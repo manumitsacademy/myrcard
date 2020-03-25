@@ -19,7 +19,6 @@
                 
             
                 
-                
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">
@@ -30,8 +29,8 @@
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">
                            
-                            <label for="email" class="fa fa-calendar-o" rel="tooltip" title="search for description/amount"></label>
-                            <input type="text" placeholder="search for description/amount" class="form-control" id="email">
+                            <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue">
+
                         </div>
                     </div>
                     <button class="btn  my-sm-0 mr-2" type="submit" style="border: 1px solid #E6EBF0;

@@ -12,6 +12,7 @@ import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component'
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
 import { PopoverModule, BsDatepickerModule } from 'ngx-bootstrap';
 import { DefaultComponent } from './default/default.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { DefaultComponent } from './default/default.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule,
+    SharedModule,FormsModule,
     HttpClientModule,
     PopoverModule,
     BsDatepickerModule
