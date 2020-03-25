@@ -16,8 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     CoreComponent,
-    CallbackComponent
-  ],
+    CallbackComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,ReactiveFormsModule,

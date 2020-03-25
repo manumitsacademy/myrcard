@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
+import { DefaultComponent } from './default/default.component';
 
 const routes: Routes = [{ path: '', component: DashboardComponent,children:[
         {
@@ -12,6 +13,10 @@ const routes: Routes = [{ path: '', component: DashboardComponent,children:[
         {
           path:'transactionhistory',
           component:TransactionhistoryComponent
+        },
+        {
+          path:'default',
+          component:DefaultComponent
         }
       ]
      }];

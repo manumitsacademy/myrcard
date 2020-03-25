@@ -20,3 +20,39 @@
     border-top:none;
     text-transform: uppercase;
 }
+
+@media (max-width:576px){
+    .mini_table{
+        display:none;
+    }
+}
+.mobile_view  .table{
+    align-self: center;
+  
+    
+}
+.mobile_view .table td:nth-child(1){
+    width:20%;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_view .table td p{
+    margin-bottom:1px;   
+}
+.mobile_view .table td:nth-child(2){
+    width:90%;
+}
+.mobile_view .table td:nth-child(3){
+    font-weight:bold;
+}
+@media (max-width:576px){
+.summaryheading .dots{
+    display: none;
+    }
+}
+@media (max-width:576px){
+    .summaryheading .view_all{
+        text-decoration: none;
+        color:#90A2B1;
+    }
+}

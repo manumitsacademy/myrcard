@@ -1,6 +1,6 @@
 #short_cut{
-    background-color: #0074b6ff;
-    
+    /* background-color: #0074b6ff; */
+    background-color: #3e80b7;
 }
 /*#short_cut:after{
     background: 
@@ -82,3 +82,27 @@
     margin:0;
     padding:0;
   }
+  @media (max-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 54px;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.3s ease;
+        display: block;
+        z-index:99;
+        background-color: black;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-right: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.show {
+        right: 0;
+    }
+}

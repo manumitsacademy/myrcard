@@ -11,10 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
 import { PopoverModule, BsDatepickerModule } from 'ngx-bootstrap';
+import { DefaultComponent } from './default/default.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent],
+  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,DefaultComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
