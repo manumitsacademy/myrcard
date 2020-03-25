@@ -5,6 +5,7 @@ import { MainareaComponent } from './mainarea/mainarea.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent],
   imports: [
     CommonModule,
+    FormsModule,ReactiveFormsModule,
     RouterModule.forChild([])
   ],
   exports:[HeaderComponent,MainareaComponent,FooterComponent]
