@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-mainarea></app-mainarea>\r\n";
+    __webpack_exports__["default"] = "\r\n<app-mainarea></app-mainarea>\r\n";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!--<div id=\"main_logo\"> \r\n<div id=\"logo\" style=\"display:flex;align-items:center\" class=\"container text-center\">\r\n   \r\n    <div><img src=\"/assets/logo_white.png\" style=\"width:55%\" class=\"img-fluid\"></div>            \r\n    <div><h1>Revenued</h1></div>\r\n    \r\n</div>\r\n</div>-->\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\r\n\r\n<section id=\"main_logo\">\r\n   <div class=\"container\">\r\n        <nav class=\"navbar navbar-expand-lg \">\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img src=\"/assets/logo_white.png\" width=\"35\" height=\"35\" class=\"d-inline-block align-top\" alt=\"\">\r\n                <span class=\"d-inline ml-2\">Revenued</span>\r\n            </a>\r\n           \r\n          \r\n            <div class=\"ml-auto mt-3 right_col\">\r\n                <i class=\"fa fa-bell-o\" aria-hidden=\"true\"></i>\r\n                <i class=\"fa fa-circle\" aria-hidden=\"true\"></i>\r\n                <div class=\"dropdown d-inline-block ml-4\">\r\n                    <a class=\"dropdown-toggle\" href=\"#\"  id=\"dropdownMenuButton\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                      <p>John Newcombe <i class=\"fa fa-angle-down font-weight-bold\" aria-hidden=\"true\"></i></p>\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\r\n                      <a class=\"dropdown-item\" href=\"#\">Action</a>\r\n                      <a class=\"dropdown-item\" href=\"#\">Another action</a>\r\n                      <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n                    </div>\r\n                  </div>\r\n            </div>\r\n              \r\n              \r\n           \r\n          </nav>\r\n     </div>\r\n</section>\r\n";
+    __webpack_exports__["default"] = "<!--<div id=\"main_logo\"> \r\n<div id=\"logo\" style=\"display:flex;align-items:center\" class=\"container text-center\">\r\n   \r\n    <div><img src=\"/assets/logo_white.png\" style=\"width:55%\" class=\"img-fluid\"></div>            \r\n    <div><h1>Revenued</h1></div>\r\n    \r\n</div>\r\n</div>-->\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\r\n\r\n<section id=\"main_logo\">\r\n   <div class=\"container\">\r\n        <nav class=\"navbar navbar-expand-lg \">\r\n          <a class=\"navbar-brand\" href=\"#\">\r\n            <img src=\"/assets/android-chrome-512x512.png\" style=\"width:30px; height:30px;\" class=\"d-inline-block align-top\" alt=\"\">\r\n            <span class=\"d-inline ml-2\">Revenued</span>\r\n        </a>\r\n       \r\n           \r\n          \r\n            <div class=\"ml-auto mt-3 right_col\">\r\n                <i class=\"fa fa-bell-o\" aria-hidden=\"true\"></i>\r\n                <i class=\"fa fa-circle\" aria-hidden=\"true\"></i>\r\n                <div class=\"dropdown d-inline-block ml-4\">\r\n                    <a class=\"dropdown-toggle\" href=\"#\"  id=\"dropdownMenuButton\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                      <p>John Newcombe <i class=\"fa fa-angle-down font-weight-bold\" aria-hidden=\"true\"></i></p>\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\r\n                      <a class=\"dropdown-item\" href=\"#\">Action</a>\r\n                      <a class=\"dropdown-item\" href=\"#\">Another action</a>\r\n                      <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n                    </div>\r\n                  </div>\r\n            </div>\r\n              \r\n              \r\n           \r\n          </nav>\r\n     </div>\r\n</section>\r\n";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\r\n<!--\r\n<div class=\"row\" style=\"height:100%\">\r\n    <div class=\"col-lg-6 col-md-6\" style=\"background-color: blueviolet; padding:100px 200px 200px 250px ;\">\r\n        <div id=\"logo\" style=\"display:flex;align-items:center\">\r\n            <div><img src=\"/assets/logo_white.png\" style=\"width:80%\"></div>            \r\n            <div><h1>Revenued</h1></div>\r\n        </div>\r\n        <div id=\"slogan\">\r\n            <h1>Business Card for</h1>\r\n            <h1>this Generation</h1>\r\n            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>\r\n        </div>\r\n        <footer>\r\n            <span>ABOUT REVENUED</span>\r\n            <SPAN>CONTACT US</SPAN>\r\n        </footer>\r\n    </div>\r\n    <div class=\"col-lg-6 col-md-6\">\r\n        <div id=\"logindiv\">\r\n            <div>\r\n                <h1>Welcome to Revenued</h1>\r\n                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>\r\n            </div>\r\n            <div>\r\n                    <DIV>\r\n                        <div class=\"form-group\">\r\n                          <label for=\"email\">Email address:</label>\r\n                          <input type=\"email\" class=\"form-control\" placeholder=\"Enter email\" id=\"email\">\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                          <label for=\"pwd\">Password:</label>\r\n                          <input type=\"password\" class=\"form-control\" placeholder=\"Enter password\" id=\"pwd\">\r\n                        </div>\r\n                        <div class=\"form-group form-check\">\r\n                          <label class=\"form-check-label\">\r\n                            Forgot password\r\n                          </label>\r\n                        </div>\r\n                        <a routerLink=\"/dashboard\" type=\"submit\" class=\"btn btn-primary\">Submit</a>\r\n                        <span>Not a member? Sign Up</span>\r\n                    </DIV>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n-->\r\n<section id=\"login_page\" style=\"height:100%\">\r\n    <div class=\"row no-gutters\" >\r\n        <div class=\"col-md-6 flex-column  text-white\" style=\"background-color: #3075bf;\">\r\n            <div class=\"left_col w-50 mt-5 align-self-center\" >\r\n               \r\n                <a class=\"navbar-brand logohead mb-5\" href=\"#\" >\r\n                    <img src=\"/assets/logo_white.png\" width=\"35\" height=\"35\" class=\"d-inline-block align-top\" alt=\"\">\r\n                    <span class=\"ml-2\" style=\"font-family:Montserrat\">Revenued</span>\r\n                </a>\r\n               \r\n                <h1>Business Card for this Generation.</h1>\r\n                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate?</p>\r\n                \r\n               \r\n           \r\n            </div>\r\n            <footer class=\"border-top w-50 align-self-center \">               \r\n                    <nav class=\"navbar navbar-expand-lg px-0 \">\r\n                          <ul class=\"navbar-nav text-uppercase\">                           \r\n                            <li class=\"nav-item\">\r\n                              <a class=\"nav-link\" href=\"#\">About Revenued</a>\r\n                            </li>\r\n                            <li class=\"nav-item\">\r\n                              <a class=\"nav-link\" href=\"#\">Contact us</a>\r\n                            </li>                            \r\n                          </ul>                       \r\n                      </nav>\r\n            </footer>\r\n           \r\n        </div>\r\n        <div class=\"col-md-6 justify-content-center\">\r\n            <div class=\"right_col w-50 \">\r\n                <div class=\"right_col_head\">\r\n                <h3>Welcome to <span class=\"text-primary\">Revenued</span></h3>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quae quod facilis pariatur dolorem vero?</p>\r\n                </div>\r\n                <form action=\"\" >\r\n                    <label for=\"email\" class=\"text-muted\">Email</label>\r\n                    <input type=\"text\" class=\"form-control p-0 mb-3\" placeholder=\"Enter Email ID\">\r\n                    <label for=\"password\">Password</label>\r\n                    <input type=\"password\" class=\"form-control p-0\" placeholder=\"Enter Password\">\r\n                    \r\n                </form> \r\n                 <p class=\"text-right\"><small><a href=\"#\">Forgot Password?</a></small></p>\r\n                 <div class=\"text-center\">\r\n                     <button type=\"button\" class=\"btn btn-xl w-50 btn-center\" (click)=\"authService.login()\" style=\"background-color: #ce6b20;\">Login</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>";
+    __webpack_exports__["default"] = "\r\n<!--\r\n<div class=\"row\" style=\"height:100%\">\r\n    <div class=\"col-lg-6 col-md-6\" style=\"background-color: blueviolet; padding:100px 200px 200px 250px ;\">\r\n        <div id=\"logo\" style=\"display:flex;align-items:center\">\r\n            <div><img src=\"/assets/logo_white.png\" style=\"width:80%\"></div>            \r\n            <div><h1>Revenued</h1></div>\r\n        </div>\r\n        <div id=\"slogan\">\r\n            <h1>Business Card for</h1>\r\n            <h1>this Generation</h1>\r\n            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>\r\n        </div>\r\n        <footer>\r\n            <span>ABOUT REVENUED</span>\r\n            <SPAN>CONTACT US</SPAN>\r\n        </footer>\r\n    </div>\r\n    <div class=\"col-lg-6 col-md-6\">\r\n        <div id=\"logindiv\">\r\n            <div>\r\n                <h1>Welcome to Revenued</h1>\r\n                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>\r\n            </div>\r\n            <div>\r\n                    <DIV>\r\n                        <div class=\"form-group\">\r\n                          <label for=\"email\">Email address:</label>\r\n                          <input type=\"email\" class=\"form-control\" placeholder=\"Enter email\" id=\"email\">\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                          <label for=\"pwd\">Password:</label>\r\n                          <input type=\"password\" class=\"form-control\" placeholder=\"Enter password\" id=\"pwd\">\r\n                        </div>\r\n                        <div class=\"form-group form-check\">\r\n                          <label class=\"form-check-label\">\r\n                            Forgot password\r\n                          </label>\r\n                        </div>\r\n                        <a routerLink=\"/dashboard\" type=\"submit\" class=\"btn btn-primary\">Submit</a>\r\n                        <span>Not a member? Sign Up</span>\r\n                    </DIV>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n-->\r\n<section id=\"login_page\" style=\"height:100%\">\r\n    <div class=\"row no-gutters\" >\r\n        <div class=\"col-md-6 left_maincol  text-white \" style=\"background-color: #3075bf;\">\r\n            <div class=\"left_col mt-5 \" >\r\n               \r\n                <a class=\"navbar-brand logohead mb-5\" href=\"#\" >\r\n                    <img src=\"/assets/logo_white.png\" width=\"35.3\" height=\"40\" class=\"d-inline-block align-top\" alt=\"\">\r\n                    <span class=\"ml-3 \" style=\"font-family:Montserrat\">Revenued</span>\r\n                </a>\r\n               \r\n                <h1>Business Card for this Generation.</h1>\r\n                <p class=\"data\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate?</p>\r\n                \r\n               \r\n           \r\n            </div>\r\n            <footer class=\" align-self-end mr-auto\" >\r\n               \r\n                <nav class=\"navbar navbar-expand-lg px-0 \">\r\n                    \r\n                    \r\n                  \r\n                      <ul class=\"navbar-nav text-uppercase\">\r\n                       \r\n                        <li class=\"nav-item\">\r\n                          <a class=\"nav-link\" href=\"#\">About Revenued</a>\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                          <a class=\"nav-link\" href=\"#\">Contact us</a>\r\n                        </li>\r\n                        \r\n                      </ul>\r\n                   \r\n                  </nav>\r\n           \r\n                </footer>\r\n          \r\n           \r\n        </div>\r\n        \r\n        <div class=\"col-md-6 d-flex justify-content-center right_maincol\">\r\n            \r\n            <div class=\"right_col\">\r\n                <!--<div class=\"back_arrow d-xl-none d-sm mt-3\">\r\n                    <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i>\r\n                </div>-->\r\n                <div class=\"right_col_head\">\r\n                    <h3>Welcome to <span>Revenued</span></h3>\r\n                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quae quod facilis pariatur dolorem vero?</p>\r\n                </div>\r\n                <form action=\"\" >\r\n                    <label for=\"email\">Email Address</label>\r\n                    <input type=\"text\" class=\"form-control p-0 mb-3\" placeholder=\"Enter Email ID\">\r\n                    <label for=\"password\">Password</label>\r\n                    <input type=\"password\" class=\"form-control p-0\" placeholder=\"************\">\r\n                    \r\n                </form> \r\n                 <p class=\"text-right\"><small><a href=\"#\">Forgot Password?</a></small></p>\r\n                 <div class=\"text-center \">\r\n                     <button type=\"button\" class=\"btn btn-xl w-50 btn-center font-weight-bold\" (click)=\"authService.login()\" style=\"background-color: #ce6b20;\">Login</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<router-outlet></router-outlet>\r\n\r\n";
+    __webpack_exports__["default"] = "\r\n<router-outlet></router-outlet>\r\n\r\n";
     /***/
   },
 
@@ -900,61 +900,79 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/platform-browser/animations */
+    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _shared_shared_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./shared/shared.module */
     "./src/app/shared/shared.module.ts");
     /* harmony import */
 
 
-    var _core_core_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _core_core_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./core/core.component */
     "./src/app/core/core.component.ts");
     /* harmony import */
 
 
-    var _callback_callback_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _callback_callback_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./callback/callback.component */
     "./src/app/callback/callback.component.ts");
     /* harmony import */
 
 
-    var _auth_auth_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _auth_auth_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./auth/auth.service */
     "./src/app/auth/auth.service.ts");
+    /* harmony import */
+
+
+    var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ngx-bootstrap */
+    "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
-    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _core_core_component__WEBPACK_IMPORTED_MODULE_7__["CoreComponent"], _callback_callback_component__WEBPACK_IMPORTED_MODULE_8__["CallbackComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__["SharedModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]],
-      providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_9__["AuthService"]],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _core_core_component__WEBPACK_IMPORTED_MODULE_8__["CoreComponent"], _callback_callback_component__WEBPACK_IMPORTED_MODULE_9__["CallbackComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_7__["SharedModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_11__["PopoverModule"].forRoot(), _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_11__["BsDatepickerModule"].forRoot()],
+      providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"]],
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })], AppModule);
     /***/
   },
@@ -1179,7 +1197,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "ngOnInit",
         value: function ngOnInit() {
           //this.authService.handleLoginCallback();
-          alert("HIHI");
           this.router.navigate(['/dashboard']);
         }
       }]);
@@ -1438,7 +1455,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');\r\n/*#logo h1{\r\n  display:inline-block;\r\n  font-family: Montserrat;\r\n  font-size:1.4rem;\r\n  font-weight:bold;\r\n  color:white;\r\n  padding:10px 40px 0px 0px;\r\n  \r\n}*/\r\n#main_logo{\r\n  background-color: rgb(182, 248, 226);\r\n  \r\n  \r\n}\r\n.fa-bell-o{\r\n  position: relative;\r\n  font-size:1.6rem;\r\n}\r\n.fa-circle{\r\n  position: absolute;\r\n  margin-left:-12px;\r\n  color:red;\r\n  font-size:0.8rem;\r\n}\r\n#main_logo p{\r\n  display:inline-block;\r\n  margin-left:2%;\r\n  vertical-align: middle;\r\n  font-size: 1rem;\r\n  font-weight: 600;\r\n \r\n \r\n}\r\n#main_logo img{\r\n  width:1.9rem;\r\n \r\n}\r\n#main_logo .dropdown-toggle::after{\r\n  border:none;\r\n}\r\n#main_logo .navbar-brand span{\r\n  font-size:1.4rem;\r\n}\r\n#main_logo a{\r\n  text-decoration: none;\r\n  color:black;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1RkFBdUY7QUFDdkY7Ozs7Ozs7O0VBUUU7QUFDRjtFQUNFLG9DQUFvQzs7O0FBR3RDO0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLFNBQVM7RUFDVCxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLG9CQUFvQjtFQUNwQixjQUFjO0VBQ2Qsc0JBQXNCO0VBQ3RCLGVBQWU7RUFDZixnQkFBZ0I7OztBQUdsQjtBQUVBO0VBQ0UsWUFBWTs7QUFFZDtBQUdBO0VBQ0UsV0FBVztBQUNiO0FBR0E7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLHFCQUFxQjtFQUNyQixXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1MYXRvOjkwMHxNb250c2VycmF0JmRpc3BsYXk9c3dhcCcpO1xyXG4vKiNsb2dvIGgxe1xyXG4gIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gIGZvbnQtZmFtaWx5OiBNb250c2VycmF0O1xyXG4gIGZvbnQtc2l6ZToxLjRyZW07XHJcbiAgZm9udC13ZWlnaHQ6Ym9sZDtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBwYWRkaW5nOjEwcHggNDBweCAwcHggMHB4O1xyXG4gIFxyXG59Ki9cclxuI21haW5fbG9nb3tcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTgyLCAyNDgsIDIyNik7XHJcbiAgXHJcbiAgXHJcbn1cclxuXHJcbi5mYS1iZWxsLW97XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIGZvbnQtc2l6ZToxLjZyZW07XHJcbn1cclxuLmZhLWNpcmNsZXtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbWFyZ2luLWxlZnQ6LTEycHg7XHJcbiAgY29sb3I6cmVkO1xyXG4gIGZvbnQtc2l6ZTowLjhyZW07XHJcbn1cclxuI21haW5fbG9nbyBwe1xyXG4gIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gIG1hcmdpbi1sZWZ0OjIlO1xyXG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgZm9udC1zaXplOiAxcmVtO1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiBcclxuIFxyXG59XHJcblxyXG4jbWFpbl9sb2dvIGltZ3tcclxuICB3aWR0aDoxLjlyZW07XHJcbiBcclxufVxyXG5cclxuXHJcbiNtYWluX2xvZ28gLmRyb3Bkb3duLXRvZ2dsZTo6YWZ0ZXJ7XHJcbiAgYm9yZGVyOm5vbmU7XHJcbn1cclxuXHJcblxyXG4jbWFpbl9sb2dvIC5uYXZiYXItYnJhbmQgc3BhbntcclxuICBmb250LXNpemU6MS40cmVtO1xyXG59XHJcbiNtYWluX2xvZ28gYXtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgY29sb3I6YmxhY2s7XHJcbn0iXX0= */";
+    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');\r\n/*#logo h1{\r\n  display:inline-block;\r\n  font-family: Montserrat;\r\n  font-size:1.4rem;\r\n  font-weight:bold;\r\n  color:white;\r\n  padding:10px 40px 0px 0px;\r\n  \r\n}*/\r\n#main_logo{\r\n  background-color: #EFFAFF;\r\n\r\n  \r\n  \r\n}\r\n.fa-bell-o{\r\n  position: relative;\r\n  font-size:1.6rem;\r\n}\r\n.fa-circle{\r\n  position: absolute;\r\n  margin-left:-12px;\r\n  color:red;\r\n  font-size:0.8rem;\r\n}\r\n#main_logo p{\r\n  display:inline-block;\r\n  margin-left:2%;\r\n  vertical-align: middle;\r\n  font-size: 1rem;\r\n  font-weight: 600;\r\n \r\n \r\n}\r\n#main_logo img{\r\n  width:1.9rem;\r\n \r\n}\r\n#main_logo .dropdown-toggle::after{\r\n  border:none;\r\n}\r\n#main_logo .navbar-brand span{\r\n  font-size:24px;\r\n  font-family: Montserrat;\r\n  font-size: 20px;\r\n  font-weight: 600;\r\n  letter-spacing: 0.3px;\r\n  line-height: 24px;\r\n  color: #555555;\r\n}\r\n#main_logo a{\r\n  text-decoration: none;\r\n  color:black;\r\n}\r\n@media (max-width: 576px) { \r\n  nav{\r\n     display:none;\r\n  }\r\n}\r\n.right_col .dropdown p{\r\n  font-size:1rem;\r\n  color: #072843;\r\n  font-family: Lato;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1RkFBdUY7QUFDdkY7Ozs7Ozs7O0VBUUU7QUFDRjtFQUNFLHlCQUF5Qjs7OztBQUkzQjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixTQUFTO0VBQ1QsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxvQkFBb0I7RUFDcEIsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixlQUFlO0VBQ2YsZ0JBQWdCOzs7QUFHbEI7QUFFQTtFQUNFLFlBQVk7O0FBRWQ7QUFHQTtFQUNFLFdBQVc7QUFDYjtBQUdBO0VBQ0UsY0FBYztFQUNkLHVCQUF1QjtFQUN2QixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsY0FBYztBQUNoQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLFdBQVc7QUFDYjtBQUVBO0VBQ0U7S0FDRyxZQUFZO0VBQ2Y7QUFDRjtBQUNBO0VBQ0UsY0FBYztFQUNkLGNBQWM7RUFDZCxpQkFBaUI7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1MYXRvOjkwMHxNb250c2VycmF0JmRpc3BsYXk9c3dhcCcpO1xyXG4vKiNsb2dvIGgxe1xyXG4gIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gIGZvbnQtZmFtaWx5OiBNb250c2VycmF0O1xyXG4gIGZvbnQtc2l6ZToxLjRyZW07XHJcbiAgZm9udC13ZWlnaHQ6Ym9sZDtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBwYWRkaW5nOjEwcHggNDBweCAwcHggMHB4O1xyXG4gIFxyXG59Ki9cclxuI21haW5fbG9nb3tcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUZGQUZGO1xyXG5cclxuICBcclxuICBcclxufVxyXG5cclxuLmZhLWJlbGwtb3tcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgZm9udC1zaXplOjEuNnJlbTtcclxufVxyXG4uZmEtY2lyY2xle1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBtYXJnaW4tbGVmdDotMTJweDtcclxuICBjb2xvcjpyZWQ7XHJcbiAgZm9udC1zaXplOjAuOHJlbTtcclxufVxyXG4jbWFpbl9sb2dvIHB7XHJcbiAgZGlzcGxheTppbmxpbmUtYmxvY2s7XHJcbiAgbWFyZ2luLWxlZnQ6MiU7XHJcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICBmb250LXNpemU6IDFyZW07XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuIFxyXG4gXHJcbn1cclxuXHJcbiNtYWluX2xvZ28gaW1ne1xyXG4gIHdpZHRoOjEuOXJlbTtcclxuIFxyXG59XHJcblxyXG5cclxuI21haW5fbG9nbyAuZHJvcGRvd24tdG9nZ2xlOjphZnRlcntcclxuICBib3JkZXI6bm9uZTtcclxufVxyXG5cclxuXHJcbiNtYWluX2xvZ28gLm5hdmJhci1icmFuZCBzcGFue1xyXG4gIGZvbnQtc2l6ZToyNHB4O1xyXG4gIGZvbnQtZmFtaWx5OiBNb250c2VycmF0O1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxuICBmb250LXdlaWdodDogNjAwO1xyXG4gIGxldHRlci1zcGFjaW5nOiAwLjNweDtcclxuICBsaW5lLWhlaWdodDogMjRweDtcclxuICBjb2xvcjogIzU1NTU1NTtcclxufVxyXG4jbWFpbl9sb2dvIGF7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIGNvbG9yOmJsYWNrO1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTc2cHgpIHsgXHJcbiAgbmF2e1xyXG4gICAgIGRpc3BsYXk6bm9uZTtcclxuICB9XHJcbn1cclxuLnJpZ2h0X2NvbCAuZHJvcGRvd24gcHtcclxuICBmb250LXNpemU6MXJlbTtcclxuICBjb2xvcjogIzA3Mjg0MztcclxuICBmb250LWZhbWlseTogTGF0bztcclxufSJdfQ== */";
     /***/
   },
 
@@ -1537,7 +1554,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');\r\n\r\n#login_page .row{\r\n  height: 100%;\r\n}\r\n\r\n#login_page .col-md-6{\r\n \r\n    display: -webkit-box;\r\n \r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    display: flex;\r\n  \r\n  \r\n    \r\n}\r\n\r\n#login_page .left_col .logohead{\r\n \r\n  text-decoration: none;\r\n  color:white;\r\n  font-size:1.3rem;\r\n\r\n  \r\n}\r\n\r\n#login_page footer a{\r\n  text-decoration: none;\r\n  color:white;\r\n  font-size:0.7rem;\r\n}\r\n\r\n#login_page .right_col .right_col_head{\r\n  margin-top:25%;\r\n  margin-bottom:15%;\r\n}\r\n\r\ninput,\r\nselect.form-control {\r\n  background: transparent;\r\n  border: none;\r\n  border: 1px solid #dddddd;\r\n  \r\n  box-shadow: none;\r\n  border-radius: 0;\r\n}\r\n\r\ninput:focus,\r\nselect.form-control:focus {\r\n  box-shadow: none;\r\n}\r\n\r\n#login_page .form-control{\r\n  /* height:2%; */\r\n}\r\n\r\nh1{\r\n  font-family: Lato;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUZBQXVGOztBQUV2RjtFQUNFLFlBQVk7QUFDZDs7QUFDQTs7SUFFSSxvQkFBYTs7SUFBYixhQUFhO0lBQ2IseUJBQThCO1lBQTlCLDhCQUE4QjtJQUM5QixhQUFhOzs7O0FBSWpCOztBQUNBOztFQUVFLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsZ0JBQWdCOzs7QUFHbEI7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsV0FBVztFQUNYLGdCQUFnQjtBQUNsQjs7QUFDQTtFQUNFLGNBQWM7RUFDZCxpQkFBaUI7QUFDbkI7O0FBQ0E7O0VBRUUsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWix5QkFBeUI7O0VBR3pCLGdCQUFnQjtFQUNoQixnQkFBZ0I7QUFDbEI7O0FBRUE7O0VBR0UsZ0JBQWdCO0FBQ2xCOztBQUNBO0VBQ0UsZUFBZTtBQUNqQjs7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9sb2dpbi9sb2dpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1MYXRvOjkwMHxNb250c2VycmF0JmRpc3BsYXk9c3dhcCcpO1xyXG5cclxuI2xvZ2luX3BhZ2UgLnJvd3tcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLmNvbC1tZC02e1xyXG4gXHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICBcclxuICBcclxuICAgIFxyXG59XHJcbiNsb2dpbl9wYWdlIC5sZWZ0X2NvbCAubG9nb2hlYWR7XHJcbiBcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgY29sb3I6d2hpdGU7XHJcbiAgZm9udC1zaXplOjEuM3JlbTtcclxuXHJcbiAgXHJcbn1cclxuXHJcbiNsb2dpbl9wYWdlIGZvb3RlciBhe1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBmb250LXNpemU6MC43cmVtO1xyXG59XHJcbiNsb2dpbl9wYWdlIC5yaWdodF9jb2wgLnJpZ2h0X2NvbF9oZWFke1xyXG4gIG1hcmdpbi10b3A6MjUlO1xyXG4gIG1hcmdpbi1ib3R0b206MTUlO1xyXG59XHJcbmlucHV0LFxyXG5zZWxlY3QuZm9ybS1jb250cm9sIHtcclxuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2RkZGRkZDtcclxuICAtd2Via2l0LWJveC1zaGFkb3c6IG5vbmU7XHJcbiAgXHJcbiAgYm94LXNoYWRvdzogbm9uZTtcclxuICBib3JkZXItcmFkaXVzOiAwO1xyXG59XHJcblxyXG5pbnB1dDpmb2N1cyxcclxuc2VsZWN0LmZvcm0tY29udHJvbDpmb2N1cyB7XHJcbiAgLXdlYmtpdC1ib3gtc2hhZG93OiBub25lO1xyXG4gIGJveC1zaGFkb3c6IG5vbmU7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLmZvcm0tY29udHJvbHtcclxuICAvKiBoZWlnaHQ6MiU7ICovXHJcbn1cclxuaDF7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbn0iXX0= */";
+    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');\r\n\r\n#login_page .row{\r\n  height: 100%;\r\n}\r\n\r\n#login_page .left_col{\r\n \r\n    padding-left:25%;\r\n    width:80%;\r\n\r\n    \r\n}\r\n\r\n#login_page .left_col h1{\r\n  font-size:2.7rem;\r\n  font-weight:900;\r\n  \r\n}\r\n\r\n#login_page .left_col .data{\r\n  font-size: 1rem;\r\n  color:#ffffff;\r\n}\r\n\r\n#login_page .left_col .logohead{\r\n \r\n  text-decoration: none;\r\n  color:white;\r\n  \r\n\r\n  \r\n}\r\n\r\n#login_page .left_col .logohead span{\r\n  font-weight:600;\r\n  font-size: 26.67px;\r\n  \r\n}\r\n\r\n#login_page .right_col .right_col_head{\r\n  margin-top:30%;\r\n  margin-bottom:15%;\r\n}\r\n\r\n#login_page .right_col_head h3{\r\n  font-size:30px;\r\n  font-family: Lato;\r\n  font-weight:bold;\r\n}\r\n\r\n#login_page .right_col span{\r\n  color:  #2B73B0;\r\n}\r\n\r\n#login_page .right_col_head p{\r\n  font-size:1rem;\r\n  font-family: Lato;\r\n  color:#90A2B1;\r\n}\r\n\r\n#login_page .right_col{\r\n  width:55%;\r\n}\r\n\r\n#login_page .right_col label{\r\n  font-size:12px;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  color:  #90A2B1;\r\n  font-family: Lato;\r\n  height:5px;\r\n}\r\n\r\ninput,\r\nselect.form-control {\r\n  background: transparent;\r\n  border: none;\r\n  border-bottom: 1px solid #dddddd;\r\n  box-shadow: none;\r\n  border-radius: 0;\r\n  color:#072843;\r\n  font-size:16px;\r\n  font-weight:bold;\r\n  font-family: Lato;\r\n}\r\n\r\ninput:focus,\r\nselect.form-control:focus {\r\n  box-shadow: none;\r\n}\r\n\r\nh1{\r\n  font-family: Lato;\r\n}\r\n\r\n.left_maincol{\r\n  min-height: 100%;\r\n  display: grid;\r\n  grid-template-rows: 1fr auto;\r\n}\r\n\r\nfooter {\r\n  margin-left:25%;\r\n  grid-row-start: 2;\r\n  grid-row-end: 3;\r\n  width:75%;\r\n  border-top: 1px solid #4B6377;\r\n}\r\n\r\n#login_page footer a{\r\n  text-decoration: none;\r\n  color:white;\r\n  font-size:12px;\r\n}\r\n\r\n.btn{\r\n  color:#FFFFFF;\r\n  font-size: 1rem;\r\n}\r\n\r\n@media (max-width: 576px) { \r\n  .left_maincol{\r\n     display:none;\r\n  }\r\n}\r\n\r\n@media (max-width:576px){\r\n  .right_col{\r\n    width:85% !important;\r\n    \r\n  }\r\n}\r\n\r\n/*@media (max-width:576px){\r\n  .right_col_head{\r\n   \r\n    margin-top:20% !important;\r\n  }\r\n}*/\r\n\r\n@media (max-width:576px){\r\n  .btn{\r\n    color:#072843;\r\n    width:100% !important;\r\n  }\r\n}\r\n\r\n.fa-arrow-left{\r\n  color:#ce6b20;\r\n  font-size:1rem;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUZBQXVGOztBQUV2RjtFQUNFLFlBQVk7QUFDZDs7QUFDQTs7SUFFSSxnQkFBZ0I7SUFDaEIsU0FBUzs7O0FBR2I7O0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTs7QUFFakI7O0FBQ0E7RUFDRSxlQUFlO0VBQ2YsYUFBYTtBQUNmOztBQUNBOztFQUVFLHFCQUFxQjtFQUNyQixXQUFXOzs7O0FBSWI7O0FBQ0E7RUFDRSxlQUFlO0VBQ2Ysa0JBQWtCOztBQUVwQjs7QUFHQTtFQUNFLGNBQWM7RUFDZCxpQkFBaUI7QUFDbkI7O0FBQ0E7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGdCQUFnQjtBQUNsQjs7QUFDQTtFQUNFLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGFBQWE7QUFDZjs7QUFDQTtFQUNFLFNBQVM7QUFDWDs7QUFDQTtFQUNFLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIseUJBQXlCO0VBQ3pCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsVUFBVTtBQUNaOztBQUNBOztFQUVFLHVCQUF1QjtFQUN2QixZQUFZO0VBQ1osZ0NBQWdDO0VBRWhDLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsaUJBQWlCO0FBQ25COztBQUVBOztFQUdFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsNEJBQTRCO0FBQzlCOztBQUNBO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsU0FBUztFQUNULDZCQUE2QjtBQUMvQjs7QUFDQTtFQUNFLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGFBQWE7RUFDYixlQUFlO0FBQ2pCOztBQUNBO0VBQ0U7S0FDRyxZQUFZO0VBQ2Y7QUFDRjs7QUFDQTtFQUNFO0lBQ0Usb0JBQW9COztFQUV0QjtBQUNGOztBQUNBOzs7OztFQUtFOztBQUNGO0VBQ0U7SUFDRSxhQUFhO0lBQ2IscUJBQXFCO0VBQ3ZCO0FBQ0Y7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9sb2dpbi9sb2dpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1MYXRvOjkwMHxNb250c2VycmF0JmRpc3BsYXk9c3dhcCcpO1xyXG5cclxuI2xvZ2luX3BhZ2UgLnJvd3tcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLmxlZnRfY29se1xyXG4gXHJcbiAgICBwYWRkaW5nLWxlZnQ6MjUlO1xyXG4gICAgd2lkdGg6ODAlO1xyXG5cclxuICAgIFxyXG59XHJcbiNsb2dpbl9wYWdlIC5sZWZ0X2NvbCBoMXtcclxuICBmb250LXNpemU6Mi43cmVtO1xyXG4gIGZvbnQtd2VpZ2h0OjkwMDtcclxuICBcclxufVxyXG4jbG9naW5fcGFnZSAubGVmdF9jb2wgLmRhdGF7XHJcbiAgZm9udC1zaXplOiAxcmVtO1xyXG4gIGNvbG9yOiNmZmZmZmY7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLmxlZnRfY29sIC5sb2dvaGVhZHtcclxuIFxyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBcclxuXHJcbiAgXHJcbn1cclxuI2xvZ2luX3BhZ2UgLmxlZnRfY29sIC5sb2dvaGVhZCBzcGFue1xyXG4gIGZvbnQtd2VpZ2h0OjYwMDtcclxuICBmb250LXNpemU6IDI2LjY3cHg7XHJcbiAgXHJcbn1cclxuXHJcblxyXG4jbG9naW5fcGFnZSAucmlnaHRfY29sIC5yaWdodF9jb2xfaGVhZHtcclxuICBtYXJnaW4tdG9wOjMwJTtcclxuICBtYXJnaW4tYm90dG9tOjE1JTtcclxufVxyXG4jbG9naW5fcGFnZSAucmlnaHRfY29sX2hlYWQgaDN7XHJcbiAgZm9udC1zaXplOjMwcHg7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbiAgZm9udC13ZWlnaHQ6Ym9sZDtcclxufVxyXG4jbG9naW5fcGFnZSAucmlnaHRfY29sIHNwYW57XHJcbiAgY29sb3I6ICAjMkI3M0IwO1xyXG59XHJcbiNsb2dpbl9wYWdlIC5yaWdodF9jb2xfaGVhZCBwe1xyXG4gIGZvbnQtc2l6ZToxcmVtO1xyXG4gIGZvbnQtZmFtaWx5OiBMYXRvO1xyXG4gIGNvbG9yOiM5MEEyQjE7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbHtcclxuICB3aWR0aDo1NSU7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbCBsYWJlbHtcclxuICBmb250LXNpemU6MTJweDtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gIGNvbG9yOiAgIzkwQTJCMTtcclxuICBmb250LWZhbWlseTogTGF0bztcclxuICBoZWlnaHQ6NXB4O1xyXG59XHJcbmlucHV0LFxyXG5zZWxlY3QuZm9ybS1jb250cm9sIHtcclxuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkZGRkZGQ7XHJcbiAgLXdlYmtpdC1ib3gtc2hhZG93OiBub25lO1xyXG4gIGJveC1zaGFkb3c6IG5vbmU7XHJcbiAgYm9yZGVyLXJhZGl1czogMDtcclxuICBjb2xvcjojMDcyODQzO1xyXG4gIGZvbnQtc2l6ZToxNnB4O1xyXG4gIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbn1cclxuXHJcbmlucHV0OmZvY3VzLFxyXG5zZWxlY3QuZm9ybS1jb250cm9sOmZvY3VzIHtcclxuICAtd2Via2l0LWJveC1zaGFkb3c6IG5vbmU7XHJcbiAgYm94LXNoYWRvdzogbm9uZTtcclxufVxyXG5cclxuaDF7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbn1cclxuLmxlZnRfbWFpbmNvbHtcclxuICBtaW4taGVpZ2h0OiAxMDAlO1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiAxZnIgYXV0bztcclxufVxyXG5mb290ZXIge1xyXG4gIG1hcmdpbi1sZWZ0OjI1JTtcclxuICBncmlkLXJvdy1zdGFydDogMjtcclxuICBncmlkLXJvdy1lbmQ6IDM7XHJcbiAgd2lkdGg6NzUlO1xyXG4gIGJvcmRlci10b3A6IDFweCBzb2xpZCAjNEI2Mzc3O1xyXG59XHJcbiNsb2dpbl9wYWdlIGZvb3RlciBhe1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBmb250LXNpemU6MTJweDtcclxufVxyXG4uYnRue1xyXG4gIGNvbG9yOiNGRkZGRkY7XHJcbiAgZm9udC1zaXplOiAxcmVtO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA1NzZweCkgeyBcclxuICAubGVmdF9tYWluY29se1xyXG4gICAgIGRpc3BsYXk6bm9uZTtcclxuICB9XHJcbn1cclxuQG1lZGlhIChtYXgtd2lkdGg6NTc2cHgpe1xyXG4gIC5yaWdodF9jb2x7XHJcbiAgICB3aWR0aDo4NSUgIWltcG9ydGFudDtcclxuICAgIFxyXG4gIH1cclxufVxyXG4vKkBtZWRpYSAobWF4LXdpZHRoOjU3NnB4KXtcclxuICAucmlnaHRfY29sX2hlYWR7XHJcbiAgIFxyXG4gICAgbWFyZ2luLXRvcDoyMCUgIWltcG9ydGFudDtcclxuICB9XHJcbn0qL1xyXG5AbWVkaWEgKG1heC13aWR0aDo1NzZweCl7XHJcbiAgLmJ0bntcclxuICAgIGNvbG9yOiMwNzI4NDM7XHJcbiAgICB3aWR0aDoxMDAlICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcbi5mYS1hcnJvdy1sZWZ0e1xyXG4gIGNvbG9yOiNjZTZiMjA7XHJcbiAgZm9udC1zaXplOjFyZW07XHJcbn0iXX0= */";
     /***/
   },
 
@@ -1674,12 +1691,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/auth/auth.service */
+    "./src/app/auth/auth.service.ts");
 
     var MainareaComponent =
     /*#__PURE__*/
     function () {
-      function MainareaComponent() {
+      function MainareaComponent(authService) {
         _classCallCheck(this, MainareaComponent);
+
+        this.authService = authService;
       }
 
       _createClass(MainareaComponent, [{
@@ -1689,6 +1714,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       return MainareaComponent;
     }();
+
+    MainareaComponent.ctorParameters = function () {
+      return [{
+        type: src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]
+      }];
+    };
 
     MainareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-mainarea',
@@ -1769,6 +1800,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./footer/footer.component */
     "./src/app/shared/footer/footer.component.ts");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
 
     var SharedModule = function SharedModule() {
       _classCallCheck(this, SharedModule);
@@ -1776,7 +1813,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     SharedModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       declarations: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"], _mainarea_mainarea_component__WEBPACK_IMPORTED_MODULE_4__["MainareaComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"]],
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forChild([])],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forChild([])],
       exports: [_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"], _mainarea_mainarea_component__WEBPACK_IMPORTED_MODULE_4__["MainareaComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"]]
     })], SharedModule);
     /***/
@@ -1818,6 +1855,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         domain: 'dev-l13h9rnv.auth0.com',
         audience: 'https://dev-l13h9rnv.auth0.com/api/v2/',
         redirect: 'https://praveeng-1002.herokuapp.com/callback',
+        // redirect: 'http://localhost:4200/callback',
+        // redirect: 'http://localhost:8080/callback',
         scope: 'openid profile email'
       }
     };

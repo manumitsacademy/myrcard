@@ -10,6 +10,7 @@ export const environment = {
     audience: 'https://dev-l13h9rnv.auth0.com/api/v2/', // e.g., http://localhost:3001
     redirect: 'https://praveeng-1002.herokuapp.com/callback',
     // redirect: 'http://localhost:4200/callback',
+    // redirect: 'http://localhost:8080/callback',
     scope: 'openid profile email'
   }
 };
