@@ -48,11 +48,11 @@
 <section id="login_page" style="height:100%">
     <div class="row no-gutters" >
         <div class="col-md-6 left_maincol  text-white " style="background-color: #3075bf;">
-            <div class="left_col mt-5 " >
+            <div class="left_col" >
                
-                <a class="navbar-brand logohead mb-5" href="#" >
+                <a class="navbar-brand logohead" href="#" >
                     <img src="/assets/logo_white.png" width="35.3" height="40" class="d-inline-block align-top" alt="">
-                    <span class="ml-3 " style="font-family:Montserrat">Revenued</span>
+                    <span class="ml-3 " >Revenued</span>
                 </a>
                
                 <h1>Business Card for this Generation.</h1>
@@ -93,19 +93,27 @@
                 </div>-->
                 <div class="right_col_head">
                     <h3>Welcome to <span>Revenued</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quae quod facilis pariatur dolorem vero?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quae quod </p>
                 </div>
-                <div [formGroup]="loginForm" >
-                    <label for="email">Email Address</label>
-                    <input formControlName="email" type="text" class="form-control p-0 mb-3" placeholder="Enter Email ID">
-                    <label for="password">Password</label>
-                    <input formControlName="password" type="password" class="form-control p-0" placeholder="************">
+                <div [formGroup]="loginForm" id="form">
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input formControlName="email" type="text" class="form-control p-0 " placeholder="John-newcombe@reverend.com">
+                    </div>
+                    <div class="passwordL">
+                        <label for="password" >Password</label>
+                        <input formControlName="password" type="password" class="form-control p-0" placeholder="************">
+                    </div>
+                    
                     
                 </div> 
-                    <p class="text-right"><small><a href="#">Forgot Password?</a></small></p>
-                    <div class="text-center ">
-                     <button type="button" class="btn btn-xl w-50 btn-center font-weight-bold" (click)="login()" style="background-color: #ce6b20;">Login</button>
-                    </div>
+                 <p class="text-right "><a href="#" class="for_pass ">Forgot Password?</a></p>
+                 <div class="text-center login_btn ">
+                     <button type="button" class="btn  btn-center" (click)="login()" >Login</button>
+                </div>
+                <div class="d-sm d-xl-none text-center mobile_signup">
+                    <p clas="text-center"><a href="#">Not a member? &nbsp;&nbsp;<span>Sign Up</span></a></p>
+                </div>
             </div>
         </div>
     </div>

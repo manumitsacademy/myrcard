@@ -11,71 +11,132 @@
     
 }
 #login_page .left_col h1{
-  font-size:2.7rem;
-  font-weight:900;
+  color: #FFFFFF;
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  line-height: 60px;
+  height: 120px;
+  width: 476px;
   
 }
 #login_page .left_col .data{
   font-size: 1rem;
   color:#ffffff;
+  margin-top:24px;
 }
 #login_page .left_col .logohead{
  
   text-decoration: none;
   color:white;
+  margin-bottom:80px;
+  margin-top:65px;
   
 
   
 }
+
 #login_page .left_col .logohead span{
-  font-weight:600;
+  color: #FFFFFF;
+  font-family: Montserrat;
   font-size: 26.67px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  height: 33px;
+  width: 142px;
   
 }
 
 
 #login_page .right_col .right_col_head{
-  margin-top:30%;
-  margin-bottom:15%;
+  
+  height: 36px;
+  width: 304px;
+  
+  
+ 
+ 
 }
 #login_page .right_col_head h3{
-  font-size:30px;
+  height: 36px;
+  width: 304px;
+  
   font-family: Lato;
-  font-weight:bold;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 36px;
 }
 #login_page .right_col span{
-  color:  #2B73B0;
+  color: #2B73B0;
 }
 #login_page .right_col_head p{
-  font-size:1rem;
+  height: 409px;
+  width: 411px;
+  color: #90A2B1;
   font-family: Lato;
-  color:#90A2B1;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  
+}
+#login_page #form{
+  margin-top:120px;
 }
 #login_page .right_col{
-  width:55%;
+  height: 409px;
+  width: 411px;
+  margin-top:198px;
 }
 #login_page .right_col label{
-  font-size:12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color:  #90A2B1;
+  
+  color: #90A2B1;
   font-family: Lato;
-  height:5px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom:0px;
 }
-input,
-select.form-control {
+#login_page .right_col input,
+#login_page .right_col select.form-control {
   background: transparent;
   border: none;
   border-bottom: 1px solid #dddddd;
+ 
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-  color:#072843;
-  font-size:16px;
-  font-weight:bold;
-  font-family: Lato;
-}
 
+  box-sizing: border-box;
+  
+
+ 
+  
+  
+  color: #072843;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+#login_page .passwordL{
+  margin-top:40px;
+}
+#login_page .right_col .for_pass{
+  
+  color: #2B73B0;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 15px;
+  
+
+}
 input:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
@@ -105,6 +166,15 @@ footer {
 .btn{
   color:#FFFFFF;
   font-size: 1rem;
+  height: 48px;
+  width: 255px;
+  border-radius: 4px;
+  background-color: #D46929;
+  font-weight:700;
+  font-family:Lato;
+}
+#login_page .right_col .login_btn{
+  margin-top:40px;
 }
 @media (max-width: 576px) { 
   .left_maincol{
@@ -125,11 +195,28 @@ footer {
 }*/
 @media (max-width:576px){
   .btn{
-    color:#072843;
+    color:#072843 !important;
     width:100% !important;
+    
   }
 }
 .fa-arrow-left{
   color:#ce6b20;
   font-size:1rem;
+}
+@media (max-width:576px){
+  #login_page .right_col_head p{
+    width:100% !important;
+  }
+}
+#login_page .mobile_signup{
+  font-family: Lato;
+  font-size:12px;
+  margin-top:12px;
+  font-weight:bold;
+  
+}
+#login_page .mobile_signup a{
+  text-decoration:none;
+  color:#90A2B1;
 }

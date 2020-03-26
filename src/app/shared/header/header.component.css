@@ -8,17 +8,22 @@
   padding:10px 40px 0px 0px;
   
 }*/
+#main_logo{
+  background-color: #EFFAFF;
+  padding-bottom:1rem;
+  padding-top:1rem;
 
-
-.fa-bell-o{
-  position: relative;
-  font-size:1.6rem;
+  
+  
 }
+
+
 .fa-circle{
   position: absolute;
-  margin-left:-12px;
-  color:red;
-  font-size:0.8rem;
+  margin-left:-10px;
+  margin-top:3px;
+  color:#EB0017;
+  font-size:11px;
 }
 #main_logo p{
   display:inline-block;
@@ -26,10 +31,13 @@
   vertical-align: middle;
   font-size: 1rem;
   font-weight: 600;
+ 
+ 
 }
 
 #main_logo img{
   width:1.9rem;
+ 
 }
 
 
@@ -37,7 +45,11 @@
   border:none;
 }
 
-
+#main_logo .bell{
+  box-sizing: border-box;
+  height: 25px;
+  width: 20.83px;
+}
 #main_logo .navbar-brand span{
   font-size:24px;
   font-family: Montserrat;
@@ -61,4 +73,18 @@
   font-size:1rem;
   color: #072843;
   font-family: Lato;
+}
+.fa-angle-down{
+  color: #8DA2B3;
+  font-size:1.2rem;
+  margin-left:5px;
+ 
+
+  
+  
+}
+@media (max-width:576px){
+  #main_logo{
+    display:none;
+  }
 }

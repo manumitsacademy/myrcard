@@ -4,11 +4,16 @@
 *{
     font-family: Lato;
 }
+#summaryheading{
+    padding-bottom:14px;
+}
 #summaryheading h5{
     color: #1F74B1;
     font-family: Lato;
     font-size: 16px;
     font-weight: bold;
+    padding-left:2.5rem;
+    
 }
 .card1{
     border: 1px solid #D9DEE4;
@@ -19,6 +24,13 @@
 .table th{
     border-top:none;
     text-transform: uppercase;
+    color: #90A2B1;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 15px;
+    
 }
 
 @media (max-width:576px){
@@ -35,6 +47,7 @@
     width:20%;
     justify-content: center;
     align-items: center;
+    
 }
 .mobile_view .table td p{
     margin-bottom:1px;   
@@ -54,5 +67,43 @@
     .summaryheading .view_all{
         text-decoration: none;
         color:#90A2B1;
+    }
+}
+.table thead tr th:nth-child(1){
+    padding-left:2.5rem;
+    
+}
+.table tbody tr td:nth-child(1){
+    padding-left:2.5rem !important;
+    
+}
+.right_dot{
+    padding-right:2rem;
+}
+.table tbody{
+    color:#072843;
+    font-family:Lato;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.table tbody td:nth-child(2){
+    text-transform: uppercase;
+    width:25%;
+}
+.table tbody td:nth-child(3){
+    width:35%;
+}
+@media (max-width:576px){
+    .card1{
+        border:none;
+        box-shadow: 0 0px 0 0;
+
+       
+    }
+}
+@media (max-width:576px){
+    #summaryheading h5{
+        padding-left:0px;;
     }
 }

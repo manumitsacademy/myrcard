@@ -24,6 +24,12 @@ export class LoginComponent implements OnInit {
   }
   login(){
     this.http.post("https://revcard.herokuapp.com/api/v1/loginUser",this.loginForm.value)
-    .subscribe((res)=>{console.log("Login:::::::",res)})
+    .subscribe((res)=>{
+      if(res){
+        this.router.navigate(["/dashboard"])
+      }else{
+        alert("Wrong credentials")
+      }
+    })
   }
 }
