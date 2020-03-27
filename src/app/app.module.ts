@@ -9,7 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreComponent } from './core/core.component';
 import { CallbackComponent } from './callback/callback.component';
 import { AuthService } from './auth/auth.service';
-import { PopoverModule } from 'ngx-bootstrap';
+import { PopoverModule, PaginationModule } from 'ngx-bootstrap';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
     HttpClientModule,
     PopoverModule.forRoot(),
     BrowserAnimationsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
