@@ -17,10 +17,10 @@
                 <div class="row pt-4">
                     <div class="col-md-12" id="summaryheading">
                         <h5 class="text-uppercase d-inline">Mini Statement</h5>
-                        <div class="d-inline right_dot" style="float:right;">
+                        <!-- <div class="d-inline right_dot" style="float:right;">
                            <a href="#" class="dots d-none d-xl-block"> <img src="assets/dots.png" alt="" class="img-fluid " style="width:60%"></a>
                            <a href="#" class="view_all d-xl-none">View all</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="mini_table">
@@ -47,17 +47,17 @@
                             <tbody>
                                 <tr *ngFor="let transaction of ministatement">
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                        <span class="text-muted">{{transaction.SUBMITDATE|date}}</span>
+                                        <span class="text-muted">{{transaction.TRXN[0].RECDATE[0]}}</span>
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.LENAME}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
                                     </td>
-                                    <td style="; padding: 10px;" class="textwidget custom-html-widget">{{transaction.PCBFAPPID}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].ID[0]}}
                                     </td>
-                                    <td style=" padding: 10px;" class="textwidget custom-html-widget">{{transaction.EXTAPPID[0]|currency}}
+                                    <td style=" padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].AMOUNT[0]|currency}}
                                     </td>
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         &nbsp;
-                                    </td>
+                                    </td> 
                                 </tr>
                             </tbody>
                         </table>

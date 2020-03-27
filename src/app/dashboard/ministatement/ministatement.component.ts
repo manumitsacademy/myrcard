@@ -1,27 +1,26 @@
 import { Component, OnInit, ɵConsole } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
+import { AccountService } from 'src/app/core/account.service';
 @Component({
   selector: 'app-ministatement',
   templateUrl: './ministatement.component.html',
   styleUrls: ['./ministatement.component.css']
 })
 export class MinistatementComponent implements OnInit {
+  ministatement: any;
 
-  constructor(public http:HttpClient) { }
-  ministatement:any;
+  constructor(public accountService:AccountService) { }
+  transactionHistory:any;
   ngOnInit() {
-    this.http.get("/assets/statement.xml",{  
-      headers: new HttpHeaders()  
-        .set('Content-Type', 'text/xml')  
-        .append('Access-Control-Allow-Methods', 'GET')  
-        .append('Access-Control-Allow-Origin', '*')  
-        .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),  
-      responseType: 'text'  
-    }).subscribe((res)=>{
+    this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        this.ministatement = result['SOAP:ENVELOPE']['SOAP:BODY'][0]['PCBFGATEWAYGETAPPSTATUSRESPONSE'][0]['PCBFAPPSTATUS'];
+        // console.log(result['ARRAY']['REVTRXN'])
+        this.ministatement = result['ARRAY']['REVTRXN'].sort((a,b)=>{
+          return a.TRXN[0].RECDATE[0]>b.TRXN[0].RECDATE[0]?-1:1;
+        }).slice(0,10);  
+        console.log(this.ministatement);
       });
     })
   }
