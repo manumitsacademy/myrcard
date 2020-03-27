@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
       password:[]
     })
   }
-  
+  failedLogin=false;
   loginForm:FormGroup;
   ngOnInit() {
     
@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       if(res){
         this.router.navigate(["/dashboard"])
       }else{
-        alert("Wrong credentials")
+        this.failedLogin=true;
       }
     })
   }

@@ -105,6 +105,9 @@
                         <input formControlName="password" type="password" class="form-control p-0" placeholder="************">
                     </div>
                     
+                    <div class="text-danger" *ngIf="failedLogin">
+                        <h6>Username and Password mismatch</h6>
+                    </div>
                     
                 </div> 
                  <p class="text-right "><a href="#" class="for_pass ">Forgot Password?</a></p>
