@@ -11,14 +11,16 @@
         popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Live demo
 </button>-->
-
+<ng-template #popTemplate>
+    TransactionID:{{popoverInfo.ACCTID[0]}}
+    LEGALNAME:{{popoverInfo.LEGALNAME[0]}}
+    CATEGORY:{{popoverInfo.CATEGORY}}
+</ng-template>
 <section id="trans_his">
-    <div class="container card">
+    <div class="container">
+        <div class="card card1">
             <div class="navbar navbar-expand-lg mt-3">
                 <a class="navbar-brand mr-auto font-weight-bold text-dark text-uppercase" href="#">Transaction History</a>
-                
-            
-                
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">
@@ -27,21 +29,17 @@
                         </div>
                     </div>
                     <div class="form-group mr-2">
-                        <div class="icon-addon addon-lg">
-                           
+                        <div class="icon-addon addon-lg">                           
                             <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue">
-
                         </div>
                     </div>
                     <button class="btn  my-sm-0 mr-2" type="submit" style="border: 1px solid #E6EBF0;
                     border-radius: 4px;">
                         <img src="assets/file_upload.png" alt="" class="img-fluid w-50">
                     </button>
-                </div>
-                
+                </div>                
             </div>
             <div class="table-responsive">
-                <!--<table class="table table-hover table-outline table-vcenter text-nowrap card-table"  width="100%">-->
                 <table class="table table-hover table-vcenter" width="100%">
                     <thead>
                         <tr>
@@ -57,13 +55,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let transaction of transactionhistory">
+                        <tr *ngFor="let transaction of transactionHistory">
                             <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                <span class="text-muted">{{transaction.SUBMITDATE|date}}</span>
+                                <span>{{transaction.TRXN[0].RECDATE[0]|date}}</span>
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.LENAME}}
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
                             </td>                
-                            <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.EXTAPPID[0]|currency}}<i class="fa fa-info-circle"  popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." [outsideClick]="true"></i>
+                            <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].AMOUNT[0]|currency}}
+                               
+                            </td>
+                            <td>
+                                <i class="fa fa-info-circle"  [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (click)="popoverInfo=transaction.TRXN[0]"></i>
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget">
                                 <i class="fa fa-gavel" aria-hidden="true"></i>
@@ -71,6 +73,7 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-    </div>
+            </div>  
+        </div>              
+    </div>    
 </section>

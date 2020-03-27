@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../core/authentication.service';
 import { AccountService } from '../../core/account.service';
 import * as xml2js from 'xml2js';
+import { RouterEvent, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,10 +13,20 @@ export class HeaderComponent implements OnInit {
   logInStatus=false;
   accountLast: any;
   username: any;
-  constructor(public authService:AuthenticationService,public accountService:AccountService) {
+  constructor(public authService:AuthenticationService,public accountService:AccountService,public router: Router) {
     this.authService.loggedInEvent.subscribe((logInStatus)=>{
       this.logInStatus=logInStatus;
     })
+    router.events.pipe(
+      filter(e => e instanceof RouterEvent)
+    ).subscribe(e => {
+      if(e['url']=='/dashboard/transactionhistory'){
+        this.divbg="purplebackground1";
+      }
+      else{
+        this.divbg="bluebackground1";
+      }
+    });
    }
 
   ngOnInit() {
@@ -26,5 +38,5 @@ export class HeaderComponent implements OnInit {
       });
     })
   }
-
+  divbg="bluebackground1";
 }

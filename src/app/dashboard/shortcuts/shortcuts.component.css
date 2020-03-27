@@ -1,6 +1,8 @@
-#short_cut{
-    background-color: #0074b6ff;
-    
+.bluebackground1{
+    background-color: #2b73b0;
+}
+.purplebackground1{
+    background-color: #542d87;
 }
 /*#short_cut:after{
     background: 
@@ -32,7 +34,7 @@
 #short_cut .navbar .nav-link{
     
     font-size:1rem;
-    font-weight:300;
+    font-weight:400;
     padding-left:24px;
     padding-right:24px;
     opacity: 0.9;

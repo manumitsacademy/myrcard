@@ -11,15 +11,15 @@ import { CallbackComponent } from './callback/callback.component';
 import { AuthService } from './auth/auth.service';
 import { PopoverModule } from 'ngx-bootstrap';
 import { BsDatepickerModule } from 'ngx-bootstrap';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     CoreComponent,
-    CallbackComponent],
+    CallbackComponent
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule,
+    AppRoutingModule,
     SharedModule,
     HttpClientModule,
     PopoverModule.forRoot(),

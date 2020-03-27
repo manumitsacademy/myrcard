@@ -1,0 +1,22 @@
+.card{
+    border: 1px solid #D9DEE4;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
+    
+}
+.card img{
+    width:35%;
+    margin-bottom:5%;
+}
+.chat_box{
+    width:30%;
+}
+.chat_box p{
+    color: #90A2B1;
+  font-family: Lato;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}

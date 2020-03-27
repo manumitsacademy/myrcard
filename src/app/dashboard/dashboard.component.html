@@ -1,7 +1,6 @@
 
 <app-header></app-header>
 <app-shortcuts></app-shortcuts>
-<div id="Div12" class="hexagonbg blue panel-row-style panel-row-style-for-46-1" style="position:relative;z-index:-10;background-color: #fafafa;">    
-    <router-outlet></router-outlet>
-</div>
-<div style="height:100%;position:relative;z-index:-20;background-color: #fafafa;"></div>
+<div [ngClass]="divbg"></div>
+<div [ngClass]="hexabg"></div>
+<router-outlet></router-outlet>

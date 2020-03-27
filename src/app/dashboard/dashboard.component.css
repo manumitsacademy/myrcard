@@ -1,15 +1,45 @@
-
-#background{
+.bluebackground1{
     width:100%;
-    height:20%;
-    background-color: rgb(62, 62, 105);
+    height:60px;
+    background-color:#2b73b0;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    top:0px;
+    top:180px;
     left:0px;
     z-index:-1;
 }
-@media (max-width:576px){
-    #background{
-        display:none
-    }
+.bluebackground{
+    width:100%;
+    height:40%;
+    background-image:url("/assets/blue.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:230px;
+    left:0px;
+    z-index:-1;
 }
+.purplebackground1{
+    width:100%;
+    height:60px;
+    background-color:#542d87;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:180px;
+    left:0px;
+    z-index:-1;
+}
+.purplebackground{
+    width:100%;
+    height:40%;
+    background-image:url("/assets/purple.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:230px;
+    left:0px;
+    z-index:-1;
+}
+

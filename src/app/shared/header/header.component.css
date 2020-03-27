@@ -8,8 +8,13 @@
   padding:10px 40px 0px 0px;
   
 }*/
+.bluebackground1{
+  background-color: #effaff;
+}
+.purplebackground1{
+  background-color: #f1edf4;
+}
 #main_logo{
-  background-color: #EFFAFF;
   padding-bottom:1rem;
   padding-top:1rem;
 

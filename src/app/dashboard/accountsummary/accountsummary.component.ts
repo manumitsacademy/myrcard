@@ -21,14 +21,14 @@ export class AccountsummaryComponent implements OnInit {
     this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log(result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0])
+        // console.log(result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0])
         this.accountLast=result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0];        
       });
     })
     this.accountService.getSummary().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log(result.REVACCOUNTSUMMARY)
+        // console.log(result.REVACCOUNTSUMMARY)
         this.spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXFUNDLIMIT[0];   
         this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0];   
         this.pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].UNCLEAREDBAL[0]; 

@@ -14,8 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent],
   imports: [
     CommonModule,
-    FormsModule,ReactiveFormsModule,
-    RouterModule.forChild([])
+    RouterModule.forChild([]),FormsModule,ReactiveFormsModule
   ],
   exports:[HeaderComponent,MainareaComponent,FooterComponent]
 })

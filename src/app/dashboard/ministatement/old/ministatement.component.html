@@ -1,0 +1,66 @@
+<div id="Div3" class="row">
+    <div id="Div4" class="panel-grid panel-has-style" style="width:100%">
+        <div class="hexagonbg bottom panel-row-style panel-row-style-for-11-2">
+            <div id="Div15" class="panel-grid-cell panel-grid-cell-empty"></div>
+        </div>
+    </div>
+</div>
+<div id="Div1" class="row no-gutters">
+    &nbsp;
+</div>
+<div>
+    <div class="container card card1 p-4">
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-md-12" id="summaryheading">
+                        <h5 class="text-uppercase d-inline">Mini Statement</h5>
+                        <div class="d-inline" style="float:right;">
+                           <a href="#"> <img src="/assets/dots.png" alt="" class="img-fluid" style="width:60%"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    
+                    <div class="table-responsive">
+                        <!--<table class="table table-hover table-outline table-vcenter text-nowrap card-table"  width="100%">-->
+                        <table class="table table-hover table-vcenter" width="100%" >
+                            <thead>
+                                <tr>
+                                    <th class="w-1p textwidget custom-html-widget">
+                                        Date
+                                    </th>
+                                    <th class="textwidget custom-html-widget">
+                                        Decription
+                                    </th>
+                                    <th style="text-align: center" class="textwidget custom-html-widget">
+                                        UPI TRANSACTION ID
+                                    </th>
+                                    <th style="text-align: center" class="textwidget custom-html-widget">
+                                        Amount
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let transaction of ministatement">
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                        <span class="text-muted">{{transaction.SUBMITDATE|date}}</span>
+                                    </td>
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.LENAME}}
+                                    </td>
+                                    <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.PCBFAPPID}}
+                                    </td>
+                                    <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.EXTAPPID[0]|currency}}
+                                    </td>
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
