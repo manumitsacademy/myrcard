@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.http.post("https://revcard.herokuapp.com/api/v1/loginUser",this.loginForm.value)
     .subscribe((res)=>{
       if(res){
+        window.localStorage.setItem('token',JSON.stringify(res))
         this.router.navigate(["/dashboard"])
       }else{
         this.failedLogin=true;

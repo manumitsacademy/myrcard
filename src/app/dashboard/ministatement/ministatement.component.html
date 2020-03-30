@@ -34,7 +34,7 @@
                                         Date
                                     </th>
                                     <th class="textwidget custom-html-widget">
-                                        Decription
+                                        Description
                                     </th>
                                     <th class="textwidget custom-html-widget">
                                         UPI TRANSACTION ID
@@ -47,7 +47,7 @@
                             <tbody>
                                 <tr *ngFor="let transaction of ministatement">
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                        <span class="text-muted">{{transaction.TRXN[0].RECDATE[0]}}</span>
+                                        <span>{{transaction.TRXN[0].RECDATE[0]}}</span>
                                     </td>
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
                                     </td>

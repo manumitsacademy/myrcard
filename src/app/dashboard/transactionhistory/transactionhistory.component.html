@@ -12,9 +12,21 @@
   Live demo
 </button>-->
 <ng-template #popTemplate>
-    TransactionID:{{popoverInfo.ACCTID[0]}}
-    LEGALNAME:{{popoverInfo.LEGALNAME[0]}}
-    CATEGORY:{{popoverInfo.CATEGORY}}
+    <div class="row no-gutters mb-2">
+        <div class="col left_tt"> TransactionID:</div>
+        <div class="col text-right right_tt"> {{popoverInfo.ACCTID[0]}}</div>
+    </div>
+    <div class="row no-gutters mb-2">
+        <div class="col left_tt"> LEGALNAME:</div>
+        <div class="col text-right right_tt"> {{popoverInfo.LEGALNAME[0]}}</div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col left_tt">CATEGORY:</div>
+        <div class="col text-right right_tt"> {{popoverInfo.CATEGORY}}</div>
+    </div>
+  
+    
+    
 </ng-template>
 <section id="trans_his">
     <div class="container">
@@ -30,13 +42,14 @@
                     </div>
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">                           
-                            <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue">
+                            <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue" [bsConfig]="{containerClass:'mytheme-purple'}" id="daterange">
+                            <label for="daterange" class="fa fa-calendar-o" rel="tooltip" title="search for description/amount"></label>
                         </div>
                     </div>
-                    <button class="btn  my-sm-0 mr-2" type="submit" style="border: 1px solid #E6EBF0;
+                    <!-- <button class="btn  my-sm-0 mr-2" type="submit" style="border: 1px solid #E6EBF0;
                     border-radius: 4px;">
                         <img src="assets/file_upload.png" alt="" class="img-fluid w-50">
-                    </button>
+                    </button> -->
                 </div>                
             </div>
             <div class="table-responsive">
@@ -47,7 +60,7 @@
                                 Date
                             </th>
                             <th class="textwidget custom-html-widget">
-                                Decription
+                                Description
                             </th>
                             <th style="text-align: center" class="textwidget custom-html-widget">
                                 Amount
@@ -64,20 +77,22 @@
                             <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].AMOUNT[0]|currency}}
                                
                             </td>
-                            <td>
-                                <i class="fa fa-info-circle"  [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (click)="popoverInfo=transaction.TRXN[0]"></i>
+                            <td style="padding: 10px;">
+                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.TRXN[0]"></i>
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                <i class="fa fa-gavel" aria-hidden="true"></i>
+                            <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
+                                <img src="assets/hammer.png" class="img-fluid" (click)="gotoDefault()" style="cursor:context-menu;">
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>  
         </div>  
-        <div class="d-flex justify-content-center">
-            <pagination [totalItems]="transactionHistoryLength-1" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)"></pagination>
+        <div class="d-flex justify-content-center p-5 border-0">
+            <pagination class=" border-0" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;" [totalItems]="transactionHistoryLength-1" (pageChanged)="pageChanged($event)"  [boundaryLinks]="true" itemsPerPage="20" 
+            ></pagination>
         </div>
+        
     </div>
         
     

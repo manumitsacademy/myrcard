@@ -84,7 +84,8 @@ export class AuthService {
   get isLoggedIn(): boolean {
     // Check if current date is before token
     // expiration and user is signed in locally
-    return Date.now() < this.expiresAt && this.authenticated;
+    //return Date.now() < this.expiresAt && this.authenticated;
+    return window.localStorage.getItem('token')!=null
   }
 
 }

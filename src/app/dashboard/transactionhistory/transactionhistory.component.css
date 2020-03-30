@@ -63,7 +63,7 @@ form .btn{
 .icon-addon.addon-lg .form-control {
     line-height: 1.33;
     height: 46px;
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px 40px 10px 10px;
 }
 
@@ -76,11 +76,12 @@ form .btn{
 
 .icon-addon.addon-lg .fa,
 .icon-addon.addon-lg .glyphicon {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 0;
-    left: 210px;
-    top: 4px;
+    left: 85%;
+    top: 8px;
     background-color:white;
+    color:lightgrey;
 }
 
 .icon-addon.addon-md .form-control,
@@ -112,6 +113,7 @@ input::placeholder{
     letter-spacing: 0;
     line-height: 15px;
 }
+
 .card1{
     border: 1px solid #D9DEE4;
     border-radius: 4px;
@@ -120,7 +122,7 @@ input::placeholder{
 }
 .table tr td:nth-child(1){
     padding-left:2.5rem !important;
-    width:30%;
+    width:20%;
     color:black !important;
 }
 .table thead th:nth-child(1){
@@ -145,4 +147,45 @@ input::placeholder{
 }
 .table tbody td:nth-child(3){
     width:5%;
+}
+.table tbody tr td:nth-child(5){
+    width:10%;
+}
+.table tbody tr td{
+    color: #072843;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+}
+.hammer img{
+    box-sizing: border-box;
+  height: 16.3px;
+  width: 16.3px;
+ 
+}
+.fa-info{
+    border:1px solid #A0A5BA;
+    font-size:9px;
+    border-radius: 50%;    
+    color:#A0A5BA;    
+    padding: 3px 6px;
+}
+
+.left_tt{
+    color: #072843;
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right:2rem;
+}
+.right_tt{
+    color: #072843;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 17px;
 }

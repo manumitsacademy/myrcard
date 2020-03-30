@@ -80,17 +80,12 @@
 .right_dot{
     padding-right:2rem;
 }
-.table tbody{
-    color:#072843;
-    font-family:Lato;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 24px;
-}
+
 .table tbody td:nth-child(2){
     text-transform: uppercase;
     width:25%;
 }
+
 .table tbody td:nth-child(3){
     width:35%;
 }
@@ -106,4 +101,13 @@
     #summaryheading h5{
         padding-left:0px;;
     }
+}
+.table tbody tr td{
+    color: #072843;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+   
 }

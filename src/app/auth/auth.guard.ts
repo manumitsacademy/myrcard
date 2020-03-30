@@ -4,7 +4,9 @@ import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 import { Router } from '@angular/router';
 
-@Injectable()
+@Injectable({
+  providedIn:"root"
+})
 export class AuthGuard implements CanActivate {
 
   constructor(
@@ -16,7 +18,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     if (!this.authService.isLoggedIn) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/login']);
       return false;
     }
     return true;

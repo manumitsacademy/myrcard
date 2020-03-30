@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.mytheme-purple .bs-datepicker-head{
+    background-color: #542d87 !important;
+}
+.bs-datepicker-body table td span[class*="select-"], .bs-datepicker-body table td[class*="select-"] span{
+    color:#aba4b1;
+    background-color: rgb(105, 68, 105)
+}
+a.pagelink{
+    border:0px solid !important;
+}

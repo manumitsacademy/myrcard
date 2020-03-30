@@ -5,18 +5,19 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
 import { DefaultComponent } from './default/default.component';
+import { AuthGuard } from '../auth/auth.guard';
 
 const routes: Routes = [{ path: '', component: DashboardComponent,children:[
         {
-          path:'',component:DashboardhomeComponent
+          path:'',component:DashboardhomeComponent,canActivate:[AuthGuard]
         },
         {
           path:'transactionhistory',
-          component:TransactionhistoryComponent
+          component:TransactionhistoryComponent,canActivate:[AuthGuard]
         },
         {
           path:'default',
-          component:DefaultComponent
+          component:DefaultComponent,canActivate:[AuthGuard]
         }
       ]
      }];
