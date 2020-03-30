@@ -140,7 +140,7 @@ input::placeholder{
     
 }
 .table tbody td:nth-child(2){
-    width:30%;
+    width:40%;
 }
 .table tbody{
     color:black;
@@ -188,4 +188,7 @@ input::placeholder{
     font-weight: bold;
     letter-spacing: 0;
     line-height: 17px;
+}
+:host(a) {
+    color:red !important;
 }
