@@ -9,3 +9,11 @@
 a.pagelink{
     border:0px solid !important;
 }
+@font-face{
+    font-family: Gotham book;
+    src:url("assets/webfonts/GothamBook.ttf");
+}
+@font-face{
+    font-family: Gotham bold;
+    src:url("assets/webfonts/GothamBold.ttf");
+}

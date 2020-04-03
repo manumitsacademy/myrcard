@@ -15,11 +15,9 @@
   background-color: #f1edf4;
 }
 #main_logo{
-  padding-bottom:1rem;
-  padding-top:1rem;
-
   
   
+  height: 80px;
 }
 
 
@@ -39,9 +37,13 @@
  
  
 }
-
+#main_logo .navbar-brand{
+  display: inline-block;
+  width:70%;
+}
 #main_logo img{
-  width:1.9rem;
+  width:20%;
+  padding-top: 1rem;
  
 }
 
@@ -77,19 +79,19 @@
 .right_col .dropdown p{
   font-size:1rem;
   color: #072843;
-  font-family: Lato;
+  font-family: Gotham book;
 }
 .fa-angle-down{
   color: #8DA2B3;
   font-size:1.2rem;
   margin-left:5px;
- 
-
-  
-  
 }
 @media (max-width:576px){
   #main_logo{
     display:none;
   }
+}
+
+.dropdown-item:hover{
+  cursor: pointer;
 }

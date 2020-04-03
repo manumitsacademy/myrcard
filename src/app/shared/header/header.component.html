@@ -11,9 +11,9 @@
 <section id="main_logo" [ngClass]="divbg">
    <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
-          <a class="navbar-brand" href="#">
-            <img src="/assets/android-chrome-512x512.png" style="width:30px; height:30px;" class="d-inline-block align-top" alt="">
-            <span class="d-inline ml-2">Revenued</span>
+          <a class="navbar-brand d-inline" href="#">
+            <img src="/assets/fulllogo.png" class="img-fluid d-inline" alt="">
+            <!--<span class="d-inline ml-2">Revenued</span>-->
            </a>
        
            
@@ -24,14 +24,14 @@
                 <i class="fa fa-circle" aria-hidden="true"></i>
               </div> -->
               
-                <div class="dropdown d-inline-block ml-4">
+                <div class="dropdown d-inline-block ml-4 w-100">
                     <a class="dropdown-toggle" href="#"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <p>{{username}}<i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <p class="d-inline">{{legalName}}<i class="fa fa-angle-down" aria-hidden="true"></i>
                        
                       </p>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#" (click)="signout()">Sign Out</a>
+                      <a class="dropdown-item" (click)="signout()">Sign Out</a>
                     </div>
                   </div>
             </div>

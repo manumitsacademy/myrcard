@@ -13,20 +13,17 @@
 </button>-->
 <ng-template #popTemplate>
     <div class="row no-gutters mb-2">
-        <div class="col left_tt"> TransactionID:</div>
-        <div class="col text-right right_tt"> {{popoverInfo.ACCTID[0]}}</div>
+        <div class="col left_tt"> Card Number:</div>
+        <div class="col text-right right_tt"> {{popoverInfo.CARDID[0]}}</div>
     </div>
     <div class="row no-gutters mb-2">
-        <div class="col left_tt"> LEGALNAME:</div>
-        <div class="col text-right right_tt"> {{popoverInfo.LEGALNAME[0]}}</div>
+        <div class="col left_tt"> Payment Amount:</div>
+        <div class="col text-right right_tt"> {{popoverInfo.AMOUNT[0]}}</div>
     </div>
     <div class="row no-gutters">
-        <div class="col left_tt">CATEGORY:</div>
-        <div class="col text-right right_tt"> {{popoverInfo.CATEGORY}}</div>
+        <div class="col left_tt">Current Balance:</div>
+        <div class="col text-right right_tt"> {{spendingAvailability}}</div>
     </div>
-  
-    
-    
 </ng-template>
 <section id="trans_his">
     <div class="container">
@@ -81,7 +78,7 @@
                                 <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.TRXN[0]"></i>
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
-                                <img src="assets/hammer.png" class="img-fluid" (click)="gotoDefault()" style="cursor:context-menu;">
+                                <img src="assets/hammer.png" class="img-fluid" (click)="gotoaccount()" style="cursor:context-menu;">
                             </td>
                         </tr>
                     </tbody>

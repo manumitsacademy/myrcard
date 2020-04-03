@@ -12,7 +12,7 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   logInStatus=false;
   accountLast: any;
-  username: any;
+  legalName: any;
   constructor(public authService:AuthenticationService,public accountService:AccountService,public router: Router) {
     this.authService.loggedInEvent.subscribe((logInStatus)=>{
       this.logInStatus=logInStatus;
@@ -33,14 +33,18 @@ export class HeaderComponent implements OnInit {
     this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log(result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0])
-        this.username=result['ARRAY']['REVTRXN'][0].TRXN[0].USERNAME[0];        
+        console.log(result['ARRAY']['REVTRXN'][0].TRXN[0])
+        this.legalName=result['ARRAY']['REVTRXN'][0].TRXN[0].LEGALNAME[0];        
       });
     })
   }
   divbg="bluebackground1";
   signout(){
-    window.localStorage.removeItem('token');
-    this.router.navigate(['/login'])
+    var res = window.confirm("Do you want to Signout")
+    if(res){
+      window.localStorage.removeItem('token');
+      this.router.navigate(['/login'])
+    }
+   
   }
 }

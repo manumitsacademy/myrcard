@@ -2,14 +2,14 @@
     color:#7c7b7b;
 }
 *{
-    font-family: Lato;
+    font-family: Gotham book;
 }
 #summaryheading{
     padding-bottom:14px;
 }
 #summaryheading h5{
     color: #1F74B1;
-    font-family: Lato;
+    font-family: Gotham bold;
     font-size: 16px;
     font-weight: bold;
     padding-left:2.5rem;
@@ -25,7 +25,7 @@
     border-top:none;
     text-transform: uppercase;
     color: #90A2B1;
-    font-family: Lato;
+    font-family: Gotham bold;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
@@ -89,6 +89,9 @@
 .table tbody td:nth-child(3){
     width:35%;
 }
+.table tbody td:nth-child(4){
+    width:5%;
+}
 @media (max-width:576px){
     .card1{
         border:none;
@@ -104,7 +107,7 @@
 }
 .table tbody tr td{
     color: #072843;
-    font-family: Lato;
+    font-family:Gotham book;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 24px;

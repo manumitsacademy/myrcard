@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
+  spendingAvailability: number;
   constructor(public accountService:AccountService,public router:Router) {
     this.maxDate.setDate(this.maxDate.getDate() + 7);
     this.bsRangeValue = [this.bsValue, this.maxDate];
@@ -36,9 +37,19 @@ export class TransactionhistoryComponent implements OnInit {
         console.log("transactionHistory:::",this.transactionHistory);
       });
     })
+    this.accountService.getSummary().subscribe((res)=>{
+      const parser = new xml2js.Parser({ strict: false, trim: true });
+      parser.parseString(res, (err, result) => {
+        console.log("REVACCOUNTSUMMARY:",result.REVACCOUNTSUMMARY)
+        var spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
+        var discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].UNCLEAREDBAL[0];
+        var pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
+        this.spendingAvailability = spendingLimit-discountedBalance-pendingAmount;         
+      });
+    })
   }
-  gotoDefault(){
-    this.router.navigate(['/dashboard/default']);
+  gotoaccount(){
+    this.router.navigate(['/dashboard']);
   }
   pageChanged(event:PageChangedEvent){
     const startItem = (event.page - 1) * event.itemsPerPage;

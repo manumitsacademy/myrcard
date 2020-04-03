@@ -1,12 +1,12 @@
 
 *{
-    font-family: Lato;
+    font-family: Gotham bold;
     font-weight:bold;
 }
 #summaryheading h5{
         height: 19px;
         color: #1F74B1;
-        font-family: Lato;
+        font-family: Gotham bold;
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: 0;
@@ -15,7 +15,7 @@
 .spending-l-imit {
     width: 100%;
     color: #90A2B1;
-    font-family: Lato;
+    font-family: Gotham bold;
     font-size: 12px;
     font-weight: bold;
     line-height: 15px;
