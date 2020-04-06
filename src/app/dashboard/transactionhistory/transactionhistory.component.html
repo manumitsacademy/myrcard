@@ -1,30 +1,20 @@
-<!--<div>Transaction History</div>
-<input type="text" placeholder="Search for description/amount">
-<div class="col-xs-12 col-12 col-md-4 form-group">
-    <input type="text"
-           placeholder="Daterangepicker"
-           class="form-control"
-           bsDaterangepicker>
-  </div>
-<div>Upload Logo</div>
-<button type="button" class="btn btn-primary"
-        popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Live demo
-</button>-->
-<ng-template #popTemplate>
-    <div class="row no-gutters mb-2">
-        <div class="col left_tt"> Card Number:</div>
-        <div class="col text-right right_tt"> {{popoverInfo.CARDID[0]}}</div>
+
+<ng-template #popTemplate >
+    <div class="row no-gutters mb-2 d-flex justify-content-between">
+        <div class=" left_tt"> Payback Amount:</div>
+        <div class=" text-right right_tt"> {{popoverInfo.PAYBACKAMOUNT?popoverInfo.PAYBACKAMOUNT[0]:null}}</div>
     </div>
-    <div class="row no-gutters mb-2">
-        <div class="col left_tt"> Payment Amount:</div>
-        <div class="col text-right right_tt"> {{popoverInfo.AMOUNT[0]}}</div>
+    <div class="row no-gutters mb-2 d-flex justify-content-between">
+        <div class=" left_tt"> Payment Amount:</div>
+        <div class=" text-right right_tt"> {{popoverInfo.TOTCOLLAMT?popoverInfo.TOTCOLLAMT[0]:null}}</div>
     </div>
-    <div class="row no-gutters">
-        <div class="col left_tt">Current Balance:</div>
-        <div class="col text-right right_tt"> {{spendingAvailability}}</div>
+    <div class="dropdown-divider"></div>
+    <div class="row no-gutters d-flex justify-content-between">
+        <div class=" total_bal">Current Balance:</div>
+        <div class=" text-right total_bal"> {{popoverInfo.BALTODONE?popoverInfo.BALTODONE[0]:null}}</div>
     </div>
 </ng-template>
+
 <section id="trans_his">
     <div class="container">
         <div class="card card1">
@@ -33,20 +23,16 @@
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">
-                            <input type="text" placeholder="search for description/amount" class="form-control" id="email">
-                            <label for="email" class="fa fa-search" rel="tooltip" title="search for description/amount"></label>
+                            <input type="text" placeholder="Search..." class="form-control" id="email" [(ngModel)]="searchKey"  (keyup)="searchHistory()">
+                            <label for="email" class="fa fa-search" rel="tooltip" title="Search..."></label>
                         </div>
                     </div>
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">                           
                             <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue" [bsConfig]="{containerClass:'mytheme-purple'}" id="daterange">
-                            <label for="daterange" class="fa fa-calendar-o" rel="tooltip" title="search for description/amount"></label>
+                            <label for="daterange" class="fa fa-calendar-o" rel="tooltip" title="Date"></label>
                         </div>
-                    </div>
-                    <!-- <button class="btn  my-sm-0 mr-2" type="submit" style="border: 1px solid #E6EBF0;
-                    border-radius: 4px;">
-                        <img src="assets/file_upload.png" alt="" class="img-fluid w-50">
-                    </button> -->
+                    </div>                    
                 </div>                
             </div>
             <div class="table-responsive">
@@ -71,14 +57,16 @@
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
                             </td>                
-                            <td style="text-align: center; padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].AMOUNT[0]|currency}}
+                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].AMOUNT[0]|currency}}
                                
                             </td>
                             <td style="padding: 10px;">
-                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.TRXN[0]"></i>
+                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.FUNDINGSTMT?transaction.FUNDINGSTMT[0]:null"></i>
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
-                                <img src="assets/hammer.png" class="img-fluid" (click)="gotoaccount()" style="cursor:context-menu;">
+                                <a routerLink="/dashboard/default"  style="cursor:pointer;">
+                                    <img src="assets/hammer.png" class="img-fluid" title="Dispute Charge">
+                                </a>
                             </td>
                         </tr>
                     </tbody>

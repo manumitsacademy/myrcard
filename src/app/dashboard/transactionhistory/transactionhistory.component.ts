@@ -24,6 +24,7 @@ export class TransactionhistoryComponent implements OnInit {
   maxDate = new Date();
   currentPage:any;
   transactionHistoryLength=0;
+  searchKey;
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
@@ -35,6 +36,11 @@ export class TransactionhistoryComponent implements OnInit {
         });  
         this.currentTransactions = this.transactionHistory.slice(0,20);
         console.log("transactionHistory:::",this.transactionHistory);
+        //(Payback Amount) revtrxn.fundingstmnt.paybackAmount        
+        //(Paid Amount) revtrxn.fundingstmnt.totCollAmt
+        //--------------------------------------m -------
+        //(Remaining Amount) revtrxn.fundingstmnt.balToDone
+
       });
     })
     this.accountService.getSummary().subscribe((res)=>{
@@ -47,6 +53,14 @@ export class TransactionhistoryComponent implements OnInit {
         this.spendingAvailability = spendingLimit-discountedBalance-pendingAmount;         
       });
     })
+  }
+  searchHistory(){
+    console.log("searching...");
+    this.currentTransactions=this.transactionHistory.filter((t,i)=>{
+      var temp = JSON.stringify(t).toUpperCase();
+      return temp.includes(this.searchKey.toUpperCase())
+    })
+    console.log("currentTransactions",this.currentTransactions)
   }
   gotoaccount(){
     this.router.navigate(['/dashboard']);

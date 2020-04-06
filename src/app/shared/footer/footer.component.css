@@ -28,11 +28,12 @@
   }
   .fa-facebook-f, .fa-twitter, .fa-linkedin-in{
       background-color:white;
-      padding:10px;
+      padding:2%;
       border-radius: 50%;
       width:10%;
       height:10%;
       text-align:center;
+      align-items: center;
       margin-left:10px;
   }
   #main_footer .copy a{

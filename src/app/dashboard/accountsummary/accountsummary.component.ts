@@ -30,7 +30,8 @@ export class AccountsummaryComponent implements OnInit {
       parser.parseString(res, (err, result) => {
         console.log("REVACCOUNTSUMMARY:",result.REVACCOUNTSUMMARY)
         this.spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
-        this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].UNCLEAREDBAL[0];
+        this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].CURRENTBAL[0];
+        //
         this.pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
         this.spendingAvailability = this.spendingLimit-this.discountedBalance-this.pendingAmount; 
         var mn = result.REVACCOUNTSUMMARY.LIMIT[0].MAXNEXTAMT[0];
