@@ -54,6 +54,15 @@ export class TransactionhistoryComponent implements OnInit {
       });
     })
   }
+  onDateChange($event){
+    console.log("$event::",$event[0].getTime())
+    console.log("$event::",$event[1].getTime())
+    this.currentTransactions=this.transactionHistory.filter((t,i)=>{  
+      var tranTime = new Date(t.TRXN[0].RECDATE[0]).getTime();
+      return tranTime>=$event[0].getTime() && tranTime<=$event[1].getTime();
+    })
+  }
+  //TRXN[0].RECDATE[0]
   searchHistory(){
     console.log("searching...");
     this.currentTransactions=this.transactionHistory.filter((t,i)=>{

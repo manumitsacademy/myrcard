@@ -29,7 +29,7 @@
                     </div>
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">                           
-                            <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue" [bsConfig]="{containerClass:'mytheme-purple'}" id="daterange">
+                            <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue" [bsConfig]="{containerClass:'mytheme-purple'}" id="daterange"  (bsValueChange)="onDateChange($event)">
                             <label for="daterange" class="fa fa-calendar-o" rel="tooltip" title="Date"></label>
                         </div>
                     </div>                    
