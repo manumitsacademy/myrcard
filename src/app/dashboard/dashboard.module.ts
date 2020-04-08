@@ -10,7 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
-import { PopoverModule, BsDatepickerModule, PaginationModule } from 'ngx-bootstrap';
+import { PopoverModule, BsDatepickerModule, PaginationModule, ModalModule } from 'ngx-bootstrap';
 import { DefaultComponent } from './default/default.component';
 import { FormsModule } from '@angular/forms';
 
@@ -26,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     PopoverModule,
     BsDatepickerModule,
-    PaginationModule
+    PaginationModule,
+    ModalModule
   ]
 })
 export class DashboardModule { }

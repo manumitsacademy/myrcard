@@ -10,10 +10,5 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'revcarddev';
   constructor(public router:Router){}
-  autologout(){
-    setTimeout(()=>{
-      window.localStorage.removeItem('token');
-      this.router.navigate(['/login'])
-    },1000*60*5)
-  }
+  
 }

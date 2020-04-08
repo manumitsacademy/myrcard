@@ -11,6 +11,7 @@ import { CallbackComponent } from './callback/callback.component';
 import { AuthService } from './auth/auth.service';
 import { PopoverModule, PaginationModule } from 'ngx-bootstrap';
 import { BsDatepickerModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap';
     PopoverModule.forRoot(),
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
-    PaginationModule.forRoot()
+    PaginationModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

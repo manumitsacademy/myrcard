@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,TemplateRef,ViewChild   } from '@angular/core';
 import { AuthenticationService } from '../core/authentication.service';
 import { ActivatedRoute, RouterEvent, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { BsModalService, BsModalRef,ModalDirective } from 'ngx-bootstrap/modal';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor(public authService:AuthenticationService,public aR:ActivatedRoute,public router: Router) { 
+  modalRef: BsModalRef;
+  message: string;
+  @ViewChild('childModal', { static: false }) childModal: ModalDirective;
+ 
+  showChildModal(): void {
+    this.childModal.show();
+  }
+ 
+  hideChildModal(): void {
+    this.childModal.hide();
+  }
+  constructor(public authService:AuthenticationService,public aR:ActivatedRoute,public router: Router,private modalService: BsModalService) { 
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
     ).subscribe(e => {
@@ -27,9 +39,39 @@ export class DashboardComponent implements OnInit {
   hexabg="bluebackground";
   ngOnInit() {    
     this.authService.loggedIn();
-    
+    this.autologout();
   }
   ngOnDestroy(){
     this.authService.loggedOut();
+  }
+  idletimeout:any;
+  confirmBoxTimeout:any;
+  autologout(){
+      console.log("autologout")
+        clearTimeout(this.idletimeout)
+        this.idletimeout =  setTimeout(()=>{
+                          this.childModal.show();
+                          this.confirmBoxTimeout=setTimeout(()=>{
+                              this.childModal.hide();
+                              clearTimeout(this.idletimeout);  
+                              window.localStorage.removeItem('token');
+                              this.router.navigate(['/login'])                           
+                            },1000*60*1);                              
+                        },1000*60*4)
+  }
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
+ 
+  confirm(): void {
+    window.localStorage.removeItem('token');
+    this.router.navigate(['/login'])
+    this.childModal.hide();
+  }
+ 
+  decline(): void {
+    clearTimeout(this.confirmBoxTimeout)
+    this.autologout();
+    this.childModal.hide();
   }
 }
