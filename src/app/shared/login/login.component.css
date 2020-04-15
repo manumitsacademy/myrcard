@@ -6,9 +6,10 @@
 #login_page .left_col{
  
     padding-left:25%;
-    width:80%;
-
-    
+  
+}
+#login_page .left_col p{
+  width:411px;
 }
 #login_page .left_col h1{
   color: #FFFFFF;
@@ -72,7 +73,7 @@
   color: #2B73B0;
 }
 #login_page .right_col_head p{
-  height: 409px;
+  
   width: 411px;
   color: #90A2B1;
   font-family: Lato;
@@ -111,11 +112,6 @@
   border-radius: 0;
 
   box-sizing: border-box;
-  
-
- 
-  
-  
   color: #072843;
   font-family: Lato;
   font-size: 16px;
@@ -155,7 +151,7 @@ footer {
   margin-left:25%;
   grid-row-start: 2;
   grid-row-end: 3;
-  width:75%;
+ 
   border-top: 1px solid #4B6377;
 }
 #login_page footer a{
@@ -184,7 +180,13 @@ footer {
 @media (max-width:576px){
   .right_col{
     width:85% !important;
+    margin-top:140px !important;
     
+  }
+}
+@media(max-width:360px){
+  .right_col{
+    margin-top:100px !important;
   }
 }
 /*@media (max-width:576px){

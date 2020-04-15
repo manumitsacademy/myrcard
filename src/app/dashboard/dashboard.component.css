@@ -44,8 +44,3 @@
 }
 
 
-@media (max-width:576px){
-    .purplebackground,.bluebackground,.purplebackground1, .purplebackground1{
-        display: none;
-    }
-}

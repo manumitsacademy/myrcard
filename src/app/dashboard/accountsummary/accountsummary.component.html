@@ -30,50 +30,104 @@
                     <h5 class="text-uppercase">CARD ENDING -   {{accountLast}}</h5>
                 </div>
             </div>
-            <div class="row    pt-3 summary-l no-gutters justify-content-center ">
-               
-                    <div class="  col-xs-6 w-sm-50 p-1 ">
-                        <div class="card  border-0  ">
-                            <div class="spending-l-imit">SPENDING LIMIT</div>
-                            <H5 style="color:#3FC0EF">{{spendingLimit|currency}}</H5>
-                        </div>
+            <div class="d-none d-md-block d-lg-block d-xl-block">
+                    <div class="row    pt-3 summary-l no-gutters justify-content-center ">
+                    
+                            <div class="  col-xs-12 w-sm-50 p-1 ">
+                                <div class="card  border-0  ">
+                                    <div class="spending-l-imit">SPENDING LIMIT</div>
+                                    <H5 style="color:#3FC0EF">{{spendingLimit|currency}}</H5>
+                                </div>
+                                
+                            </div>
+                            <div class="symbol col align-self-center text-center"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                            <div class="  col-xs-12 w-sm-50 p-1" >
+                                <div class="card border-0">
+                                    <div class="spending-l-imit">DISCOUNTED BALANCE</div>
+                                    <H5 style="color:#CFAC1F">{{discountedBalance|currency}}</H5>
+                                </div>
+                                
+                            </div>
+                            <div class="symbol col align-self-center text-center"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                            <div class="  col-xs-12 w-sm-50 p-1 ">
+                                <div class="card border-0">
+                                    <div class="spending-l-imit">PENDING BALANCE</div>
+                                    <H5 style="color:#542D87">{{pendingAmount|currency}}</H5>
+                                </div>
+                                
+                            </div>
+                            <div class="symbol col align-self-center text-center"><i class="fas fa-equals"></i></div>
+                            <div class="  col-xs-12 w-sm-50 p-1">
+                                <div class="card border-0">
+                                    <div class="spending-l-imit">SPENDING AVAILABILITY</div>
+                                    <H5 style="color:#D56926">{{spendingAvailability|currency}}</H5>
+                                </div>
+                            
+                            </div>
+                            <div class="symbol col align-self-center text-center"></div>
+                            <div  class="lead  verticalLine  col-xs-12 w-sm-50 p-1 ml-2 mr-auto"> 
+                                <div class="card border-0">
+                                    <div class="spending-l-imit">DAILY SPEND LIMIT</div>
+                                    <H5 style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
+                                </div>
+                            
+                            </div>
+                    
                         
                     </div>
-                    <div class="symbol col align-self-center text-center"><i class="fa fa-minus" aria-hidden="true"></i></div>
-                    <div class="  col-xs-6 w-sm-50 p-1" >
-                        <div class="card border-0">
-                            <div class="spending-l-imit">DISCOUNTED BALANCE</div>
+           </div>
+           <div class="accordion md-accordion" id="my_ac">
+               <div id="ac_summary1" class="mobile_ac d-lg-none d-xl-none d-md-none collapse hide" aria-labelledby="headingOne" data-parent="#my_ac">
+                   <div class="row d-flex justify-content-between no-gutters">
+                       <div>
+                           <p>SPENDING LIMIT</p>
+                       </div>
+                       <div>
+                        <H5 style="color:#3FC0EF">{{spendingLimit|currency}}</H5>
+                       </div>
+                   </div>
+                   <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                   <div class="row d-flex justify-content-between no-gutters">
+                        <div>
+                            <p>DISCOUNTED BALANCE</p>
+                        </div>
+                        <div>
                             <H5 style="color:#CFAC1F">{{discountedBalance|currency}}</H5>
                         </div>
-                        
-                    </div>
-                    <div class="symbol col align-self-center text-center"><i class="fa fa-minus" aria-hidden="true"></i></div>
-                    <div class="  col-xs-6 w-sm-50 p-1 ">
-                        <div class="card border-0">
-                            <div class="spending-l-imit">PENDING BALANCE</div>
+                     </div>
+                     <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                     <div class="row d-flex justify-content-between no-gutters">
+                        <div>
+                            <p>PENDING BALANCE</p>
+                        </div>
+                        <div>
                             <H5 style="color:#542D87">{{pendingAmount|currency}}</H5>
                         </div>
-                        
-                    </div>
-                    <div class="symbol col align-self-center text-center"><i class="fas fa-equals"></i></div>
-                    <div class="  col-xs-6 w-sm-50 p-1">
-                        <div class="card border-0">
-                            <div class="spending-l-imit">SPENDING AVAILABILITY</div>
-                            <H5 style="color:#D56926">{{spendingAvailability|currency}}</H5>
-                        </div>
-                       
-                    </div>
-                    <div class="symbol col align-self-center text-center"></div>
-                    <div  class="lead  verticalLine  col-xs-6 w-sm-50 p-1 ml-2 mr-auto"> 
-                        <div class="card border-0">
-                            <div class="spending-l-imit">DAILY SPEND LIMIT</div>
+                     </div>
+                     <div class="row no-gutters"><i class="fas fa-equals"></i></div>
+                     <div class="row d-flex justify-content-between no-gutters">
+                         <div><p>AVAILABLESPENDING</p></div>
+                         <div>
                             <H5 style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
-                        </div>
-                      
-                    </div>
-               
-                
-            </div>
+                         </div>
+                     </div>
+                     <div class="dropdown-divider">
+
+                     </div>
+                     <div class="row d-flex justify-content-between no-gutters">
+                         <div>
+                             <p>DAILy SPEND LIMIT</p>
+                         </div>
+                         <div>
+                            <H5 style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
+                         </div>
+                     </div>
+
+               </div>
+               <div class="d-flex justify-content-center">
+                   <i class="fa fa-chevron-down ac_arrow d-md-none d-lg-none d-xl-none" data-toggle="collapse" data-target="#ac_summary1" aria-expanded="true" aria-controls="collapseOne"></i>
+               </div>
+           </div> 
         </div>
     </div>
 </section>

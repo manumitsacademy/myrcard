@@ -44,18 +44,15 @@
     
 }
 .mobile_view .table td:nth-child(1){
-    width:20%;
-    justify-content: center;
-    align-items: center;
+    width:90%;
+  
     
 }
 .mobile_view .table td p{
     margin-bottom:1px;   
 }
+
 .mobile_view .table td:nth-child(2){
-    width:90%;
-}
-.mobile_view .table td:nth-child(3){
     font-weight:bold;
 }
 @media (max-width:576px){
