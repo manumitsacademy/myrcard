@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreComponent } from './core/core.component';
-import { CallbackComponent } from './callback/callback.component';
 import { AuthService } from './auth/auth.service';
 import { PopoverModule, PaginationModule } from 'ngx-bootstrap';
 import { BsDatepickerModule } from 'ngx-bootstrap';
@@ -15,8 +14,7 @@ import { ModalModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    CoreComponent,
-    CallbackComponent
+    CoreComponent
   ],
   imports: [
     BrowserModule,

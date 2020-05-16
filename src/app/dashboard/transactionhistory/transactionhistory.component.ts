@@ -13,8 +13,7 @@ export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
   spendingAvailability: number;
   constructor(public accountService:AccountService,public router:Router) {
-    this.maxDate.setDate(this.maxDate.getDate() + 7);
-    this.bsRangeValue = [this.bsValue, this.maxDate];
+    
    }
  
   transactionHistory:any;
@@ -26,6 +25,8 @@ export class TransactionhistoryComponent implements OnInit {
   transactionHistoryLength=0;
   searchKey;
   ngOnInit() {
+    this.maxDate.setDate(this.maxDate.getDate() + 7);
+    this.bsRangeValue = [this.bsValue, this.maxDate];
     this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
@@ -55,12 +56,13 @@ export class TransactionhistoryComponent implements OnInit {
     })
   }
   onDateChange($event){
-    console.log("$event::",$event[0].getTime())
-    console.log("$event::",$event[1].getTime())
-    this.currentTransactions=this.transactionHistory.filter((t,i)=>{  
-      var tranTime = new Date(t.TRXN[0].RECDATE[0]).getTime();
-      return tranTime>=$event[0].getTime() && tranTime<=$event[1].getTime();
-    })
+    if(this.transactionHistory){
+      this.currentTransactions=this.transactionHistory.filter((t,i)=>{  
+        var tranTime = new Date(t.TRXN[0].RECDATE[0]).getTime();
+        return tranTime>=$event[0].getTime() && tranTime<=$event[1].getTime();
+      })
+    }
+    
   }
   //TRXN[0].RECDATE[0]
   searchHistory(){
