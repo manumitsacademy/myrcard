@@ -17,7 +17,7 @@ app.get("/abc",function (req, res, next) {
         headers: sampleHeaders
     }).then((result) => {
         console.log("res",result);
-        res.send("chiddam");
+        res.send(JSON.stringify(result));
     }).catch((err) => {
         console.log("err", err.toJSON());
         res.sendStatus(500);
