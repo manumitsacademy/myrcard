@@ -17,6 +17,9 @@ export class AccountService {
       responseType: 'text'  
     })
   }
+  getAccountSummary(){
+    return this.http.get("/accountsummary")
+  }
   getTransactionHistory(){
     return this.http.get("/assets/history.xml",{  
       headers: new HttpHeaders()  

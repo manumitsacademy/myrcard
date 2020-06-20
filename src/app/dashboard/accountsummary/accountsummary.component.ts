@@ -25,10 +25,13 @@ export class AccountsummaryComponent implements OnInit {
         this.accountLast=result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0];        
       });
     })
+    this.accountService.getAccountSummary().subscribe((res)=>{
+      console.log("Account Summary new",res)
+    })
     this.accountService.getSummary().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log("REVACCOUNTSUMMARY:",result.REVACCOUNTSUMMARY)
+        console.log("REVACCOUNTSUMMARY:",result)
         this.spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
         this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].CURRENTBAL[0];
         //
