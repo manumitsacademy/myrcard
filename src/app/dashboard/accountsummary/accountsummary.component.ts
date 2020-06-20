@@ -27,22 +27,31 @@ export class AccountsummaryComponent implements OnInit {
     })
     this.accountService.getAccountSummary().subscribe((res)=>{
       console.log("Account Summary new",res)
-    })
-    this.accountService.getSummary().subscribe((res)=>{
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(res, (err, result) => {
-        console.log("REVACCOUNTSUMMARY:",result)
-        this.spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
-        this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].CURRENTBAL[0];
+        this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;   
+        this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
         //
-        this.pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
+        this.pendingAmount = res['Result'].RevAccountSummary.summary[0].pendingBal[0]; 
         this.spendingAvailability = this.spendingLimit-this.discountedBalance-this.pendingAmount; 
-        var mn = result.REVACCOUNTSUMMARY.LIMIT[0].MAXNEXTAMT[0];
-        var ma = result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];
+        var mn = res['Result'].RevAccountSummary.limit.maxNextAmt;
+        var ma = res['Result'].RevAccountSummary.limit.maxTrxnAmt[0];
         var sa = this.spendingAvailability;
         this.dailySpendLimit = (mn<ma)?(mn<sa?mn:sa):(ma<sa?ma:sa); 
-      });
     })
+    // this.accountService.getSummary().subscribe((res)=>{
+    //   const parser = new xml2js.Parser({ strict: false, trim: true });
+    //   parser.parseString(res, (err, result) => {
+    //     console.log("REVACCOUNTSUMMARY:",result)
+    //     this.spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
+    //     this.discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].CURRENTBAL[0];
+    //     //
+    //     this.pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
+    //     this.spendingAvailability = this.spendingLimit-this.discountedBalance-this.pendingAmount; 
+    //     var mn = result.REVACCOUNTSUMMARY.LIMIT[0].MAXNEXTAMT[0];
+    //     var ma = result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];
+    //     var sa = this.spendingAvailability;
+    //     this.dailySpendLimit = (mn<ma)?(mn<sa?mn:sa):(ma<sa?ma:sa); 
+    //   });
+    // })
   }
 
 }
