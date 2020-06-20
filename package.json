@@ -30,6 +30,7 @@
     "rxjs": "~6.4.0",
     "stream": "0.0.2",
     "stream-browserify": "^2.0.2",
+    "strong-soap": "^2.0.0",
     "timers": "^0.1.1",
     "timers-browserify": "^2.0.11",
     "tslib": "^1.10.0",
