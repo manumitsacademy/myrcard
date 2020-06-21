@@ -20,6 +20,9 @@ export class AccountService {
   getAccountSummary(){
     return this.http.get(`${environment.soapBase}accountsummary`)
   }
+  getTransactionHistorySoap(){
+    return this.http.get(`${environment.soapBase}transactionhistory`)
+  }
   getTransactionHistory(){
     return this.http.get("/assets/history.xml",{  
       headers: new HttpHeaders()  
