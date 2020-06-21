@@ -33,7 +33,6 @@ export class HeaderComponent implements OnInit {
     this.accountService.getTransactionHistory().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log(result['ARRAY']['REVTRXN'][0].TRXN[0])
         this.legalName=result['ARRAY']['REVTRXN'][0].TRXN[0].LEGALNAME[0];        
       });
     })

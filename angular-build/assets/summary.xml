@@ -1,0 +1,59 @@
+<RevAccountSummary>
+	<oppId>0060y00001D8L1dAAF</oppId>
+	<sysDate>03/26/2020</sysDate>
+	<limit>
+		<id>A2F69A25D546783B</id>
+		<recDate>02/22/2020</recDate>
+		<sysDate>02/22/2020 12:02:23.081</sysDate>
+		<effDate>02/24/2020 17:05:30.067</effDate>
+		<srce>CardLimit.xml</srce>
+		<type>cetUpdate</type>
+		<seqId>8200</seqId>
+		<oppId>0060y00001D8L1dAAF</oppId>
+		<acctId>0010L00001vaBCHQA2</acctId>
+		<legalName>G.J.H. MECHANICS LLC</legalName>
+		<factorPnt>1.1</factorPnt>
+		<repoPnt>1.05</repoPnt>
+		<daysGrace>22</daysGrace>
+		<dailyPmtCnt>100</dailyPmtCnt>
+		<avgMonthRev>86322</avgMonthRev>
+		<maxFundLimit>3000</maxFundLimit>
+		<minTrxnAmt>0.01</minTrxnAmt>
+		<maxTrxnAmt>5000</maxTrxnAmt>
+		<maxNextAmt>5000</maxNextAmt>
+	</limit>
+	<summary>
+		<id>9CA3412619BE56F8</id>
+		<recDate>02/22/2020</recDate>
+		<sysDate>02/22/2020 12:02:23.081</sysDate>
+		<effDate>03/26/2020 11:44:38.157</effDate>
+		<tid>9846436AD1006FE4</tid>
+		<eid>7A2DDAB56ED27AEF</eid>
+		<srce>webhook</srce>
+		<type>cetCredit</type>
+		<mqtType>gpa.credit</mqtType>
+		<amount>50</amount>
+		<seqId>31476</seqId>
+		<oppId>0060y00001D8L1dAAF</oppId>
+		<acctId>0010L00001vaBCHQA2</acctId>
+		<legalName>G.J.H. MECHANICS LLC</legalName>
+		<trxnBal>2477.11636</trxnBal>
+		<paybackBal>2724.83</paybackBal>
+		<currentBal>2477.11636</currentBal>
+		<unclearedBal>45.79</unclearedBal>
+		<pendingBal>222.42</pendingBal>
+	</summary>
+	<ledger>
+		<id>3AE7700C23FB3955</id>
+		<cid>33269</cid>
+		<oppId>0060y00001D8L1dAAF</oppId>
+		<acctId>0010L00001vaBCHQA2</acctId>
+		<sysDate>03/26/2020</sysDate>
+		<effDate>03/26/2020 14:00:05.118</effDate>
+		<trxnBal>2171.8</trxnBal>
+		<paybackBal>2388.98</paybackBal>
+		<currentBal>2171.8</currentBal>
+		<unclearedBal>50.9</unclearedBal>
+		<pendingBal>222.42</pendingBal>
+	</ledger>
+</RevAccountSummary>

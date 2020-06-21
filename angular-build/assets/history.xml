@@ -1,0 +1,3207 @@
+<array className='RevTrxn' index='0' count='38' total='38'>
+	<RevTrxn>
+		<trxn>
+			<id>D08F3A95128A35DB</id>
+			<recDate>03/07/2020</recDate>
+			<sysDate>03/07/2020 19:46:51.780</sysDate>
+			<effDate>03/08/2020 12:14:39.929</effDate>
+			<mqtDate>03/07/2020 19:46:51.000</mqtDate>
+			<seqId>19019</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>19.7</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>3ecd8ed1-fd67-41bd-b576-1bc2927b2da4</orderToken>
+			<jitFundingToken>b5007d20-7419-4fb8-87f0-feac56d45c20</jitFundingToken>
+			<gpaOrderToken>ee2d6f49-4203-41b6-8e5c-7c4f4401c8a6</gpaOrderToken>
+			<gpaTrxnToken>c4c7acd0-6b8e-407a-aa64-eab0be5577ae</gpaTrxnToken>
+			<descr>FLEETPRIDE810 MID=000496275647881 ?MCC=5533</descr>
+			<category>Automotive Parts and Accessories Stores</category>
+			<cpty>
+				<mid>000496275647881</mid>
+				<mcc>5533</mcc>
+				<name>FLEETPRIDE810</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85009</zipCode>
+				<country>US</country>
+				<mccDescr>Automotive Parts and Accessories Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>D08F3A95128A35DB</id>
+			<recDate>03/08/2020</recDate>
+			<sysDate>03/08/2020 12:14:39.862</sysDate>
+			<effDate>03/08/2020 12:14:39.862</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/08/2020 07:14:39.911</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>19.7</fundedAmount>
+			<paybackAmount>21.67</paybackAmount>
+			<dailyPmtCnt>99</dailyPmtCnt>
+			<collDailyAmt>0.22</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00535</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9BBC5ECA8CC0DEA8</id>
+			<tid>D08F3A95128A35DB</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/08/2020</fundDate>
+			<fundedAmount>19.7</fundedAmount>
+			<paybackAmount>21.67</paybackAmount>			
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.22</collDailyAmt>
+			<firstDate>03/09/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>14</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.22009</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.44017</uncPymtVal>
+			<totPymtCnt>11</totPymtCnt>
+			<totPymtAmt>2.29395</totPymtAmt>
+			<totPerfAmt>3.3</totPerfAmt>
+			<totPerfGap>0.56588</totPerfGap>
+			<totCollAmt>2.73412</totCollAmt>
+			<totCollPnt>0.13879</totCollPnt>
+			<trxnBal>17.21444</trxnBal>
+			<currentBal>17.21444</currentBal>
+			<balToDone>18.93588</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>62792E864A171E92</id>
+			<recDate>03/07/2020</recDate>
+			<sysDate>03/07/2020 19:39:35.260</sysDate>
+			<effDate>03/08/2020 12:14:40.937</effDate>
+			<mqtDate>03/07/2020 19:39:34.000</mqtDate>
+			<seqId>19020</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>314.52</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>fbe5064b-54ce-4240-b54a-c28d98a3ed42</orderToken>
+			<jitFundingToken>53ed8ba1-ba6d-4b5b-bc10-fa30abf41283</jitFundingToken>
+			<gpaOrderToken>d316a47d-fcb1-424b-9372-2e74002d460e</gpaOrderToken>
+			<gpaTrxnToken>22cb7d1a-3c65-4d92-921e-26c1f3ad6131</gpaTrxnToken>
+			<descr>FLEETPRIDE810 MID=000496275647881 ?MCC=5533</descr>
+			<category>Automotive Parts and Accessories Stores</category>
+			<cpty>
+				<mid>000496275647881</mid>
+				<mcc>5533</mcc>
+				<name>FLEETPRIDE810</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85009</zipCode>
+				<country>US</country>
+				<mccDescr>Automotive Parts and Accessories Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>62792E864A171E92</id>
+			<recDate>03/08/2020</recDate>
+			<sysDate>03/08/2020 12:14:40.866</sysDate>
+			<effDate>03/08/2020 12:14:40.866</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/08/2020 07:14:40.919</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>314.52</fundedAmount>
+			<paybackAmount>345.97</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>3.46</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.08417</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>E92225DDC3B467B2</id>
+			<tid>62792E864A171E92</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/08/2020</fundDate>
+			<fundedAmount>314.52</fundedAmount>
+			<paybackAmount>345.97</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>3.46</collDailyAmt>
+			<firstDate>03/09/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>14</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>3.46136</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>6.92272</uncPymtVal>
+			<totPymtCnt>11</totPymtCnt>
+			<totPymtAmt>36.07752</totPymtAmt>
+			<totPerfAmt>51.9</totPerfAmt>
+			<totPerfGap>8.89976</totPerfGap>
+			<totCollAmt>43.00024</totCollAmt>
+			<totCollPnt>0.13672</totCollPnt>
+			<trxnBal>275.42706</trxnBal>
+			<currentBal>275.42706</currentBal>
+			<balToDone>302.96976</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>E666634E8E720C04</id>
+			<recDate>03/12/2020</recDate>
+			<sysDate>03/12/2020 01:04:47.961</sysDate>
+			<effDate>03/12/2020 12:10:54.870</effDate>
+			<mqtDate>03/12/2020 00:04:47.000</mqtDate>
+			<seqId>19043</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>109</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>3add6dfd-7e95-4e75-8c22-5805bfcf55a9</orderToken>
+			<jitFundingToken>18ce556a-04d4-416a-a6ec-2151e411c2fa</jitFundingToken>
+			<gpaOrderToken>f087d375-2886-4c37-953a-c858de4010ac</gpaOrderToken>
+			<gpaTrxnToken>f2bf577e-3d99-4eb6-abce-38c33a559ead</gpaTrxnToken>
+			<descr>FASTMED URGENT CARE MID=000846025147881 ?MCC=8011</descr>
+			<category>Doctors</category>
+			<cpty>
+				<mid>000846025147881</mid>
+				<mcc>8011</mcc>
+				<name>FASTMED URGENT CARE</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85015</zipCode>
+				<country>US</country>
+				<mccDescr>Doctors</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>E666634E8E720C04</id>
+			<recDate>03/12/2020</recDate>
+			<sysDate>03/12/2020 12:10:54.801</sysDate>
+			<effDate>03/12/2020 12:10:54.801</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/12/2020 07:10:54.853</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>109</fundedAmount>
+			<paybackAmount>119.9</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>1.2</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.02919</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>05D70C49252E6727</id>
+			<tid>E666634E8E720C04</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/12/2020</fundDate>
+			<fundedAmount>109</fundedAmount>
+			<paybackAmount>119.9</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>1.2</collDailyAmt>
+			<firstDate>03/13/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>11</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>1.20047</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>2.40094</uncPymtVal>
+			<totPymtCnt>8</totPymtCnt>
+			<totPymtAmt>8.91243</totPymtAmt>
+			<totPerfAmt>13.2</totPerfAmt>
+			<totPerfGap>1.88662</totPerfGap>
+			<totCollAmt>11.31338</totCollAmt>
+			<totCollPnt>0.10379</totCollPnt>
+			<trxnBal>98.71511</trxnBal>
+			<currentBal>98.71511</currentBal>
+			<balToDone>108.58662</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>B701E08A27399429</id>
+			<recDate>03/13/2020</recDate>
+			<sysDate>03/13/2020 08:27:45.838</sysDate>
+			<effDate>03/14/2020 11:39:23.506</effDate>
+			<mqtDate>03/13/2020 07:27:45.000</mqtDate>
+			<seqId>24207</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>175</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>eb572b26-e4fc-41eb-8e1a-ca0c79a9d33e</orderToken>
+			<jitFundingToken>54edd2d2-dcaa-41a5-a627-10909a67f616</jitFundingToken>
+			<gpaOrderToken>33dd448c-ee1c-444d-8d94-1652b9eacd63</gpaOrderToken>
+			<gpaTrxnToken>570f8896-4e9f-49e2-aeac-4b409ab8bec6</gpaTrxnToken>
+			<descr>UNIVERSAL CHAIN MID=000021890338432 ?MCC=7399</descr>
+			<category>Miscellaneous Business Services</category>
+			<cpty>
+				<mid>000021890338432</mid>
+				<mcc>7399</mcc>
+				<name>UNIVERSAL CHAIN</name>
+				<city>DENVER</city>
+				<state>08</state>
+				<zipCode>80216</zipCode>
+				<country>US</country>
+				<mccDescr>Miscellaneous Business Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>B701E08A27399429</id>
+			<recDate>03/14/2020</recDate>
+			<sysDate>03/14/2020 11:39:23.438</sysDate>
+			<effDate>03/14/2020 11:39:23.438</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/14/2020 06:39:23.489</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>175</fundedAmount>
+			<paybackAmount>192.5</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>1.93</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.04695</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>0A1511860BED4DED</id>
+			<tid>B701E08A27399429</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/14/2020</fundDate>
+			<fundedAmount>175</fundedAmount>
+			<paybackAmount>192.5</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>1.93</collDailyAmt>
+			<firstDate>03/16/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>9</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>1.93076</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>3.86152</uncPymtVal>
+			<totPymtCnt>7</totPymtCnt>
+			<totPymtAmt>12.40417</totPymtAmt>
+			<totPerfAmt>19.3</totPerfAmt>
+			<totPerfGap>3.03432</totPerfGap>
+			<totCollAmt>16.26568</totCollAmt>
+			<totCollPnt>0.09295</totCollPnt>
+			<trxnBal>160.21302</trxnBal>
+			<currentBal>160.21302</currentBal>
+			<balToDone>176.23432</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>927A8D33E6A37E5B</id>
+			<recDate>03/14/2020</recDate>
+			<sysDate>03/14/2020 20:07:29.185</sysDate>
+			<effDate>03/15/2020 11:48:16.996</effDate>
+			<mqtDate>03/14/2020 19:07:28.000</mqtDate>
+			<seqId>26222</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>37.58</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>b1a4f9d1-e5f6-41e4-90f7-849b474701f2</orderToken>
+			<jitFundingToken>7cce868d-8eb6-41a3-a5c6-13701c2724b6</jitFundingToken>
+			<gpaOrderToken>91dcd8b5-0981-4435-945d-20366d2c4f36</gpaOrderToken>
+			<gpaTrxnToken>adb294a0-1055-4917-9d2a-e29478ab3174</gpaTrxnToken>
+			<descr>FLEETPRIDE810 MID=000496275647881 ?MCC=5533</descr>
+			<category>Automotive Parts and Accessories Stores</category>
+			<cpty>
+				<mid>000496275647881</mid>
+				<mcc>5533</mcc>
+				<name>FLEETPRIDE810</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85009</zipCode>
+				<country>US</country>
+				<mccDescr>Automotive Parts and Accessories Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>927A8D33E6A37E5B</id>
+			<recDate>03/15/2020</recDate>
+			<sysDate>03/15/2020 11:48:16.933</sysDate>
+			<effDate>03/15/2020 11:48:16.933</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/15/2020 06:48:16.980</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>37.58</fundedAmount>
+			<paybackAmount>41.34</paybackAmount>
+			<dailyPmtCnt>99</dailyPmtCnt>
+			<collDailyAmt>0.42</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.01022</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>CBD11EB123DCFAF7</id>
+			<tid>927A8D33E6A37E5B</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/15/2020</fundDate>
+			<fundedAmount>37.58</fundedAmount>
+			<paybackAmount>41.34</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.42</collDailyAmt>
+			<firstDate>03/16/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>9</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.42017</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.84033</uncPymtVal>
+			<totPymtCnt>7</totPymtCnt>
+			<totPymtAmt>2.69935</totPymtAmt>
+			<totPerfAmt>4.2</totPerfAmt>
+			<totPerfGap>0.66032</totPerfGap>
+			<totCollAmt>3.53968</totCollAmt>
+			<totCollPnt>0.09419</totCollPnt>
+			<trxnBal>34.36393</trxnBal>
+			<currentBal>34.36393</currentBal>
+			<balToDone>37.80032</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>9B71BE9295FAB6D7</id>
+			<recDate>03/15/2020</recDate>
+			<sysDate>03/15/2020 01:33:42.879</sysDate>
+			<effDate>03/16/2020 11:32:40.996</effDate>
+			<mqtDate>03/15/2020 00:33:42.000</mqtDate>
+			<seqId>26225</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>23.77</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>9877b249-22d6-4e32-979d-6385e70c24ea</orderToken>
+			<jitFundingToken>afe78f82-0600-4f24-b709-7c6dc1fa2161</jitFundingToken>
+			<gpaOrderToken>cbda03e1-5eee-4f09-8576-aea5b91a7966</gpaOrderToken>
+			<gpaTrxnToken>3039876b-eb11-418c-9a12-9dc1c46d9604</gpaTrxnToken>
+			<descr>OCEAN BLUE CARIBBEAN R MID=8788430289977 ?MCC=5812</descr>
+			<category>Eating Places, Restaurants</category>
+			<cpty>
+				<mid>8788430289977</mid>
+				<mcc>5812</mcc>
+				<name>OCEAN BLUE CARIBBEAN R</name>
+				<city>CHANDLER</city>
+				<state>04</state>
+				<zipCode>85226</zipCode>
+				<country>US</country>
+				<mccDescr>Eating Places, Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>9B71BE9295FAB6D7</id>
+			<recDate>03/16/2020</recDate>
+			<sysDate>03/16/2020 11:32:40.924</sysDate>
+			<effDate>03/16/2020 11:32:40.924</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/16/2020 06:32:40.980</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>23.77</fundedAmount>
+			<paybackAmount>26.15</paybackAmount>
+			<dailyPmtCnt>97</dailyPmtCnt>
+			<collDailyAmt>0.27</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00657</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9DA02549628CFAA0</id>
+			<tid>9B71BE9295FAB6D7</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/16/2020</fundDate>
+			<fundedAmount>23.77</fundedAmount>
+			<paybackAmount>26.15</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.27</collDailyAmt>
+			<firstDate>03/17/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>9</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.27011</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.54021</uncPymtVal>
+			<totPymtCnt>6</totPymtCnt>
+			<totPymtAmt>1.55306</totPymtAmt>
+			<totPerfAmt>2.43</totPerfAmt>
+			<totPerfGap>0.33673</totPerfGap>
+			<totCollAmt>2.09327</totCollAmt>
+			<totCollPnt>0.08806</totCollPnt>
+			<trxnBal>21.86976</trxnBal>
+			<currentBal>21.86976</currentBal>
+			<balToDone>24.05673</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>920C7E9450C41765</id>
+			<recDate>03/14/2020</recDate>
+			<sysDate>03/14/2020 20:39:04.113</sysDate>
+			<effDate>03/16/2020 11:53:01.801</effDate>
+			<mqtDate>03/14/2020 19:39:03.000</mqtDate>
+			<seqId>26232</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>82.83</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>dea919d4-c82a-448b-bbb5-5a3e5cc689c1</orderToken>
+			<jitFundingToken>539aa046-45f1-4bb0-8857-fda3d76d0ec4</jitFundingToken>
+			<gpaOrderToken>42995e95-aa4a-4825-88c6-486514b1f0f1</gpaOrderToken>
+			<gpaTrxnToken>eac64c98-e406-4f85-ba14-6c54908ae832</gpaTrxnToken>
+			<descr>NAPA STORE 4718001 MID=000313007820886 ?MCC=5533</descr>
+			<category>Automotive Parts and Accessories Stores</category>
+			<cpty>
+				<mid>000313007820886</mid>
+				<mcc>5533</mcc>
+				<name>NAPA STORE 4718001</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>850170000</zipCode>
+				<country>US</country>
+				<mccDescr>Automotive Parts and Accessories Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>920C7E9450C41765</id>
+			<recDate>03/16/2020</recDate>
+			<sysDate>03/16/2020 11:53:01.733</sysDate>
+			<effDate>03/16/2020 11:53:01.733</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/16/2020 06:53:01.783</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>82.83</fundedAmount>
+			<paybackAmount>91.11</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>0.92</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.02238</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>E9430C97908DB620</id>
+			<tid>920C7E9450C41765</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/16/2020</fundDate>
+			<fundedAmount>82.83</fundedAmount>
+			<paybackAmount>91.11</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.92</collDailyAmt>
+			<firstDate>03/17/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>9</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.92036</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>1.84072</uncPymtVal>
+			<totPymtCnt>6</totPymtCnt>
+			<totPymtAmt>5.2919</totPymtAmt>
+			<totPerfAmt>8.28</totPerfAmt>
+			<totPerfGap>1.14738</totPerfGap>
+			<totCollAmt>7.13262</totCollAmt>
+			<totCollPnt>0.08611</totCollPnt>
+			<trxnBal>76.34307</trxnBal>
+			<currentBal>76.34307</currentBal>
+			<balToDone>83.97738</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>E8978130C1DF7797</id>
+			<recDate>03/16/2020</recDate>
+			<sysDate>03/16/2020 22:47:17.336</sysDate>
+			<effDate>03/17/2020 11:48:02.970</effDate>
+			<mqtDate>03/16/2020 21:47:16.000</mqtDate>
+			<seqId>26243</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>7.84</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>5bcc2373-2e0c-481f-b133-74b45469a15f</orderToken>
+			<jitFundingToken>81910330-17a2-4072-b425-cd33350e7e55</jitFundingToken>
+			<gpaOrderToken>232d6098-a4cc-4285-9c60-aa558d45d044</gpaOrderToken>
+			<gpaTrxnToken>111dbf5c-39f9-47d6-8fdb-4efd448a91f5</gpaTrxnToken>
+			<descr>VENEZIA&apos;S EAST MESA MID=000329358551995 ?MCC=5812</descr>
+			<category>Eating Places, Restaurants</category>
+			<cpty>
+				<mid>000329358551995</mid>
+				<mcc>5812</mcc>
+				<name>VENEZIA&apos;S EAST MESA</name>
+				<city>MESA</city>
+				<state>04</state>
+				<zipCode>852090000</zipCode>
+				<country>US</country>
+				<mccDescr>Eating Places, Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>E8978130C1DF7797</id>
+			<recDate>03/17/2020</recDate>
+			<sysDate>03/17/2020 11:48:02.908</sysDate>
+			<effDate>03/17/2020 11:48:02.908</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/17/2020 06:48:02.953</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>7.84</fundedAmount>
+			<paybackAmount>8.62</paybackAmount>
+			<dailyPmtCnt>96</dailyPmtCnt>
+			<collDailyAmt>0.09</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00219</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>05E06EFE7FF27B2A</id>
+			<tid>E8978130C1DF7797</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/17/2020</fundDate>
+			<fundedAmount>7.84</fundedAmount>
+			<paybackAmount>8.62</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.09</collDailyAmt>
+			<firstDate>03/18/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>8</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.09004</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.18007</uncPymtVal>
+			<totPymtCnt>5</totPymtCnt>
+			<totPymtAmt>0.42769</totPymtAmt>
+			<totPerfAmt>0.72</totPerfAmt>
+			<totPerfGap>0.11224</totPerfGap>
+			<totCollAmt>0.60776</totCollAmt>
+			<totCollPnt>0.07752</totCollPnt>
+			<trxnBal>7.28386</trxnBal>
+			<currentBal>7.28386</currentBal>
+			<balToDone>8.01224</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>CF58EB5C35ECE46B</id>
+			<recDate>03/16/2020</recDate>
+			<sysDate>03/16/2020 14:04:40.349</sysDate>
+			<effDate>03/17/2020 11:48:37.886</effDate>
+			<mqtDate>03/16/2020 13:04:40.000</mqtDate>
+			<seqId>26245</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>35</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>15958fac-70ab-433c-9fa6-247df4dd4a59</orderToken>
+			<jitFundingToken>0fdad30e-87b4-44fd-9351-3d1ad8fbee4d</jitFundingToken>
+			<gpaOrderToken>283fc137-3815-45d1-b062-fc1e8da04379</gpaOrderToken>
+			<gpaTrxnToken>32dcfa1b-7a6a-47c0-908c-c938a76d5730</gpaTrxnToken>
+			<descr>EBRANDPLUS INC MID=000267526633883 ?MCC=4814</descr>
+			<category>Telecommunication Services</category>
+			<cpty>
+				<mid>000267526633883</mid>
+				<mcc>4814</mcc>
+				<name>EBRANDPLUS INC</name>
+				<city>OSWEGO</city>
+				<state>17</state>
+				<zipCode>60543</zipCode>
+				<country>US</country>
+				<mccDescr>Telecommunication Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>CF58EB5C35ECE46B</id>
+			<recDate>03/17/2020</recDate>
+			<sysDate>03/17/2020 11:48:37.824</sysDate>
+			<effDate>03/17/2020 11:48:37.824</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/17/2020 06:48:37.869</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>35</fundedAmount>
+			<paybackAmount>38.5</paybackAmount>
+			<dailyPmtCnt>99</dailyPmtCnt>
+			<collDailyAmt>0.39</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00949</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>6060358A23321CFA</id>
+			<tid>CF58EB5C35ECE46B</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/17/2020</fundDate>
+			<fundedAmount>35</fundedAmount>
+			<paybackAmount>38.5</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.39</collDailyAmt>
+			<firstDate>03/18/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>8</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.39015</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.78031</uncPymtVal>
+			<totPymtCnt>5</totPymtCnt>
+			<totPymtAmt>1.8533</totPymtAmt>
+			<totPerfAmt>3.12</totPerfAmt>
+			<totPerfGap>0.48639</totPerfGap>
+			<totCollAmt>2.63361</totCollAmt>
+			<totCollPnt>0.07525</totCollPnt>
+			<trxnBal>32.60581</trxnBal>
+			<currentBal>32.60581</currentBal>
+			<balToDone>35.86639</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>464A7487ECB91734</id>
+			<recDate>03/16/2020</recDate>
+			<sysDate>03/16/2020 22:49:05.702</sysDate>
+			<effDate>03/17/2020 11:48:38.467</effDate>
+			<mqtDate>03/16/2020 21:49:05.000</mqtDate>
+			<seqId>26246</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>3.89</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>58b2f96c-40f8-41c5-a78a-0aeb4a735843</orderToken>
+			<jitFundingToken>4911a5c0-89a3-4609-a5da-8aefb299cb15</jitFundingToken>
+			<gpaOrderToken>b0b262b7-13f6-4038-9850-6c296471df72</gpaOrderToken>
+			<gpaTrxnToken>8c2c0336-9c8b-4481-a966-038cde28bf8d</gpaTrxnToken>
+			<descr>CIRCLE K # 03463 MID=720000101347101 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>720000101347101</mid>
+				<mcc>5541</mcc>
+				<name>CIRCLE K # 03463</name>
+				<city>MESA</city>
+				<state>04</state>
+				<zipCode>85212</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>464A7487ECB91734</id>
+			<recDate>03/17/2020</recDate>
+			<sysDate>03/17/2020 11:48:38.408</sysDate>
+			<effDate>03/17/2020 11:48:38.408</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/17/2020 06:48:38.451</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>3.89</fundedAmount>
+			<paybackAmount>4.28</paybackAmount>
+			<dailyPmtCnt>86</dailyPmtCnt>
+			<collDailyAmt>0.05</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00122</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>B5E79729019377C2</id>
+			<tid>464A7487ECB91734</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/17/2020</fundDate>
+			<fundedAmount>3.89</fundedAmount>
+			<paybackAmount>4.28</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.05</collDailyAmt>
+			<firstDate>03/18/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>8</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.05002</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.10004</uncPymtVal>
+			<totPymtCnt>5</totPymtCnt>
+			<totPymtAmt>0.2376</totPymtAmt>
+			<totPerfAmt>0.4</totPerfAmt>
+			<totPerfGap>0.06236</totPerfGap>
+			<totCollAmt>0.33764</totCollAmt>
+			<totCollPnt>0.0868</totCollPnt>
+			<trxnBal>3.58396</trxnBal>
+			<currentBal>3.58396</currentBal>
+			<balToDone>3.94236</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>D7EC73EDBA878D8D</id>
+			<recDate>03/17/2020</recDate>
+			<sysDate>03/17/2020 21:38:37.951</sysDate>
+			<effDate>03/18/2020 11:31:34.004</effDate>
+			<mqtDate>03/17/2020 20:38:37.000</mqtDate>
+			<seqId>26259</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>10</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>73b8a4d8-a843-4ac5-b20b-81419d112e04</orderToken>
+			<jitFundingToken>66625eff-c918-429b-8df4-7e926c4ba3b4</jitFundingToken>
+			<gpaOrderToken>696c7af4-5eb7-4c60-a3e4-0dc7957a8af0</gpaOrderToken>
+			<gpaTrxnToken>b2761b7c-facc-4ebc-9499-555d562c2c46</gpaTrxnToken>
+			<descr>GOODYEAR MVD/CDL MID=000345763830881 ?MCC=9399</descr>
+			<category>Government Services (Not Elsewhere Classified)</category>
+			<cpty>
+				<mid>000345763830881</mid>
+				<mcc>9399</mcc>
+				<name>GOODYEAR MVD/CDL</name>
+				<city>GOODYEAR</city>
+				<state>04</state>
+				<zipCode>853380000</zipCode>
+				<country>US</country>
+				<mccDescr>Government Services (Not Elsewhere Classified)</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>D7EC73EDBA878D8D</id>
+			<recDate>03/18/2020</recDate>
+			<sysDate>03/18/2020 11:31:33.935</sysDate>
+			<effDate>03/18/2020 11:31:33.935</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/18/2020 06:31:33.984</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>10</fundedAmount>
+			<paybackAmount>11</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>0.11</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00268</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>A8DD70F04E5C823C</id>
+			<tid>D7EC73EDBA878D8D</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/18/2020</fundDate>
+			<fundedAmount>10</fundedAmount>
+			<paybackAmount>11</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.11</collDailyAmt>
+			<firstDate>03/19/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>7</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.11004</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.22009</uncPymtVal>
+			<totPymtCnt>4</totPymtCnt>
+			<totPymtAmt>0.4126</totPymtAmt>
+			<totPerfAmt>0.77</totPerfAmt>
+			<totPerfGap>0.13731</totPerfGap>
+			<totCollAmt>0.63269</totCollAmt>
+			<totCollPnt>0.06327</totCollPnt>
+			<trxnBal>9.42483</trxnBal>
+			<currentBal>9.42483</currentBal>
+			<balToDone>10.36731</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>0D9AD3C35EDD8950</id>
+			<recDate>03/17/2020</recDate>
+			<sysDate>03/17/2020 23:10:06.390</sysDate>
+			<effDate>03/18/2020 11:50:19.957</effDate>
+			<mqtDate>03/17/2020 22:10:06.000</mqtDate>
+			<seqId>26260</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>10.28</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>45607be4-b737-42e1-a347-aebfe046143a</orderToken>
+			<jitFundingToken>876300da-0767-4512-ad8a-48dee62ef282</jitFundingToken>
+			<gpaOrderToken>066bd6b8-7f89-4224-bfd0-4591c16b4e1c</gpaOrderToken>
+			<gpaTrxnToken>ff548c97-9d34-4b05-a735-ffa83bf41e39</gpaTrxnToken>
+			<descr>VENEZIA&apos;S EAST MESA MID=000329358551995 ?MCC=5812</descr>
+			<category>Eating Places, Restaurants</category>
+			<cpty>
+				<mid>000329358551995</mid>
+				<mcc>5812</mcc>
+				<name>VENEZIA&apos;S EAST MESA</name>
+				<city>MESA</city>
+				<state>04</state>
+				<zipCode>852090000</zipCode>
+				<country>US</country>
+				<mccDescr>Eating Places, Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>0D9AD3C35EDD8950</id>
+			<recDate>03/18/2020</recDate>
+			<sysDate>03/18/2020 11:50:19.894</sysDate>
+			<effDate>03/18/2020 11:50:19.894</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/18/2020 06:50:19.940</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>10.28</fundedAmount>
+			<paybackAmount>11.31</paybackAmount>
+			<dailyPmtCnt>95</dailyPmtCnt>
+			<collDailyAmt>0.12</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00292</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>4A43255C4096693E</id>
+			<tid>0D9AD3C35EDD8950</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/18/2020</fundDate>
+			<fundedAmount>10.28</fundedAmount>
+			<paybackAmount>11.31</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.12</collDailyAmt>
+			<firstDate>03/19/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>7</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.12005</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.24009</uncPymtVal>
+			<totPymtCnt>4</totPymtCnt>
+			<totPymtAmt>0.45011</totPymtAmt>
+			<totPerfAmt>0.84</totPerfAmt>
+			<totPerfGap>0.14979</totPerfGap>
+			<totCollAmt>0.69021</totCollAmt>
+			<totCollPnt>0.06714</totCollPnt>
+			<trxnBal>9.65436</trxnBal>
+			<currentBal>9.65436</currentBal>
+			<balToDone>10.61979</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>6194FCE64BECCDB5</id>
+			<recDate>03/18/2020</recDate>
+			<sysDate>03/18/2020 04:31:02.461</sysDate>
+			<effDate>03/19/2020 11:31:15.334</effDate>
+			<mqtDate>03/18/2020 03:31:02.000</mqtDate>
+			<seqId>26271</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>95</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>5fc11093-be0b-475e-b025-6e47320f2268</orderToken>
+			<jitFundingToken>47b211b4-1fcc-4c1e-8651-258d33bd7010</jitFundingToken>
+			<gpaOrderToken>8ea2c78a-ca66-4eef-86bd-9b5a019f60d2</gpaOrderToken>
+			<gpaTrxnToken>1f08e216-c8dd-4b6d-9858-2ceacda83f8a</gpaTrxnToken>
+			<descr>UNIVERSAL CHAIN MID=000021890338432 ?MCC=7399</descr>
+			<category>Miscellaneous Business Services</category>
+			<cpty>
+				<mid>000021890338432</mid>
+				<mcc>7399</mcc>
+				<name>UNIVERSAL CHAIN</name>
+				<city>DENVER</city>
+				<state>08</state>
+				<zipCode>80216</zipCode>
+				<country>US</country>
+				<mccDescr>Miscellaneous Business Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>6194FCE64BECCDB5</id>
+			<recDate>03/19/2020</recDate>
+			<sysDate>03/19/2020 11:31:15.269</sysDate>
+			<effDate>03/19/2020 11:31:15.269</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/19/2020 06:31:15.316</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>95</fundedAmount>
+			<paybackAmount>104.5</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>1.05</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.02554</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>0521707689FB2FFE</id>
+			<tid>6194FCE64BECCDB5</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/19/2020</fundDate>
+			<fundedAmount>95</fundedAmount>
+			<paybackAmount>104.5</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>1.05</collDailyAmt>
+			<firstDate>03/20/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>6</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>1.05041</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>2.10083</uncPymtVal>
+			<totPymtCnt>3</totPymtCnt>
+			<totPymtAmt>2.88735</totPymtAmt>
+			<totPerfAmt>6.3</totPerfAmt>
+			<totPerfGap>1.31183</totPerfGap>
+			<totCollAmt>4.98817</totCollAmt>
+			<totCollPnt>0.05251</totCollPnt>
+			<trxnBal>90.4653</trxnBal>
+			<currentBal>90.4653</currentBal>
+			<balToDone>99.51183</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>9247198F49B2E51C</id>
+			<recDate>03/19/2020</recDate>
+			<sysDate>03/19/2020 03:46:36.166</sysDate>
+			<effDate>03/20/2020 11:31:57.359</effDate>
+			<mqtDate>03/19/2020 02:46:35.000</mqtDate>
+			<seqId>26289</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>95</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>68ade7d7-8d1b-47aa-af01-a811a939e995</orderToken>
+			<jitFundingToken>f88c0c82-068d-4663-9f80-f9bfbdec9c73</jitFundingToken>
+			<gpaOrderToken>a829a205-4c52-481d-91bf-2cbfc5ba2278</gpaOrderToken>
+			<gpaTrxnToken>0ba9f172-a882-4f64-9eb8-a0cc2c0b637f</gpaTrxnToken>
+			<descr>UNIVERSAL CHAIN MID=000021890338432 ?MCC=7399</descr>
+			<category>Miscellaneous Business Services</category>
+			<cpty>
+				<mid>000021890338432</mid>
+				<mcc>7399</mcc>
+				<name>UNIVERSAL CHAIN</name>
+				<city>DENVER</city>
+				<state>08</state>
+				<zipCode>80216</zipCode>
+				<country>US</country>
+				<mccDescr>Miscellaneous Business Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>9247198F49B2E51C</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 11:31:57.296</sysDate>
+			<effDate>03/20/2020 11:31:57.296</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/20/2020 06:31:57.341</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>95</fundedAmount>
+			<paybackAmount>104.5</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>1.05</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.02554</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>B5680C148489690B</id>
+			<tid>9247198F49B2E51C</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/20/2020</fundDate>
+			<fundedAmount>95</fundedAmount>
+			<paybackAmount>104.5</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>1.05</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>5</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>1.05041</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>2.10083</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>1.83632</totPymtAmt>
+			<totPerfAmt>5.25</totPerfAmt>
+			<totPerfGap>1.31285</totPerfGap>
+			<totCollAmt>3.93715</totCollAmt>
+			<totCollPnt>0.04144</totCollPnt>
+			<trxnBal>91.42077</trxnBal>
+			<currentBal>91.42077</currentBal>
+			<balToDone>100.56285</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>3FAB121EAEDE4690</id>
+			<recDate>03/19/2020</recDate>
+			<sysDate>03/19/2020 23:56:37.273</sysDate>
+			<effDate>03/20/2020 11:32:01.930</effDate>
+			<mqtDate>03/19/2020 22:56:36.000</mqtDate>
+			<seqId>26290</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>6.52</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>9772464e-7072-493d-b965-7f81fdadc8a7</orderToken>
+			<jitFundingToken>ab458728-3738-4e85-9216-75dff7f21626</jitFundingToken>
+			<gpaOrderToken>64eec045-e8f1-410e-a443-bb1ceae9f84a</gpaOrderToken>
+			<gpaTrxnToken>1d2b6b75-3775-4df7-85b7-e4611ad60908</gpaTrxnToken>
+			<descr>MCDONALD&apos;S F11739 MID=000505875 ?MCC=5814</descr>
+			<category>Fast Food Restaurants</category>
+			<cpty>
+				<mid>000505875</mid>
+				<mcc>5814</mcc>
+				<name>MCDONALD&apos;S F11739</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85017</zipCode>
+				<country>US</country>
+				<mccDescr>Fast Food Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>3FAB121EAEDE4690</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 11:32:01.865</sysDate>
+			<effDate>03/20/2020 11:32:01.865</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/20/2020 06:32:01.911</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>6.52</fundedAmount>
+			<paybackAmount>7.17</paybackAmount>
+			<dailyPmtCnt>90</dailyPmtCnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00195</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9DCE5E470A6247AB</id>
+			<tid>3FAB121EAEDE4690</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/20/2020</fundDate>
+			<fundedAmount>6.52</fundedAmount>
+			<paybackAmount>7.17</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>5</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.08003</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.16006</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.13991</totPymtAmt>
+			<totPerfAmt>0.4</totPerfAmt>
+			<totPerfGap>0.10003</totPerfGap>
+			<totCollAmt>0.29997</totCollAmt>
+			<totCollPnt>0.04601</totCollPnt>
+			<trxnBal>6.24548</trxnBal>
+			<currentBal>6.24548</currentBal>
+			<balToDone>6.87003</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>BD705791253AC6A9</id>
+			<recDate>03/19/2020</recDate>
+			<sysDate>03/19/2020 06:32:35.161</sysDate>
+			<effDate>03/20/2020 11:47:44.883</effDate>
+			<mqtDate>03/19/2020 05:32:34.000</mqtDate>
+			<seqId>26292</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>21.32</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>704e9fa6-3e85-4c9b-8349-b22c7e6f10ac</orderToken>
+			<jitFundingToken>06078df0-9a53-41c5-9aae-35b4e26ef193</jitFundingToken>
+			<gpaOrderToken>c3e74e83-01e6-49c3-8058-9839ed40d6b9</gpaOrderToken>
+			<gpaTrxnToken>41bdfb93-fb47-4217-8334-890cf0715887</gpaTrxnToken>
+			<descr>CIRCLE K # 03459 MID=720000101320102 ?MCC=5542</descr>
+			<category>Automated Fuel Dispensers</category>
+			<cpty>
+				<mid>720000101320102</mid>
+				<mcc>5542</mcc>
+				<name>CIRCLE K # 03459</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85017</zipCode>
+				<country>US</country>
+				<mccDescr>Automated Fuel Dispensers</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>BD705791253AC6A9</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 11:47:44.819</sysDate>
+			<effDate>03/20/2020 11:47:44.819</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/20/2020 06:47:44.865</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>21.32</fundedAmount>
+			<paybackAmount>23.45</paybackAmount>
+			<dailyPmtCnt>98</dailyPmtCnt>
+			<collDailyAmt>0.24</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00584</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9921F39E6093DD12</id>
+			<tid>BD705791253AC6A9</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/20/2020</fundDate>
+			<fundedAmount>21.32</fundedAmount>
+			<paybackAmount>23.45</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.24</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>5</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.24009</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.48019</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.41973</totPymtAmt>
+			<totPerfAmt>1.2</totPerfAmt>
+			<totPerfGap>0.30008</totPerfGap>
+			<totCollAmt>0.89992</totCollAmt>
+			<totCollPnt>0.04221</totCollPnt>
+			<trxnBal>20.50007</trxnBal>
+			<currentBal>20.50007</currentBal>
+			<balToDone>22.55008</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>9BBEBB4D711A684E</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 05:38:16.898</sysDate>
+			<effDate>03/21/2020 11:26:39.898</effDate>
+			<mqtDate>03/20/2020 04:38:16.000</mqtDate>
+			<seqId>26310</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>6.95</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>16882dc5-4b1b-4849-ae0a-8d4a293e96fc</orderToken>
+			<jitFundingToken>7102d089-e9fe-4c7f-87a8-3cdc6772201f</jitFundingToken>
+			<gpaOrderToken>169b011a-d897-4e10-a78f-0eb463e85165</gpaOrderToken>
+			<gpaTrxnToken>63720bbf-f1a8-40ac-896a-64d0e6b74792</gpaTrxnToken>
+			<descr>EXXON STAY THIRSTY MID=000479229 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>000479229</mid>
+				<mcc>5541</mcc>
+				<name>EXXON STAY THIRSTY</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85017</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>9BBEBB4D711A684E</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:26:39.834</sysDate>
+			<effDate>03/21/2020 11:26:39.834</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:26:39.880</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>6.95</fundedAmount>
+			<paybackAmount>7.65</paybackAmount>
+			<dailyPmtCnt>96</dailyPmtCnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00195</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>54651ECA718D333C</id>
+			<tid>9BBEBB4D711A684E</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>6.95</fundedAmount>
+			<paybackAmount>7.65</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.08003</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.16006</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.13991</totPymtAmt>
+			<totPerfAmt>0.4</totPerfAmt>
+			<totPerfGap>0.10003</totPerfGap>
+			<totCollAmt>0.29997</totCollAmt>
+			<totCollPnt>0.04316</totCollPnt>
+			<trxnBal>6.68184</trxnBal>
+			<currentBal>6.68184</currentBal>
+			<balToDone>7.35003</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>6A344957482D109A</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 05:34:31.850</sysDate>
+			<effDate>03/21/2020 11:26:42.091</effDate>
+			<mqtDate>03/20/2020 04:34:31.000</mqtDate>
+			<seqId>26311</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>17.5</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>93637c33-55f0-4d07-8c52-49db269fc6b3</orderToken>
+			<jitFundingToken>854db79d-ae31-49a6-ac37-0beec9156183</jitFundingToken>
+			<gpaOrderToken>e040c797-355b-44f0-8ccb-58ad9435b3d4</gpaOrderToken>
+			<gpaTrxnToken>19f711fd-ea61-432c-9ee5-fcce5401b23b</gpaTrxnToken>
+			<descr>EXXON STAY THIRSTY MID=000479229 ?MCC=5542</descr>
+			<category>Automated Fuel Dispensers</category>
+			<cpty>
+				<mid>000479229</mid>
+				<mcc>5542</mcc>
+				<name>EXXON STAY THIRSTY</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85017</zipCode>
+				<country>US</country>
+				<mccDescr>Automated Fuel Dispensers</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>6A344957482D109A</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:26:42.028</sysDate>
+			<effDate>03/21/2020 11:26:42.028</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:26:42.075</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>17.5</fundedAmount>
+			<paybackAmount>19.25</paybackAmount>
+			<dailyPmtCnt>97</dailyPmtCnt>
+			<collDailyAmt>0.2</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00487</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>83CE6E3D248745DA</id>
+			<tid>6A344957482D109A</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>17.5</fundedAmount>
+			<paybackAmount>19.25</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.2</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.20008</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.40016</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.34978</totPymtAmt>
+			<totPerfAmt>1</totPerfAmt>
+			<totPerfGap>0.25007</totPerfGap>
+			<totCollAmt>0.74993</totCollAmt>
+			<totCollPnt>0.04285</totCollPnt>
+			<trxnBal>16.81824</trxnBal>
+			<currentBal>16.81824</currentBal>
+			<balToDone>18.50007</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>29E490075031E7B9</id>
+			<recDate>03/19/2020</recDate>
+			<sysDate>03/19/2020 17:17:42.072</sysDate>
+			<effDate>03/21/2020 11:45:27.125</effDate>
+			<mqtDate>03/19/2020 16:17:41.000</mqtDate>
+			<seqId>26314</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>1.63</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>6e24d124-e5e4-462d-8874-983d5afdb8da</orderToken>
+			<jitFundingToken>995d979c-05e0-4511-85f3-e2a9dfb65972</jitFundingToken>
+			<gpaOrderToken>18606c00-c485-43a2-8248-d0b052572c94</gpaOrderToken>
+			<gpaTrxnToken>12c92780-e98c-4f54-b6cc-096d977d7b00</gpaTrxnToken>
+			<descr>SHELL/SHELL MID=57442518304 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>57442518304</mid>
+				<mcc>5541</mcc>
+				<name>SHELL/SHELL</name>
+				<city>GILA BEND</city>
+				<state>04</state>
+				<zipCode>85337</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>29E490075031E7B9</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:45:27.063</sysDate>
+			<effDate>03/21/2020 11:45:27.063</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:45:27.108</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>1.63</fundedAmount>
+			<paybackAmount>1.79</paybackAmount>
+			<dailyPmtCnt>90</dailyPmtCnt>
+			<collDailyAmt>0.02</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00049</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>4A99908FFF919F1C</id>
+			<tid>29E490075031E7B9</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>1.63</fundedAmount>
+			<paybackAmount>1.79</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.02</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.02001</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.04002</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.03498</totPymtAmt>
+			<totPerfAmt>0.1</totPerfAmt>
+			<totPerfGap>0.02501</totPerfGap>
+			<totCollAmt>0.07499</totCollAmt>
+			<totCollPnt>0.04601</totCollPnt>
+			<trxnBal>1.5591</trxnBal>
+			<currentBal>1.5591</currentBal>
+			<balToDone>1.71501</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>D735C37EC802092B</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 14:02:49.475</sysDate>
+			<effDate>03/21/2020 11:45:27.462</effDate>
+			<mqtDate>03/20/2020 13:02:49.000</mqtDate>
+			<seqId>26315</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>209</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>7d2f3288-c771-4766-b0c2-1748d0884d41</orderToken>
+			<jitFundingToken>8c295197-7487-419d-927f-1e35c768854e</jitFundingToken>
+			<gpaOrderToken>04fff9b3-0b92-4412-8ed0-b9ef89612d73</gpaOrderToken>
+			<gpaTrxnToken>3ad6d35a-4344-4f74-bdb7-81c1a54b84a3</gpaTrxnToken>
+			<descr>IN *ALTERNATIVE HEAVY MID=219040000207048 ?MCC=7549</descr>
+			<category>Towing Services</category>
+			<cpty>
+				<mid>219040000207048</mid>
+				<mcc>7549</mcc>
+				<name>IN *ALTERNATIVE HEAVY</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>850855714</zipCode>
+				<country>US</country>
+				<mccDescr>Towing Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>D735C37EC802092B</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:45:27.400</sysDate>
+			<effDate>03/21/2020 11:45:27.400</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:45:27.445</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>209</fundedAmount>
+			<paybackAmount>229.9</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>2.3</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.05595</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>81C56E140A27A7A2</id>
+			<tid>D735C37EC802092B</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>209</fundedAmount>
+			<paybackAmount>229.9</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>2.3</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>2.3009</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>4.60181</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>4.02242</totPymtAmt>
+			<totPerfAmt>11.5</totPerfAmt>
+			<totPerfGap>2.87577</totPerfGap>
+			<totCollAmt>8.62423</totCollAmt>
+			<totCollPnt>0.04126</totCollPnt>
+			<trxnBal>201.15979</trxnBal>
+			<currentBal>201.15979</currentBal>
+			<balToDone>221.27577</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>84C888EBD0650B50</id>
+			<recDate>03/22/2020</recDate>
+			<sysDate>03/22/2020 23:06:26.354</sysDate>
+			<effDate>03/23/2020 11:42:31.828</effDate>
+			<mqtDate>03/22/2020 22:06:26.000</mqtDate>
+			<seqId>31417</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>19.5</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>2675d0c2-23fd-44bf-a64b-baffee6d40a5</orderToken>
+			<jitFundingToken>32a9a048-8b0d-42ff-b4c0-4154a29de131</jitFundingToken>
+			<gpaOrderToken>0da696f3-701f-4a9e-a13b-5a0e00c197f1</gpaOrderToken>
+			<gpaTrxnToken>9b6227a3-7cd2-4700-8611-79095df661e4</gpaTrxnToken>
+			<descr>CIRCLE K 09192 MID=720000097241101 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>720000097241101</mid>
+				<mcc>5541</mcc>
+				<name>CIRCLE K 09192</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85085</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>84C888EBD0650B50</id>
+			<recDate>03/23/2020</recDate>
+			<sysDate>03/23/2020 11:42:31.770</sysDate>
+			<effDate>03/23/2020 11:42:31.770</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/23/2020 06:42:31.812</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>19.5</fundedAmount>
+			<paybackAmount>21.45</paybackAmount>
+			<dailyPmtCnt>98</dailyPmtCnt>
+			<collDailyAmt>0.22</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00535</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>6D44FC59F2D6BDD2</id>
+			<tid>84C888EBD0650B50</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/23/2020</fundDate>
+			<fundedAmount>19.5</fundedAmount>
+			<paybackAmount>21.45</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.22</collDailyAmt>
+			<firstDate>03/24/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.22009</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.44017</uncPymtVal>
+			<totPymtCnt>1</totPymtCnt>
+			<totPymtAmt>0.22011</totPymtAmt>
+			<totPerfAmt>0.88</totPerfAmt>
+			<totPerfGap>0.21972</totPerfGap>
+			<totCollAmt>0.66028</totCollAmt>
+			<totCollPnt>0.03386</totCollPnt>
+			<trxnBal>18.89974</trxnBal>
+			<currentBal>18.89974</currentBal>
+			<balToDone>20.78972</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>9F0BF2DC303FE2FA</id>
+			<recDate>03/20/2020</recDate>
+			<sysDate>03/20/2020 02:22:39.178</sysDate>
+			<effDate>03/21/2020 11:45:27.882</effDate>
+			<mqtDate>03/20/2020 01:22:38.000</mqtDate>
+			<seqId>26316</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>16.58</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>841aa526-5282-459d-be56-0f75044acf63</orderToken>
+			<jitFundingToken>42dc01d1-8e26-4ea0-b95f-aa5ab51d708c</jitFundingToken>
+			<gpaOrderToken>0256af9e-9ee7-48fd-8d61-f64f5a68a018</gpaOrderToken>
+			<gpaTrxnToken>7b3b5298-268a-46a5-aac1-5bb66e21c5de</gpaTrxnToken>
+			<descr>SAFELINK    *WIRELESS MID=333700000683672 ?MCC=4812</descr>
+			<category>Telecommunication Equipment and Telephone Sales</category>
+			<cpty>
+				<mid>333700000683672</mid>
+				<mcc>4812</mcc>
+				<name>SAFELINK    *WIRELESS</name>
+				<city>800-723-3546</city>
+				<state>12</state>
+				<zipCode>33178</zipCode>
+				<country>US</country>
+				<mccDescr>Telecommunication Equipment and Telephone Sales</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>9F0BF2DC303FE2FA</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:45:27.820</sysDate>
+			<effDate>03/21/2020 11:45:27.820</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:45:27.865</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>16.58</fundedAmount>
+			<paybackAmount>18.24</paybackAmount>
+			<dailyPmtCnt>96</dailyPmtCnt>
+			<collDailyAmt>0.19</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00462</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>05436E2FB936AEA5</id>
+			<tid>9F0BF2DC303FE2FA</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>16.58</fundedAmount>
+			<paybackAmount>18.24</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.19</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.19007</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.38015</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.33229</totPymtAmt>
+			<totPerfAmt>0.95</totPerfAmt>
+			<totPerfGap>0.23756</totPerfGap>
+			<totCollAmt>0.71244</totCollAmt>
+			<totCollPnt>0.04297</totCollPnt>
+			<trxnBal>15.93415</trxnBal>
+			<currentBal>15.93415</currentBal>
+			<balToDone>17.52756</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>1EA00E7332F9ACCF</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 00:56:00.455</sysDate>
+			<effDate>03/21/2020 11:45:28.334</effDate>
+			<mqtDate>03/20/2020 23:56:00.000</mqtDate>
+			<seqId>26317</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>79.57</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>a9cc6a98-92b9-4ece-91a2-5baf78f21922</orderToken>
+			<jitFundingToken>77246c23-8b37-4ee4-948e-91a319c0b036</jitFundingToken>
+			<gpaOrderToken>b3c9dd6f-1aa6-4c4b-9cd7-8fd81e0a3076</gpaOrderToken>
+			<gpaTrxnToken>9fba5024-3adc-4cf7-80d0-ce9ca9e56c2e</gpaTrxnToken>
+			<descr>FLEETPRIDE810 MID=000496275647881 ?MCC=5533</descr>
+			<category>Automotive Parts and Accessories Stores</category>
+			<cpty>
+				<mid>000496275647881</mid>
+				<mcc>5533</mcc>
+				<name>FLEETPRIDE810</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85009</zipCode>
+				<country>US</country>
+				<mccDescr>Automotive Parts and Accessories Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>1EA00E7332F9ACCF</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:45:28.183</sysDate>
+			<effDate>03/21/2020 11:45:28.183</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:45:28.317</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>79.57</fundedAmount>
+			<paybackAmount>87.53</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>0.88</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.02141</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>379F903D1B0CBDD7</id>
+			<tid>1EA00E7332F9ACCF</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>79.57</fundedAmount>
+			<paybackAmount>87.53</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.88</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.88035</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>1.76069</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>1.53901</totPymtAmt>
+			<totPerfAmt>4.4</totPerfAmt>
+			<totPerfGap>1.10029</totPerfGap>
+			<totCollAmt>3.29971</totCollAmt>
+			<totCollPnt>0.04147</totCollPnt>
+			<trxnBal>76.573</trxnBal>
+			<currentBal>76.573</currentBal>
+			<balToDone>84.23029</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>7BD8D3CB1C12C512</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 03:41:59.780</sysDate>
+			<effDate>03/21/2020 11:45:29.219</effDate>
+			<mqtDate>03/21/2020 02:41:59.000</mqtDate>
+			<seqId>26321</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>12.74</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>d26a0fb0-f389-4ad5-98f2-fe9b74caec47</orderToken>
+			<jitFundingToken>644de9bd-df3b-431a-8c2d-ee2559f5253c</jitFundingToken>
+			<gpaOrderToken>c3d3711f-7743-4473-8bcf-e7740026d32b</gpaOrderToken>
+			<gpaTrxnToken>75a3199f-c8ba-444c-82ae-bdc97d975e12</gpaTrxnToken>
+			<descr>LAMS SUPERMARKET MID=000428227362889 ?MCC=5411</descr>
+			<category>Grocery Stores, Supermarkets</category>
+			<cpty>
+				<mid>000428227362889</mid>
+				<mcc>5411</mcc>
+				<name>LAMS SUPERMARKET</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85033</zipCode>
+				<country>US</country>
+				<mccDescr>Grocery Stores, Supermarkets</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>7BD8D3CB1C12C512</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 11:45:29.128</sysDate>
+			<effDate>03/21/2020 11:45:29.128</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/21/2020 06:45:29.203</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>12.74</fundedAmount>
+			<paybackAmount>14.01</paybackAmount>
+			<dailyPmtCnt>94</dailyPmtCnt>
+			<collDailyAmt>0.15</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00365</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>05D9F3A41E118070</id>
+			<tid>7BD8D3CB1C12C512</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/21/2020</fundDate>
+			<fundedAmount>12.74</fundedAmount>
+			<paybackAmount>14.01</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.15</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.15006</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.30012</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.26233</totPymtAmt>
+			<totPerfAmt>0.75</totPerfAmt>
+			<totPerfGap>0.18755</totPerfGap>
+			<totCollAmt>0.56245</totCollAmt>
+			<totCollPnt>0.04415</totCollPnt>
+			<trxnBal>12.22505</trxnBal>
+			<currentBal>12.22505</currentBal>
+			<balToDone>13.44755</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>E3BFF2424DEA25F1</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 01:08:06.029</sysDate>
+			<effDate>03/22/2020 11:24:39.336</effDate>
+			<mqtDate>03/21/2020 00:08:05.000</mqtDate>
+			<seqId>31407</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>6.52</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>86d702a5-6bb2-47ad-8d7d-aaa5f22ecfad</orderToken>
+			<jitFundingToken>e17c54aa-c028-4008-b56e-829365dde1f2</jitFundingToken>
+			<gpaOrderToken>364548ba-a16a-4da9-ad6c-8794e33e376d</gpaOrderToken>
+			<gpaTrxnToken>dc3a104d-033b-4acc-86bb-7f206af88a6b</gpaTrxnToken>
+			<descr>MCDONALD&apos;S F11739 MID=000505875 ?MCC=5814</descr>
+			<category>Fast Food Restaurants</category>
+			<cpty>
+				<mid>000505875</mid>
+				<mcc>5814</mcc>
+				<name>MCDONALD&apos;S F11739</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85017</zipCode>
+				<country>US</country>
+				<mccDescr>Fast Food Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>E3BFF2424DEA25F1</id>
+			<recDate>03/22/2020</recDate>
+			<sysDate>03/22/2020 11:24:39.274</sysDate>
+			<effDate>03/22/2020 11:24:39.274</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/22/2020 06:24:39.319</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>6.52</fundedAmount>
+			<paybackAmount>7.17</paybackAmount>
+			<dailyPmtCnt>90</dailyPmtCnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00195</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>54A5CBD0909640C3</id>
+			<tid>E3BFF2424DEA25F1</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/22/2020</fundDate>
+			<fundedAmount>6.52</fundedAmount>
+			<paybackAmount>7.17</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.08</collDailyAmt>
+			<firstDate>03/23/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.08003</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.16006</uncPymtVal>
+			<totPymtCnt>2</totPymtCnt>
+			<totPymtAmt>0.13991</totPymtAmt>
+			<totPerfAmt>0.4</totPerfAmt>
+			<totPerfGap>0.10003</totPerfGap>
+			<totCollAmt>0.29997</totCollAmt>
+			<totCollPnt>0.04601</totCollPnt>
+			<trxnBal>6.24548</trxnBal>
+			<currentBal>6.24548</currentBal>
+			<balToDone>6.87003</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>37759908B0AC8757</id>
+			<recDate>03/22/2020</recDate>
+			<sysDate>03/22/2020 05:05:01.427</sysDate>
+			<effDate>03/23/2020 11:27:08.766</effDate>
+			<mqtDate>03/22/2020 04:05:00.000</mqtDate>
+			<seqId>31413</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>43.42</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>be5dc2dc-876b-46d7-be58-67616ec34a83</orderToken>
+			<jitFundingToken>861a4f3b-cdd7-4980-9408-cc12df945b94</jitFundingToken>
+			<gpaOrderToken>73bdfc01-3c63-462f-9e44-4f2a581cd0f2</gpaOrderToken>
+			<gpaTrxnToken>f7638478-7d86-42c4-90e5-64eefd35b9b1</gpaTrxnToken>
+			<descr>PILOT_00611 MID=25800006114 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>25800006114</mid>
+				<mcc>5541</mcc>
+				<name>PILOT_00611</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85043</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>37759908B0AC8757</id>
+			<recDate>03/23/2020</recDate>
+			<sysDate>03/23/2020 11:27:08.707</sysDate>
+			<effDate>03/23/2020 11:27:08.707</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/23/2020 06:27:08.750</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>43.42</fundedAmount>
+			<paybackAmount>47.76</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>0.48</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.01168</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>4A61C4B81B4ACF72</id>
+			<tid>37759908B0AC8757</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/23/2020</fundDate>
+			<fundedAmount>43.42</fundedAmount>
+			<paybackAmount>47.76</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.48</collDailyAmt>
+			<firstDate>03/24/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>0.48019</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>0.96038</uncPymtVal>
+			<totPymtCnt>1</totPymtCnt>
+			<totPymtAmt>0.48024</totPymtAmt>
+			<totPerfAmt>1.92</totPerfAmt>
+			<totPerfGap>0.47939</totPerfGap>
+			<totCollAmt>1.44061</totCollAmt>
+			<totCollPnt>0.03318</totCollPnt>
+			<trxnBal>42.10853</trxnBal>
+			<currentBal>42.10853</currentBal>
+			<balToDone>46.31939</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>DEB1983D3E771721</id>
+			<recDate>03/21/2020</recDate>
+			<sysDate>03/21/2020 21:47:06.359</sysDate>
+			<effDate>03/23/2020 11:27:14.482</effDate>
+			<mqtDate>03/21/2020 20:47:06.000</mqtDate>
+			<seqId>31414</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>375</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>9ea4577c-346f-4e77-8d19-cf3fc6cbaf90</orderToken>
+			<jitFundingToken>a413d7cf-cb9e-44a0-92e6-e075ad883c59</jitFundingToken>
+			<gpaOrderToken>7e683a61-b6b0-42a6-bbaf-aef5016d7790</gpaOrderToken>
+			<gpaTrxnToken>0a6a4031-4769-4afd-9d0c-6595cfc6da89</gpaTrxnToken>
+			<descr>MJP*SPOTLIGHTFU8009913424 MID=022336446000870 ?MCC=7392</descr>
+			<category>Consulting, Public Relations</category>
+			<cpty>
+				<mid>022336446000870</mid>
+				<mcc>7392</mcc>
+				<name>MJP*SPOTLIGHTFU8009913424</name>
+				<city>800-9913424</city>
+				<state>32</state>
+				<zipCode>89147</zipCode>
+				<country>US</country>
+				<mccDescr>Consulting, Public Relations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>DEB1983D3E771721</id>
+			<recDate>03/23/2020</recDate>
+			<sysDate>03/23/2020 11:27:14.422</sysDate>
+			<effDate>03/23/2020 11:27:14.422</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/23/2020 06:27:14.466</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>375</fundedAmount>
+			<paybackAmount>412.5</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>4.13</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.10047</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>CBBC37597FE97F39</id>
+			<tid>DEB1983D3E771721</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/23/2020</fundDate>
+			<fundedAmount>375</fundedAmount>
+			<paybackAmount>412.5</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>4.13</collDailyAmt>
+			<firstDate>03/24/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>4</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>4.13162</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>8.26325</uncPymtVal>
+			<totPymtCnt>1</totPymtCnt>
+			<totPymtAmt>4.13203</totPymtAmt>
+			<totPerfAmt>16.52</totPerfAmt>
+			<totPerfGap>4.12472</totPerfGap>
+			<totCollAmt>12.39528</totCollAmt>
+			<totCollPnt>0.03305</totCollPnt>
+			<trxnBal>363.73157</trxnBal>
+			<currentBal>363.73157</currentBal>
+			<balToDone>400.10472</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>22C161BAE1EB4B1C</id>
+			<recDate>03/23/2020</recDate>
+			<sysDate>03/23/2020 19:42:12.177</sysDate>
+			<effDate>03/24/2020 11:41:21.626</effDate>
+			<mqtDate>03/23/2020 18:42:11.000</mqtDate>
+			<seqId>31430</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>297.2</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>2ff1df31-b149-4f36-b771-89445f3790ca</orderToken>
+			<jitFundingToken>3cdb3674-9032-413f-9ced-1faf068caf59</jitFundingToken>
+			<gpaOrderToken>ebdbd3fd-e69b-4765-8a0e-a74c2b5a8cbc</gpaOrderToken>
+			<gpaTrxnToken>b3435df9-1b57-49b6-8ace-49e26e729814</gpaTrxnToken>
+			<descr>CITY SERVICES BILL EPMT MID=720000340611002 ?MCC=4900</descr>
+			<category>Utilities</category>
+			<cpty>
+				<mid>720000340611002</mid>
+				<mcc>4900</mcc>
+				<name>CITY SERVICES BILL EPMT</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85003</zipCode>
+				<country>US</country>
+				<mccDescr>Utilities</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>22C161BAE1EB4B1C</id>
+			<recDate>03/24/2020</recDate>
+			<sysDate>03/24/2020 11:41:21.566</sysDate>
+			<effDate>03/24/2020 11:41:21.566</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/24/2020 06:41:21.609</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>297.2</fundedAmount>
+			<paybackAmount>326.92</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>3.27</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.07955</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>546F9A890762A9E1</id>
+			<tid>22C161BAE1EB4B1C</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/24/2020</fundDate>
+			<fundedAmount>297.2</fundedAmount>
+			<paybackAmount>326.92</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>3.27</collDailyAmt>
+			<firstDate>03/25/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>3</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>3.27129</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>6.54257</uncPymtVal>
+			<totPerfAmt>9.81</totPerfAmt>
+			<totPerfGap>3.26743</totPerfGap>
+			<totCollAmt>6.54257</totCollAmt>
+			<totCollPnt>0.02201</totCollPnt>
+			<trxnBal>291.25221</trxnBal>
+			<currentBal>291.25221</currentBal>
+			<balToDone>320.37743</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>354F75C6B355CE43</id>
+			<recDate>03/23/2020</recDate>
+			<sysDate>03/23/2020 16:05:29.677</sysDate>
+			<effDate>03/24/2020 11:41:31.845</effDate>
+			<mqtDate>03/23/2020 15:05:29.000</mqtDate>
+			<seqId>31431</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>166.63</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>f41ba15e-2435-4ac4-b85e-1f92c1af264e</orderToken>
+			<jitFundingToken>4c46aa68-b02f-4182-a396-626163250be3</jitFundingToken>
+			<gpaOrderToken>80fc1a95-e721-4c75-9130-71703233c93d</gpaOrderToken>
+			<gpaTrxnToken>c15e2029-7080-4025-9b94-5fc9176ff63f</gpaTrxnToken>
+			<descr>IN *WTT, LLC MID=219040000207048 ?MCC=5983</descr>
+			<category>Fuel Dealers (Non Automotive)</category>
+			<cpty>
+				<mid>219040000207048</mid>
+				<mcc>5983</mcc>
+				<name>IN *WTT, LLC</name>
+				<city>WICHITA</city>
+				<state>20</state>
+				<zipCode>672194204</zipCode>
+				<country>US</country>
+				<mccDescr>Fuel Dealers (Non Automotive)</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>354F75C6B355CE43</id>
+			<recDate>03/24/2020</recDate>
+			<sysDate>03/24/2020 11:41:31.782</sysDate>
+			<effDate>03/24/2020 11:41:31.782</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/24/2020 06:41:31.827</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>166.63</fundedAmount>
+			<paybackAmount>183.29</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>1.84</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.04476</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9E71C4D81132A98C</id>
+			<tid>354F75C6B355CE43</tid>
+			<cid>33269</cid>
+			<srce>payment</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/24/2020</fundDate>
+			<fundedAmount>166.63</fundedAmount>
+			<paybackAmount>183.29</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>1.84</collDailyAmt>
+			<firstDate>03/25/2020</firstDate>
+			<lastDate>03/26/2020</lastDate>
+			<daysOpen>3</daysOpen>
+			<isBusDay>true</isBusDay>
+			<dayPymtCnt>1</dayPymtCnt>
+			<dayPymtAmt>1.84072</dayPymtAmt>
+			<uncPymtCnt>2</uncPymtCnt>
+			<uncPymtVal>3.68145</uncPymtVal>
+			<totPerfAmt>5.52</totPerfAmt>
+			<totPerfGap>1.83855</totPerfGap>
+			<totCollAmt>3.68145</totCollAmt>
+			<totCollPnt>0.02209</totCollPnt>
+			<trxnBal>163.2805</trxnBal>
+			<currentBal>163.2805</currentBal>
+			<balToDone>179.60855</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>54D5F36ABD90D34B</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 05:47:57.259</sysDate>
+			<effDate>03/25/2020 05:47:57.855</effDate>
+			<mqtDate>03/25/2020 04:47:56.000</mqtDate>
+			<seqId>31449</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsPending</status>
+			<reason>APPROVED</reason>
+			<amount>113.58</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>ee7e4810-36ba-48c3-bff2-5ecf0a161684</orderToken>
+			<jitFundingToken>1febabfe-77fd-42cd-b9c9-653a82579842</jitFundingToken>
+			<gpaOrderToken>29ac04d4-516a-4a25-9a6e-e410ab0fb940</gpaOrderToken>
+			<gpaTrxnToken>4a5c2937-e39f-4511-889b-108210ca2c3d</gpaTrxnToken>
+			<descr>Amazon Payments MID=235251000762203 ?MCC=5942</descr>
+			<category>Book Stores</category>
+			<cpty>
+				<mid>235251000762203</mid>
+				<mcc>5942</mcc>
+				<name>Amazon Payments</name>
+				<city>Seattle</city>
+				<state>53</state>
+				<zipCode>98104</zipCode>
+				<country>US</country>
+				<mccDescr>Book Stores</mccDescr>
+			</cpty>
+		</trxn>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>3E00A0C868FD20D1</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 09:12:18.672</sysDate>
+			<effDate>03/25/2020 09:12:19.273</effDate>
+			<mqtDate>03/25/2020 08:12:18.000</mqtDate>
+			<seqId>31453</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsPending</status>
+			<reason>APPROVED</reason>
+			<amount>23.84</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>0fe17290-c572-4c69-8760-b0c0ef77de60</orderToken>
+			<jitFundingToken>577340f9-dbb0-43d6-8eab-25af8ba8bb6a</jitFundingToken>
+			<gpaOrderToken>390887d4-5516-4712-b7e5-4c5ac7ff7744</gpaOrderToken>
+			<gpaTrxnToken>693d0418-e1c2-4d46-98a7-946a88aca3d0</gpaTrxnToken>
+			<descr>Amazon Payments MID=235251000762203 ?MCC=5942</descr>
+			<category>Book Stores</category>
+			<cpty>
+				<mid>235251000762203</mid>
+				<mcc>5942</mcc>
+				<name>Amazon Payments</name>
+				<city>Seattle</city>
+				<state>53</state>
+				<zipCode>98104</zipCode>
+				<country>US</country>
+				<mccDescr>Book Stores</mccDescr>
+			</cpty>
+		</trxn>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>7E89997DD653F551</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 21:45:08.357</sysDate>
+			<effDate>03/25/2020 21:45:09.121</effDate>
+			<mqtDate>03/25/2020 20:45:08.000</mqtDate>
+			<seqId>31466</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsPending</status>
+			<reason>APPROVED</reason>
+			<amount>85</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>8dc34ae1-2712-42f7-be0f-81fe204649ee</orderToken>
+			<jitFundingToken>a567661f-bd31-4741-a570-b7f5e9eab68f</jitFundingToken>
+			<gpaOrderToken>faef8b44-5067-43ab-89a7-29a817514dbf</gpaOrderToken>
+			<gpaTrxnToken>85b6970f-6f74-4a29-9e5a-052277943a53</gpaTrxnToken>
+			<descr>ARIZONA CORP COMM MID=000345767446882 ?MCC=9399</descr>
+			<category>Government Services (Not Elsewhere Classified)</category>
+			<cpty>
+				<mid>000345767446882</mid>
+				<mcc>9399</mcc>
+				<name>ARIZONA CORP COMM</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>850070000</zipCode>
+				<country>US</country>
+				<mccDescr>Government Services (Not Elsewhere Classified)</mccDescr>
+			</cpty>
+		</trxn>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>401B40CEA2A3493F</id>
+			<recDate>03/24/2020</recDate>
+			<sysDate>03/24/2020 21:02:09.502</sysDate>
+			<effDate>03/26/2020 11:27:10.960</effDate>
+			<mqtDate>03/24/2020 20:02:09.000</mqtDate>
+			<seqId>31468</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>10.44</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>7d787d86-c30a-4a53-8541-4ec4bbab5361</orderToken>
+			<jitFundingToken>2fe21480-1ad8-405c-b321-5c84abd9ee92</jitFundingToken>
+			<gpaOrderToken>2c0b4b4b-fce9-41b2-bbef-6db16bc0c6a5</gpaOrderToken>
+			<gpaTrxnToken>27bc4dfb-1452-4bf0-bb52-6434048757f1</gpaTrxnToken>
+			<descr>BURGER KING #25911 MID=000456206377990 ?MCC=5814</descr>
+			<category>Fast Food Restaurants</category>
+			<cpty>
+				<mid>000456206377990</mid>
+				<mcc>5814</mcc>
+				<name>BURGER KING #25911</name>
+				<city>YUMA</city>
+				<state>04</state>
+				<zipCode>85365</zipCode>
+				<country>US</country>
+				<mccDescr>Fast Food Restaurants</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>401B40CEA2A3493F</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:27:10.892</sysDate>
+			<effDate>03/26/2020 11:27:10.892</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:27:10.942</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>10.44</fundedAmount>
+			<paybackAmount>11.48</paybackAmount>
+			<dailyPmtCnt>96</dailyPmtCnt>
+			<collDailyAmt>0.12</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00292</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>401B40CEA2A3493F</id>
+			<tid>401B40CEA2A3493F</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>10.44</fundedAmount>
+			<paybackAmount>11.48</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.12</collDailyAmt>
+			<trxnBal>10.44</trxnBal>
+			<currentBal>10.44</currentBal>
+			<balToDone>11.48</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>BD23614EAF9DAC27</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 13:31:44.746</sysDate>
+			<effDate>03/26/2020 11:27:19.173</effDate>
+			<mqtDate>03/25/2020 12:31:44.000</mqtDate>
+			<seqId>31469</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>2.69</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>666d12a4-2673-4a32-8793-d84b64c8c692</orderToken>
+			<jitFundingToken>dec4e520-9c2e-4041-9981-3a5cfb9bda03</jitFundingToken>
+			<gpaOrderToken>299d3d6c-97c5-4285-bd6e-84f128a1c2e7</gpaOrderToken>
+			<gpaTrxnToken>4f24c638-19e0-4b3c-8732-917079d44ebb</gpaTrxnToken>
+			<descr>PILOT_00611 MID=25800006114 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>25800006114</mid>
+				<mcc>5541</mcc>
+				<name>PILOT_00611</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85043</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>BD23614EAF9DAC27</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:27:19.110</sysDate>
+			<effDate>03/26/2020 11:27:19.110</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:27:19.157</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>2.69</fundedAmount>
+			<paybackAmount>2.96</paybackAmount>
+			<dailyPmtCnt>99</dailyPmtCnt>
+			<collDailyAmt>0.03</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00073</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>BD23614EAF9DAC27</id>
+			<tid>BD23614EAF9DAC27</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>2.69</fundedAmount>
+			<paybackAmount>2.96</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.03</collDailyAmt>
+			<trxnBal>2.69</trxnBal>
+			<currentBal>2.69</currentBal>
+			<balToDone>2.96</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>1FF0607771B83714</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 05:40:04.116</sysDate>
+			<effDate>03/26/2020 11:43:49.174</effDate>
+			<mqtDate>03/25/2020 04:40:03.000</mqtDate>
+			<seqId>31471</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>204.61</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>36ece34b-474b-4a2d-a2c5-d2bf5bb7643d</orderToken>
+			<jitFundingToken>63585a20-a6e2-4c07-ac44-16eaa2992795</jitFundingToken>
+			<gpaOrderToken>5403829b-7f8e-4c28-a6a1-857b5afbb223</gpaOrderToken>
+			<gpaTrxnToken>b3e9f808-9a6a-496f-80dc-c7c3e53183c6</gpaTrxnToken>
+			<descr>Amazon Payments MID=235251000762203 ?MCC=5942</descr>
+			<category>Book Stores</category>
+			<cpty>
+				<mid>235251000762203</mid>
+				<mcc>5942</mcc>
+				<name>Amazon Payments</name>
+				<city>Seattle</city>
+				<state>53</state>
+				<zipCode>98104</zipCode>
+				<country>US</country>
+				<mccDescr>Book Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>1FF0607771B83714</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:43:49.112</sysDate>
+			<effDate>03/26/2020 11:43:49.112</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:43:49.158</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>204.61</fundedAmount>
+			<paybackAmount>225.07</paybackAmount>
+			<dailyPmtCnt>100</dailyPmtCnt>
+			<collDailyAmt>2.26</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.05498</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>1FF0607771B83714</id>
+			<tid>1FF0607771B83714</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>204.61</fundedAmount>
+			<paybackAmount>225.07</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>2.26</collDailyAmt>
+			<trxnBal>204.61</trxnBal>
+			<currentBal>204.61</currentBal>
+			<balToDone>225.07</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>AEC0ACE84D26D8AC</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 09:14:39.917</sysDate>
+			<effDate>03/26/2020 11:44:10.299</effDate>
+			<mqtDate>03/25/2020 08:14:39.000</mqtDate>
+			<seqId>31472</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>8.69</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>2c11d234-c83c-444c-89a2-db17e0d32c3e</orderToken>
+			<jitFundingToken>495ed12a-23c3-431e-9a9b-b1402e8bfdc6</jitFundingToken>
+			<gpaOrderToken>3b310b4d-10f1-490b-aadc-5306701dd8b7</gpaOrderToken>
+			<gpaTrxnToken>fc209d65-7740-48f5-b488-8f590fa4b92b</gpaTrxnToken>
+			<descr>Amazon Payments MID=235251000762203 ?MCC=5942</descr>
+			<category>Book Stores</category>
+			<cpty>
+				<mid>235251000762203</mid>
+				<mcc>5942</mcc>
+				<name>Amazon Payments</name>
+				<city>Seattle</city>
+				<state>53</state>
+				<zipCode>98104</zipCode>
+				<country>US</country>
+				<mccDescr>Book Stores</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>AEC0ACE84D26D8AC</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:44:10.238</sysDate>
+			<effDate>03/26/2020 11:44:10.238</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:44:10.283</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>8.69</fundedAmount>
+			<paybackAmount>9.56</paybackAmount>
+			<dailyPmtCnt>96</dailyPmtCnt>
+			<collDailyAmt>0.1</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.00243</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>AEC0ACE84D26D8AC</id>
+			<tid>AEC0ACE84D26D8AC</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>8.69</fundedAmount>
+			<paybackAmount>9.56</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.1</collDailyAmt>
+			<trxnBal>8.69</trxnBal>
+			<currentBal>8.69</currentBal>
+			<balToDone>9.56</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>F964AD9C69AFFE5A</id>
+			<recDate>03/24/2020</recDate>
+			<sysDate>03/24/2020 23:04:56.316</sysDate>
+			<effDate>03/26/2020 11:44:34.957</effDate>
+			<mqtDate>03/24/2020 22:04:55.000</mqtDate>
+			<seqId>31474</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>5.75</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>1b300ff0-127d-482c-945c-c42f99f05bdb</orderToken>
+			<jitFundingToken>717af65d-b1c4-477f-811d-28b52ab2446a</jitFundingToken>
+			<gpaOrderToken>48651fa0-80b0-47fb-9477-1d79d7dc01ee</gpaOrderToken>
+			<gpaTrxnToken>f8359b8c-326b-4266-abfa-952f6be061a5</gpaTrxnToken>
+			<descr>SHELL/SHELL MID=57442518304 ?MCC=5541</descr>
+			<category>Service Stations</category>
+			<cpty>
+				<mid>57442518304</mid>
+				<mcc>5541</mcc>
+				<name>SHELL/SHELL</name>
+				<city>GILA BEND</city>
+				<state>04</state>
+				<zipCode>85337</zipCode>
+				<country>US</country>
+				<mccDescr>Service Stations</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>F964AD9C69AFFE5A</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:44:34.890</sysDate>
+			<effDate>03/26/2020 11:44:34.890</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:44:34.939</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>5.75</fundedAmount>
+			<paybackAmount>6.33</paybackAmount>
+			<dailyPmtCnt>91</dailyPmtCnt>
+			<collDailyAmt>0.07</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.0017</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>F964AD9C69AFFE5A</id>
+			<tid>F964AD9C69AFFE5A</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>5.75</fundedAmount>
+			<paybackAmount>6.33</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.07</collDailyAmt>
+			<trxnBal>5.75</trxnBal>
+			<currentBal>5.75</currentBal>
+			<balToDone>6.33</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+	<RevTrxn>
+		<trxn>
+			<id>9846436AD1006FE4</id>
+			<recDate>03/25/2020</recDate>
+			<sysDate>03/25/2020 18:01:07.252</sysDate>
+			<effDate>03/26/2020 11:44:38.146</effDate>
+			<mqtDate>03/25/2020 17:01:06.000</mqtDate>
+			<seqId>31476</seqId>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<contId>0030y00002R5V7mAAF</contId>
+			<acctLast4>1580</acctLast4>
+			<status>ctsCleared</status>
+			<reason>APPROVED</reason>
+			<amount>50</amount>
+			<userName>Sylvia Smith</userName>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<orderToken>a65188b4-a323-434b-bcb1-d41044107f07</orderToken>
+			<jitFundingToken>98075c6a-dab9-4cf4-b73f-783708ad4a5c</jitFundingToken>
+			<gpaOrderToken>1e36bebd-79e0-41d5-9f6c-4f4c66148aac</gpaOrderToken>
+			<gpaTrxnToken>5cf061cb-28c4-40a5-827f-614d3e97493d</gpaTrxnToken>
+			<descr>DV TOWING - PHOENIX MID=912200181719120 ?MCC=7549</descr>
+			<category>Towing Services</category>
+			<cpty>
+				<mid>912200181719120</mid>
+				<mcc>7549</mcc>
+				<name>DV TOWING - PHOENIX</name>
+				<city>PHOENIX</city>
+				<state>04</state>
+				<zipCode>85085</zipCode>
+				<country>US</country>
+				<mccDescr>Towing Services</mccDescr>
+			</cpty>
+		</trxn>
+		<funding>
+			<id>9846436AD1006FE4</id>
+			<recDate>03/26/2020</recDate>
+			<sysDate>03/26/2020 11:44:38.079</sysDate>
+			<effDate>03/26/2020 11:44:38.079</effDate>
+			<cid>33269</cid>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<legalName>G.J.H. MECHANICS LLC</legalName>
+			<fundDate>03/26/2020 06:44:38.128</fundDate>
+			<factorPnt>1.1</factorPnt>
+			<repoPnt>1.05</repoPnt>
+			<daysGrace>22</daysGrace>
+			<fundedAmount>50</fundedAmount>
+			<paybackAmount>55</paybackAmount>
+			<dailyPmtCnt>99</dailyPmtCnt>
+			<collDailyAmt>0.56</collDailyAmt>
+			<avgMonthRev>86322</avgMonthRev>
+			<withholdPnt>0.01362</withholdPnt>
+		</funding>
+		<fundingStmt>
+			<id>9846436AD1006FE4</id>
+			<tid>9846436AD1006FE4</tid>
+			<cid>33269</cid>
+			<srce>funding</srce>
+			<oppId>0060y00001D8L1dAAF</oppId>
+			<acctId>0010L00001vaBCHQA2</acctId>
+			<cardId>0060y00001D8L1dAAF-P01</cardId>
+			<acctLast4>1580</acctLast4>
+			<sysDate>03/26/2020</sysDate>
+			<fundDate>03/26/2020</fundDate>
+			<fundedAmount>50</fundedAmount>
+			<paybackAmount>55</paybackAmount>
+			<factorPnt>1.1</factorPnt>
+			<collDailyAmt>0.56</collDailyAmt>
+			<trxnBal>50</trxnBal>
+			<currentBal>50</currentBal>
+			<balToDone>55</balToDone>
+		</fundingStmt>
+	</RevTrxn>
+</array>

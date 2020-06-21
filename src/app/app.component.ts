@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from './auth/auth.service';
 import { Router } from '@angular/router';
-
+import { environment } from '../environments/environment'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'revcarddev';
-  constructor(public router:Router){}
+  constructor(public router:Router){
+    console.log("Environment",environment)
+  }
   
 }

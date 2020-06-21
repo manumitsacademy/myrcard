@@ -26,7 +26,6 @@ export class AccountsummaryComponent implements OnInit {
       });
     })
     this.accountService.getAccountSummary().subscribe((res)=>{
-      console.log("Account Summary new",res)
         this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;   
         this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
         //

@@ -47,7 +47,6 @@ export class DashboardComponent implements OnInit {
   idletimeout:any;
   confirmBoxTimeout:any;
   autologout(){
-      console.log("autologout")
         clearTimeout(this.idletimeout)
         this.idletimeout =  setTimeout(()=>{
                           this.childModal.show();

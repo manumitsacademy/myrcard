@@ -20,7 +20,6 @@ export class MinistatementComponent implements OnInit {
         this.ministatement = result['ARRAY']['REVTRXN'].sort((a,b)=>{
           return a.TRXN[0].RECDATE[0]>b.TRXN[0].RECDATE[0]?-1:1;
         }).slice(0,10);  
-        console.log(this.ministatement);
       });
     })
   }

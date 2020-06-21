@@ -36,7 +36,6 @@ export class TransactionhistoryComponent implements OnInit {
           return a.TRXN[0].RECDATE[0]>b.TRXN[0].RECDATE[0]?-1:1;
         });  
         this.currentTransactions = this.transactionHistory.slice(0,20);
-        console.log("transactionHistory:::",this.transactionHistory);
         //(Payback Amount) revtrxn.fundingstmnt.paybackAmount        
         //(Paid Amount) revtrxn.fundingstmnt.totCollAmt
         //--------------------------------------m -------
@@ -47,7 +46,6 @@ export class TransactionhistoryComponent implements OnInit {
     this.accountService.getSummary().subscribe((res)=>{
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(res, (err, result) => {
-        console.log("REVACCOUNTSUMMARY:",result.REVACCOUNTSUMMARY)
         var spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
         var discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].UNCLEAREDBAL[0];
         var pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
@@ -66,12 +64,10 @@ export class TransactionhistoryComponent implements OnInit {
   }
   //TRXN[0].RECDATE[0]
   searchHistory(){
-    console.log("searching...");
     this.currentTransactions=this.transactionHistory.filter((t,i)=>{
       var temp = JSON.stringify(t).toUpperCase();
       return temp.includes(this.searchKey.toUpperCase())
     })
-    console.log("currentTransactions",this.currentTransactions)
   }
   gotoaccount(){
     this.router.navigate(['/dashboard']);
