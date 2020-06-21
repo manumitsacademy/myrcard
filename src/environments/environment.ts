@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  xyz:'its not production'
+  buildname:'its in development',
+  soapBase:'http://localhost:3400/'
 };
 
 /*
