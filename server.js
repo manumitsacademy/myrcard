@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 var soap = require('strong-soap').soap;
 const cors = require('cors');
-app.use(cors())
+app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
 app.get("/accountsummary", function (req, res, next) {
     var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
@@ -53,4 +53,4 @@ app.get('/*', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
 });
 // Start the app by listening on the default Heroku port
-app.listen(3400,()=>{console.log("server running on 3400")});
+app.listen(process.env.PORT || 8080);
