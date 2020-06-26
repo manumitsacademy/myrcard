@@ -5,12 +5,14 @@ var soap = require('strong-soap').soap;
 const cors = require('cors');
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
+ var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
+    var date = new Date();
+    var sysDate = (+(date.getUTCMonth()))+1+"/"+(+date.getDate()-1)+"/"+date.getFullYear();
 app.get("/accountsummary", function (req, res, next) {
-    var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
-
+    console.log(process.env)
     var requestArgs = {
         oppId: '0060y00001D8L1dAAF',
-        sysDate: '5/29/2020',
+        sysDate,
         sessionId: '?'
     };
 
@@ -23,7 +25,8 @@ app.get("/accountsummary", function (req, res, next) {
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetAcctSummary'];
         method(requestArgs, function (err, result, envelope, soapHeader) {
-            res.send(result);
+            res.send(process.env)
+            //res.send(result);
         }, null , customRequestHeader);
     });
 });
@@ -32,7 +35,7 @@ app.get("/transactionhistory", function (req, res, next) {
 
     var requestArgs = {
         oppId: '0060y00001D8L1dAAF',
-        sysDate: '5/29/2020',
+        sysDate,
         sessionId: '?'
     };
 

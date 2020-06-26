@@ -47,13 +47,13 @@
                             <tbody>
                                 <tr *ngFor="let transaction of ministatement">
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                        <span>{{transaction.TRXN[0].RECDATE[0]}}</span>
+                                        <span>{{transaction.trxn.recDate}}</span>
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].ID[0]}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.id}}
                                     </td>
-                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right">{{transaction.TRXN[0].AMOUNT[0]|currency}}
+                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right">{{transaction.trxn.amount|currency}}
                                     </td>
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         &nbsp;

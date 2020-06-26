@@ -20,17 +20,17 @@ export class AccountService {
   getAccountSummary(){
     return this.http.get(`${environment.soapBase}accountsummary`)
   }
-  getTransactionHistorySoap(){
+  getTransactionHistory(){
     return this.http.get(`${environment.soapBase}transactionhistory`)
   }
-  getTransactionHistory(){
-    return this.http.get("/assets/history.xml",{  
-      headers: new HttpHeaders()  
-        .set('Content-Type', 'text/xml')  
-        .append('Access-Control-Allow-Methods', 'GET')  
-        .append('Access-Control-Allow-Origin', '*')  
-        .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),  
-      responseType: 'text'  
-    })
-  }
+  // getTransactionHistory(){
+  //   return this.http.get("/assets/history.xml",{  
+  //     headers: new HttpHeaders()  
+  //       .set('Content-Type', 'text/xml')  
+  //       .append('Access-Control-Allow-Methods', 'GET')  
+  //       .append('Access-Control-Allow-Origin', '*')  
+  //       .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),  
+  //     responseType: 'text'  
+  //   })
+  // }
 }

@@ -19,13 +19,17 @@ export class AccountsummaryComponent implements OnInit {
   transactionHistory:any;
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res)=>{
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(res, (err, result) => {
-        // console.log(result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0])
-        this.accountLast=result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0];        
-      });
+      
+      this.accountLast=res['Result'].array.RevTrxn[0].trxn.acctLast4;        
+
+      // const parser = new xml2js.Parser({ strict: false, trim: true });
+      // parser.parseString(res, (err, result) => {
+      //   // console.log(result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0])
+      //   this.accountLast=result['ARRAY']['REVTRXN'][0].TRXN[0].ACCTLAST4[0];        
+      // });
     })
     this.accountService.getAccountSummary().subscribe((res)=>{
+      console.log("Acc summ",res)
         this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;   
         this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
         //

@@ -53,15 +53,15 @@
                     <tbody>
                         <tr *ngFor="let transaction of currentTransactions">
                             <td style="padding: 10px;" class="textwidget custom-html-widget">
-                                <span>{{transaction.TRXN[0].RECDATE[0]|date}}</span>
+                                <span>{{transaction.trxn.recDate|date}}</span>
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.TRXN[0].CPTY[0].NAME[0]}}
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
                             </td>                
-                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget">{{(transaction.FUNDINGSTMT?transaction.FUNDINGSTMT[0].BALTODONE[0]:0.00)|number:'1.2-2'|currency}}
+                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget">{{(transaction.fundingStmt?transaction.fundingStmt.balToDone:0.00)|number:'1.2-2'|currency}}
                                
                             </td>
                             <td style="padding: 10px;">
-                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.FUNDINGSTMT?transaction.FUNDINGSTMT[0]:null"></i>
+                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.fundingStmt?transaction.functingStmt:null"></i>
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
                                 <a routerLink="/dashboard/default"  style="cursor:pointer;">

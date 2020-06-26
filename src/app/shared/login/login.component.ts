@@ -25,7 +25,12 @@ export class LoginComponent implements OnInit {
   login(){
     this.http.post("https://revcard.herokuapp.com/api/v1/loginUser",this.loginForm.value)
     .subscribe((res)=>{
+      console.log("authentication",res)
       if(res){
+        const headers = { 'Authorization': 'Bearer '+res['id_token'] }
+        this.http.post("https://revcard.herokuapp.com/api/v1/getUserDetails",{email:this.loginForm['email']},{
+          headers
+        }).subscribe((details)=>{console.log(details)})
         window.localStorage.setItem('token',JSON.stringify(res))
         this.router.navigate(["/dashboard"])
       }else{
