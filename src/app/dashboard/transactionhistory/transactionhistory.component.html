@@ -2,16 +2,16 @@
 <ng-template #popTemplate >
     <div class="row no-gutters mb-2 d-flex justify-content-between">
         <div class=" left_tt"> Payback Amount:</div>
-        <div class=" text-right right_tt"> {{(popoverInfo?popoverInfo.PAYBACKAMOUNT[0]:0.00)|number:'1.2-2'|currency}}</div>
+        <div class=" text-right right_tt"> {{(popoverInfo?popoverInfo.paybackAmount:0.00)|number:'1.2-2'|currency}}</div>
     </div>
     <div class="row no-gutters mb-2 d-flex justify-content-between">
         <div class=" left_tt"> Collected Amount:</div>
-        <div class=" text-right right_tt"> {{((popoverInfo && popoverInfo.TOTCOLLAMT)?popoverInfo.TOTCOLLAMT[0]:0.00)|number:'1.2-2'|currency}}</div>
+        <div class=" text-right right_tt"> {{((popoverInfo && popoverInfo.totCollAmt)?popoverInfo.totCollAmt[0]:0.00)|number:'1.2-2'|currency}}</div>
     </div>
     <div class="dropdown-divider"></div>
     <div class="row no-gutters d-flex justify-content-between">
         <div class=" total_bal">Balance Amount:</div>
-        <div class=" text-right total_bal"> {{((popoverInfo && popoverInfo.BALTODONE)?popoverInfo.BALTODONE[0]:0.00)|number:'1.2-2'|currency}}</div>
+        <div class=" text-right total_bal"> {{((popoverInfo && popoverInfo.balToDone)?popoverInfo.balToDone:0.00)|number:'1.2-2'|currency}}</div>
     </div>
 </ng-template>
 
@@ -57,11 +57,11 @@
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
                             </td>                
-                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget">{{(transaction.fundingStmt?transaction.fundingStmt.balToDone:0.00)|number:'1.2-2'|currency}}
+                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}
                                
                             </td>
                             <td style="padding: 10px;">
-                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.fundingStmt?transaction.functingStmt:null"></i>
+                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="bottom" [popoverTitle]="'INFO'" (mouseenter)="popoverInfo=transaction.fundingStmt?transaction.fundingStmt:null"></i>
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
                                 <a routerLink="/dashboard/default"  style="cursor:pointer;">
