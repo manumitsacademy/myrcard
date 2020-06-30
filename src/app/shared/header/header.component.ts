@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
   }
   divbg="bluebackground1";
   signout(){
-    var res = window.confirm("Do you want to Signout")
+    var res = window.confirm("Are you Sure!")
     if(res){
       window.localStorage.removeItem('token');
       this.router.navigate(['/login'])

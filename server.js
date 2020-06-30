@@ -5,23 +5,23 @@ var soap = require('strong-soap').soap;
 const cors = require('cors');
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
- var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
+ var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";//fetch from heroku variables
     var date = new Date();
     var sysDate = (+(date.getUTCMonth()))+1+"/"+(+date.getDate()-1)+"/"+date.getFullYear();
+    //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
 app.get("/accountsummary", function (req, res, next) {
     console.log(process.env)
     var requestArgs = {
-        oppId: '0060y00001D8L1dAAF',
+        oppId: '0060y00001D8L1dAAF',//get it from the user
         sysDate,
         sessionId: '?'
     };
-
     var options = {};
 
     soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
-            "Authorization":process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
+            "Authorization": process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetAcctSummary'];
         method(requestArgs, function (err, result, envelope, soapHeader) {
