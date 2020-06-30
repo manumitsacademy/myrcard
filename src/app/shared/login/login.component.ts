@@ -30,9 +30,13 @@ export class LoginComponent implements OnInit {
         const headers = { 'Authorization': 'Bearer '+res['id_token'] }
         this.http.post("https://revcard.herokuapp.com/api/v1/getUserDetails",{email:this.loginForm['email']},{
           headers
-        }).subscribe((details)=>{console.log(details)})
-        window.localStorage.setItem('token',JSON.stringify(res))
-        this.router.navigate(["/dashboard"])
+        }).subscribe((details)=>{
+          window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
+          window.localStorage.setItem('token',JSON.stringify(res))
+          this.router.navigate(["/dashboard"])
+          console.log(details)
+        })
+        
       }else{
         this.failedLogin=true;
       }

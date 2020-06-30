@@ -18,10 +18,12 @@ export class AccountService {
     })
   }
   getAccountSummary(){
-    return this.http.get(`${environment.soapBase}accountsummary`)
+    var oppId = window.localStorage.getItem('oppId')
+    return this.http.get(`${environment.soapBase}accountsummary/${oppId}`)
   }
   getTransactionHistory(){
-    return this.http.get(`${environment.soapBase}transactionhistory`)
+    var oppId = window.localStorage.getItem('oppId')
+    return this.http.get(`${environment.soapBase}transactionhistory/${oppId}`)
   }
   // getTransactionHistory(){
   //   return this.http.get("/assets/history.xml",{  

@@ -1,18 +1,24 @@
 const path = require("path");
 const express = require("express");
 const app = express();
+var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json
+app.use(bodyParser.json())
 const cors = require('cors');
+
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
- var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";//fetch from heroku variables
+ var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";//fetch from heroku variables
     var date = new Date();
     var sysDate = (+(date.getUTCMonth()))+1+"/"+(+date.getDate()-1)+"/"+date.getFullYear();
     //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
-app.get("/accountsummary", function (req, res, next) {
-    console.log(process.env)
+app.get("/accountsummary/:oppId", function (req, res, next) {
+    console.log(req.params);
     var requestArgs = {
-        oppId: '0060y00001D8L1dAAF',//get it from the user
+        oppId: req.params.oppId,
         sysDate,
         sessionId: '?'
     };
@@ -29,11 +35,11 @@ app.get("/accountsummary", function (req, res, next) {
         }, null , customRequestHeader);
     });
 });
-app.get("/transactionhistory", function (req, res, next) {
+app.get("/transactionhistory/:oppId", function (req, res, next) {
     var url = "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
-
+    console.log(req.params);
     var requestArgs = {
-        oppId: '0060y00001D8L1dAAF',
+        oppId: req.params.oppId,
         sysDate,
         sessionId: '?'
     };
