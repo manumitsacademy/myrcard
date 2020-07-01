@@ -23,7 +23,6 @@ app.get("/accountsummary/:oppId", function (req, res, next) {
         sessionId: '?'
     };
     var options = {};
-
     soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
