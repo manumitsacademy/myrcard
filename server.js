@@ -11,9 +11,9 @@ const cors = require('cors');
 
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
- var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";//fetch from heroku variables
+ var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
-    var sysDate = (+(date.getUTCMonth()))+1+"/"+(+date.getDate()-1)+"/"+date.getFullYear();
+    var sysDate = date.getTime()-(24*60*60*1000);
     //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
 app.get("/accountsummary/:oppId", function (req, res, next) {
     console.log(req.params);
