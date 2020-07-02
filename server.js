@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
-    var sysDate = date.getTime()-(24*60*60*1000);
+    var sysDate = date.getTime();
     //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
 app.get("/accountsummary/:oppId", function (req, res, next) {
     console.log(req.params);
@@ -29,9 +29,18 @@ app.get("/accountsummary/:oppId", function (req, res, next) {
             "Authorization": process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetAcctSummary'];
-        method(requestArgs, function (err, result, envelope, soapHeader) {
-            res.send(result);
-        }, null , customRequestHeader);
+        if(err){
+            method({...requestArgs,sysDate:sysDate-(24*60*60*1000)}, function (err, result, envelope, soapHeader) {
+                res.send(result);
+            }, null , customRequestHeader);
+        }
+        else{
+            
+            method(requestArgs, function (err, result, envelope, soapHeader) {
+                res.send(result);
+            }, null , customRequestHeader);
+        }
+        
     });
 });
 app.get("/transactionhistory/:oppId", function (req, res, next) {
@@ -51,9 +60,18 @@ app.get("/transactionhistory/:oppId", function (req, res, next) {
             "Authorization":"UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetTrxnHistory'];
-        method(requestArgs, function (err, result, envelope, soapHeader) {
-            res.send(result);
-        }, null , customRequestHeader);
+       
+        if(err){
+            method({...requestArgs,sysDate:sysDate-(24*60*60*1000)}, function (err, result, envelope, soapHeader) {
+                res.send(result);
+            }, null , customRequestHeader);
+        }
+        else{
+            
+            method(requestArgs, function (err, result, envelope, soapHeader) {
+                res.send(result);
+            }, null , customRequestHeader);
+        }
     });
 });
 app.get('/*', function(req,res){
