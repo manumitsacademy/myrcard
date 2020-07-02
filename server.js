@@ -57,7 +57,7 @@ app.get("/transactionhistory/:oppId", function (req, res, next) {
     soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
-            "Authorization":"UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
+            "Authorization":process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetTrxnHistory'];
        
