@@ -19,11 +19,12 @@ export class AccountService {
   }
   getAccountSummary(){
     var oppId = window.localStorage.getItem('oppId')
-    return this.http.get(`${environment.soapBase}accountsummary/${oppId}`)
+    
+    return this.http.get(`/accountsummary/${oppId}`)
   }
   getTransactionHistory(){
     var oppId = window.localStorage.getItem('oppId')
-    return this.http.get(`${environment.soapBase}transactionhistory/${oppId}`)
+    return this.http.get(`/transactionhistory/${oppId}`)
   }
   // getTransactionHistory(){
   //   return this.http.get("/assets/history.xml",{  

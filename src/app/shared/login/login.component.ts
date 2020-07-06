@@ -21,28 +21,31 @@ export class LoginComponent implements OnInit {
   loginForm:FormGroup;
   loginurl:string;
   ngOnInit() {
-    this.http.get("/herokuvars").subscribe((res)=>{
-      this.loginurl=res['authURL'];
-    })
+   
   }
   login(){
-    this.http.post(`${this.loginurl}v1/loginUser`,this.loginForm.value)
-    .subscribe((res)=>{
-      console.log("authentication",res)
-      if(res){
-        const headers = { 'Authorization': 'Bearer '+res['id_token'] }
-        this.http.post(`${this.loginurl}v1/getUserDetails`,{email:this.loginForm['email']},{
-          headers
-        }).subscribe((details)=>{
-          window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
-          window.localStorage.setItem('token',JSON.stringify(res))
-          this.router.navigate(["/dashboard"])
-          console.log(details)
-        })
-        
-      }else{
-        this.failedLogin=true;
-      }
+    this.http.get("/getAuthUrl").toPromise().then((res)=>{
+      console.log(res)
+      var loginurl=res['authUrl'];
+      this.http.post(`${loginurl}v1/loginUser`,this.loginForm.value)
+      .subscribe((res)=>{
+        console.log("authentication",res)
+        if(res){
+          const headers = { 'Authorization': 'Bearer '+res['id_token'] }
+          this.http.post(`${loginurl}v1/getUserDetails`,{email:this.loginForm['email']},{
+            headers
+          }).subscribe((details)=>{
+            window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
+            window.localStorage.setItem('token',JSON.stringify(res))
+            this.router.navigate(["/dashboard"])
+            console.log(details)
+          })
+          
+        }else{
+          this.failedLogin=true;
+        }
+      })
     })
+    
   }
 }
