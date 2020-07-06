@@ -19,16 +19,19 @@ export class LoginComponent implements OnInit {
   }
   failedLogin=false;
   loginForm:FormGroup;
+  loginurl:string;
   ngOnInit() {
-    
+    this.http.get("/herokuvars").subscribe((res)=>{
+      this.loginurl=res['authURL'];
+    })
   }
   login(){
-    this.http.post("https://revcard.herokuapp.com/api/v1/loginUser",this.loginForm.value)
+    this.http.post(`${this.loginurl}v1/loginUser`,this.loginForm.value)
     .subscribe((res)=>{
       console.log("authentication",res)
       if(res){
         const headers = { 'Authorization': 'Bearer '+res['id_token'] }
-        this.http.post("https://revcard.herokuapp.com/api/v1/getUserDetails",{email:this.loginForm['email']},{
+        this.http.post(`${this.loginurl}v1/getUserDetails`,{email:this.loginForm['email']},{
           headers
         }).subscribe((details)=>{
           window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)

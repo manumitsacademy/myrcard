@@ -8,13 +8,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 const cors = require('cors');
-
+var herokuenvs = process.env || {authUrl:"https://revcard.herokuapp.com/api/"}
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
     //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
+app.get("/herokuvars",(req,res)=>{
+    res.send(process.env)
+})
 app.get("/accountsummary/:oppId", function (req, res, next) {
     console.log(req.params);
     var requestArgs = {
