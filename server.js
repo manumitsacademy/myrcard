@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 const cors = require('cors');
-var herokuenvs = process.env || {authUrl:"https://revcard.herokuapp.com/api/"}
+var herokuenvs = {authUrl:process.env.authUrl} || {authUrl:"https://revcard.herokuapp.com/api/"}
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
