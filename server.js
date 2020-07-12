@@ -19,7 +19,7 @@ app.get("/getAuthUrl",(req,res)=>{
     res.send({authUrl:authUrl})
 })
 app.get("/accountsummary/:oppId", function (req, res, next) {
-    console.log(req.params);
+    console.log("account summary ",req.params);
     var requestArgs = {
         oppId: req.params.oppId,
         sysDate,
