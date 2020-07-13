@@ -844,19 +844,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
-    /* harmony import */
-
-
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ../environments/environment */
-    "./src/environments/environment.ts");
 
     var AppComponent = function AppComponent(router) {
       _classCallCheck(this, AppComponent);
 
       this.router = router;
       this.title = 'revcarddev';
-      console.log("Environment", _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"]);
     };
 
     AppComponent.ctorParameters = function () {
@@ -1478,11 +1471,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this2 = this;
 
           this.accountService.getTransactionHistory().subscribe(function (res) {
-            console.log("header ", res);
-            _this2.legalName = res['Result'].array.RevTrxn[0].trxn.legalName; // const parser = new xml2js.Parser({ strict: false, trim: true });
-            // parser.parseString(res, (err, result) => {
-            //   this.legalName=result['ARRAY']['REVTRXN'][0].TRXN[0].LEGALNAME[0];        
-            // });
+            _this2.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
           });
         }
       }, {
@@ -1624,12 +1613,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this3 = this;
 
           this.http.get("/getAuthUrl").toPromise().then(function (res) {
-            console.log(res);
             var loginurl = res['authUrl'];
 
             _this3.http.post("".concat(loginurl, "v1/loginUser"), _this3.loginForm.value).subscribe(function (res) {
-              console.log("authentication", res);
-
               if (res) {
                 var headers = {
                   'Authorization': 'Bearer ' + res['id_token']
@@ -1644,8 +1630,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                   window.localStorage.setItem('token', JSON.stringify(res));
 
                   _this3.router.navigate(["/dashboard"]);
-
-                  console.log(details);
                 });
               } else {
                 _this3.failedLogin = true;

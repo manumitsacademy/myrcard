@@ -554,7 +554,6 @@ let MinistatementComponent = class MinistatementComponent {
     ngOnInit() {
         this.accountService.getTransactionHistory().subscribe((res) => {
             res = JSON.parse(res);
-            console.log(res);
             this.ministatement = res['Result'].array.RevTrxn.sort((a, b) => {
                 return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
             }).slice(0, 10);
@@ -682,35 +681,12 @@ let TransactionhistoryComponent = class TransactionhistoryComponent {
         this.bsRangeValue = [this.bsValue, this.maxDate];
         this.accountService.getTransactionHistory().subscribe((res) => {
             res = JSON.parse(res);
-            console.log("trxn his", res);
             this.transactionHistoryLength = res['Result'].array.RevTrxn.length;
             this.transactionHistory = res['Result'].array.RevTrxn.sort((a, b) => {
                 return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
             });
             this.currentTransactions = this.transactionHistory.slice(0, 20);
-            // const parser = new xml2js.Parser({ strict: false, trim: true });
-            // parser.parseString(res, (err, result) => {
-            //   // console.log(result['ARRAY']['REVTRXN'])
-            //   this.transactionHistoryLength = result['ARRAY']['REVTRXN'].length;
-            //   this.transactionHistory = result['ARRAY']['REVTRXN'].sort((a,b)=>{
-            //     return a.TRXN[0].RECDATE[0]>b.TRXN[0].RECDATE[0]?-1:1;
-            //   });  
-            //   this.currentTransactions = this.transactionHistory.slice(0,20);
-            //   //(Payback Amount) revtrxn.fundingstmnt.paybackAmount        
-            //   //(Paid Amount) revtrxn.fundingstmnt.totCollAmt
-            //   //--------------------------------------m -------
-            //   //(Remaining Amount) revtrxn.fundingstmnt.balToDone
-            // });
         });
-        // this.accountService.getSummary().subscribe((res)=>{
-        //   const parser = new xml2js.Parser({ strict: false, trim: true });
-        //   parser.parseString(res, (err, result) => {
-        //     var spendingLimit=result.REVACCOUNTSUMMARY.LIMIT[0].MAXTRXNAMT[0];   
-        //     var discountedBalance = result.REVACCOUNTSUMMARY.SUMMARY[0].UNCLEAREDBAL[0];
-        //     var pendingAmount = result.REVACCOUNTSUMMARY.SUMMARY[0].PENDINGBAL[0]; 
-        //     this.spendingAvailability = spendingLimit-discountedBalance-pendingAmount;         
-        //   });
-        // })
     }
     onDateChange($event) {
         if (this.transactionHistory) {
@@ -720,7 +696,6 @@ let TransactionhistoryComponent = class TransactionhistoryComponent {
             });
         }
     }
-    //TRXN[0].RECDATE[0]
     searchHistory() {
         this.currentTransactions = this.transactionHistory.filter((t, i) => {
             var temp = JSON.stringify(t).toUpperCase();

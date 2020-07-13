@@ -15,7 +15,6 @@ export class MinistatementComponent implements OnInit {
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res)=>{
       res=JSON.parse(res);
-      console.log(res)
       this.ministatement = res['Result'].array.RevTrxn.sort((a,b)=>{
         return a.trxn.recDate>b.trxn.recDate?-1:1;
       }).slice(0,10)

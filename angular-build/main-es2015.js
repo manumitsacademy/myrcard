@@ -392,8 +392,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-
 
 
 
@@ -401,7 +399,6 @@ let AppComponent = class AppComponent {
     constructor(router) {
         this.router = router;
         this.title = 'revcarddev';
-        console.log("Environment", _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"]);
     }
 };
 AppComponent.ctorParameters = () => [
@@ -776,12 +773,7 @@ let HeaderComponent = class HeaderComponent {
     }
     ngOnInit() {
         this.accountService.getTransactionHistory().subscribe((res) => {
-            console.log("header ", res);
             this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
-            // const parser = new xml2js.Parser({ strict: false, trim: true });
-            // parser.parseString(res, (err, result) => {
-            //   this.legalName=result['ARRAY']['REVTRXN'][0].TRXN[0].LEGALNAME[0];        
-            // });
         });
     }
     signout() {
@@ -860,11 +852,9 @@ let LoginComponent = class LoginComponent {
     }
     login() {
         this.http.get("/getAuthUrl").toPromise().then((res) => {
-            console.log(res);
             var loginurl = res['authUrl'];
             this.http.post(`${loginurl}v1/loginUser`, this.loginForm.value)
                 .subscribe((res) => {
-                console.log("authentication", res);
                 if (res) {
                     const headers = { 'Authorization': 'Bearer ' + res['id_token'] };
                     this.http.post(`${loginurl}v1/getUserDetails`, { email: this.loginForm['email'] }, {
@@ -873,7 +863,6 @@ let LoginComponent = class LoginComponent {
                         window.localStorage.setItem('oppId', details['app_metadata'].opportunityId);
                         window.localStorage.setItem('token', JSON.stringify(res));
                         this.router.navigate(["/dashboard"]);
-                        console.log(details);
                     });
                 }
                 else {

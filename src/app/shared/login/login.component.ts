@@ -25,11 +25,9 @@ export class LoginComponent implements OnInit {
   }
   login(){
     this.http.get("/getAuthUrl").toPromise().then((res)=>{
-      console.log(res)
       var loginurl=res['authUrl'];
       this.http.post(`${loginurl}v1/loginUser`,this.loginForm.value)
       .subscribe((res)=>{
-        console.log("authentication",res)
         if(res){
           const headers = { 'Authorization': 'Bearer '+res['id_token'] }
           this.http.post(`${loginurl}v1/getUserDetails`,{email:this.loginForm['email']},{
@@ -38,7 +36,6 @@ export class LoginComponent implements OnInit {
             window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
             window.localStorage.setItem('token',JSON.stringify(res))
             this.router.navigate(["/dashboard"])
-            console.log(details)
           })
           
         }else{

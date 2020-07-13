@@ -10,7 +10,6 @@ import { environment } from '../environments/environment'
 export class AppComponent {
   title = 'revcarddev';
   constructor(public router:Router){
-    console.log("Environment",environment)
   }
   
 }
