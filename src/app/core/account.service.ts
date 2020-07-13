@@ -42,15 +42,5 @@ export class AccountService {
         .append('Authorization', 'Bearer '+idToken),      
       responseType: 'text' as 'json'  
     })
-  }
-  // getTransactionHistory(){
-  //   return this.http.get("/assets/history.xml",{  
-  //     headers: new HttpHeaders()  
-  //       .set('Content-Type', 'text/xml')  
-  //       .append('Access-Control-Allow-Methods', 'GET')  
-  //       .append('Access-Control-Allow-Origin', '*')  
-  //       .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),  
-  //     responseType: 'text'  
-  //   })
-  // }
+  }  
 }
