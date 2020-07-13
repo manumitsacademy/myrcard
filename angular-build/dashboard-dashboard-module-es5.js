@@ -304,7 +304,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
           });
           this.accountService.getAccountSummary().subscribe(function (res) {
-            console.log("Acc summ", res);
+            res = JSON.parse(res);
             _this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;
             _this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
             _this.pendingAmount = res['Result'].RevAccountSummary.summary.pendingBal;
@@ -983,6 +983,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this4 = this;
 
           this.accountService.getTransactionHistory().subscribe(function (res) {
+            res = JSON.parse(res);
             console.log(res);
             _this4.ministatement = res['Result'].array.RevTrxn.sort(function (a, b) {
               return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
@@ -1200,6 +1201,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.maxDate.setDate(this.maxDate.getDate() + 7);
           this.bsRangeValue = [this.bsValue, this.maxDate];
           this.accountService.getTransactionHistory().subscribe(function (res) {
+            res = JSON.parse(res);
             console.log("trxn his", res);
             _this6.transactionHistoryLength = res['Result'].array.RevTrxn.length;
             _this6.transactionHistory = res['Result'].array.RevTrxn.sort(function (a, b) {

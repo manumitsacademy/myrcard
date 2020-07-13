@@ -1,6 +1,7 @@
 const path = require("path");
 const express = require("express");
 const app = express();
+const http = require('http');
 var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
 // parse application/x-www-form-urlencoded
@@ -18,8 +19,37 @@ app.use(express.static(__dirname + '/angular-build'));
 app.get("/getAuthUrl",(req,res)=>{
     res.send({authUrl:authUrl})
 })
+app.use((req,res,next)=>{
+    if(req.headers.authorization){
+        var options = {
+            method:'GET',
+            host: 'revcard.herokuapp.com',
+            path: '/api/v1/validateToken',
+            headers:{"Authorization":req.headers.authorization}
+        };
+          
+          callback = function(response) {
+            var str = '';
+            response.on('data', function (chunk) {
+                console.log("data response");
+            });
+            response.on('error', function (res) {
+                console.log("error resp",res);
+              });
+            response.on('end', function () {
+              console.log("end resp",res);
+            });
+            next();
+          }
+          
+          http.request(options, callback).end();
+    }
+    else{
+        res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
+    }
+})
+
 app.get("/accountsummary/:oppId", function (req, res, next) {
-    console.log("account summary ",req.params);
     var requestArgs = {
         oppId: req.params.oppId,
         sysDate,

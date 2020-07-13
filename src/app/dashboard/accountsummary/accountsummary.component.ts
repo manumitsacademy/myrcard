@@ -24,7 +24,7 @@ export class AccountsummaryComponent implements OnInit {
 
     })
     this.accountService.getAccountSummary().subscribe((res)=>{
-      console.log("Acc summ",res)
+        res=JSON.parse(res);
         this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;   
         this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
         

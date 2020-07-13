@@ -28,6 +28,7 @@ export class TransactionhistoryComponent implements OnInit {
     this.maxDate.setDate(this.maxDate.getDate() + 7);
     this.bsRangeValue = [this.bsValue, this.maxDate];
     this.accountService.getTransactionHistory().subscribe((res)=>{
+      res=JSON.parse(res);
       console.log("trxn his",res)
       this.transactionHistoryLength = res['Result'].array.RevTrxn.length;
       this.transactionHistory = res['Result'].array.RevTrxn.sort((a,b)=>{

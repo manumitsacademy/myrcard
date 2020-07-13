@@ -17,14 +17,31 @@ export class AccountService {
       responseType: 'text'  
     })
   }
-  getAccountSummary(){
+  getAccountSummary():any{
     var oppId = window.localStorage.getItem('oppId')
-    
-    return this.http.get(`/accountsummary/${oppId}`)
+    var idToken = JSON.parse(window.localStorage.getItem('token')).id_token;
+    return this.http.get(`/accountsummary/${oppId}`,{  
+      headers: new HttpHeaders()  
+        .set('Content-Type', 'text/xml')  
+        .append('Access-Control-Allow-Methods', 'GET')  
+        .append('Access-Control-Allow-Origin', '*')  
+        .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method")
+        .append('Authorization', 'Bearer '+idToken),      
+      responseType: 'text' as 'json'  
+    })
   }
-  getTransactionHistory(){
-    var oppId = window.localStorage.getItem('oppId')
-    return this.http.get(`/transactionhistory/${oppId}`)
+  getTransactionHistory():any{
+    var oppId = window.localStorage.getItem('oppId');
+    var idToken = JSON.parse(window.localStorage.getItem('token')).id_token;
+    return this.http.get(`/transactionhistory/${oppId}`,{  
+      headers: new HttpHeaders()  
+        .set('Content-Type', 'text/xml')  
+        .append('Access-Control-Allow-Methods', 'GET')  
+        .append('Access-Control-Allow-Origin', '*')  
+        .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method")
+        .append('Authorization', 'Bearer '+idToken),      
+      responseType: 'text' as 'json'  
+    })
   }
   // getTransactionHistory(){
   //   return this.http.get("/assets/history.xml",{  

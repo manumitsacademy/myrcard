@@ -174,7 +174,7 @@ let AccountsummaryComponent = class AccountsummaryComponent {
             this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
         });
         this.accountService.getAccountSummary().subscribe((res) => {
-            console.log("Acc summ", res);
+            res = JSON.parse(res);
             this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;
             this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
             this.pendingAmount = res['Result'].RevAccountSummary.summary.pendingBal;
@@ -553,6 +553,7 @@ let MinistatementComponent = class MinistatementComponent {
     }
     ngOnInit() {
         this.accountService.getTransactionHistory().subscribe((res) => {
+            res = JSON.parse(res);
             console.log(res);
             this.ministatement = res['Result'].array.RevTrxn.sort((a, b) => {
                 return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
@@ -680,6 +681,7 @@ let TransactionhistoryComponent = class TransactionhistoryComponent {
         this.maxDate.setDate(this.maxDate.getDate() + 7);
         this.bsRangeValue = [this.bsValue, this.maxDate];
         this.accountService.getTransactionHistory().subscribe((res) => {
+            res = JSON.parse(res);
             console.log("trxn his", res);
             this.transactionHistoryLength = res['Result'].array.RevTrxn.length;
             this.transactionHistory = res['Result'].array.RevTrxn.sort((a, b) => {
