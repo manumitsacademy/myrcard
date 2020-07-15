@@ -19,6 +19,9 @@ app.use(express.static(__dirname + '/angular-build'));
 app.get("/getAuthUrl",(req,res)=>{
     res.send({authUrl:authUrl})
 })
+app.get('/login', function(req,res){
+    res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
+});
 app.use((req,res,next)=>{
     if(req.headers.authorization){
         var options = {
@@ -45,7 +48,7 @@ app.use((req,res,next)=>{
           http.request(options, callback).end();
     }
     else{
-        res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
+        res.redirect("/login")
     }
 })
 
