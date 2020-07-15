@@ -36,13 +36,11 @@ export class LoginComponent implements OnInit {
             window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
             window.localStorage.setItem('token',JSON.stringify(res))
             this.router.navigate(["/dashboard"])
-          })
-          
+          })          
         }else{
           this.failedLogin=true;
         }
       })
-    })
-    
+    })    
   }
 }
