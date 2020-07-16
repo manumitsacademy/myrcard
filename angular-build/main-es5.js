@@ -1471,6 +1471,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this2 = this;
 
           this.accountService.getTransactionHistory().subscribe(function (res) {
+            res = JSON.parse(res);
             _this2.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
           });
         }

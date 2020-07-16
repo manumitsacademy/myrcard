@@ -773,6 +773,7 @@ let HeaderComponent = class HeaderComponent {
     }
     ngOnInit() {
         this.accountService.getTransactionHistory().subscribe((res) => {
+            res = JSON.parse(res);
             this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
         });
     }

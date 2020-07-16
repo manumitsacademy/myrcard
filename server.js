@@ -34,13 +34,13 @@ app.use((req,res,next)=>{
           callback = function(response) {
             var str = '';
             response.on('data', function (chunk) {
-                console.log("data response");
+                
             });
             response.on('error', function (res) {
-                console.log("error resp",res);
+               
               });
             response.on('end', function () {
-              console.log("end resp",res);
+              
             });
             next();
           }

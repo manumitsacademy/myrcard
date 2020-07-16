@@ -31,8 +31,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res)=>{
-      this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;    
-     
+      res=JSON.parse(res);
+      this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
     })
   }
   divbg="bluebackground1";
