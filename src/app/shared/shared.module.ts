@@ -6,12 +6,14 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreatepasswordComponent } from './createpassword/createpassword.component';
 
 
 
 @NgModule({
   declarations: [HeaderComponent, MainareaComponent, LoginComponent,
-    FooterComponent],
+    FooterComponent,
+    CreatepasswordComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([]),FormsModule,ReactiveFormsModule

@@ -12,13 +12,14 @@ import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component'
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
 import { PopoverModule, BsDatepickerModule, PaginationModule, ModalModule } from 'ngx-bootstrap';
 import { DefaultComponent } from './default/default.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
 
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,DefaultComponent],
+  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,DefaultComponent, UpdatepasswordComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
@@ -27,6 +28,8 @@ import { FormsModule } from '@angular/forms';
     PopoverModule,
     BsDatepickerModule,
     PaginationModule,
+    FormsModule,
+    ReactiveFormsModule,
     ModalModule
   ]
 })

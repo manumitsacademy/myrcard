@@ -9,13 +9,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 const cors = require('cors');
-var authUrl = process.env.authUrl || "https://revcard.herokuapp.com/api/"
+var authUrl = process.env.authUrl || "https://revcard.herokuapp.com/api/";
+//seperate environment variables for authurl and api
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
-    //keep the system date server date. only if the response from SOAP api is error then substract the date  -1
 app.get("/getAuthUrl",(req,res)=>{
     res.send({authUrl:authUrl})
 })

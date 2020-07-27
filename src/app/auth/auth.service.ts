@@ -39,5 +39,5 @@ export class AuthService {
     //return Date.now() < this.expiresAt && this.authenticated;
     return window.localStorage.getItem('token')!=null
   }
-
+ 
 }

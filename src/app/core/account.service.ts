@@ -20,7 +20,7 @@ export class AccountService {
   getAccountSummary():any{
     var oppId = window.localStorage.getItem('oppId')
     var idToken = JSON.parse(window.localStorage.getItem('token')).id_token;
-    return this.http.get(`/accountsummary/${oppId}`,{  
+    return this.http.get(`${environment.baseUrl}accountsummary/${oppId}`,{  
       headers: new HttpHeaders()  
         .set('Content-Type', 'text/xml')  
         .append('Access-Control-Allow-Methods', 'GET')  
@@ -33,7 +33,7 @@ export class AccountService {
   getTransactionHistory():any{
     var oppId = window.localStorage.getItem('oppId');
     var idToken = JSON.parse(window.localStorage.getItem('token')).id_token;
-    return this.http.get(`/transactionhistory/${oppId}`,{  
+    return this.http.get(`${environment.baseUrl}transactionhistory/${oppId}`,{  
       headers: new HttpHeaders()  
         .set('Content-Type', 'text/xml')  
         .append('Access-Control-Allow-Methods', 'GET')  

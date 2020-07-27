@@ -77,8 +77,9 @@
                 </table>
             </div>  
         </div>  
-        <div class="d-flex justify-content-center p-5 border-0">
-            <pagination class=" border-0" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;" [totalItems]="transactionHistoryLength-1" (pageChanged)="pageChanged($event)"  [boundaryLinks]="true" itemsPerPage="20" 
+        
+        <div class="d-flex justify-content-center p-5 border-0" *ngIf="filteredTransactions && filteredTransactions.length>0">
+            <pagination class=" border-0" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;" [totalItems]="filteredTransactions.length-1" (pageChanged)="pageChanged($event)"  [boundaryLinks]="true" [itemsPerPage]="itemsPerPage" 
             ></pagination>
         </div>
         

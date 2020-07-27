@@ -15,43 +15,61 @@ export class TransactionhistoryComponent implements OnInit {
   constructor(public accountService:AccountService,public router:Router) {
     
    }
- 
+   //latest available transaction date to latest avaible 
   transactionHistory:any;
+  transactionHistoryLength=0;
+  filteredTransactions:any;
+  filteredTransactionsLength=0;
+  itemsPerPage=20;
   popoverInfo:any;
   bsValue = new Date();
   bsRangeValue: Date[];
   maxDate = new Date();
+  minDate:Date;
   currentPage:any;
-  transactionHistoryLength=0;
+  selectedDateRange:any;
   searchKey;
   ngOnInit() {
-    this.maxDate.setDate(this.maxDate.getDate() + 7);
-    this.bsRangeValue = [this.bsValue, this.maxDate];
     this.accountService.getTransactionHistory().subscribe((res)=>{
       res=JSON.parse(res);
-      this.transactionHistoryLength = res['Result'].array.RevTrxn.length;
       this.transactionHistory = res['Result'].array.RevTrxn.sort((a,b)=>{
         return a.trxn.recDate>b.trxn.recDate?-1:1;
       });  
-      this.currentTransactions = this.transactionHistory.slice(0,20);
-    
-    })
-  
+      this.filteredTransactions = this.transactionHistory;
+      this.filteredTransactionsLength = this.filteredTransactions.length;
+      this.currentTransactions = this.transactionHistory.slice(0,this.itemsPerPage); 
+      console.log(this.filteredTransactions);  
+      this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
+      this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
+      this.bsRangeValue = [this.minDate, this.maxDate];
+      this.selectedDateRange=this.bsRangeValue;
+      console.log(this.selectedDateRange);
+      console.log(this.minDate);
+      this.onDateChange(this.selectedDateRange); 
+    })  
   }
-  onDateChange($event){
+  onDateChange(dateRange?: undefined){
+    if(dateRange){this.selectedDateRange = dateRange;}
     if(this.transactionHistory){
-      this.currentTransactions=this.transactionHistory.filter((t,i)=>{  
+      this.filteredTransactions=this.transactionHistory.filter((t,i)=>{  
         var tranTime = new Date(t.trxn.recDate).getTime();
-        return tranTime>=$event[0].getTime() && tranTime<=$event[1].getTime();
+        return tranTime>=this.selectedDateRange[0].getTime() && tranTime<=this.selectedDateRange[1].getTime();
       })
-    }
-    
+      this.currentTransactions = this.filteredTransactions.slice(0,this.itemsPerPage);
+    }    
   }
   searchHistory(){
-    this.currentTransactions=this.transactionHistory.filter((t,i)=>{
-      var temp = JSON.stringify(t).toUpperCase();
-      return temp.includes(this.searchKey.toUpperCase())
-    })
+    if(this.searchKey!='' && this.searchKey!=null){
+      this.filteredTransactions=this.filteredTransactions.filter((t,i)=>{
+        var temp = JSON.stringify(t).toUpperCase();
+        return temp.includes(this.searchKey.toUpperCase())
+      })
+    }
+    else{
+      this.onDateChange()
+    }
+    
+    this.currentTransactions = this.filteredTransactions.slice(0,this.itemsPerPage);
   }
   gotoaccount(){
     this.router.navigate(['/dashboard']);

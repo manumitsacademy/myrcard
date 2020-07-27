@@ -36,12 +36,10 @@ export class HeaderComponent implements OnInit {
     })
   }
   divbg="bluebackground1";
-  signout(){
-    var res = window.confirm("Are you Sure!")
-    if(res){
-      window.localStorage.removeItem('token');
-      this.router.navigate(['/login'])
-    }
-   
+  signout(a){
+    this.authService.signout();
+  }
+  changePassword(){
+    this.router.navigate(['/dashboard/changepassword'])
   }
 }
