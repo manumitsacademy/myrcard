@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
     })
   }
   divbg="bluebackground1";
-  signout(a){
+  signout(){
     this.authService.signout();
   }
   changePassword(){
