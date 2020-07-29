@@ -37,14 +37,11 @@ export class TransactionhistoryComponent implements OnInit {
       });  
       this.filteredTransactions = this.transactionHistory;
       this.filteredTransactionsLength = this.filteredTransactions.length;
-      this.currentTransactions = this.transactionHistory.slice(0,this.itemsPerPage); 
-      console.log(this.filteredTransactions);  
+      this.currentTransactions = this.transactionHistory.slice(0,this.itemsPerPage);
       this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
       this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
       this.bsRangeValue = [this.minDate, this.maxDate];
       this.selectedDateRange=this.bsRangeValue;
-      console.log(this.selectedDateRange);
-      console.log(this.minDate);
       this.onDateChange(this.selectedDateRange); 
     })  
   }
@@ -67,8 +64,7 @@ export class TransactionhistoryComponent implements OnInit {
     }
     else{
       this.onDateChange()
-    }
-    
+    }    
     this.currentTransactions = this.filteredTransactions.slice(0,this.itemsPerPage);
   }
   gotoaccount(){
