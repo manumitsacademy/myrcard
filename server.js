@@ -14,9 +14,9 @@ app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
-app.get("/getAuthUrl",(req,res)=>{
-    
-    res.send({authUrl:authUrl})
+app.get("/getAuthUrl",(req,res)=>{   
+    console.log(process.env) 
+    res.send({authUrl:process.env.authUrl})
 })
 app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'));
