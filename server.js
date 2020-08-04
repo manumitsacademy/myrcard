@@ -4,6 +4,7 @@ const app = express();
 const http = require('http');
 var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
+var logger = require('./logger')
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
@@ -17,6 +18,7 @@ app.use(express.static(__dirname + '/angular-build'));
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
 app.get("/getAuthUrl",(req,res)=>{
+    logger.info('welcome to loggeer')
     res.send({authUrl:authUrl})
 })
 app.get('/login', function(req,res){
