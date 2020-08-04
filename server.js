@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/angular-build'));
     var sysDate = date.getTime()-(24*60*60*1000);
 app.get("/getAuthUrl",(req,res)=>{   
     console.log(process.env) 
-    res.send({authUrl:process.env.authUrl})
+    res.send(hi)
 })
 app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'));
