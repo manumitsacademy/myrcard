@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/angular-build'));
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
 app.get("/getAuthUrl",(req,res)=>{
-    logger.console.error('error from logger');
+    
     res.send({authUrl:authUrl})
 })
 app.get('/login', function(req,res){
