@@ -4,7 +4,6 @@ const app = express();
 const http = require('http');
 var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
-var logger = require('./logger')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 const cors = require('cors');
