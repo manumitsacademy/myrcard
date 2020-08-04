@@ -4,19 +4,21 @@ const app = express();
 const http = require('http');
 var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
+// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json
 app.use(bodyParser.json())
 const cors = require('cors');
 var authUrl = process.env.authUrl;      // || "https://revcard.herokuapp.com/api/";
-
+//seperate environment variables for authurl and api
 app.use(cors());
 app.use(express.static(__dirname + '/angular-build'));
  var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
-app.get("/getAuthUrl",(req,res)=>{   
-    console.log(process.env) 
-    res.send("hi")
+app.get("/getAuthUrl",(req,res)=>{
+    console.log(process.env)
+    res.send({authUrl:authUrl})
 })
 app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'));
