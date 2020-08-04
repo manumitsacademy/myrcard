@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   buildname:'its in development',
-  baseUrl:'https://localhost:8080/'//'https://praveeng-1002.herokuapp.com/'
+  baseUrl:'https://praveeng-1002.herokuapp.com/'
 };
 
 /*
