@@ -1,0 +1,577 @@
+[33mcommit 03a4ca34f69246bb5e80ff60a4347e9c4b4f8007[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 29 19:05:00 2020 +0530
+
+    'headersignouterror'
+
+[33mcommit 3825fc1254b5b3b550eb51e1879cfbb2cd1ffe74[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 29 18:59:32 2020 +0530
+
+    'updatepassword'
+
+[33mcommit a0ebece826a0add47c0f21b4066a041500a3386d[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 29 18:51:48 2020 +0530
+
+    transactionDateRangeSetlastdate
+
+[33mcommit 5f7279f1ea22455f99c9957bfd020a9b071255be[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 27 10:30:31 2020 +0530
+
+    'dateRangefromAvailableTransactions'
+
+[33mcommit ddaf79b0f3048c86ef711d87fa012499eb335c8a[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jul 17 00:03:50 2020 +0530
+
+    'headername'
+
+[33mcommit 90cb12768e8e6c6470643bb0a6dad950f5d39858[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 15 09:33:08 2020 +0530
+
+    'redirection'
+
+[33mcommit f46d3d14b95be4c90200818025cb101e0c765084[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 15 09:04:15 2020 +0530
+
+    spaces
+
+[33mcommit 554a996296368b45e1d29ff28291ca784c796c2d[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 13 22:17:55 2020 +0530
+
+    'logstatements'
+
+[33mcommit c183bc15b931b003616e087242fd9729d7fb09b6[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 13 19:14:49 2020 +0530
+
+    'securityPatch2'
+
+[33mcommit 5af5d1e960304e4969671f8e3b8a2548cd4b79b1[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 13 19:08:29 2020 +0530
+
+    'secureRequest'
+
+[33mcommit 4ce1e511164d5531d18c941b9eee74cdf9b577d6[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jul 12 14:07:26 2020 +0530
+
+    asd
+
+[33mcommit 8db564a417507f85d4ee1bcd9fafe97ef962bb7e[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jul 12 14:06:05 2020 +0530
+
+    asdsd
+
+[33mcommit e93703c2aac499e9a242ed4111ab5ac640a2739e[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 6 17:09:50 2020 +0530
+
+    'title'
+
+[33mcommit f75c17121965012a98ec54cf229a8bbf832e34f9[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 6 16:42:57 2020 +0530
+
+    vars
+
+[33mcommit 2d1ad9d1ce36742eeb321def32684d02d34e45ec[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 6 15:24:55 2020 +0530
+
+    'configvars'
+
+[33mcommit 255f721d0f3c7e40e725a5b158d5b5254d4f257d[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 6 15:12:26 2020 +0530
+
+    'configvars'
+
+[33mcommit 5360ac8d03d69fda0bc14242842c51efc6a4561c[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Mon Jul 6 13:26:25 2020 +0530
+
+    'herokuvars'
+
+[33mcommit 1be1281ae2ee4baad2e95a1f217d7beb4519b129[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jul 3 08:09:13 2020 +0530
+
+    corrections
+
+[33mcommit 88791bdf091d2ae20746cea21f17b9c362775b65[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Thu Jul 2 22:41:17 2020 +0530
+
+    corrections
+
+[33mcommit 67e7f9ce066bb8ceda463fe15da61340ba44ad4f[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Thu Jul 2 22:29:16 2020 +0530
+
+    'corrections'
+
+[33mcommit 1a96bc2a0360da538ee1685d2ea6ef7e9f5f3b96[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Thu Jul 2 22:06:10 2020 +0530
+
+    'authcodefromvars'
+
+[33mcommit 6da469a3679a52558a98c867083b8ffc3593d8f0[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Thu Jul 2 21:39:24 2020 +0530
+
+    'systemdatecorrectionsANDinfopopupcorrection'
+
+[33mcommit 9390a52e6c9ef3aa73e7369dbff038b285997eb8[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 1 21:20:30 2020 +0530
+
+    'infowithdeclinedstatus'
+
+[33mcommit 030ab020c32afb709454603765191c2192d5f13a[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Wed Jul 1 20:59:01 2020 +0530
+
+    'dateissueandinfobox'
+
+[33mcommit 6ceae8d7910474422ef822cd7a43a5f3e5ea28a4[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Tue Jun 30 21:19:51 2020 +0530
+
+    'herokuvariables'
+
+[33mcommit ece7b7c93138c2bbfa848e3b0e1f2b343978d234[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Tue Jun 30 20:41:28 2020 +0530
+
+    'infopopupand_other_minor_changes'
+
+[33mcommit 6fe0768b0706bb597304684c545fa72be761a501[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 26 20:41:11 2020 +0530
+
+    'soapintegrationuptofirstdeadline'
+
+[33mcommit 508ef9e49a9b335d013fff575ee4db09cbb9906c[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 26 19:48:05 2020 +0530
+
+    'envVar'
+
+[33mcommit 01dbf555a160def38f543ef517005513474db67c[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 26 19:38:21 2020 +0530
+
+    'environmentvariables'
+
+[33mcommit f085f60deee810ae4c4ed08157eded06bd925ad3[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 19:28:41 2020 +0530
+
+    'tr'
+
+[33mcommit 3de3576826c03bd187695ff005186dced913efc5[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 19:22:22 2020 +0530
+
+    'letsseesoap2'
+
+[33mcommit 673b1024f8a50b2f1e46adff00d46fb928498cbe[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 19:17:45 2020 +0530
+
+    'tr2'
+
+[33mcommit 73d4afa912aef61d19c391926e64bd6c19dd05e3[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 19:12:58 2020 +0530
+
+    'tr'
+
+[33mcommit 3fad9cb34fa357844956b74f499fba73467c7333[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 19:01:19 2020 +0530
+
+    'accSoap'
+
+[33mcommit b22f84340b0120a73298ce4e450a06c0d70b2129[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 18:21:13 2020 +0530
+
+    'test3'
+
+[33mcommit ade8b57cb9212e27a1f53decdb1d40d7210b555f[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 12:16:13 2020 +0530
+
+    'test2'
+
+[33mcommit 8f60dfcb7fdc9d01e2132eaaf4aa8b0233fd6a7d[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sun Jun 21 11:08:20 2020 +0530
+
+    'test2'
+
+[33mcommit a55bddffe9eb03437f0ff70699ced03ab81a5444[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat Jun 20 19:16:56 2020 +0530
+
+    'soapapis'
+
+[33mcommit 789928bf3d9df2d8bbb55b137ddf41e986090672[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat Jun 20 19:13:01 2020 +0530
+
+    'soapapisaccntsmr'
+
+[33mcommit 8f13548e7bf345d56c9e73a6d22c34630a8b37a4[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat Jun 20 18:57:10 2020 +0530
+
+    'accsum'
+
+[33mcommit 164dc967f4aeb962ddfbd1ae091685a355d11f3d[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat Jun 20 18:19:04 2020 +0530
+
+    'soapapis'
+
+[33mcommit 791c132621b97be5625c3285e9149f50edcd2de4[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat Jun 20 18:05:48 2020 +0530
+
+    'strong-soap'
+
+[33mcommit cec835947b5f7c7c94a72b661dac22fdf96b3697[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 19 19:59:35 2020 +0530
+
+    soapresponse
+
+[33mcommit 2ef64d5d6486ba6cc8a6b918441b8e8a6db9c215[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 19 19:43:16 2020 +0530
+
+    soapservice1
+
+[33mcommit 4ea8efa89f2cc08c638a4c536d945841d0000e13[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 19 13:57:14 2020 +0530
+
+    nodesoaptest1
+
+[33mcommit 26e0950a02c97f9f7b1b1846cb80212868bfb8fc[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri Jun 19 13:37:28 2020 +0530
+
+    nodesoaptest
+
+[33mcommit 6cc37bc19382508fb98e6e48e7adb3e1ac71f81b[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Sat May 16 21:16:49 2020 +0530
+
+    'infopopup'
+
+[33mcommit 413da2cd6632dd9c1ea0e022ce5c5729507f399c[m
+Author: Praveen-at-289810389200 <manumits.info@gmail.com>
+Date:   Fri May 15 10:23:35 2020 +0530
+
+    'headerinfofooter'
+
+[33mcommit 728f8ed51d564c1120b0d0724e18a316d9e3dbfa[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Apr 15 23:05:07 2020 +0530
+
+    'responsive'
+
+[33mcommit eee59c04313ec67f62007186b3c219f38173b439[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Apr 8 19:59:32 2020 +0530
+
+    'sessionhandling'
+
+[33mcommit 008d1856e33e60fd3cd3c4be7493a2c13875da53[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Apr 7 17:31:43 2020 +0530
+
+    'datefilter'
+
+[33mcommit 91a787aa9b355d0a378fff1a3e0b115c27183106[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Apr 7 00:21:24 2020 +0530
+
+    'searchpopover'
+
+[33mcommit 5c36e340bf7611872a12f1a369d327db64970984[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Apr 3 20:47:25 2020 +0530
+
+    'header'
+
+[33mcommit dd14b0692c1e1aa0dd87f378e71d35a9e23456d1[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Apr 3 20:38:24 2020 +0530
+
+    'header'
+
+[33mcommit 48bab846563606e737216b5136527a2f6d2d11f6[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Mar 31 20:30:42 2020 +0530
+
+    'smallhexagons'
+
+[33mcommit 863ba922d5a0d4fb30988a6f65078680f42ad522[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 30 19:41:57 2020 +0530
+
+    '3003amountposition'
+
+[33mcommit 181596e4ad7cd12141ec4f86eeb3b3d9e0501ca0[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 30 19:00:18 2020 +0530
+
+    '3003'
+
+[33mcommit f4b828dd8f8e141265d076d3cb6b4456a6df5178[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 21:07:21 2020 +0530
+
+    'daterangefont'
+
+[33mcommit 978dd5578e243a2f6e156c20d78a1f4e2f0d6568[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 20:53:38 2020 +0530
+
+    'pagination'
+
+[33mcommit 7788add2d0eab160090edf1bc375111e44d30957[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 20:18:43 2020 +0530
+
+    'loginerror'
+
+[33mcommit c243021ccbccb9be487b745676a72b0df8b9c9f1[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 19:43:42 2020 +0530
+
+    'colorhexa'
+
+[33mcommit 8e9364c3c70b1ad4e2a911ec15cf959f36120686[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 13:24:24 2020 +0530
+
+    'dashboardxmlupdate'
+
+[33mcommit 1f4d2558dafd746994e7d80d46efd0385e13b589[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 11:18:16 2020 +0530
+
+    '2605'
+
+[33mcommit 346682041e6989161008fb37b74a5a1a88eaf27f[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 11:06:51 2020 +0530
+
+    '2603'
+
+[33mcommit b987fdb565f2d5e4a7012e635cb53a4754c91360[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Fri Mar 27 00:28:20 2020 +0530
+
+    '2603'
+
+[33mcommit c23b452fda92e40dcd44bb492bee4aff82e5a258[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Thu Mar 26 20:18:01 2020 +0530
+
+    'hexagon'
+
+[33mcommit fe85010879449bf34b704fe346c70c12f4a174e3[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 21:17:22 2020 +0530
+
+    '2503'
+
+[33mcommit 3359fba7b253356eceb3ce8daef1491b2d56feee[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 21:08:08 2020 +0530
+
+    '2503'
+
+[33mcommit 36c1f905b60b66107e3d6cf661b3da8677ef44fd[m[33m ([m[1;31morigin/praveeng[m[33m, [m[1;32mpraveeng[m[33m)[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 19:23:35 2020 +0530
+
+    'resplogin'
+
+[33mcommit 9100774a314d106c69b59fe6f836345ae8a2976d[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 18:59:42 2020 +0530
+
+    'respheroku'
+
+[33mcommit dd5feb2634cf958adbd37c068b14320ffd640b40[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 18:58:24 2020 +0530
+
+    'responsivelogin'
+
+[33mcommit 621d2540950844dc974eaaafc26a40a815bcc28e[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 18:44:37 2020 +0530
+
+    cvxc
+
+[33mcommit cea2e822086ceb90005b97decdd444a54f9931d1[m
+Merge: cf3adef a36a010
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 18:39:12 2020 +0530
+
+    'resplogh'
+
+[33mcommit a36a010fd7d276f2b46be2ca41267bddde9e32ae[m
+Merge: bfb035c 4bb08ca
+Author: manumitsacademy <31826519+manumitsacademy@users.noreply.github.com>
+Date:   Wed Mar 25 18:08:01 2020 +0530
+
+    Merge pull request #5 from manumitsacademy/praveenk
+    
+    'resp'
+
+[33mcommit cf3adef9c82db497092e6e4488b5922a1e0a71ce[m
+Merge: 29bc3aa bfb035c
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 18:01:21 2020 +0530
+
+    Merge https://github.com/manumitsacademy/rcard into praveeng
+
+[33mcommit 29bc3aace8b10ee724785a39d0f493d7575103db[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 17:49:51 2020 +0530
+
+    'hexagons'
+
+[33mcommit 4bb08ca62cf8d6f730f2e000d651bd671d3991b3[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 17:44:43 2020 +0530
+
+    'resp'
+
+[33mcommit 83d5e04449d2c4e6fb3d34438b18eb302cc3f400[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 15:48:39 2020 +0530
+
+    '2503'
+
+[33mcommit fe78816f5565c66bf0bb3ae0a78dbc188e851380[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Wed Mar 25 13:59:49 2020 +0530
+
+    '2503'
+
+[33mcommit bfb035ccdabc806c14d16ea58c711568ba0c90fd[m
+Merge: d147ba4 6943384
+Author: manumitsacademy <31826519+manumitsacademy@users.noreply.github.com>
+Date:   Tue Mar 24 23:41:42 2020 +0530
+
+    Merge pull request #4 from manumitsacademy/praveenk
+    
+    'delassets'
+
+[33mcommit 69433849e8356585397035ec8046c205cbfc1f60[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Mar 24 23:37:29 2020 +0530
+
+    'delassets'
+
+[33mcommit 825c847d0102476fc006fb5b6117825e6c3a90df[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Mar 24 23:30:22 2020 +0530
+
+    fresh
+
+[33mcommit d147ba4672ebb41c67fb73eb0b1b119d635e83ab[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Tue Mar 24 22:59:31 2020 +0530
+
+    'transhist'
+
+[33mcommit 2e78ea78d1d235f369af3529b8f51219be8f05d6[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 23:12:39 2020 +0530
+
+    '2303'
+
+[33mcommit 455fd738bdbe7ff41b5f8e557a02320bcde7dbbb[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 14:41:11 2020 +0530
+
+    'withLogin'
+
+[33mcommit 3cbb0b8d90f15b4263916d836de2ab7f8727b4ec[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 14:37:15 2020 +0530
+
+    'ff'
+
+[33mcommit 5f76a4d89705cc7726c4b570ffca065336a0ab22[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 14:05:46 2020 +0530
+
+    'ff'
+
+[33mcommit bcac0d95e7ef9b2a5548beed4476bbd4b3872f5d[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 13:59:54 2020 +0530
+
+    'ff'
+
+[33mcommit 33aa29eb23be06c7b5f48780a75c1e964c834974[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 13:33:46 2020 +0530
+
+    'th'
+
+[33mcommit b4704635fbac142ce5979285da679c7209b960db[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 13:12:28 2020 +0530
+
+    'second2'
+
+[33mcommit 827ab6cd2055ea844e852047171497bb3633ad95[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 13:02:44 2020 +0530
+
+    'second2'
+
+[33mcommit f996a255a9fc04d08f5af4f882bf183034566535[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Mon Mar 23 12:51:08 2020 +0530
+
+    'authenti'
+
+[33mcommit ad2645203ba05fc8016bcf7aab10913e1fd804d4[m
+Author: manumitsacademy <manumits.info@gmail.com>
+Date:   Sun Mar 22 20:36:58 2020 +0530
+
+    'first'
+
+[33mcommit 97d195c812e7e13784a518af5ce79f2fa0c7589b[m
+Author: vlr <ajsjan27@gmail.com>
+Date:   Sun Mar 22 09:56:40 2020 +0530
+
+    'latestby2203'
+
+[33mcommit 2b5852275e66b2c9023179b5c0326f926794b739[m
+Author: vlr <ajsjan27@gmail.com>
+Date:   Fri Mar 20 12:05:49 2020 +0530
+
+    initial setup

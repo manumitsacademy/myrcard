@@ -35,6 +35,7 @@
     "timers": "^0.1.1",
     "timers-browserify": "^2.0.11",
     "tslib": "^1.10.0",
+    "winston": "^3.3.3",
     "xml2js": "^0.4.23",
     "zone.js": "~0.9.1"
   },
