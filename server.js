@@ -16,7 +16,7 @@ var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
 
 app.use(cors({
 origin: function(origin,callback){
-    
+
     return callback(null,true);
 
     // if(allowedOrigins.includes(origin)){
@@ -27,12 +27,12 @@ origin: function(origin,callback){
     // }
 }
 }));
-var authUrl = process.env.authURL       || "https://revcard.herokuapp.com/api/";
-//var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
+
+var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
 //seperate environment variables for authurl and api
 app.use(express.static(__dirname + '/angular-build'));
-    var url = process.env.Url  || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
-    //var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
+    
+    var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
 app.get("/getAuthUrl",(req,res)=>{
@@ -125,4 +125,4 @@ app.get('/*', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
 });
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT);
