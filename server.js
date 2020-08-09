@@ -10,6 +10,9 @@ var cors = require('cors')
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
+
+app.use(cors());
+
 var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://praveeng-1002.herokuapp.com/favicon.ico'];
 app.use(cors({
 origin: function(origin,callback){
@@ -21,6 +24,9 @@ origin: function(origin,callback){
     }
 }
 }));
+
+
+
 var authUrl = process.env.authURL       || "https://revcard.herokuapp.com/api/";
 //var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
 //seperate environment variables for authurl and api
