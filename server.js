@@ -11,22 +11,22 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
 
-//app.use(cors())
+var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
+'https://praveeng-1002-herokuapp.com'];
 
-var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://praveeng-1002.herokuapp.com/favicon.ico'];
 app.use(cors({
 origin: function(origin,callback){
-    if(allowedOrigins.includes(origin)){
-        return callback(null,true)
-    }
-    else{
-        return callback('not allowed',false)
-    }
+    
+    return callback(null,true);
+
+    // if(allowedOrigins.includes(origin)){
+    //     return callback(null,true)
+    // }
+    // else{
+    //     return callback('not allowed',false)
+    // }
 }
 }));
-
-
-
 var authUrl = process.env.authURL       || "https://revcard.herokuapp.com/api/";
 //var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
 //seperate environment variables for authurl and api
