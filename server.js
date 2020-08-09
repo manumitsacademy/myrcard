@@ -10,7 +10,7 @@ var cors = require('cors')
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
-var allowedOrigins = ['https://praveeng-1002-herokuapp.com/*.*'];
+var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://praveeng-1002.herokuapp.com/favicon.ico'];
 app.use(cors({
 origin: function(origin,callback){
     if(allowedOrigins.includes(origin)){
