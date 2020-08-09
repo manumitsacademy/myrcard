@@ -13,17 +13,17 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://praveeng-1002.herokuapp.com/favicon.ico'];
-app.use(cors({
-origin: function(origin,callback){
-    if(allowedOrigins.includes(origin)){
-        return callback(null,true)
-    }
-    else{
-        return callback('not allowed',false)
-    }
-}
-}));
+// var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://praveeng-1002.herokuapp.com/favicon.ico'];
+// app.use(cors({
+// origin: function(origin,callback){
+//     if(allowedOrigins.includes(origin)){
+//         return callback(null,true)
+//     }
+//     else{
+//         return callback('not allowed',false)
+//     }
+// }
+// }));
 
 
 
