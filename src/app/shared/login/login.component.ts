@@ -28,11 +28,13 @@ export class LoginComponent implements OnInit {
       var loginurl=res['authUrl'];
       this.http.post(`${loginurl}v1/loginUser`,this.loginForm.value)
       .subscribe((res)=>{
+        console.log(res);
         if(res){
           const headers = { 'Authorization': 'Bearer '+res['id_token'] }
-          this.http.post(`${loginurl}v1/getUserDetails`,{email:this.loginForm['email']},{
+          this.http.post(`${loginurl}v1/getUserDetails`,{email:this.loginForm.controls['email'].value},{
             headers
           }).subscribe((details)=>{
+            console.log(details)
             window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
             window.localStorage.setItem('email',details['email'])
             window.localStorage.setItem('token',JSON.stringify(res))
@@ -41,7 +43,7 @@ export class LoginComponent implements OnInit {
         }else{
           this.failedLogin=true;
         }
-      })
+      },(err)=>{console.log(err)})
     })    
   }
 }
