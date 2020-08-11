@@ -10,7 +10,7 @@ var cors = require('cors')
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
-
+app.use(express.static(__dirname + '/angular-build'));
 var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
 'https://praveeng-1002-herokuapp.com'];
 
@@ -30,7 +30,7 @@ app.use(cors({
 
 var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
 //seperate environment variables for authurl and api
-app.use(express.static(__dirname + '/angular-build'));
+
     
     var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
