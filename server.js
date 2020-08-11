@@ -22,10 +22,6 @@ app.use(cors({
         if(allowedOrigins.includes(origin)){
             return callback(null,true)
         }
-        else{
-            res.send("not allowed you know")
-            return callback('not allowed'+origin,false)
-        }
     }
 }));
 
