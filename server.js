@@ -18,7 +18,7 @@ app.use(cors({
     origin: function(origin,callback){
 
         //return callback(null,true);
-
+        console.log(origin)
         if(allowedOrigins.includes(origin)){
             return callback(null,true)
         }
