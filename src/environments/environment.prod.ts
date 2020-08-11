@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
   buildname:'its in production',
-  baseUrl:'/',
+  baseUrl:'https://praveeng-1002-herokuapp.com/',
   soapUrl:'/'
 };
