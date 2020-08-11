@@ -16,7 +16,6 @@ var allowedOrigins = ['http://localhost:4200','http://localhost:8080/',
 app.use(express.static(__dirname + '/angular-build'));
 app.use(cors({
 origin: function(origin,callback){
-    console.log(origin)
     if(allowedOrigins.includes(origin)){
         return callback(null,true)
     }
