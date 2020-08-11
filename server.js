@@ -8,6 +8,7 @@ var logger = require('./logger')
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
+var cors = require('cors');
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
 var authUrl = process.env.authURL || "https://revcard.herokuapp.com/api/";   
