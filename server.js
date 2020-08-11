@@ -15,17 +15,17 @@ var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
 'https://praveeng-1002-herokuapp.com'];
 
 app.use(cors({
-origin: function(origin,callback){
+    origin: function(origin,callback){
 
-    return callback(null,true);
+        //return callback(null,true);
 
-    // if(allowedOrigins.includes(origin)){
-    //     return callback(null,true)
-    // }
-    // else{
-    //     return callback('not allowed',false)
-    // }
-}
+        if(allowedOrigins.includes(origin)){
+            return callback(null,true)
+        }
+        else{
+            return callback('not allowed',false)
+        }
+    }
 }));
 
 var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
