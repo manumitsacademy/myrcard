@@ -14,17 +14,17 @@ app.use(bodyParser.json());
 var allowedOrigins = ['http://localhost:4200','http://localhost:8080/',
 'https://praveeng-1002-herokuapp.com'];
 app.use(express.static(__dirname + '/angular-build'));
-//app.use(cors())
-app.use(cors({
-origin: function(origin,callback){
-    if(allowedOrigins.includes(origin)){
-        return callback(null,true)
-    }
-    else{
-        return callback('not allowed',false)
-    }
-}
-}));
+app.use(cors())
+// app.use(cors({
+// origin: function(origin,callback){
+//     if(allowedOrigins.includes(origin)){
+//         return callback(null,true)
+//     }
+//     else{
+//         return callback('not allowed',false)
+//     }
+// }
+// }));
 
 var authUrl = process.env.authURL || "https://revcard.herokuapp.com/api/";
 
