@@ -121,7 +121,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!--<div style=\"display: flex\" class=\"container\">\r\n    <div>Account Overview</div>\r\n    <div>Request limit Increase</div>\r\n    <div>Request Cash Draw</div>\r\n    <div>Payment Calendar</div>\r\n    <div>Transaction History</div>\r\n    <div>Rewards</div>\r\n</div>-->\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\r\n<section id=\"short_cut\" class=\"py-4\" [ngClass]=\"divbg\">\r\n    <div class=\"container\">\r\n        <nav class=\"navbar navbar-expand-lg navbar-expand-md navbar-light\">\r\n          <div class=\"container\">\r\n            <div class=\"row short_mobile no-gutters d-xl-none d-sm d-md-none d-lg-none \">\r\n              \r\n                  <button class=\"navbar-toggler border-0\" type=\"button\" data-toggle=\"collapse\" data-target=\"#shortcut\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n                    <span class=\"navbar-toggler-icon\"></span>\r\n                  </button>\r\n                <h5 class=\"d-inline d-xl-none d-sm text-white align-self-end\">Account Overview</h5>\r\n              <!--  <div class=\" d-xl-none d-sm d-inline \">\r\n                  <i class=\"fa fa-bell text-white\" aria-hidden=\"true\" style=\"font-size:1.5rem;\"></i>\r\n                  <i class=\"fa fa-circle border-1 border-white\" aria-hidden=\"true\"></i>\r\n                \r\n                </div>-->\r\n                <div class=\" d-xl-none d-sm d-inline \">\r\n                </div>\r\n               \r\n            </div>\r\n          <div class=\"collapse navbar-collapse\" id=\"shortcut\">\r\n            <ul class=\"navbar-nav\">\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\" routerLink=\"/dashboard\">Account Overview</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\">Request Limit Increase</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\">Request Cash Draw</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\" >Payment Calendar</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\"  routerLink=\"transactionhistory\" >Transaction History</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\"  routerLink=\"/dashboard/default\" >Rewards</a>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n        </nav>\r\n    </div>\r\n</section>\r\n";
+    __webpack_exports__["default"] = "<!--<div style=\"display: flex\" class=\"container\">\r\n    <div>Account Overview</div>\r\n    <div>Request limit Increase</div>\r\n    <div>Request Cash Draw</div>\r\n    <div>Payment Calendar</div>\r\n    <div>Transaction History</div>\r\n    <div>Rewards</div>\r\n</div>-->\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\r\n<section id=\"short_cut\" class=\"py-4\" [ngClass]=\"divbg\">\r\n    <div class=\"container\">\r\n        <nav class=\"navbar navbar-expand-lg navbar-expand-md navbar-light\">\r\n          <div class=\"container\">\r\n            <div class=\"row short_mobile no-gutters d-xl-none d-sm d-md-none d-lg-none \">\r\n              \r\n                  <button class=\"navbar-toggler border-0\" type=\"button\" data-toggle=\"collapse\" data-target=\"#shortcut\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n                    <span class=\"navbar-toggler-icon\"></span>\r\n                  </button>\r\n                <h5 class=\"d-inline d-xl-none d-sm text-white align-self-end\">{{headerTitle|uppercase}}</h5>\r\n              <!--  <div class=\" d-xl-none d-sm d-inline \">\r\n                  <i class=\"fa fa-bell text-white\" aria-hidden=\"true\" style=\"font-size:1.5rem;\"></i>\r\n                  <i class=\"fa fa-circle border-1 border-white\" aria-hidden=\"true\"></i>\r\n                \r\n                </div>-->\r\n                <div class=\" d-xl-none d-sm d-inline \">\r\n                </div>\r\n               \r\n            </div>\r\n          <div class=\"collapse navbar-collapse\" id=\"shortcut\">\r\n            <ul class=\"navbar-nav\">\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\" routerLink=\"/dashboard\">Account Overview</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\">Request Limit Increase</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\">Request Cash Draw</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link\"  routerLink=\"/dashboard/default\" >Payment Calendar</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\"  routerLink=\"transactionhistory\" >Transaction History</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\"  routerLink=\"/dashboard/default\" >Rewards</a>\r\n                </li>                \r\n              </ul>\r\n            </div>\r\n          </div>\r\n        </nav>\r\n    </div>\r\n</section>\r\n";
     /***/
   },
 
@@ -141,7 +141,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\r\n<ng-template #popTemplate >\r\n    <div *ngIf=\"popoverInfo.trxn.status!=='ctsDeclined'\">\r\n        <div class=\"row no-gutters mb-2 d-flex justify-content-between\">\r\n            <div class=\" left_tt\"> Payback Amount:</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"popoverInfo.fundingStmt\"> {{(popoverInfo.fundingStmt?popoverInfo.fundingStmt.paybackAmount:'0.00')|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n        <div class=\"row no-gutters mb-2 d-flex justify-content-between\">\r\n            <div class=\" left_tt\"> Collected Amount:</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"popoverInfo.fundingStmt\"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.totCollAmt)?popoverInfo.fundingStmt.totCollAmt[0]:0.00)|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n        <div class=\"dropdown-divider\"></div>\r\n        <div class=\"row no-gutters d-flex justify-content-between\">\r\n            <div class=\" total_bal\">Balance Amount:</div>\r\n            <div class=\" text-right total_bal\" *ngIf=\"popoverInfo.fundingStmt\"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.balToDone)?(popoverInfo.fundingStmt.paybackAmount-popoverInfo.fundingStmt.totCollAmt[0]):0.00)|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n    </div> \r\n</ng-template>\r\n<section id=\"trans_his\">\r\n    <div class=\"container\">\r\n        <div class=\"card card1\">\r\n            <div class=\"navbar navbar-expand-lg mt-3\">\r\n                <a class=\"navbar-brand mr-auto font-weight-bold text-dark text-uppercase\" href=\"#\">Transaction History</a>\r\n                <div class=\"form-inline my-2 my-lg-0\">\r\n                    <div class=\"form-group mr-2\">\r\n                        <div class=\"icon-addon addon-lg\">\r\n                            <input type=\"text\" placeholder=\"Search...\" class=\"form-control\" id=\"email\" [(ngModel)]=\"searchKey\"  (keyup)=\"searchHistory()\">\r\n                            <label for=\"email\" class=\"fa fa-search\" rel=\"tooltip\" title=\"Search...\"></label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group mr-2\">\r\n                        <div class=\"icon-addon addon-lg\">                           \r\n                            <input class=\"form-control\" #drp=\"bsDaterangepicker\" bsDaterangepicker [(ngModel)]=\"bsRangeValue\" [bsConfig]=\"{containerClass:'mytheme-purple'}\" id=\"daterange\"  (bsValueChange)=\"onDateChange($event)\">\r\n                            <label for=\"daterange\" class=\"fa fa-calendar-o\" rel=\"tooltip\" title=\"Date\"></label>\r\n                        </div>\r\n                    </div>                    \r\n                </div>                \r\n            </div>\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover table-vcenter\" width=\"100%\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th class=\"w-1p textwidget custom-html-widget\">\r\n                                Date\r\n                            </th>\r\n                            <th class=\"textwidget custom-html-widget\">\r\n                                Description\r\n                            </th>\r\n                            <th style=\"text-align: center\" class=\"textwidget custom-html-widget\">\r\n                                Amount\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let transaction of currentTransactions\">\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <span>{{transaction.trxn.recDate|date}}</span>\r\n                            </td>\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget\"  [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">{{transaction.trxn.cpty.name}}\r\n                            </td>                \r\n                            <td style=\"text-align: right; padding: 10px;\" class=\"textwidget custom-html-widget\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}\r\n                               \r\n                            </td>\r\n                            <td style=\"padding: 10px;\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <i class=\"fa fa-info\" triggers=\"mouseenter:mouseleave\" [popover]=\"popTemplate\" [outsideClick]=\"true\" placement=\"bottom\" [popoverTitle]=\"transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'\" (mouseenter)=\"popoverInfo=transaction\"></i>\r\n                            </td>\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget hammer\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <a routerLink=\"/dashboard/default\"  style=\"cursor:pointer;\">\r\n                                    <img src=\"assets/hammer.png\" class=\"img-fluid\" title=\"Dispute Charge\">\r\n                                </a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>  \r\n        </div>  \r\n        <div class=\"d-flex justify-content-center p-5 border-0\">\r\n            <pagination class=\" border-0\" previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\" [totalItems]=\"transactionHistoryLength-1\" (pageChanged)=\"pageChanged($event)\"  [boundaryLinks]=\"true\" itemsPerPage=\"20\" \r\n            ></pagination>\r\n        </div>\r\n        \r\n    </div>\r\n        \r\n    \r\n</section>\r\n";
+    __webpack_exports__["default"] = "\r\n<ng-template #popTemplate >\r\n    <div *ngIf=\"popoverInfo.trxn.status!=='ctsDeclined'\">\r\n        <div class=\"row no-gutters mb-2 d-flex justify-content-between\">\r\n            <div class=\" left_tt\"> Payback Amount:</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"popoverInfo.fundingStmt\"> {{(popoverInfo.fundingStmt?popoverInfo.fundingStmt.paybackAmount:'0.00')|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n        <div class=\"row no-gutters mb-2 d-flex justify-content-between\">\r\n            <div class=\" left_tt\"> Collected Amount:</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"popoverInfo.fundingStmt\"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.totCollAmt)?popoverInfo.fundingStmt.totCollAmt[0]:0.00)|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n        <div class=\"dropdown-divider\"></div>\r\n        <div class=\"row no-gutters d-flex justify-content-between\">\r\n            <div class=\" total_bal\">Balance Amount:</div>\r\n            <div class=\" text-right total_bal\" *ngIf=\"popoverInfo.fundingStmt\"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.balToDone)?(popoverInfo.fundingStmt.paybackAmount-popoverInfo.fundingStmt.totCollAmt[0]):0.00)|number:'1.2-2'|currency}}</div>\r\n            <div class=\" text-right right_tt\" *ngIf=\"!popoverInfo.fundingStmt\">N/A</div>\r\n        </div>\r\n    </div> \r\n</ng-template>\r\n<section id=\"trans_his\">\r\n    <div class=\"container\">\r\n        <div class=\"card card1\">\r\n            <div class=\"navbar navbar-expand-lg mt-3\">\r\n                <a class=\"navbar-brand mr-auto font-weight-bold text-dark text-uppercase\" href=\"#\">Transaction History</a>\r\n                <div class=\"form-inline my-2 my-lg-0\">\r\n                    <div class=\"form-group mr-2\">\r\n                        <div class=\"icon-addon addon-lg\">\r\n                            <input type=\"text\" placeholder=\"Search...\" class=\"form-control\" id=\"email\" [(ngModel)]=\"searchKey\"  (keyup)=\"searchHistory()\">\r\n                            <label for=\"email\" class=\"fa fa-search\" rel=\"tooltip\" title=\"Search...\"></label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group mr-2\">\r\n                        <div class=\"icon-addon addon-lg\">                           \r\n                            <input class=\"form-control\" #drp=\"bsDaterangepicker\" bsDaterangepicker [(ngModel)]=\"bsRangeValue\" [bsConfig]=\"{containerClass:'mytheme-purple'}\" id=\"daterange\"  (bsValueChange)=\"onDateChange($event)\">\r\n                            <label for=\"daterange\" class=\"fa fa-calendar-o\" rel=\"tooltip\" title=\"Date\"></label>\r\n                        </div>\r\n                    </div>                    \r\n                </div>                \r\n            </div>\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover table-vcenter\" width=\"100%\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th class=\"w-1p textwidget custom-html-widget\">\r\n                                Date\r\n                            </th>\r\n                            <th class=\"textwidget custom-html-widget\">\r\n                                Description\r\n                            </th>\r\n                            <th style=\"text-align: center\" class=\"textwidget custom-html-widget\">\r\n                                Amount\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let transaction of currentTransactions\">\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <span>{{transaction.trxn.recDate|date}}</span>\r\n                            </td>\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget\"  [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">{{transaction.trxn.cpty.name}}\r\n                            </td>                \r\n                            <td style=\"text-align: right; padding: 10px;\" class=\"textwidget custom-html-widget\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}\r\n                               \r\n                            </td>\r\n                            <td style=\"padding: 10px;\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <i class=\"fa fa-info\" triggers=\"mouseenter:mouseleave\" [popover]=\"popTemplate\" [outsideClick]=\"true\" placement=\"bottom\" [popoverTitle]=\"transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'\" (mouseenter)=\"popoverInfo=transaction\"></i>\r\n                            </td>\r\n                            <td style=\"padding: 10px;\" class=\"textwidget custom-html-widget hammer\" [ngClass]=\"transaction.trxn.status==='ctsDeclined'?'text-danger':''\">\r\n                                <a routerLink=\"/dashboard/default\"  style=\"cursor:pointer;\">\r\n                                    <img src=\"assets/hammer.png\" class=\"img-fluid\" title=\"Dispute Charge\">\r\n                                </a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>  \r\n        </div>  \r\n        \r\n        <div class=\"d-flex justify-content-center p-5 border-0\" *ngIf=\"filteredTransactions && filteredTransactions.length>0\">\r\n            <pagination class=\" border-0\" previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\" [totalItems]=\"filteredTransactions.length-1\" (pageChanged)=\"pageChanged($event)\"  [boundaryLinks]=\"true\" [itemsPerPage]=\"itemsPerPage\" \r\n            ></pagination>\r\n        </div>\r\n        \r\n    </div>\r\n        \r\n    \r\n</section>\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/updatepassword/updatepassword.component.html":
+  /*!**************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/updatepassword/updatepassword.component.html ***!
+    \**************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppDashboardUpdatepasswordUpdatepasswordComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container \">\n    <div class=\"card \"  style=\"height:300px;width: auto;\">\n        <div class=\"d-flex justify-content-center  my-auto\">\n            <div class=\"chat_box text-center\">\n                <div id=\"form\" [formGroup]=\"passwordForm\" >\n                    <div class=\"m-3 text-left\">\n                        <label for=\"oldpassword\">Current Password</label>\n                        <input  type=\"password\" formControlName=\"currentPassword\" class=\"form-control p-0 \" placeholder=\"***********\">\n                    </div>\n                    <div class=\"passwordL m-3 text-left\">\n                        <label for=\"newpassword\" >New Password</label>\n                        <input  type=\"password\" formControlName=\"newPassword\" class=\"form-control p-0\" placeholder=\"\">\n                    </div>\n                    <div class=\"passwordL m-3 text-left\">\n                        <label for=\"confirmpassword\" #confirmPassword (keyUp)=\"0\">Confirm Password</label>\n                        <input  type=\"password\" class=\"form-control p-0\" placeholder=\"\">\n                    </div>\n                    <div class=\"text-danger\" *ngIf=\"newPassword.touched && confirmPassword!==newPassword.value\">\n                        <h6>Password and Confirm Password mismatch</h6>\n                    </div>\n                    <div class=\"text-center login_btn m-2\">\n                        <button type=\"button\" class=\"btn  btn-center\" (click)=\"updatePassword()\">Update Password</button>\n                    </div>\n                </div> \n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -301,6 +321,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this = this;
 
           this.accountService.getTransactionHistory().subscribe(function (res) {
+            res = JSON.parse(res);
             _this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
           });
           this.accountService.getAccountSummary().subscribe(function (res) {
@@ -405,6 +426,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ../auth/auth.guard */
     "./src/app/auth/auth.guard.ts");
+    /* harmony import */
+
+
+    var _updatepassword_updatepassword_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./updatepassword/updatepassword.component */
+    "./src/app/dashboard/updatepassword/updatepassword.component.ts");
 
     var routes = [{
       path: '',
@@ -416,6 +443,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         path: 'transactionhistory',
         component: _transactionhistory_transactionhistory_component__WEBPACK_IMPORTED_MODULE_5__["TransactionhistoryComponent"],
+        canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+      }, {
+        path: 'changepassword',
+        component: _updatepassword_updatepassword_component__WEBPACK_IMPORTED_MODULE_8__["UpdatepasswordComponent"],
         canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
       }, {
         path: 'default',
@@ -740,14 +771,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _updatepassword_updatepassword_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ./updatepassword/updatepassword.component */
+    "./src/app/dashboard/updatepassword/updatepassword.component.ts");
 
     var DashboardModule = function DashboardModule() {
       _classCallCheck(this, DashboardModule);
     };
 
     DashboardModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      declarations: [_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"], _shortcuts_shortcuts_component__WEBPACK_IMPORTED_MODULE_5__["ShortcutsComponent"], _accountsummary_accountsummary_component__WEBPACK_IMPORTED_MODULE_6__["AccountsummaryComponent"], _ministatement_ministatement_component__WEBPACK_IMPORTED_MODULE_7__["MinistatementComponent"], _dashboardhome_dashboardhome_component__WEBPACK_IMPORTED_MODULE_10__["DashboardhomeComponent"], _transactionhistory_transactionhistory_component__WEBPACK_IMPORTED_MODULE_11__["TransactionhistoryComponent"], _default_default_component__WEBPACK_IMPORTED_MODULE_13__["DefaultComponent"]],
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_3__["DashboardRoutingModule"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_8__["SharedModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["PopoverModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["BsDatepickerModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["PaginationModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ModalModule"]]
+      declarations: [_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"], _shortcuts_shortcuts_component__WEBPACK_IMPORTED_MODULE_5__["ShortcutsComponent"], _accountsummary_accountsummary_component__WEBPACK_IMPORTED_MODULE_6__["AccountsummaryComponent"], _ministatement_ministatement_component__WEBPACK_IMPORTED_MODULE_7__["MinistatementComponent"], _dashboardhome_dashboardhome_component__WEBPACK_IMPORTED_MODULE_10__["DashboardhomeComponent"], _transactionhistory_transactionhistory_component__WEBPACK_IMPORTED_MODULE_11__["TransactionhistoryComponent"], _default_default_component__WEBPACK_IMPORTED_MODULE_13__["DefaultComponent"], _updatepassword_updatepassword_component__WEBPACK_IMPORTED_MODULE_15__["UpdatepasswordComponent"]],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _dashboard_routing_module__WEBPACK_IMPORTED_MODULE_3__["DashboardRoutingModule"], _shared_shared_module__WEBPACK_IMPORTED_MODULE_8__["SharedModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["PopoverModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["BsDatepickerModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["PaginationModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_14__["ReactiveFormsModule"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ModalModule"]]
     })], DashboardModule);
     /***/
   },
@@ -1075,31 +1112,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
 
-    var ShortcutsComponent = function ShortcutsComponent(aR, router) {
-      var _this5 = this;
 
-      _classCallCheck(this, ShortcutsComponent);
+    var src_app_core_authentication_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/core/authentication.service */
+    "./src/app/core/authentication.service.ts");
 
-      this.aR = aR;
-      this.router = router;
-      this.divbg = "bluebackground1";
-      router.events.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])(function (e) {
-        return e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterEvent"];
-      })).subscribe(function (e) {
-        if (e['url'] == '/dashboard/transactionhistory') {
-          _this5.divbg = "purplebackground1";
-        } else {
-          _this5.divbg = "bluebackground1";
+    var ShortcutsComponent =
+    /*#__PURE__*/
+    function () {
+      function ShortcutsComponent(aR, router, authenticationService) {
+        var _this5 = this;
+
+        _classCallCheck(this, ShortcutsComponent);
+
+        this.aR = aR;
+        this.router = router;
+        this.authenticationService = authenticationService;
+        this.divbg = "bluebackground1";
+        router.events.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])(function (e) {
+          return e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterEvent"];
+        })).subscribe(function (e) {
+          _this5.headerTitle = e["url"].split('/')[2];
+
+          if (e['url'] == '/dashboard/transactionhistory') {
+            _this5.divbg = "purplebackground1";
+          } else {
+            _this5.divbg = "bluebackground1";
+            _this5.headerTitle = 'AccountSummary';
+          }
+        });
+      }
+
+      _createClass(ShortcutsComponent, [{
+        key: "signout",
+        value: function signout() {
+          this.authenticationService.signout();
         }
-      });
-    };
+      }]);
+
+      return ShortcutsComponent;
+    }();
 
     ShortcutsComponent.ctorParameters = function () {
       return [{
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }, {
+        type: src_app_core_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"]
       }];
     };
 
@@ -1187,9 +1249,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.accountService = accountService;
         this.router = router;
+        this.transactionHistoryLength = 0;
+        this.filteredTransactionsLength = 0;
+        this.itemsPerPage = 20;
         this.bsValue = new Date();
         this.maxDate = new Date();
-        this.transactionHistoryLength = 0;
       }
 
       _createClass(TransactionhistoryComponent, [{
@@ -1197,36 +1261,54 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this6 = this;
 
-          this.maxDate.setDate(this.maxDate.getDate() + 7);
-          this.bsRangeValue = [this.bsValue, this.maxDate];
           this.accountService.getTransactionHistory().subscribe(function (res) {
             res = JSON.parse(res);
-            _this6.transactionHistoryLength = res['Result'].array.RevTrxn.length;
             _this6.transactionHistory = res['Result'].array.RevTrxn.sort(function (a, b) {
               return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
             });
-            _this6.currentTransactions = _this6.transactionHistory.slice(0, 20);
+            _this6.filteredTransactions = _this6.transactionHistory;
+            _this6.filteredTransactionsLength = _this6.filteredTransactions.length;
+            _this6.currentTransactions = _this6.transactionHistory.slice(0, _this6.itemsPerPage);
+            _this6.maxDate = new Date(_this6.filteredTransactions[0].trxn.recDate);
+            _this6.minDate = new Date(_this6.maxDate.getTime() - 7 * 24 * 60 * 60 * 1000);
+            _this6.bsRangeValue = [_this6.minDate, _this6.maxDate];
+            _this6.selectedDateRange = _this6.bsRangeValue;
+
+            _this6.onDateChange(_this6.selectedDateRange);
           });
         }
       }, {
         key: "onDateChange",
-        value: function onDateChange($event) {
+        value: function onDateChange(dateRange) {
+          var _this7 = this;
+
+          if (dateRange) {
+            this.selectedDateRange = dateRange;
+          }
+
           if (this.transactionHistory) {
-            this.currentTransactions = this.transactionHistory.filter(function (t, i) {
+            this.filteredTransactions = this.transactionHistory.filter(function (t, i) {
               var tranTime = new Date(t.trxn.recDate).getTime();
-              return tranTime >= $event[0].getTime() && tranTime <= $event[1].getTime();
+              return tranTime >= _this7.selectedDateRange[0].getTime() && tranTime <= _this7.selectedDateRange[1].getTime();
             });
+            this.currentTransactions = this.filteredTransactions.slice(0, this.itemsPerPage);
           }
         }
       }, {
         key: "searchHistory",
         value: function searchHistory() {
-          var _this7 = this;
+          var _this8 = this;
 
-          this.currentTransactions = this.transactionHistory.filter(function (t, i) {
-            var temp = JSON.stringify(t).toUpperCase();
-            return temp.includes(_this7.searchKey.toUpperCase());
-          });
+          if (this.searchKey != '' && this.searchKey != null) {
+            this.filteredTransactions = this.filteredTransactions.filter(function (t, i) {
+              var temp = JSON.stringify(t).toUpperCase();
+              return temp.includes(_this8.searchKey.toUpperCase());
+            });
+          } else {
+            this.onDateChange();
+          }
+
+          this.currentTransactions = this.filteredTransactions.slice(0, this.itemsPerPage);
         }
       }, {
         key: "gotoaccount",
@@ -1262,6 +1344,151 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./transactionhistory.component.css */
       "./src/app/dashboard/transactionhistory/transactionhistory.component.css")).default]
     })], TransactionhistoryComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/updatepassword/updatepassword.component.css":
+  /*!***********************************************************************!*\
+    !*** ./src/app/dashboard/updatepassword/updatepassword.component.css ***!
+    \***********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppDashboardUpdatepasswordUpdatepasswordComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');\r\n\r\n#login_page .row{\r\n  height: 100%;\r\n}\r\n\r\n#login_page .left_col{\r\n \r\n    padding-left:25%;\r\n  \r\n}\r\n\r\n#login_page .left_col p{\r\n  width:411px;\r\n}\r\n\r\n#login_page .left_col h1{\r\n  color: #FFFFFF;\r\n  font-family: Lato;\r\n  font-size: 50px;\r\n  font-weight: 900;\r\n  letter-spacing: 0.8px;\r\n  line-height: 60px;\r\n  height: 120px;\r\n  width: 476px;\r\n  \r\n}\r\n\r\n#login_page .left_col .data{\r\n  font-size: 1rem;\r\n  color:#ffffff;\r\n  margin-top:24px;\r\n}\r\n\r\n#login_page .left_col .logohead{\r\n \r\n  text-decoration: none;\r\n  color:white;\r\n  margin-bottom:80px;\r\n  margin-top:65px;\r\n  \r\n\r\n  \r\n}\r\n\r\n#login_page .left_col .logohead span{\r\n  color: #FFFFFF;\r\n  font-family: Montserrat;\r\n  font-size: 26.67px;\r\n  font-weight: 600;\r\n  letter-spacing: 0.8px;\r\n  height: 33px;\r\n  width: 142px;\r\n  \r\n}\r\n\r\n#login_page .right_col .right_col_head{\r\n  \r\n  height: 36px;\r\n  width: 304px;\r\n  \r\n  \r\n \r\n \r\n}\r\n\r\n#login_page .right_col_head h3{\r\n  height: 36px;\r\n  width: 304px;\r\n  \r\n  font-family: Lato;\r\n  font-size: 30px;\r\n  font-weight: bold;\r\n  letter-spacing: 0;\r\n  line-height: 36px;\r\n}\r\n\r\n#login_page .right_col span{\r\n  color: #2B73B0;\r\n}\r\n\r\n#login_page .right_col_head p{\r\n  \r\n  width: 411px;\r\n  color: #90A2B1;\r\n  font-family: Lato;\r\n  font-size: 16px;\r\n  letter-spacing: 0;\r\n  line-height: 19px;\r\n  \r\n}\r\n\r\n#login_page #form{\r\n  margin-top:120px;\r\n}\r\n\r\n#login_page .right_col{\r\n  height: 409px;\r\n  width: 411px;\r\n  margin-top:198px;\r\n}\r\n\r\n#login_page .right_col label{\r\n  \r\n  color: #90A2B1;\r\n  font-family: Lato;\r\n  font-size: 12px;\r\n  font-weight: bold;\r\n  letter-spacing: 0;\r\n  line-height: 15px;\r\n  text-transform: uppercase;\r\n  margin-bottom:0px;\r\n}\r\n\r\n#login_page .right_col input,\r\n#login_page .right_col select.form-control {\r\n  background: transparent;\r\n  border: none;\r\n  border-bottom: 1px solid #dddddd;\r\n  box-shadow: none;\r\n  border-radius: 0;\r\n\r\n  box-sizing: border-box;\r\n  color: #072843;\r\n  font-family: Lato;\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  letter-spacing: 0;\r\n  line-height: 19px;\r\n}\r\n\r\n#login_page .passwordL{\r\n  margin-top:40px;\r\n}\r\n\r\n#login_page .right_col .for_pass{\r\n  \r\n  color: #2B73B0;\r\n  font-family: Lato;\r\n  font-size: 12px;\r\n  font-weight: bold;\r\n  letter-spacing: 0;\r\n  line-height: 15px;\r\n  \r\n\r\n}\r\n\r\ninput:focus,\r\nselect.form-control:focus {\r\n  box-shadow: none;\r\n}\r\n\r\nh1{\r\n  font-family: Lato;\r\n}\r\n\r\n.left_maincol{\r\n  min-height: 100%;\r\n  display: grid;\r\n  grid-template-rows: 1fr auto;\r\n}\r\n\r\nfooter {\r\n  margin-left:25%;\r\n  grid-row-start: 2;\r\n  grid-row-end: 3;\r\n \r\n  border-top: 1px solid #4B6377;\r\n}\r\n\r\n#login_page footer a{\r\n  text-decoration: none;\r\n  color:white;\r\n  font-size:12px;\r\n}\r\n\r\n.btn{\r\n  color:#FFFFFF;\r\n  font-size: 1rem;\r\n  height: 48px;\r\n  width: 255px;\r\n  border-radius: 4px;\r\n  background-color: #D46929;\r\n  font-weight:700;\r\n  font-family:Lato;\r\n}\r\n\r\n#login_page .right_col .login_btn{\r\n  margin-top:40px;\r\n}\r\n\r\n@media (max-width: 576px) { \r\n  .left_maincol{\r\n     display:none;\r\n  }\r\n}\r\n\r\n@media (max-width:576px){\r\n  .right_col{\r\n    width:85% !important;\r\n    margin-top:140px !important;\r\n    \r\n  }\r\n}\r\n\r\n@media(max-width:360px){\r\n  .right_col{\r\n    margin-top:100px !important;\r\n  }\r\n}\r\n\r\n/*@media (max-width:576px){\r\n  .right_col_head{\r\n   \r\n    margin-top:20% !important;\r\n  }\r\n}*/\r\n\r\n@media (max-width:576px){\r\n  .btn{\r\n    color:#072843 !important;\r\n    width:100% !important;\r\n    \r\n  }\r\n}\r\n\r\n.fa-arrow-left{\r\n  color:#ce6b20;\r\n  font-size:1rem;\r\n}\r\n\r\n@media (max-width:576px){\r\n  #login_page .right_col_head p{\r\n    width:100% !important;\r\n  }\r\n}\r\n\r\n#login_page .mobile_signup{\r\n  font-family: Lato;\r\n  font-size:12px;\r\n  margin-top:12px;\r\n  font-weight:bold;\r\n  \r\n}\r\n\r\n#login_page .mobile_signup a{\r\n  text-decoration:none;\r\n  color:#90A2B1;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL3VwZGF0ZXBhc3N3b3JkL3VwZGF0ZXBhc3N3b3JkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUZBQXVGOztBQUV2RjtFQUNFLFlBQVk7QUFDZDs7QUFDQTs7SUFFSSxnQkFBZ0I7O0FBRXBCOztBQUNBO0VBQ0UsV0FBVztBQUNiOztBQUNBO0VBQ0UsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsYUFBYTtFQUNiLFlBQVk7O0FBRWQ7O0FBQ0E7RUFDRSxlQUFlO0VBQ2YsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBQ0E7O0VBRUUscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsZUFBZTs7OztBQUlqQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixxQkFBcUI7RUFDckIsWUFBWTtFQUNaLFlBQVk7O0FBRWQ7O0FBR0E7O0VBRUUsWUFBWTtFQUNaLFlBQVk7Ozs7O0FBS2Q7O0FBQ0E7RUFDRSxZQUFZO0VBQ1osWUFBWTs7RUFFWixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsaUJBQWlCO0FBQ25COztBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFDQTs7RUFFRSxZQUFZO0VBQ1osY0FBYztFQUNkLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGlCQUFpQjs7QUFFbkI7O0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsWUFBWTtFQUNaLGdCQUFnQjtBQUNsQjs7QUFDQTs7RUFFRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsaUJBQWlCO0FBQ25COztBQUNBOztFQUVFLHVCQUF1QjtFQUN2QixZQUFZO0VBQ1osZ0NBQWdDO0VBR2hDLGdCQUFnQjtFQUNoQixnQkFBZ0I7O0VBRWhCLHNCQUFzQjtFQUN0QixjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLGlCQUFpQjtBQUNuQjs7QUFDQTtFQUNFLGVBQWU7QUFDakI7O0FBQ0E7O0VBRUUsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixpQkFBaUI7OztBQUduQjs7QUFDQTs7RUFHRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLDRCQUE0QjtBQUM5Qjs7QUFDQTtFQUNFLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsZUFBZTs7RUFFZiw2QkFBNkI7QUFDL0I7O0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixlQUFlO0VBQ2YsZ0JBQWdCO0FBQ2xCOztBQUNBO0VBQ0UsZUFBZTtBQUNqQjs7QUFDQTtFQUNFO0tBQ0csWUFBWTtFQUNmO0FBQ0Y7O0FBQ0E7RUFDRTtJQUNFLG9CQUFvQjtJQUNwQiwyQkFBMkI7O0VBRTdCO0FBQ0Y7O0FBQ0E7RUFDRTtJQUNFLDJCQUEyQjtFQUM3QjtBQUNGOztBQUNBOzs7OztFQUtFOztBQUNGO0VBQ0U7SUFDRSx3QkFBd0I7SUFDeEIscUJBQXFCOztFQUV2QjtBQUNGOztBQUNBO0VBQ0UsYUFBYTtFQUNiLGNBQWM7QUFDaEI7O0FBQ0E7RUFDRTtJQUNFLHFCQUFxQjtFQUN2QjtBQUNGOztBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCOztBQUVsQjs7QUFDQTtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9kYXNoYm9hcmQvdXBkYXRlcGFzc3dvcmQvdXBkYXRlcGFzc3dvcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9TGF0bzo5MDB8TW9udHNlcnJhdCZkaXNwbGF5PXN3YXAnKTtcclxuXHJcbiNsb2dpbl9wYWdlIC5yb3d7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcbiNsb2dpbl9wYWdlIC5sZWZ0X2NvbHtcclxuIFxyXG4gICAgcGFkZGluZy1sZWZ0OjI1JTtcclxuICBcclxufVxyXG4jbG9naW5fcGFnZSAubGVmdF9jb2wgcHtcclxuICB3aWR0aDo0MTFweDtcclxufVxyXG4jbG9naW5fcGFnZSAubGVmdF9jb2wgaDF7XHJcbiAgY29sb3I6ICNGRkZGRkY7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiA5MDA7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDAuOHB4O1xyXG4gIGxpbmUtaGVpZ2h0OiA2MHB4O1xyXG4gIGhlaWdodDogMTIwcHg7XHJcbiAgd2lkdGg6IDQ3NnB4O1xyXG4gIFxyXG59XHJcbiNsb2dpbl9wYWdlIC5sZWZ0X2NvbCAuZGF0YXtcclxuICBmb250LXNpemU6IDFyZW07XHJcbiAgY29sb3I6I2ZmZmZmZjtcclxuICBtYXJnaW4tdG9wOjI0cHg7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLmxlZnRfY29sIC5sb2dvaGVhZHtcclxuIFxyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICBjb2xvcjp3aGl0ZTtcclxuICBtYXJnaW4tYm90dG9tOjgwcHg7XHJcbiAgbWFyZ2luLXRvcDo2NXB4O1xyXG4gIFxyXG5cclxuICBcclxufVxyXG5cclxuI2xvZ2luX3BhZ2UgLmxlZnRfY29sIC5sb2dvaGVhZCBzcGFue1xyXG4gIGNvbG9yOiAjRkZGRkZGO1xyXG4gIGZvbnQtZmFtaWx5OiBNb250c2VycmF0O1xyXG4gIGZvbnQtc2l6ZTogMjYuNjdweDtcclxuICBmb250LXdlaWdodDogNjAwO1xyXG4gIGxldHRlci1zcGFjaW5nOiAwLjhweDtcclxuICBoZWlnaHQ6IDMzcHg7XHJcbiAgd2lkdGg6IDE0MnB4O1xyXG4gIFxyXG59XHJcblxyXG5cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbCAucmlnaHRfY29sX2hlYWR7XHJcbiAgXHJcbiAgaGVpZ2h0OiAzNnB4O1xyXG4gIHdpZHRoOiAzMDRweDtcclxuICBcclxuICBcclxuIFxyXG4gXHJcbn1cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbF9oZWFkIGgze1xyXG4gIGhlaWdodDogMzZweDtcclxuICB3aWR0aDogMzA0cHg7XHJcbiAgXHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIGxldHRlci1zcGFjaW5nOiAwO1xyXG4gIGxpbmUtaGVpZ2h0OiAzNnB4O1xyXG59XHJcbiNsb2dpbl9wYWdlIC5yaWdodF9jb2wgc3BhbntcclxuICBjb2xvcjogIzJCNzNCMDtcclxufVxyXG4jbG9naW5fcGFnZSAucmlnaHRfY29sX2hlYWQgcHtcclxuICBcclxuICB3aWR0aDogNDExcHg7XHJcbiAgY29sb3I6ICM5MEEyQjE7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG4gIGxldHRlci1zcGFjaW5nOiAwO1xyXG4gIGxpbmUtaGVpZ2h0OiAxOXB4O1xyXG4gIFxyXG59XHJcbiNsb2dpbl9wYWdlICNmb3Jte1xyXG4gIG1hcmdpbi10b3A6MTIwcHg7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbHtcclxuICBoZWlnaHQ6IDQwOXB4O1xyXG4gIHdpZHRoOiA0MTFweDtcclxuICBtYXJnaW4tdG9wOjE5OHB4O1xyXG59XHJcbiNsb2dpbl9wYWdlIC5yaWdodF9jb2wgbGFiZWx7XHJcbiAgXHJcbiAgY29sb3I6ICM5MEEyQjE7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbiAgZm9udC1zaXplOiAxMnB4O1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIGxldHRlci1zcGFjaW5nOiAwO1xyXG4gIGxpbmUtaGVpZ2h0OiAxNXB4O1xyXG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgbWFyZ2luLWJvdHRvbTowcHg7XHJcbn1cclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbCBpbnB1dCxcclxuI2xvZ2luX3BhZ2UgLnJpZ2h0X2NvbCBzZWxlY3QuZm9ybS1jb250cm9sIHtcclxuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkZGRkZGQ7XHJcbiBcclxuICAtd2Via2l0LWJveC1zaGFkb3c6IG5vbmU7XHJcbiAgYm94LXNoYWRvdzogbm9uZTtcclxuICBib3JkZXItcmFkaXVzOiAwO1xyXG5cclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gIGNvbG9yOiAjMDcyODQzO1xyXG4gIGZvbnQtZmFtaWx5OiBMYXRvO1xyXG4gIGZvbnQtc2l6ZTogMTZweDtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICBsZXR0ZXItc3BhY2luZzogMDtcclxuICBsaW5lLWhlaWdodDogMTlweDtcclxufVxyXG4jbG9naW5fcGFnZSAucGFzc3dvcmRMe1xyXG4gIG1hcmdpbi10b3A6NDBweDtcclxufVxyXG4jbG9naW5fcGFnZSAucmlnaHRfY29sIC5mb3JfcGFzc3tcclxuICBcclxuICBjb2xvcjogIzJCNzNCMDtcclxuICBmb250LWZhbWlseTogTGF0bztcclxuICBmb250LXNpemU6IDEycHg7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDA7XHJcbiAgbGluZS1oZWlnaHQ6IDE1cHg7XHJcbiAgXHJcblxyXG59XHJcbmlucHV0OmZvY3VzLFxyXG5zZWxlY3QuZm9ybS1jb250cm9sOmZvY3VzIHtcclxuICAtd2Via2l0LWJveC1zaGFkb3c6IG5vbmU7XHJcbiAgYm94LXNoYWRvdzogbm9uZTtcclxufVxyXG5cclxuaDF7XHJcbiAgZm9udC1mYW1pbHk6IExhdG87XHJcbn1cclxuLmxlZnRfbWFpbmNvbHtcclxuICBtaW4taGVpZ2h0OiAxMDAlO1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiAxZnIgYXV0bztcclxufVxyXG5mb290ZXIge1xyXG4gIG1hcmdpbi1sZWZ0OjI1JTtcclxuICBncmlkLXJvdy1zdGFydDogMjtcclxuICBncmlkLXJvdy1lbmQ6IDM7XHJcbiBcclxuICBib3JkZXItdG9wOiAxcHggc29saWQgIzRCNjM3NztcclxufVxyXG4jbG9naW5fcGFnZSBmb290ZXIgYXtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgY29sb3I6d2hpdGU7XHJcbiAgZm9udC1zaXplOjEycHg7XHJcbn1cclxuLmJ0bntcclxuICBjb2xvcjojRkZGRkZGO1xyXG4gIGZvbnQtc2l6ZTogMXJlbTtcclxuICBoZWlnaHQ6IDQ4cHg7XHJcbiAgd2lkdGg6IDI1NXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRDQ2OTI5O1xyXG4gIGZvbnQtd2VpZ2h0OjcwMDtcclxuICBmb250LWZhbWlseTpMYXRvO1xyXG59XHJcbiNsb2dpbl9wYWdlIC5yaWdodF9jb2wgLmxvZ2luX2J0bntcclxuICBtYXJnaW4tdG9wOjQwcHg7XHJcbn1cclxuQG1lZGlhIChtYXgtd2lkdGg6IDU3NnB4KSB7IFxyXG4gIC5sZWZ0X21haW5jb2x7XHJcbiAgICAgZGlzcGxheTpub25lO1xyXG4gIH1cclxufVxyXG5AbWVkaWEgKG1heC13aWR0aDo1NzZweCl7XHJcbiAgLnJpZ2h0X2NvbHtcclxuICAgIHdpZHRoOjg1JSAhaW1wb3J0YW50O1xyXG4gICAgbWFyZ2luLXRvcDoxNDBweCAhaW1wb3J0YW50O1xyXG4gICAgXHJcbiAgfVxyXG59XHJcbkBtZWRpYShtYXgtd2lkdGg6MzYwcHgpe1xyXG4gIC5yaWdodF9jb2x7XHJcbiAgICBtYXJnaW4tdG9wOjEwMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcbi8qQG1lZGlhIChtYXgtd2lkdGg6NTc2cHgpe1xyXG4gIC5yaWdodF9jb2xfaGVhZHtcclxuICAgXHJcbiAgICBtYXJnaW4tdG9wOjIwJSAhaW1wb3J0YW50O1xyXG4gIH1cclxufSovXHJcbkBtZWRpYSAobWF4LXdpZHRoOjU3NnB4KXtcclxuICAuYnRue1xyXG4gICAgY29sb3I6IzA3Mjg0MyAhaW1wb3J0YW50O1xyXG4gICAgd2lkdGg6MTAwJSAhaW1wb3J0YW50O1xyXG4gICAgXHJcbiAgfVxyXG59XHJcbi5mYS1hcnJvdy1sZWZ0e1xyXG4gIGNvbG9yOiNjZTZiMjA7XHJcbiAgZm9udC1zaXplOjFyZW07XHJcbn1cclxuQG1lZGlhIChtYXgtd2lkdGg6NTc2cHgpe1xyXG4gICNsb2dpbl9wYWdlIC5yaWdodF9jb2xfaGVhZCBwe1xyXG4gICAgd2lkdGg6MTAwJSAhaW1wb3J0YW50O1xyXG4gIH1cclxufVxyXG4jbG9naW5fcGFnZSAubW9iaWxlX3NpZ251cHtcclxuICBmb250LWZhbWlseTogTGF0bztcclxuICBmb250LXNpemU6MTJweDtcclxuICBtYXJnaW4tdG9wOjEycHg7XHJcbiAgZm9udC13ZWlnaHQ6Ym9sZDtcclxuICBcclxufVxyXG4jbG9naW5fcGFnZSAubW9iaWxlX3NpZ251cCBhe1xyXG4gIHRleHQtZGVjb3JhdGlvbjpub25lO1xyXG4gIGNvbG9yOiM5MEEyQjE7XHJcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/updatepassword/updatepassword.component.ts":
+  /*!**********************************************************************!*\
+    !*** ./src/app/dashboard/updatepassword/updatepassword.component.ts ***!
+    \**********************************************************************/
+
+  /*! exports provided: UpdatepasswordComponent */
+
+  /***/
+  function srcAppDashboardUpdatepasswordUpdatepasswordComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "UpdatepasswordComponent", function () {
+      return UpdatepasswordComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/auth/auth.service */
+    "./src/app/auth/auth.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var src_environments_environment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! src/environments/environment */
+    "./src/environments/environment.ts");
+
+    var UpdatepasswordComponent =
+    /*#__PURE__*/
+    function () {
+      function UpdatepasswordComponent(authService, router, fb, http) {
+        _classCallCheck(this, UpdatepasswordComponent);
+
+        this.authService = authService;
+        this.router = router;
+        this.fb = fb;
+        this.http = http;
+        this.passwordForm = this.fb.group({
+          email: [window.localStorage.getItem('email')],
+          currentPassword: [],
+          newPassword: []
+        });
+      }
+
+      _createClass(UpdatepasswordComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "updatePassword",
+        value: function updatePassword() {
+          var _this9 = this;
+
+          this.http.post("https://revcard.herokuapp.com/api/v1/updatePassword", this.passwordForm.value).subscribe(function () {
+            _this9.router.navigate(["".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].baseUrl, "login")]);
+          });
+        }
+      }, {
+        key: "newPassword",
+        get: function get() {
+          return this.passwordForm.controls['newPassword'];
+        }
+      }]);
+
+      return UpdatepasswordComponent;
+    }();
+
+    UpdatepasswordComponent.ctorParameters = function () {
+      return [{
+        type: src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"]
+      }];
+    };
+
+    UpdatepasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-updatepassword',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./updatepassword.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/updatepassword/updatepassword.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./updatepassword.component.css */
+      "./src/app/dashboard/updatepassword/updatepassword.component.css")).default]
+    })], UpdatepasswordComponent);
     /***/
   }
 }]);
