@@ -51,7 +51,11 @@ app.use((req,res,next)=>{
         res.redirect("/login")
     }
 })
-
+app.use(cors({
+    origin:function(origin,callback){
+        callback(null,true)
+    }
+}));
 app.get("/accountsummary/:oppId",function (req, res, next) {
     var requestArgs = {
         oppId: req.params.oppId,
@@ -67,8 +71,7 @@ app.get("/accountsummary/:oppId",function (req, res, next) {
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetAcctSummary'];
         method(requestArgs, function (err, result, envelope, soapHeader) {
             res.send(result);
-        }, null , customRequestHeader);
-        
+        }, null , customRequestHeader);        
     });
 });
 app.get("/transactionhistory/:oppId", function (req, res, next) {
