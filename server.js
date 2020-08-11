@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
 var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
-'https://praveeng-1002-herokuapp.com/\.*'];
+'https://praveeng-1002-herokuapp.com/','https://praveeng-1002.herokuapp.com/assests/favicon.ico','https://praveeng-1002.herokuapp.com/getAuthUrl'];
 
 app.use(cors({
     origin: function(origin,callback){
@@ -23,7 +23,7 @@ app.use(cors({
             return callback(null,true)
         }
         else{
-
+            res.send("not allowed you know")
             return callback('not allowed'+origin,false)
         }
     }
