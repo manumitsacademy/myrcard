@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
 var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
-'https://praveeng-1002-herokuapp.com/'];
+'https://praveeng-1002-herokuapp.com/\.*'];
 
 app.use(cors({
     origin: function(origin,callback){
