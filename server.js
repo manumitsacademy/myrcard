@@ -23,7 +23,8 @@ app.use(cors({
             return callback(null,true)
         }
         else{
-            return callback('not allowed',false)
+
+            return callback('not allowed'+origin,false)
         }
     }
 }));
