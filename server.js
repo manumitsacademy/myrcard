@@ -10,26 +10,27 @@ var cors = require('cors')
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
+
+var allowedOrigins = ['http://localhost:4200','http://localhost:8080/',
+'https://praveeng-1002-herokuapp.com'];
 app.use(express.static(__dirname + '/angular-build'));
-var allowedOrigins = ['http://localhost:4200','http://localhost:8080/*',
-'https://praveeng-1002-herokuapp.com/','https://praveeng-1002.herokuapp.com/assests/favicon.ico','https://praveeng-1002.herokuapp.com/getAuthUrl'];
-
 app.use(cors({
-    origin: function(origin,callback){
-
-        //return callback(null,true);
-        console.log(origin)
-        if(allowedOrigins.includes(origin)){
-            return callback(null,true)
-        }
+origin: function(origin,callback){
+    console.log(origin)
+    if(allowedOrigins.includes(origin)){
+        return callback(null,true)
     }
+    else{
+        return callback('not allowed',false)
+    }
+}
 }));
 
-var authUrl = process.env.authURL;      // || "https://revcard.herokuapp.com/api/";
-//seperate environment variables for authurl and api
+var authUrl = process.env.authURL || "https://revcard.herokuapp.com/api/";
+
 
     
-    var url = process.env.Url;             // || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
+    var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
     var date = new Date();
     var sysDate = date.getTime()-(24*60*60*1000);
 app.get("/getAuthUrl",(req,res)=>{
@@ -122,4 +123,4 @@ app.get('/*', function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
 });
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 8080);
