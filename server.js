@@ -15,7 +15,19 @@ var authUrl = process.env.authURL || "https://revcard.herokuapp.com/api/";
 var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
 var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
-
+var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:4200','http://localhost:8080']
+var corsOptions = {
+    origin: function (origin, callback) {
+        console.log(origin)
+        if(allowedOrigins.includes(origin)){
+            return callback(null,true)
+        }
+        else{
+            return callback('not allowed',false)
+        }
+    }
+  }
+app.use(cors(corsOptions));
 app.get("/getAuthUrl",(req,res)=>{
     logger.info('welcome to loggeer')
     res.send({authUrl:authUrl})
