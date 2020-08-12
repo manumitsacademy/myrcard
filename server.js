@@ -11,12 +11,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 var cors = require('cors');
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
-var authUrl = process.env.authURL || "https://revcard.herokuapp.com/api/";   
-var url = process.env.Url || "https://revcard.pearlcapital.com:7073/Revenued.wsdl";
+var authUrl = process.env.authURL;   
+var url = process.env.Url;
 var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
 var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:4200','http://localhost:8080']
 var corsOptionsDelegate = function (req, callback) {
+    logger.info('welcome to loggeer',JSON.stringify(req.connection))
     var corsOptions;
     if (allowedOrigins.indexOf(req.header('Origin')) !== -1) {
       corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
@@ -26,8 +27,7 @@ var corsOptionsDelegate = function (req, callback) {
     callback(null, corsOptions) // callback expects two parameters: error and options
   }
 app.use(cors(corsOptionsDelegate));
-app.get("/getAuthUrl",(req,res)=>{
-    logger.info('welcome to loggeer')
+app.get("/getAuthUrl",(req,res)=>{    
     res.send({authUrl:authUrl})
 })
 app.get('/login',function(req,res){
@@ -77,7 +77,7 @@ app.get("/accountsummary/:oppId",function (req, res, next) {
     soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
-            "Authorization": process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
+            "Authorization": process.env.Authorization
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetAcctSummary'];
         method(requestArgs, function (err, result, envelope, soapHeader) {
@@ -98,7 +98,7 @@ app.get("/transactionhistory/:oppId", function (req, res, next) {
     soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
-            "Authorization": process.env.Authorization || "UmV2ZW51ZWRIZXJva3VTaXRlL0ZJNzhKSkNSMzRXOTAhNTY="
+            "Authorization": process.env.Authorization
         };
         var method = client['Revenued']['RevenuedSoap']['RevenuedGetTrxnHistory'];
        
@@ -119,4 +119,4 @@ app.get('/*',function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
 });
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT);
