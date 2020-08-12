@@ -19,7 +19,7 @@ var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:42
 var corsOptions = {
     origin: function (origin, callback) {
         console.log(origin)
-        if(allowedOrigins.includes(origin)){
+        if(allowedOrigins.includes(origin)||origin===undefined){
             return callback(null,true)
         }
         else{
