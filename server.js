@@ -25,8 +25,8 @@ var corsOptionsDelegate = function (req, callback) {
     }
     callback(null, corsOptions) // callback expects two parameters: error and options
   }
-//app.use(cors(corsOptions));
-app.get("/getAuthUrl",cors(corsOptionsDelegate),(req,res)=>{
+app.use(cors(corsOptionsDelegate));
+app.get("/getAuthUrl",(req,res)=>{
     logger.info('welcome to loggeer')
     res.send({authUrl:authUrl})
 })
