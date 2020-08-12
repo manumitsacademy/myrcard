@@ -17,7 +17,6 @@ var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
 var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:4200','http://localhost:8080']
 var corsOptionsDelegate = function (req, callback) {
-    logger.info('welcome to loggeer',JSON.stringify(req.connection))
     var corsOptions;
     if (allowedOrigins.indexOf(req.header('Origin')) !== -1) {
       corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
@@ -27,7 +26,8 @@ var corsOptionsDelegate = function (req, callback) {
     callback(null, corsOptions) // callback expects two parameters: error and options
   }
 app.use(cors(corsOptionsDelegate));
-app.get("/getAuthUrl",(req,res)=>{    
+app.get("/getAuthUrl",(req,res)=>{     
+    logger.info('welcome to loggeer',JSON.stringify(req.connection))   
     res.send({authUrl:authUrl})
 })
 app.get('/login',function(req,res){
