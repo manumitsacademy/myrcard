@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   buildname:'its in development',
   baseUrl:'https://praveeng-1002.herokuapp.com/',
-  soapUrl:'http://localhost:8080/'
+  soapUrl:'https://praveeng-1002.herokuapp.com/'
+  //soapUrl:'http://localhost:8080/'
 };
 
 /*

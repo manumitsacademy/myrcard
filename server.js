@@ -26,7 +26,7 @@ var corsOptions = {
             return callback('not allowed',false)
         }
     }
-  }
+}
 app.use(cors(corsOptions));
 app.get("/getAuthUrl",(req,res)=>{
     logger.info('welcome to loggeer')
