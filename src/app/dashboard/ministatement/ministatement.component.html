@@ -11,20 +11,14 @@
 <div>
     <div class="container ">
         <div class="card card1">
-        <div class="row">
-            
+        <div class="row">            
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="row pt-4">
                     <div class="col-md-12" id="summaryheading">
-                        <h5 class="text-uppercase d-inline">Mini Statement</h5>
-                        <!-- <div class="d-inline right_dot" style="float:right;">
-                           <a href="#" class="dots d-none d-xl-block"> <img src="assets/dots.png" alt="" class="img-fluid " style="width:60%"></a>
-                           <a href="#" class="view_all d-xl-none">View all</a>
-                        </div> -->
+                        <h5 class="text-uppercase d-inline">Mini Statement</h5>                        
                     </div>
                 </div>
-                <div class="mini_table d-sm-none d-md-block d-xl-block d-lg-block">
-                    
+                <div class="mini_table d-sm-none d-md-block d-xl-block d-lg-block">                    
                     <div class="table-responsive">
                         <!--<table class="table table-hover table-outline table-vcenter text-nowrap card-table"  width="100%">-->
                         <table class="table table-hover table-vcenter text-left" width="100%" >
@@ -46,14 +40,14 @@
                             </thead>
                             <tbody>
                                 <tr *ngFor="let transaction of ministatement">
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">
                                         <span>{{transaction.trxn.recDate}}</span>
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.cpty.name}}
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.id}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.id}}
                                     </td>
-                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right">{{transaction.trxn.amount|currency}}
+                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.amount|currency}}
                                     </td>
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         &nbsp;
