@@ -11,8 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 var cors = require('cors');
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
-var proxyUrlEnv = process.env.PROXY_URL;
-var proxy = url.parse(proxyUrlEnv);
 var authUrl = process.env.authURL;   
 var url = process.env.Url;
 var date = new Date();
@@ -72,34 +70,6 @@ app.use(cors({
         callback(null,true)
     }
 }));
-//proximo setup
-var proxyUrlEnv = process.env.PROXY_URL;
-var proxy = url.parse(proxyUrlEnv);
-
-var request_with_defaults = request.defaults({
-    'proxy': proxyUrlEnv,
-    'timeout': 29000,
-    'connection': 'keep-alive'
-  });
-
-  soap_client_options = {
-    'request': request_with_defaults,
-    "overrideRootElement": {
-        "namespace": "pcb",
-        "xmlKey": 'theXml',
-        "xmlnsAttributes": [{
-          "name": "xmlns:pcb",
-          "value": "pcbfServices/PCBFGateway"
-        },{
-          "name": "xmlns:ns2",
-          "value": "pcbfServices/PCBFGateway"
-        } ]
-      }
-  };
-}
-
-
-//soap api calls
 app.get("/accountsummary/:oppId",function (req, res, next) {
     var requestArgs = {
         oppId: req.params.oppId,
@@ -107,7 +77,7 @@ app.get("/accountsummary/:oppId",function (req, res, next) {
         sessionId: '?'
     };
     var options = {};
-    soap.createClient(url, soap_client_options, function (err, client) {
+    soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
             "Authorization": process.env.Authorization
@@ -125,8 +95,10 @@ app.get("/transactionhistory/:oppId", function (req, res, next) {
         sysDate,
         sessionId: '?'
     };
-    var options = ;//{};
-    soap.createClient(url, soap_client_options, function (err, client) {
+
+    var options = {};
+
+    soap.createClient(url, options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
             "Authorization": process.env.Authorization
