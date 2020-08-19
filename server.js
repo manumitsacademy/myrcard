@@ -71,13 +71,40 @@ app.use(cors({
     }
 }));
 app.get("/accountsummary/:oppId",function (req, res, next) {
+    var options = {
+        hostname: proxy.hostname,
+        port: proxy.port || 80,
+        path: urlMerchant,
+        headers: {"Proxy-Authorization": 'Basic #{new Buffer(proxy.auth).toString("base64")}'}
+      }
+    
+      var request_with_defaults = request.defaults({
+        'proxy': proxyUrlEnv,
+        'timeout': 29000,
+        'connection': 'keep-alive'
+      });
+    
+      soap_client_options = {
+        'request': request_with_defaults,
+        "overrideRootElement": {
+            "namespace": "pcb",
+            "xmlKey": 'theXml',
+            "xmlnsAttributes": [{
+              "name": "xmlns:pcb",
+              "value": "pcbfServices/PCBFGateway"
+            },{
+              "name": "xmlns:ns2",
+              "value": "pcbfServices/PCBFGateway"
+            } ]
+          }
+      };
     var requestArgs = {
         oppId: req.params.oppId,
         sysDate,
         sessionId: '?'
     };
     var options = {};
-    soap.createClient(url, options, function (err, client) {
+    soap.createClient(url, soap_client_options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
             "Authorization": process.env.Authorization
