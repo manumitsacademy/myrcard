@@ -70,16 +70,19 @@ app.use(cors({
         callback(null,true)
     }
 }));
+
+var proxy = url.parse(process.env.PROXIMO_URL);
+
 app.get("/accountsummary/:oppId",function (req, res, next) {
-    var options = {
-        hostname: proxy.hostname,
-        port: proxy.port || 80,
-        path: urlMerchant,
-        headers: {"Proxy-Authorization": 'Basic #{new Buffer(proxy.auth).toString("base64")}'}
-      }
+    // var options = {
+    //     hostname: proxy.hostname,
+    //     port: proxy.port || 80,
+    //     path: urlMerchant,
+    //     headers: {"Proxy-Authorization": 'Basic #{new Buffer(proxy.auth).toString("base64")}'}
+    //   }
     
       var request_with_defaults = request.defaults({
-        'proxy': proxyUrlEnv,
+        'proxy': proxy,
         'timeout': 29000,
         'connection': 'keep-alive'
       });
