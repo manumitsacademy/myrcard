@@ -71,9 +71,10 @@ app.use(cors({
     }
 }));
 
-var proxy = url.parse(process.env.PROXIMO_URL);
+
 
 app.get("/accountsummary/:oppId",function (req, res, next) {
+    var proxy = url.parse(process.env.PROXIMO_URL);
     // var options = {
     //     hostname: proxy.hostname,
     //     port: proxy.port || 80,
