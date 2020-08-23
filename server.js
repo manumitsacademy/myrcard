@@ -15,7 +15,7 @@ var authUrl = process.env.authURL;
 var url = process.env.Url;
 var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
-var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:4200','http://localhost:8080']
+var allowedOrigins = ['https://praveeng-1002-herokuapp.com','http://localhost:4200','http://localhost:8080',]
 var corsOptionsDelegate = function (req, callback) {
     var corsOptions;
     if (allowedOrigins.indexOf(req.header('Origin')) !== -1) {
