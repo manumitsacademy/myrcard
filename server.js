@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 var cors = require('cors');
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/angular-build'));
-var authUrl = process.env.authURL;   
+var authUrl = process.env.authUrl;   
 var url = process.env.Url;
 var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
