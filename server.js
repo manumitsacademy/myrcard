@@ -74,16 +74,8 @@ app.use(cors({
 
 
 app.get("/accountsummary/:oppId",function (req, res, next) {
-    var proxy = url.parse(process.env.PROXIMO_URL);
-    // var options = {
-    //     hostname: proxy.hostname,
-    //     port: proxy.port || 80,
-    //     path: urlMerchant,
-    //     headers: {"Proxy-Authorization": 'Basic #{new Buffer(proxy.auth).toString("base64")}'}
-    //   }
-    
       var request_with_defaults = request.defaults({
-        'proxy': proxy,
+        'proxy': process.env.PROXIMO_URL,
         'timeout': 29000,
         'connection': 'keep-alive'
       });
