@@ -5,6 +5,7 @@ const http = require('http');
 var bodyParser = require('body-parser')
 var soap = require('strong-soap').soap;
 var logger = require('./logger')
+var request = require('request');
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
