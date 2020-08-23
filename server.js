@@ -114,6 +114,26 @@ app.get("/accountsummary/:oppId",function (req, res, next) {
 });
 app.get("/transactionhistory/:oppId", function (req, res, next) {
     
+    var request_with_defaults = request.defaults({
+        'proxy': process.env.PROXIMO_URL,
+        'timeout': 29000,
+        'connection': 'keep-alive'
+      });
+    
+      soap_client_options = {
+        'request': request_with_defaults,
+        "overrideRootElement": {
+            "namespace": "pcb",
+            "xmlKey": 'theXml',
+            "xmlnsAttributes": [{
+              "name": "xmlns:pcb",
+              "value": "pcbfServices/PCBFGateway"
+            },{
+              "name": "xmlns:ns2",
+              "value": "pcbfServices/PCBFGateway"
+            } ]
+          }
+      };
     var requestArgs = {
         oppId: req.params.oppId,
         sysDate,
