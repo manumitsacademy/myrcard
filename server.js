@@ -18,6 +18,7 @@ var date = new Date();
 var sysDate = date.getTime()-(24*60*60*1000);
 var allowedOrigins = ['https://praveeng-1002-herokuapp.com','https://revcard-dev.herokuapp.com','http://localhost:4200','http://localhost:8080',]
 var corsOptionsDelegate = function (req, callback) {
+  logger.info(process.env.Allowed_Origins)
     var corsOptions;
     if (allowedOrigins.indexOf(req.header('Origin')) !== -1) {
       corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
