@@ -1,7 +1,9 @@
 import { Component, OnInit, ɵConsole } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import * as xml2js from 'xml2js';
+import { TransactionStatus } from '../../core/model/transaction.status'
 import { AccountService } from 'src/app/core/account.service';
+import { AuthService } from 'src/app/auth/auth.service';
+import { AuthenticationService } from 'src/app/core/authentication.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-ministatement',
   templateUrl: './ministatement.component.html',
@@ -10,9 +12,14 @@ import { AccountService } from 'src/app/core/account.service';
 export class MinistatementComponent implements OnInit {
   ministatement: any;
 
-  constructor(public accountService:AccountService) { }
+  constructor(public accountService:AccountService,private authService:AuthenticationService,private router:Router) { }
   transactionHistory:any;
+  transactionStatus=TransactionStatus;
   ngOnInit() {
+    this.authService.isTokenIdValid().subscribe((res)=>{
+      console.log("token validaton",res)
+    },()=>{window.localStorage.removeItem('token');
+    this.router.navigate(['/login']) })
     this.accountService.getTransactionHistory().subscribe((res)=>{
       res=JSON.parse(res);
       this.ministatement = res['Result'].array.RevTrxn.sort((a,b)=>{

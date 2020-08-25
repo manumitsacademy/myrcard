@@ -4,6 +4,7 @@ import * as xml2js from 'xml2js';
 import { AccountService } from 'src/app/core/account.service';
 import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { Router } from '@angular/router';
+import { AuthenticationService } from 'src/app/core/authentication.service';
 @Component({
   selector: 'app-transactionhistory',
   templateUrl: './transactionhistory.component.html',
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
   spendingAvailability: number;
-  constructor(public accountService:AccountService,public router:Router) {
+  constructor(public accountService:AccountService,public router:Router,private authService:AuthenticationService) {
     
    }
    //latest available transaction date to latest avaible 
@@ -30,6 +31,10 @@ export class TransactionhistoryComponent implements OnInit {
   selectedDateRange:any;
   searchKey;
   ngOnInit() {
+    this.authService.isTokenIdValid().subscribe((res)=>{
+      console.log("token validaton",res)
+    },()=>{window.localStorage.removeItem('token');
+    this.router.navigate(['/login'])})
     this.accountService.getTransactionHistory().subscribe((res)=>{
       res=JSON.parse(res);
       this.transactionHistory = res['Result'].array.RevTrxn.sort((a,b)=>{
