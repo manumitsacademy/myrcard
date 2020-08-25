@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/core/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-default',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthenticationService,private router:Router) { }
 
   ngOnInit() {
+    this.authService.isTokenIdValid().subscribe((res)=>{
+      console.log("token validaton",res)
+    },()=>{window.localStorage.removeItem('token');
+    this.router.navigate(['/login'])
+    })
   }
 
 }

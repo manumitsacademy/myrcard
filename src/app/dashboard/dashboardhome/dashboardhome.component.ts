@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from 'src/app/core/authentication.service';
 
 @Component({
   selector: 'app-dashboardhome',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardhomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthenticationService,private router:Router) { }
 
   ngOnInit() {
+    this.authService.isTokenIdValid().subscribe((res)=>{
+      console.log("token validaton",res)
+    },()=>{window.localStorage.removeItem('token');
+    this.router.navigate(['/login'])
+    })
   }
 
 }

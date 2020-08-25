@@ -4,6 +4,7 @@ import { AuthService } from 'src/app/auth/auth.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { AuthenticationService } from 'src/app/core/authentication.service';
 @Component({
   selector: 'app-updatepassword',
   templateUrl: './updatepassword.component.html',
@@ -12,7 +13,7 @@ import { environment } from 'src/environments/environment';
 export class UpdatepasswordComponent implements OnInit {
 
   passwordForm:FormGroup;
-  constructor(public authService:AuthService,public router:Router,public fb:FormBuilder,private http:HttpClient) {
+  constructor(public authService:AuthenticationService,public router:Router,public fb:FormBuilder,private http:HttpClient) {
     this.passwordForm = this.fb.group({
       email:[window.localStorage.getItem('email')],
       currentPassword:[],
@@ -23,6 +24,11 @@ export class UpdatepasswordComponent implements OnInit {
     return this.passwordForm.controls['newPassword'];
   }
   ngOnInit() {
+    this.authService.isTokenIdValid().subscribe((res)=>{
+      console.log("token validaton",res)
+    },()=>{window.localStorage.removeItem('token');
+    this.router.navigate(['/login'])
+    })
   }
   updatePassword(){
     this.http.post("https://revcard.herokuapp.com/api/v1/updatePassword",this.passwordForm.value)
