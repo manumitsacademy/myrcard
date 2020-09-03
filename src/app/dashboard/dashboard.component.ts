@@ -50,7 +50,7 @@ export class DashboardComponent implements OnInit {
     this.autologout();
   }
   ngOnDestroy(){
-    this.authService.loggedOut();
+    //this.authService.loggedOut();
   }
   idletimeout:any;
   confirmBoxTimeout:any;
