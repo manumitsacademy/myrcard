@@ -22,7 +22,7 @@
     "@auth0/auth0-spa-js": "^1.6.5",
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "auth0-js": "^9.12.2",
-    "bootstrap": "4.1.1",
+    "bootstrap": "4.3.1",
     "cors": "^2.8.5",
     "easy-soap-request": "^3.3.1",
     "express": "^4.17.1",
