@@ -40,14 +40,14 @@
                             </thead>
                             <tbody>
                                 <tr *ngFor="let transaction of ministatement">
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         <span>{{transaction.trxn.recDate}}</span>
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.cpty.name}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
                                     </td>
-                                    <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transactionStatus[transaction.trxn.status]}}
+                                    <td style="padding: 10px;" class="textwidget custom-html-widget">{{transactionStatus[transaction.trxn.status]}}
                                     </td>
-                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.amount|currency}}
+                                    <td style=" padding: 10px;" class="textwidget custom-html-widget text-right">{{transaction.trxn.amount|currency}}
                                     </td>
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         &nbsp;

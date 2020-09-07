@@ -5,6 +5,7 @@ import { AccountService } from 'src/app/core/account.service';
 import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/core/authentication.service';
+import { TransactionStatus } from '../../core/model/transaction.status';
 @Component({
   selector: 'app-transactionhistory',
   templateUrl: './transactionhistory.component.html',
@@ -21,6 +22,7 @@ export class TransactionhistoryComponent implements OnInit {
   transactionHistoryLength=0;
   filteredTransactions:any;
   filteredTransactionsLength=0;
+  transactionStatus=TransactionStatus;
   itemsPerPage=20;
   popoverInfo:any;
   bsValue = new Date();

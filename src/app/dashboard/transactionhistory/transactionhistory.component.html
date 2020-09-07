@@ -23,7 +23,7 @@
     <div class="container">
         <div class="card card1">
             <div class="navbar navbar-expand-lg mt-3">
-                <a class="navbar-brand mr-auto font-weight-bold text-dark text-uppercase" href="#">Transaction History</a>
+                <a class="navbar-brand mr-auto font-weight-bold text-dark text-uppercase">Transaction History</a>
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2">
                         <div class="icon-addon addon-lg">
@@ -49,25 +49,29 @@
                             <th class="textwidget custom-html-widget">
                                 Description
                             </th>
-                            <th style="text-align: center" class="textwidget custom-html-widget">
+                            <th class="textwidget custom-html-widget">
+                                Status
+                            </th>
+                            <th style="text-align: right" class="textwidget custom-html-widget">
                                 Amount
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let transaction of currentTransactions">
-                            <td style="padding: 10px;" class="textwidget custom-html-widget" [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">
-                                <span>{{transaction.trxn.recDate|date}}</span>
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                <span>{{transaction.trxn.recDate}}</span>
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget"  [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{transaction.trxn.cpty.name}}
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
+                            </td> 
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transactionStatus[transaction.trxn.status]}}
                             </td>                
-                            <td style="text-align: right; padding: 10px;" class="textwidget custom-html-widget" [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}
-                               
+                            <td style="text-align: right; padding: 10px;">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}                               
                             </td>
-                            <td style="padding: 10px;" [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">
-                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i>
+                            <td style="padding: 10px;">
+                                <!-- <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i> -->
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget hammer" [ngClass]="transaction.trxn.status==='ctsDeclined'?'text-danger':''">
+                            <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
                                 <a routerLink="/dashboard/default"  style="cursor:pointer;">
                                     <img src="assets/hammer.png" class="img-fluid" title="Dispute Charge">
                                 </a>

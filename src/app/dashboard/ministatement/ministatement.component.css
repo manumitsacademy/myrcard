@@ -111,3 +111,9 @@
     font-weight: 400;
    
 }
+.table thead th{
+    border:0px solid ;
+}
+.table thead{
+    border-bottom:2px solid lightgray;
+}
