@@ -142,7 +142,7 @@ app.get("/transactionhistory/:oppId", function (req, res, next) {
 
     var options = {};
 
-    soap.createClient(url, options, function (err, client) {
+    soap.createClient(url, soap_client_options, function (err, client) {
         var customRequestHeader = {
             "Content-Type": "text/xml;charset=UTF-8",
             "Authorization": process.env.Authorization
