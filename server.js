@@ -108,57 +108,11 @@ app.use(cors({
     }
 }));
 app.get("/accountsummary/:oppId",function (req, res, next) {
-      soapRequest(req,res,"RevenuedGetAcctSummary")
+      
 });
 app.get("/transactionhistory/:oppId", function (req, res, next) {
+  soapRequest(req,res,"RevenuedGetTrxnHistory")
     
-    var request_with_defaults = request.defaults({
-        'proxy': process.env.PROXIMO_URL,
-        'timeout': 29000,
-        'connection': 'keep-alive'
-      });
-    
-      soap_client_options = {
-        'request': request_with_defaults,
-        "overrideRootElement": {
-            "namespace": "pcb",
-            "xmlKey": 'theXml',
-            "xmlnsAttributes": [{
-              "name": "xmlns:pcb",
-              "value": "pcbfServices/PCBFGateway"
-            },{
-              "name": "xmlns:ns2",
-              "value": "pcbfServices/PCBFGateway"
-            } ]
-          }
-      };
-    var requestArgs = {
-        oppId: req.params.oppId,
-        sysDate,
-        sessionId: '?'
-    };
-
-    var options = {};
-
-    soap.createClient(url, soap_client_options, function (err, client) {
-        var customRequestHeader = {
-            "Content-Type": "text/xml;charset=UTF-8",
-            "Authorization": process.env.Authorization
-        };
-        var method = client['Revenued']['RevenuedSoap']['RevenuedGetTrxnHistory'];
-       
-        if(err){
-            method({...requestArgs,sysDate:sysDate-(24*60*60*1000)}, function (err, result, envelope, soapHeader) {
-                res.send(result);
-            }, null , customRequestHeader);
-        }
-        else{
-            
-            method(requestArgs, function (err, result, envelope, soapHeader) {
-                res.send(result);
-            }, null , customRequestHeader);
-        }
-    });
 });
 app.get('/*',function(req,res){
     res.sendFile(path.join(__dirname+'/angular-build'+'/index.html'))
