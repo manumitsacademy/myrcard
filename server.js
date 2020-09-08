@@ -108,7 +108,7 @@ app.use(cors({
     }
 }));
 app.get("/accountsummary/:oppId",function (req, res, next) {
-      
+  soapRequest(req,res,"RevenuedGetAcctSummary")
 });
 app.get("/transactionhistory/:oppId", function (req, res, next) {
   soapRequest(req,res,"RevenuedGetTrxnHistory")
