@@ -16,7 +16,9 @@ export class AccountsummaryComponent implements OnInit {
   pendingAmount: any;
   spendingAvailability: any;
   dailySpendLimit: any;
-  public modalRef: BsModalRef;
+  modalRef: BsModalRef;
+  modelTitle:string;
+  modelContent:string="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
   constructor(public accountService:AccountService, private modalService: BsModalService,) { }
   transactionHistory:any;
   ngOnInit() {
@@ -37,8 +39,10 @@ export class AccountsummaryComponent implements OnInit {
     })   
   }
 
-  openModal(template: TemplateRef<any>) {
-    this.modalService.show(template, { class: 'right-modal' });
-}
+  openModal(template: TemplateRef<any>,title) {
+    this.modelTitle=title;  
+    this.modalRef=this.modalService.show(template, { class: 'right-modal' });
+  }
+  
 }
 
