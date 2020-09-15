@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { AccountService } from 'src/app/core/account.service';
 import * as xml2js from 'xml2js';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-accountsummary',
@@ -15,7 +16,8 @@ export class AccountsummaryComponent implements OnInit {
   pendingAmount: any;
   spendingAvailability: any;
   dailySpendLimit: any;
-  constructor(public accountService:AccountService) { }
+  public modalRef: BsModalRef;
+  constructor(public accountService:AccountService, private modalService: BsModalService,) { }
   transactionHistory:any;
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res)=>{
@@ -34,5 +36,9 @@ export class AccountsummaryComponent implements OnInit {
         this.dailySpendLimit = (mn<ma)?(mn<sa?mn:sa):(ma<sa?ma:sa); 
     })   
   }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalService.show(template, { class: 'right-modal' });
+}
 }
 
