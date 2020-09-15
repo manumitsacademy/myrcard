@@ -17,3 +17,12 @@ a.pagelink{
     font-family: Gotham bold;
     src:url("assets/webfonts/GothamBold.ttf");
 }
+.right-modal {
+    min-width: 50%;
+    height: 100%;
+    margin: 0;
+    float: right;
+  }
+.right-modal .modal-content {
+    min-height: 100%;
+}
