@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');
 
 #login_page .row{
   height: 100%;
@@ -13,7 +12,7 @@
 }
 #login_page .left_col h1{
   color: #FFFFFF;
-  font-family: Lato;
+  font-family: Gotham bold;
   font-size: 50px;
   font-weight: 900;
   letter-spacing: 0.8px;
@@ -59,13 +58,11 @@
  
  
 }
-#login_page .right_col_head h3{
+#login_page .right_col_head h3,span{
   height: 36px;
   width: 304px;
-  
-  font-family: Lato;
+  font-family: Gotham bold;
   font-size: 30px;
-  font-weight: bold;
   letter-spacing: 0;
   line-height: 36px;
 }
@@ -76,7 +73,7 @@
   
   width: 411px;
   color: #90A2B1;
-  font-family: Lato;
+  font-family: Gotham book;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;
@@ -93,7 +90,7 @@
 #login_page .right_col label{
   
   color: #90A2B1;
-  font-family: Lato;
+  font-family: Gotham book;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -113,7 +110,7 @@
 
   box-sizing: border-box;
   color: #072843;
-  font-family: Lato;
+  font-family: Gotham book;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
@@ -125,7 +122,7 @@
 #login_page .right_col .for_pass{
   
   color: #2B73B0;
-  font-family: Lato;
+  font-family: Gotham book;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -140,7 +137,7 @@ select.form-control:focus {
 }
 
 h1{
-  font-family: Lato;
+  font-family: Gotham bold;
 }
 .left_maincol{
   min-height: 100%;
@@ -167,7 +164,7 @@ footer {
   border-radius: 4px;
   background-color: #D46929;
   font-weight:700;
-  font-family:Lato;
+  font-family:Gotham book;
 }
 #login_page .right_col .login_btn{
   margin-top:40px;
@@ -212,7 +209,7 @@ footer {
   }
 }
 #login_page .mobile_signup{
-  font-family: Lato;
+  font-family: Gotham book;
   font-size:12px;
   margin-top:12px;
   font-weight:bold;

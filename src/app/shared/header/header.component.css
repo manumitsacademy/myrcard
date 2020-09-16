@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:900|Montserrat&display=swap');
 /*#logo h1{
   display:inline-block;
   font-family: Montserrat;
@@ -59,7 +58,7 @@
 }
 #main_logo .navbar-brand span{
   font-size:24px;
-  font-family: Montserrat;
+  font-family: Gotham book;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.3px;
