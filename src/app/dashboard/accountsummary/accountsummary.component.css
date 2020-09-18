@@ -23,6 +23,9 @@ margin-bottom: 10px;
     font-weight: bold;
     line-height: 15px;
   }
+  .cursor-pointer{
+    cursor: pointer;
+  }
   .card1{
     border: 1px solid #D9DEE4;
     border-radius: 4px;
