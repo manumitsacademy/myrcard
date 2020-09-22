@@ -13,7 +13,6 @@ export class DashboardhomeComponent implements OnInit {
 
   ngOnInit() {
     this.authService.isTokenIdValid().subscribe((res)=>{
-      console.log("token validaton",res)
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])
     })

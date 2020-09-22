@@ -23,7 +23,6 @@ export class DashboardComponent implements OnInit {
   }
   constructor(public authService:AuthenticationService,public aR:ActivatedRoute,public router: Router,private modalService: BsModalService) { 
     this.authService.isTokenIdValid().subscribe((res)=>{
-      console.log("token validaton",res)
     })
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
@@ -42,7 +41,6 @@ export class DashboardComponent implements OnInit {
   hexabg="bluebackground";
   ngOnInit() {    
     this.authService.isTokenIdValid().subscribe((res)=>{
-      console.log("token validaton",res)
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])
     })

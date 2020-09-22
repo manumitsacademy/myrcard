@@ -26,10 +26,8 @@ export class LoginComponent implements OnInit {
   login(){
     this.http.get(`${environment.baseUrl}getAuthUrl`).toPromise().then((res)=>{
       var loginurl=res['authUrl'];
-
       this.http.post(`${loginurl}v1/loginUser`,this.loginForm.value)
       .subscribe((res)=>{
-        console.log(res);
         if(res){
           const headers = { 'Authorization': 'Bearer '+res['id_token'] };
           window.localStorage.setItem('loginurl',loginurl)
@@ -37,7 +35,6 @@ export class LoginComponent implements OnInit {
           this.http.post(`${loginurl}v1/getUserDetails`,{email:this.loginForm.controls['email'].value},{
             headers
           }).subscribe((details)=>{
-            console.log(details)
             window.localStorage.setItem('oppId',details['app_metadata'].opportunityId)
             window.localStorage.setItem('email',details['email'])
             window.localStorage.setItem('token',JSON.stringify(res))
@@ -47,7 +44,7 @@ export class LoginComponent implements OnInit {
         }else{
           this.failedLogin=true;
         }
-      },(err)=>{console.log(err)})
+      },(err)=>{console.log("could not make a request....")})
     })    
   }
 }

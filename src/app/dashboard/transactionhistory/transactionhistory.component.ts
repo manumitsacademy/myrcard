@@ -34,7 +34,6 @@ export class TransactionhistoryComponent implements OnInit {
   searchKey;
   ngOnInit() {
     this.authService.isTokenIdValid().subscribe((res)=>{
-      console.log("token validaton",res)
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])})
     this.accountService.getTransactionHistory().subscribe((res)=>{
