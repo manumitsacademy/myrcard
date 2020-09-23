@@ -32,6 +32,8 @@ export class TransactionhistoryComponent implements OnInit {
   currentPage:any;
   selectedDateRange:any;
   searchKey;
+  startDate:Date;
+  endDate:Date;
   ngOnInit() {
     this.authService.isTokenIdValid().subscribe((res)=>{
     },()=>{window.localStorage.removeItem('token');
@@ -46,13 +48,18 @@ export class TransactionhistoryComponent implements OnInit {
       this.currentTransactions = this.transactionHistory.slice(0,this.itemsPerPage);
       this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
       this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
+      
       this.bsRangeValue = [this.minDate, this.maxDate];
       this.selectedDateRange=this.bsRangeValue;
       this.onDateChange(this.selectedDateRange); 
+      
     })  
   }
-  onDateChange(dateRange?: undefined){
-    if(dateRange){this.selectedDateRange = dateRange;}
+  onDateChange(dateRange?: undefined,dateType?:undefined){
+    console.dir(dateRange,this.selectedDateRange)
+    
+    if(dateType==='minDate' && this.selectedDateRange){this.selectedDateRange[0] = dateRange}
+    if(dateType==='maxDate' && this.selectedDateRange){this.selectedDateRange[1] = dateRange}
     if(this.transactionHistory){
       this.filteredTransactions=this.transactionHistory.filter((t,i)=>{  
         var tranTime = new Date(t.trxn.recDate).getTime();
