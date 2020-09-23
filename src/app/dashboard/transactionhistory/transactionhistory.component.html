@@ -75,7 +75,7 @@
                             <td style="text-align: right; padding: 10px;">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}                               
                             </td>
                             <td style="padding: 10px;">
-                                <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i> 
+                                <!-- <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i>  -->
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
                                 <a routerLink="/dashboard/default"  style="cursor:pointer;">

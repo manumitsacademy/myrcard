@@ -55,7 +55,7 @@ export class TransactionhistoryComponent implements OnInit {
       
     })  
   }
-  onDateChange(dateRange?: undefined,dateType?:undefined){
+  onDateChange(dateRange?: undefined,dateType?){
     console.dir(dateRange,this.selectedDateRange)
     
     if(dateType==='minDate' && this.selectedDateRange){this.selectedDateRange[0] = dateRange}
