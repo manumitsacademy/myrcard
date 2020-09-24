@@ -83,6 +83,11 @@
                                 </a>
                             </td>
                         </tr>
+                        <tr *ngIf="currentTransactions.length==0">
+                            <td colspan="4" class="text-center">
+                                No transactions in the given date range
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>  

@@ -35,6 +35,7 @@ export class TransactionhistoryComponent implements OnInit {
   startDate:Date;
   endDate:Date;
   ngOnInit() {
+    
     this.authService.isTokenIdValid().subscribe((res)=>{
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])})
@@ -57,16 +58,22 @@ export class TransactionhistoryComponent implements OnInit {
   }
   onDateChange(dateRange?: undefined,dateType?){
     console.dir(dateRange,this.selectedDateRange)
-    
-    if(dateType==='minDate' && this.selectedDateRange){this.selectedDateRange[0] = dateRange}
-    if(dateType==='maxDate' && this.selectedDateRange){this.selectedDateRange[1] = dateRange}
-    if(this.transactionHistory){
-      this.filteredTransactions=this.transactionHistory.filter((t,i)=>{  
-        var tranTime = new Date(t.trxn.recDate).getTime();
-        return tranTime>=this.selectedDateRange[0].getTime() && tranTime<=this.selectedDateRange[1].getTime();
-      })
-      this.currentTransactions = this.filteredTransactions.slice(0,this.itemsPerPage);
-    }    
+      if(dateType==='minDate' && this.selectedDateRange){this.selectedDateRange[0] = dateRange}
+      if(dateType==='maxDate' && this.selectedDateRange){this.selectedDateRange[1] = dateRange}
+      if(this.selectedDateRange[0].getTime()>this.selectedDateRange[1].getTime()){
+        alert("Starting Date cannot be greater than End Date"); 
+        this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
+        this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
+      }
+      else{
+        if(this.transactionHistory){
+          this.filteredTransactions=this.transactionHistory.filter((t,i)=>{  
+            var tranTime = new Date(t.trxn.recDate).getTime();
+            return tranTime>=this.selectedDateRange[0].getTime() && tranTime<=this.selectedDateRange[1].getTime();
+          })
+          this.currentTransactions = this.filteredTransactions.slice(0,this.itemsPerPage);
+        }
+      }
   }
   searchHistory(){
     if(this.searchKey!='' && this.searchKey!=null){
