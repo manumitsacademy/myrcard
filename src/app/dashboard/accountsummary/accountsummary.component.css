@@ -12,6 +12,9 @@
         letter-spacing: 0;
         line-height: 19px;
 }
+.mb-10 {
+margin-bottom: 10px;
+}
 .spending-l-imit {
     width: 100%;
     color: #90A2B1;
@@ -19,7 +22,9 @@
     font-size: 12px;
     font-weight: bold;
     line-height: 15px;
-    margin-bottom:10px;
+  }
+  .cursor-pointer{
+    cursor: pointer;
   }
   .card1{
     border: 1px solid #D9DEE4;
