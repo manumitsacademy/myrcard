@@ -10,6 +10,7 @@ import { AuthenticationService } from 'src/app/core/authentication.service';
 export class LoginComponent implements OnInit {
 
   constructor(public authService:AuthenticationService,public router:Router,public fb:FormBuilder) {
+
     this.loginForm = this.fb.group({
       email:[],
       password:[]
@@ -21,8 +22,6 @@ export class LoginComponent implements OnInit {
    
   }
   login(){
-
     this.authService.appLogin(this.loginForm,this.failedLogin);
-
   }
 }

@@ -1,35 +1,36 @@
-
-<section id="login_page" style="height:100%">
-    <div class="row no-gutters" >
+<section id="login_page" style="height:100%" *ngIf="!loggedIn">
+    <div class="row no-gutters">
         <div class="col left_maincol  text-white " style="background-color: #2B73B0;">
-            <div class="left_col" >
-               
-                <a class="navbar-brand logohead" href="#" >
-                    <img src="/assets/revenued_primary_logo-white.png" width="200" height="40" class="d-inline-block align-top" alt="">
+            <div class="left_col">
+
+                <a class="navbar-brand logohead" href="#">
+                    <img src="/assets/revenued_primary_logo-white.png" width="200" height="40"
+                        class="d-inline-block align-top" alt="">
                 </a>
-               
+
                 <h1>Business Card for this Generation.</h1>
                 <p class="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate?</p>
             </div>
             <footer>
                 <nav class="navbar navbar-expand-lg px-0 ">
                     <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.revenued.com/about/" target="_blank">About Revenued</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.revenued.com/contact/" target="_blank">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Card User Agreement</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.revenued.com/about/" target="_blank">About
+                                Revenued</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.revenued.com/contact/" target="_blank">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Card User Agreement</a>
+                        </li>
                     </ul>
                 </nav>
             </footer>
         </div>
         <div class="col d-flex justify-content-center right_maincol">
-            
-            <div class="right_col">                
+
+            <div class="right_col">
                 <div class="right_col_head">
                     <div class="d-flex">
                         <h3>Welcome to</h3>
@@ -43,18 +44,19 @@
                         <input formControlName="email" type="text" class="form-control p-0 " placeholder="User Email">
                     </div>
                     <div class="passwordL">
-                        <label for="password" >Password</label>
-                        <input formControlName="password" type="password" class="form-control p-0" placeholder="************">
+                        <label for="password">Password</label>
+                        <input formControlName="password" type="password" class="form-control p-0"
+                            placeholder="************">
                     </div>
-                    
+
                     <div class="text-danger" *ngIf="failedLogin">
                         <h6>Username and Password mismatch</h6>
                     </div>
-                    
-                </div> 
-                 <p class="text-right "><a routerLink="/forgotpassword" class="for_pass ">Forgot Password?</a></p>
-                 <div class="text-center login_btn ">
-                     <button type="button" class="btn  btn-center" (click)="login()" >Login</button>
+
+                </div>
+                <p class="text-right "><a routerLink="/forgotpassword" class="for_pass ">Forgot Password?</a></p>
+                <div class="text-center login_btn ">
+                    <button type="button" class="btn  btn-center" (click)="login()">Login</button>
                 </div>
                 <div class="d-sm d-xl-none text-center mobile_signup">
                     <p clas="text-center"><a href="#">Not a member? &nbsp;&nbsp;<span>Sign Up</span></a></p>
@@ -63,3 +65,6 @@
         </div>
     </div>
 </section>
+<div *ngIf="loggedIn">
+    <div class="loader"></div>
+</div>
