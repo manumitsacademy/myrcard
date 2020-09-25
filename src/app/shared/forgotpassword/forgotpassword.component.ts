@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-
+import { AuthenticationService } from 'src/app/core/authentication.service';
 @Component({
   selector: 'app-forgotpassword',
   templateUrl: './forgotpassword.component.html',
@@ -14,7 +14,7 @@ export class ForgotpasswordComponent implements OnInit {
   forgotPasswordForm: FormGroup;
   email:string;
   
-  constructor(private router:Router,private fb:FormBuilder,private http:HttpClient) {     
+  constructor(public authService:AuthenticationService,private router:Router,private fb:FormBuilder,private http:HttpClient) {     
     this.forgotPasswordForm = this.fb.group({
       email:[]
     })  
@@ -24,9 +24,7 @@ export class ForgotpasswordComponent implements OnInit {
     
   }
   forgotPassword(){
-    const headers = { 'appName': 'REV_CARD' };
-    this.http.post("https://revcard.herokuapp.com/api/v1/forgotPassword", 
-    this.forgotPasswordForm.value,{headers})
+    this.authService.forgotPwd(this.forgotPasswordForm.value)
     .subscribe(()=>{
       this.router.navigate([`${environment.baseUrl}login`])
     },()=>{alert("No account working with this email")})

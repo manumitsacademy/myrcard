@@ -30,8 +30,7 @@ export class UpdatepasswordComponent implements OnInit {
     })
   }
   updatePassword(){
-    this.http.post("https://revcard.herokuapp.com/api/v1/updatePassword",this.passwordForm.value)
-    .subscribe(()=>{
+    this.authService.updatePwd(this.passwordForm.value).subscribe(()=>{
       this.router.navigate([`${environment.baseUrl}login`])
     })
   }
