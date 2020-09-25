@@ -10,7 +10,7 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  loggedIn = false;
   constructor(public authService:AuthService,public router:Router,public http:HttpClient,public fb:FormBuilder) {
     this.loginForm = this.fb.group({
       email:[],
@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
    
   }
   login(){
+    this.loggedIn = true;
     this.http.get(`${environment.baseUrl}getAuthUrl`).toPromise().then((res)=>{
       var loginurl=res['authUrl'];
       this.http.post(`${loginurl}v1/loginUser`,this.loginForm.value)
@@ -42,6 +43,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(["/dashboard"])
           })          
         }else{
+          this.loggedIn = false;
           this.failedLogin=true;
         }
       },(err)=>{console.log("could not make a request....")})
