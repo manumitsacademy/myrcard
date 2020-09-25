@@ -21,6 +21,8 @@ export class LoginComponent implements OnInit {
    
   }
   login(){
+
     this.authService.appLogin(this.loginForm,this.failedLogin);
+
   }
 }
