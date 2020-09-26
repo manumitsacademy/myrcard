@@ -8,7 +8,7 @@ import { AuthenticationService } from 'src/app/core/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  loggedIn = false;
   constructor(public authService:AuthenticationService,public router:Router,public fb:FormBuilder) {
 
     this.loginForm = this.fb.group({
@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
    
   }
   login(){
-    this.authService.appLogin(this.loginForm,this.failedLogin);
+    this.loggedIn = true;
+    this.authService.appLogin(this.loginForm,this.failedLogin,this.loggedIn);
   }
 }

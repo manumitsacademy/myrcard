@@ -39,6 +39,11 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr *ngIf="!isStatementLoaded">
+                                    <td colspan="4">
+                                        <div class="small-loader mx-auto"></div>
+                                    </td>
+                                </tr>
                                 <tr *ngFor="let transaction of ministatement">
                                     <td style="padding: 10px;" class="textwidget custom-html-widget">
                                         <span>{{transaction.trxn.recDate}}</span>

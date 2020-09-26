@@ -32,7 +32,7 @@ export class AuthenticationService {
             headers
           });
   }
-  appLogin(cred,failed){
+  appLogin(cred,failed,loggedIn){
     this.http.get(`${environment.baseUrl}getAuthUrl`).toPromise().then((res)=>{
       var loginurl=res['authUrl'];
 
@@ -55,6 +55,7 @@ export class AuthenticationService {
           })          
         }else{
           failed=true;
+          loggedIn = false;
         }
       },(err)=>{console.log(err)})
     })
