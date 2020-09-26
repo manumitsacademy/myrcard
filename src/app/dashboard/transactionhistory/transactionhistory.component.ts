@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
 import { AccountService } from 'src/app/core/account.service';
@@ -6,6 +6,8 @@ import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/core/authentication.service';
 import { TransactionStatus } from '../../core/model/transaction.status';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+
 @Component({
   selector: 'app-transactionhistory',
   templateUrl: './transactionhistory.component.html',
@@ -14,10 +16,12 @@ import { TransactionStatus } from '../../core/model/transaction.status';
 export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
   spendingAvailability: number;
-  constructor(public accountService:AccountService,public router:Router,private authService:AuthenticationService) {
+  constructor(public accountService:AccountService,public router:Router,private authService:AuthenticationService, private modalService: BsModalService) {
     
    }
    //latest available transaction date to latest avaible 
+  modalRef: BsModalRef;
+  isTransactionsLoaded = false;
   transactionHistory:any;
   transactionHistoryLength=0;
   filteredTransactions:any;
@@ -47,6 +51,7 @@ export class TransactionhistoryComponent implements OnInit {
       this.filteredTransactions = this.transactionHistory;
       this.filteredTransactionsLength = this.filteredTransactions.length;
       this.currentTransactions = this.transactionHistory.slice(0,this.itemsPerPage);
+      this.isTransactionsLoaded = true;
       this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
       this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
       
@@ -61,7 +66,8 @@ export class TransactionhistoryComponent implements OnInit {
       if(dateType==='minDate' && this.selectedDateRange){this.selectedDateRange[0] = dateRange}
       if(dateType==='maxDate' && this.selectedDateRange){this.selectedDateRange[1] = dateRange}
       if(this.selectedDateRange[0].getTime()>this.selectedDateRange[1].getTime()){
-        alert("Starting Date cannot be greater than End Date"); 
+        // alert("Starting Date cannot be greater than End Date"); 
+        this.openInvalidDateModal();
         this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
         this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
       }
@@ -95,4 +101,33 @@ export class TransactionhistoryComponent implements OnInit {
     const endItem = event.page * event.itemsPerPage;
     this.currentTransactions = this.transactionHistory.slice(startItem, endItem);
   }
+
+  openInvalidDateModal() {
+    this.modalRef=this.modalService.show(InvalidDateModalComponent);
+  }
+}
+
+@Component({
+  selector: 'invalid-date-modal',
+  template: `
+  <div class="modal-header">
+  <h4 class="modal-title pull-left"></h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  Start Date cannot be greater than End Date
+</div>
+  `
+})
+ 
+export class InvalidDateModalComponent implements OnInit {
+  
+  constructor(public modalRef: BsModalRef) {}
+  
+  ngOnInit() {
+
+  }
+
 }

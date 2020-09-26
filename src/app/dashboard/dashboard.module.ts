@@ -9,7 +9,7 @@ import { MinistatementComponent } from './ministatement/ministatement.component'
 import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
-import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
+import { InvalidDateModalComponent, TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
 import { PopoverModule, BsDatepickerModule, PaginationModule, ModalModule } from 'ngx-bootstrap';
 import { DefaultComponent } from './default/default.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -19,7 +19,7 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 
 
 @NgModule({
-  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,DefaultComponent, UpdatepasswordComponent],
+  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,InvalidDateModalComponent, DefaultComponent, UpdatepasswordComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
@@ -31,6 +31,7 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
     FormsModule,
     ReactiveFormsModule,
     ModalModule
-  ]
+  ],
+  entryComponents:[InvalidDateModalComponent]
 })
 export class DashboardModule { }
