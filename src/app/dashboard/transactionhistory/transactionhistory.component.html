@@ -46,7 +46,7 @@
                         <div class="icon-addon addon-lg">
                             <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate"
                                 [bsConfig]="{containerClass:'mytheme-purple'}" id="endDate"
-                                (bsValueChange)="onDateChange($event,'maxDate')">
+                                (bsValueChange)="onDateChange($event,'maxDate')" [maxDate]="maxDate">
                             <label for="endDate" class="fa fa-calendar-o" rel="tooltip" title="endDate"></label>
                         </div>
                     </div>
