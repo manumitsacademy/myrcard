@@ -2,7 +2,7 @@ import { Component, OnInit,TemplateRef,ViewChild   } from '@angular/core';
 import { AuthenticationService } from '../core/authentication.service';
 import { ActivatedRoute, RouterEvent, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { BsModalService, BsModalRef,ModalDirective } from 'ngx-bootstrap/modal';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,15 +11,20 @@ import { BsModalService, BsModalRef,ModalDirective } from 'ngx-bootstrap/modal';
 })
 export class DashboardComponent implements OnInit {
   modalRef: BsModalRef;
+  config = {
+    backdrop: true,
+    ignoreBackdropClick: true
+  };
   message: string;
-  @ViewChild('childModal', { static: false }) childModal: ModalDirective;
+  @ViewChild('childModal', { static: false }) childModalRef: TemplateRef<any>;
  
   showChildModal(): void {
-    this.childModal.show();
+    
+    this.modalRef = this.modalService.show(this.childModalRef, this.config);
   }
  
   hideChildModal(): void {
-    this.childModal.hide();
+    this.modalRef.hide();
   }
   constructor(public authService:AuthenticationService,public aR:ActivatedRoute,public router: Router,private modalService: BsModalService) { 
     this.authService.isTokenIdValid().subscribe((res)=>{
@@ -55,9 +60,9 @@ export class DashboardComponent implements OnInit {
   autologout(){
         clearTimeout(this.idletimeout)
         this.idletimeout =  setTimeout(()=>{
-                          this.childModal.show();
+                          this.showChildModal();
                           this.confirmBoxTimeout=setTimeout(()=>{
-                              this.childModal.hide();
+                              this.hideChildModal();
                               clearTimeout(this.idletimeout);  
                               window.localStorage.removeItem('token');
                               this.router.navigate(['/login'])                           
@@ -71,12 +76,12 @@ export class DashboardComponent implements OnInit {
   confirm(): void {
     window.localStorage.removeItem('token');
     this.router.navigate(['/login'])
-    this.childModal.hide();
+    this.hideChildModal();
   }
  
   decline(): void {
     clearTimeout(this.confirmBoxTimeout)
     this.autologout();
-    this.childModal.hide();
+    this.hideChildModal();
   }
 }
