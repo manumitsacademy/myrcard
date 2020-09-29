@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit,ViewChild, TemplateRef } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
 import { AccountService } from 'src/app/core/account.service';
@@ -16,6 +16,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
   spendingAvailability: number;
+  @ViewChild('invalidDateTemplate', { static: true }) invalidDateTemplate: TemplateRef<any>;
   constructor(public accountService:AccountService,public router:Router,private authService:AuthenticationService, private modalService: BsModalService) {
     
    }
@@ -67,7 +68,7 @@ export class TransactionhistoryComponent implements OnInit {
       if(dateType==='maxDate' && this.selectedDateRange){this.selectedDateRange[1] = dateRange}
       if(this.selectedDateRange[0].getTime()>this.selectedDateRange[1].getTime()){
         // alert("Starting Date cannot be greater than End Date"); 
-        this.openInvalidDateModal();
+        this.modalRef=this.modalService.show(this.invalidDateTemplate);
         this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
         this.minDate= new Date(this.maxDate.getTime()-7*24*60*60*1000);
       }
@@ -101,33 +102,4 @@ export class TransactionhistoryComponent implements OnInit {
     const endItem = event.page * event.itemsPerPage;
     this.currentTransactions = this.transactionHistory.slice(startItem, endItem);
   }
-
-  openInvalidDateModal() {
-    this.modalRef=this.modalService.show(InvalidDateModalComponent);
-  }
-}
-
-@Component({
-  selector: 'invalid-date-modal',
-  template: `
-  <div class="modal-header">
-  <h4 class="modal-title pull-left"></h4>
-  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<div class="modal-body">
-  Start Date cannot be greater than End Date
-</div>
-  `
-})
- 
-export class InvalidDateModalComponent implements OnInit {
-  
-  constructor(public modalRef: BsModalRef) {}
-  
-  ngOnInit() {
-
-  }
-
 }
