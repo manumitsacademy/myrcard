@@ -79,7 +79,7 @@
 }
 #login_page .right_col{
   height: 409px;
-  width: 411px;
+  width: 400px;
   margin-top:198px;
 }
 #login_page .right_col label{
@@ -179,6 +179,14 @@ footer {
 @media(max-width:360px){
   .right_col{
     margin-top:100px !important;
+    max-width: 306px;
+  }
+  .right_col_head{
+    max-width: 306px;
+  }
+  .right_col_head h3,span{
+    font-size: 20px !important;
+    max-width: 130px;
   }
 }
 /*@media (max-width:576px){
@@ -189,7 +197,6 @@ footer {
 }*/
 @media (max-width:576px){
   .btn{
-    color:#072843 !important;
     width:100% !important;
     
   }
@@ -201,6 +208,7 @@ footer {
 @media (max-width:576px){
   #login_page .right_col_head p{
     width:100% !important;
+    font-size: 14px;
   }
 }
 #login_page .mobile_signup{
