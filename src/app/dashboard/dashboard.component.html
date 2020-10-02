@@ -5,21 +5,15 @@
 <div [ngClass]="hexabg"></div>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1"
-     role="dialog" aria-labelledby="dialog-child-name">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 id="dialog-child-name" class="modal-title pull-left">Session will be expired</h4>
-        
-      </div>
-      <div class="modal-body">
-        <div class="modal-body text-center">
-            <button type="button" class="btn btn-default" (click)="confirm()" >Logout</button>
-            <button type="button" class="btn btn-primary" (click)="decline()" >Resume</button>
-        </div>
-      </div>
+<ng-template #childModal>
+  <div class="modal-header">
+    <h4 id="dialog-child-name" class="modal-title pull-left">Session will be expired</h4>
+  </div>
+  <div class="modal-body">
+    <div class="modal-body text-center">
+        <button type="button" class="btn btn-default" (click)="confirm()" >Logout</button>
+        <button type="button" class="btn btn-primary" (click)="decline()" >Resume</button>
     </div>
   </div>
-</div>
+</ng-template>
 </div>

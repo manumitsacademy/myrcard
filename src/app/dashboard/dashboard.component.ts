@@ -11,16 +11,15 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class DashboardComponent implements OnInit {
   modalRef: BsModalRef;
-  config = {
-    backdrop: true,
-    ignoreBackdropClick: true
-  };
   message: string;
-  @ViewChild('childModal', { static: false }) childModalRef: TemplateRef<any>;
+  @ViewChild('childModal', { static: true }) childModalRef: TemplateRef<any>;
  
   showChildModal(): void {
-    
-    this.modalRef = this.modalService.show(this.childModalRef, this.config);
+    this.modalRef = this.modalService.show(this.childModalRef, {
+      class: 'modal-sm',
+      backdrop: true,
+      ignoreBackdropClick: true
+    });
   }
  
   hideChildModal(): void {
