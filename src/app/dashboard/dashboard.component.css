@@ -42,5 +42,13 @@
     left:0px;
     z-index:-1;
 }
-
+@media(max-width:360px){
+    .bluebackground1.bg-sub{
+        top: 101px;
+    }
+    .bluebackground{
+        background-image:url("/assets/blue-mobile.png");
+        top: 170px;
+    }
+}
 

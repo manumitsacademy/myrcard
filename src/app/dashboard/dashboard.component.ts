@@ -18,7 +18,8 @@ export class DashboardComponent implements OnInit {
     this.modalRef = this.modalService.show(this.childModalRef, {
       class: 'modal-sm',
       backdrop: true,
-      ignoreBackdropClick: true
+      ignoreBackdropClick: true,
+      keyboard: false
     });
   }
  
@@ -36,12 +37,12 @@ export class DashboardComponent implements OnInit {
         this.hexabg="purplebackground";
       }
       else{
-        this.divbg="bluebackground1";
+        this.divbg="bluebackground1 bg-sub";
         this.hexabg="bluebackground";
       }
     });
   }
-  divbg="bluebackground1";
+  divbg="bluebackground1 bg-sub";
   hexabg="bluebackground";
   ngOnInit() {    
     this.authService.isTokenIdValid().subscribe((res)=>{
