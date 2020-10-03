@@ -118,9 +118,31 @@ accordion-group span{
   border-bottom: 1px solid rgba(0,0,0,.125) !important;
   border-radius: 4px !important;
 }
-.simple-accord .card{
-  width: 330px;
-}
 .simple-accord .card .card-body{
   padding: 0 16px 16px 16px;
+}
+@media(width:360px){
+  .simple-accord .card{
+    width: 330px;
+  }
+}
+@media(width:411.2px){
+  .simple-accord .card{
+    width: 380px;
+  }
+}
+@media(width:320px){
+  .simple-accord .card{
+    width: 290px;
+  }
+}
+@media(width:375.2px){
+  .simple-accord .card{
+    width: 345px;
+  }
+}
+@media(width:414.4px){
+  .simple-accord .card{
+    width: 384px;
+  }
 }
