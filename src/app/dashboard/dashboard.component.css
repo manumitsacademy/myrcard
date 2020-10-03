@@ -44,10 +44,11 @@
 }
 @media(max-width:415px){
     .bluebackground1.bg-sub{
+        height: 10px;
         top: 101px;
     }
     .bluebackground{
-        background-image:url("/assets/blue-mobile.png");
-        top: 170px;
+        background-image:url("/assets/blue-mobile-reduced.png");
+        top: 110px;
     }
 }
