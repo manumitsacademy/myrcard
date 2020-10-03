@@ -26,3 +26,26 @@ a.pagelink{
 .right-modal .modal-content {
     min-height: 100%;
 }
+accordion.no-btm-border .panel-heading{
+    border-bottom: none;
+}
+
+/* .accordion .card:first-of-type{
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+    border-radius: 4px !important;
+  } */
+
+  
+  .font-flex{
+    font-size:12px;
+    display: flex;
+    justify-content: center;
+  }
+  .font-flex span{
+    color: #1F74B1;;
+    padding: 14px;
+  }
+  .pos-rel{
+    position: relative;
+    bottom: 15px;
+  }

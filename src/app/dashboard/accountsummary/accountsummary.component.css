@@ -73,7 +73,7 @@ margin-bottom: 10px;
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 34px;
+    line-height: 25px;
   }
   #ac_summary1 p{
     color:#90A2B1;
@@ -103,4 +103,24 @@ margin-bottom: 10px;
   color:#1F74B1;
   font-size: 1.rem;
   position: absolute;
+}
+
+accordion-group span{
+  color:#1F74B1;
+}
+.no-margin p,h6{
+  margin: 0 !important;
+}
+.no-margin p{
+  font-size: 10px !important;
+}
+.simple-accord .card:first-of-type{
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+  border-radius: 4px !important;
+}
+.simple-accord .card{
+  width: 330px;
+}
+.simple-accord .card .card-body{
+  padding: 0 16px 16px 16px;
 }

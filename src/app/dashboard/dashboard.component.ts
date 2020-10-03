@@ -11,16 +11,16 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class DashboardComponent implements OnInit {
   modalRef: BsModalRef;
-  config = {
-    backdrop: true,
-    ignoreBackdropClick: true
-  };
   message: string;
-  @ViewChild('childModal', { static: false }) childModalRef: TemplateRef<any>;
+  @ViewChild('childModal', { static: true }) childModalRef: TemplateRef<any>;
  
   showChildModal(): void {
-    
-    this.modalRef = this.modalService.show(this.childModalRef, this.config);
+    this.modalRef = this.modalService.show(this.childModalRef, {
+      class: 'modal-sm',
+      backdrop: true,
+      ignoreBackdropClick: true,
+      keyboard: false
+    });
   }
  
   hideChildModal(): void {
@@ -37,12 +37,12 @@ export class DashboardComponent implements OnInit {
         this.hexabg="purplebackground";
       }
       else{
-        this.divbg="bluebackground1";
+        this.divbg="bluebackground1 bg-sub";
         this.hexabg="bluebackground";
       }
     });
   }
-  divbg="bluebackground1";
+  divbg="bluebackground1 bg-sub";
   hexabg="bluebackground";
   ngOnInit() {    
     this.authService.isTokenIdValid().subscribe((res)=>{
