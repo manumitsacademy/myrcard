@@ -93,14 +93,20 @@
     .card1{
         border:none;
         box-shadow: 0 0px 0 0;
-
-       
+        background: none;
+    }
+    .row.pt-4{
+        padding-top: 14px!important;
     }
 }
 @media (max-width:576px){
     #summaryheading h5{
-        padding-left:10px;;
+        padding-left:0;
     }
+}
+
+.shadow{
+    box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
 }
 .table tbody tr td{
     color: #072843;
