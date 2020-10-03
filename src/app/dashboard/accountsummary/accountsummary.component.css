@@ -117,6 +117,7 @@ accordion-group span{
 .simple-accord .card:first-of-type{
   border-bottom: 1px solid rgba(0,0,0,.125) !important;
   border-radius: 4px !important;
+  box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
 }
 .simple-accord .card .card-body{
   padding: 0 16px 16px 16px;
