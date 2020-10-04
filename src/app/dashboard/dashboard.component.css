@@ -51,4 +51,12 @@
         background-image:url("/assets/blue-mobile-reduced.png");
         top: 110px;
     }
+    .purplebackground1{
+        height: 10px;
+        top: 101px;
+    }
+    .purplebackground{
+        background-image:url("/assets/purple-mobile-reduced.png");
+        top: 110px;
+    }
 }
