@@ -18,7 +18,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <h5 class="d-inline d-xl-none d-sm text-white align-self-end">{{headerTitle}}</h5>
+          <h5 class="d-inline d-xl-none d-sm text-white align-self-end">{{headerTitle|uppercase}}</h5>
           <!--  <div class=" d-xl-none d-sm d-inline ">
                   <i class="fa fa-bell text-white" aria-hidden="true" style="font-size:1.5rem;"></i>
                   <i class="fa fa-circle border-1 border-white" aria-hidden="true"></i>
@@ -49,6 +49,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="transactionhistory">Transaction History</a>
+            </li>
+            <li class="nav-item d-md-none d-lg-none d-xl-none">
+              <a class="nav-link" (click)="signout()">Logout</a>
             </li>
           </ul>
         </div>

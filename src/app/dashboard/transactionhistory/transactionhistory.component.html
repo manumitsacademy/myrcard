@@ -29,15 +29,15 @@
             <div class="navbar navbar-expand-lg mt-3">
                 <a class="navbar-brand mr-auto font-weight-bold text-uppercase">Transaction History</a>
                 <div class="form-inline my-2 my-lg-0">
-                    <div class="form-group mr-2">
+                    <div class="form-group mr-2 d-none d-md-block d-lg-block d-xl-block">
                         <div class="icon-addon addon-lg">
                             <input type="text" placeholder="Search..." class="form-control" id="email"
                                 [(ngModel)]="searchKey" (keyup)="searchHistory()">
                             <label for="email" class="fa fa-search" rel="tooltip" title="Search..."></label>
                         </div>
                     </div>
-                    <div class="form-group mr-2">
-                        <div class="icon-addon addon-lg">
+                    <div class="form-group d-flex">
+                        <div class="icon-addon addon-lg mr-1">
                             <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate"
                                 [bsConfig]="{containerClass:'mytheme-purple'}" id="startDate"
                                 (bsValueChange)="onDateChange($event,'minDate')">
