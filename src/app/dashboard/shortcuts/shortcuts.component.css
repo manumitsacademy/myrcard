@@ -35,7 +35,7 @@
     
     font-size:15px;
     font-weight:400;
-    padding-left:24px;
+    padding-left:16px;
     padding-right:24px;
     opacity: 0.9;
     color: #FFFFFF;
@@ -101,68 +101,17 @@
     margin:0;
     padding:0;
   }
-  @media (max-width: 576px) {
-    .navbar-collapse {
-        position: absolute;
-        top: 54px;
-        right: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.3s ease;
-        display: block;
-        z-index:99;
-        background-color: black;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-right: 50%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.show {
-        right: 0;
-    }
-}
-@media(max-width:360px){
-    .navbar-collapse {
-        position: absolute;
-        top: 54px;
-        right: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.3s ease;
-        display: block;
-        z-index:99;
-        background-color: black;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-right: 50%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.show {
-        right: 0;
-    }
-
-}
 @media(max-width:640px){
     .navbar-collapse {
-        position: absolute;
-        top: 54px;
+        position: fixed;
+        top: 0;
         right: 110%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
+        padding: 15px 15px 15px 16px;
+        width: 80%;
         transition: all 0.3s ease;
         display: block;
         z-index:99;
-        background-color: black;
+        background-color: rgb(235, 243, 255);
     }
     .navbar-collapse.collapsing {
         height: auto !important;
@@ -171,6 +120,20 @@
         display: block;
     }
     .navbar-collapse.show {
-        right: 0;
+        right: 20%;
+        height: 100%;
+    }
+    .navbar-nav{
+        margin-top: 16px !important;
+    }
+    .nav-item{
+        margin-bottom: 20px;
+    }
+    #short_cut .navbar .nav-link{
+        color: rgb(135,135,135);
+    }
+    #short_cut .navbar .nav-link:hover{
+        color:black;
+        font-weight: bold;
     }
 }
