@@ -15,11 +15,12 @@ export class ShortcutsComponent {
     ).subscribe(e => {
       this.headerTitle = e["url"].split('/')[2]
       if(e['url']=='/dashboard/transactionhistory'){
-        this.divbg="purplebackground1";        
+        this.divbg="purplebackground1"; 
+        this.headerTitle = 'Transaction History';       
       }      
       else{
         this.divbg="bluebackground1";
-        this.headerTitle = 'AccountSummary'
+        this.headerTitle = 'Account Summary'
       }
     });
   }
