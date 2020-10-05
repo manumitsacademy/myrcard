@@ -18,7 +18,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <h5 class="d-inline d-xl-none d-sm text-white align-self-end">{{headerTitle|uppercase}}</h5>
+          <h5 class="d-inline d-xl-none d-sm text-white align-self-end">{{headerTitle|titlecase}}</h5>
           <!--  <div class=" d-xl-none d-sm d-inline ">
                   <i class="fa fa-bell text-white" aria-hidden="true" style="font-size:1.5rem;"></i>
                   <i class="fa fa-circle border-1 border-white" aria-hidden="true"></i>
@@ -27,14 +27,14 @@
           <div class=" d-xl-none d-sm d-inline ">
           </div>
         </div>
-        <div class="collapse navbar-collapse" id="shortcut">
+        <div class="collapse navbar-collapse no-action" id="shortcut">
           <button class="navbar-toggler border-0 mt-3 navbar-light" type="button" data-toggle="collapse"
             data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <span class="d-md-none d-lg-none d-xl-none"><b>Hello, Sylvia Smith</b></span>
-          <ul class="navbar-nav">
+          <span class="d-md-none d-lg-none d-xl-none no-action">Hello, Sylvia Smith</span>
+          <ul class="navbar-nav d-none d-md-flex d-lg-flex d-xl-flex">
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard">Account Overview</a>
             </li>
@@ -49,6 +49,26 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="transactionhistory">Transaction History</a>
+            </li>
+            <li class="nav-item d-md-none d-lg-none d-xl-none">
+              <a class="nav-link" (click)="signout()">Logout</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-md-none d-lg-none d-xl-none">
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard" [class.active]="overview" (click)="overviewActive()">Account Overview</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/default" [class.active]="requestLimit" (click)="requestLimitActive()">Request Limit Increase</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/default" [class.active]="requestCash" (click)="requestCashActive()">Request Cash Draw</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/default" [class.active]="calendar" (click)="calendarActive()">Payment Calendar</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="transactionhistory" [class.active]="history" (click)="historyActive()">Transaction History</a>
             </li>
             <li class="nav-item d-md-none d-lg-none d-xl-none">
               <a class="nav-link" (click)="signout()">Logout</a>
