@@ -211,6 +211,22 @@ input::placeholder{
 .table thead{
     border-bottom:2px solid lightgray;
 }
+.mobile_view  .table{
+    align-self: center;
+}
+.mobile_view .table td:nth-child(1){
+    width:90%;
+}
+.mobile_view .table td p{
+    margin-bottom:1px;   
+}
+
+.mobile_view .table td:nth-child(2){
+    font-weight:bold;
+}
+.shadow{
+    box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
+}
 .small-loader{
     border: 5px solid #f3f3f3;
     border-radius: 50%;
@@ -229,3 +245,18 @@ input::placeholder{
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+@media(max-width:640px){
+    .card.card1{
+        margin-bottom: 30px;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+    .table td{
+        vertical-align: middle;
+    }
+    .table tr td:nth-child(1){
+        padding-left:12px !important;
+    }
+}
