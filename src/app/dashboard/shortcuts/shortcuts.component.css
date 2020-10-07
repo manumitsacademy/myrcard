@@ -86,15 +86,33 @@
     font-size:0.8rem;
   }
   .short_mobile{
-    display:d-flex;
-    align-items:stretch;
-    justify-content:space-between;
+    display:flex;
+    align-items:center;
     width:100%;
     margin:0;
     padding:0;
   }
   span.no-action{
       font-weight: bold;
+  }
+  .height-match{
+      margin-bottom: 11px;
+  }
+  .img{
+      margin:0 !important;
+  }
+  .search-border{
+    border-bottom: 1px solid white;
+  }
+  .search-icon{
+      height: fit-content;
+  }
+  .search-input{
+      background-color: #542d87;
+  }
+  ::placeholder {
+    color: white;
+    font-size:12px;
   }
 @media(max-width:640px){
     .navbar-collapse {
@@ -126,5 +144,8 @@
     }
     #short_cut .navbar .nav-link{
         color: rgb(135,135,135);
+    }
+    #short_cut .navbar .nav-link:hover{
+        color: rgb(0, 0, 0);
     }
 }

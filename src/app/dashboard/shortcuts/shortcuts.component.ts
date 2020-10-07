@@ -2,12 +2,36 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterEvent, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { AuthenticationService } from 'src/app/core/authentication.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-shortcuts',
   templateUrl: './shortcuts.component.html',
-  styleUrls: ['./shortcuts.component.css']
+  styleUrls: ['./shortcuts.component.css'],
+  animations: [
+    trigger(
+      'fadeAnimation', 
+      [
+        transition(
+          ':enter', 
+          [
+            style({ opacity: 0 }),
+            animate('0.5s', 
+                    style({ opacity: 1 }))
+          ]
+        ),
+        transition(
+          ':leave', 
+          [
+            animate('0s', 
+                    style({ opacity: 0 }))
+          ]
+        )
+      ]
+    )
+  ]
 })
 export class ShortcutsComponent {
+  isSearchEnabled = false;
   overview = true;
   requestLimit = false;
   requestCash = false;
@@ -15,11 +39,13 @@ export class ShortcutsComponent {
   history = false;
   divbg="bluebackground1";
   headerTitle;
+  currentUrl;
   constructor(public aR:ActivatedRoute,public router: Router,private authenticationService:AuthenticationService) { 
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
     ).subscribe(e => {
       this.headerTitle = e["url"].split('/')[2];
+      this.currentUrl = e['url'];
       
       if(e['url']=='/dashboard/transactionhistory'){
         this.divbg="purplebackground1"; 
@@ -73,5 +99,11 @@ export class ShortcutsComponent {
   }
   signout(){
     this.authenticationService.signout();
+  }
+  enableSearch(){
+    this.isSearchEnabled = true;
+  }
+  disableSearch(){
+    this.isSearchEnabled = false;
   }
 }
