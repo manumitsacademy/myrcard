@@ -40,12 +40,12 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">SPENDING LIMIT</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'SPENDING LIMIT')">
+                                    (click)="openModal(template,'Spending Limit')">
                             </div>
 
 
 
-                            <H5 style="color:#3FC0EF">{{spendingLimit|currency}}</H5>
+                            <H5 class="text-bold" style="color:#3FC0EF">{{spendingLimit|currency}}</H5>
 
 
                         </div>
@@ -58,10 +58,10 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">DISCOUNTED BALANCE</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'DISCOUNTED BALANCE')">
+                                    (click)="openModal(template,'Discounted Balance')">
 
                             </div>
-                            <H5 style="color:#CFAC1F">{{discountedBalance|currency}}</H5>
+                            <H5 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</H5>
 
 
                         </div>
@@ -73,10 +73,10 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">PENDING BALANCE</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'PENDING BALANCE')">
+                                    (click)="openModal(template,'Pending Balance')">
 
                             </div>
-                            <H5 style="color:#542D87">{{pendingAmount|currency}}</H5>
+                            <H5 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</H5>
 
 
                         </div>
@@ -87,10 +87,10 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">SPENDING AVAILABILITY</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'SPENDING AVAILABILITY')">
+                                    (click)="openModal(template,'Spending Availability')">
 
                             </div>
-                            <H5 style="color:#D56926">{{spendingAvailability|currency}}</H5>
+                            <H5 class="text-bold" style="color:#D56926">{{spendingAvailability|currency}}</H5>
 
 
                         </div>
@@ -101,9 +101,9 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">DAILY SPEND LIMIT</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'DAILY SPEND LIMIT')">
+                                    (click)="openModal(template,'Daily Spend Limit')">
                             </div>
-                            <H5 style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
+                            <H5 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
     <div class="accordion md-accordion simple-accord d-block d-md-none d-lg-none d-xl-none" id="my_ac">
         <div class="card">
             <div class="font-flex px-3">
-                <span>ACCOUNT SUMMARY OF 'XXX1234'</span>
+                <span>CARD ENDING - 1580</span>
             </div>
             <div id="ac_summary1" class="mobile_ac d-lg-none d-xl-none d-md-none collapse hide"
                 aria-labelledby="headingOne" data-parent="#my_ac">
@@ -126,7 +126,7 @@
                             <p>SPENDING LIMIT</p>
                         </div>
                         <div class="no-margin">
-                            <h6 style="color:#3FC0EF">{{spendingLimit|currency}}</h6>
+                            <h6 class="text-bold" style="color:#3FC0EF">{{spendingLimit|currency}}</h6>
                         </div>
                     </div>
                     <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
@@ -135,7 +135,7 @@
                             <p>DISCOUNTED BALANCE</p>
                         </div>
                         <div class="no-margin">
-                            <h6 style="color:#CFAC1F">{{discountedBalance|currency}}</h6>
+                            <h6 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</h6>
                         </div>
                     </div>
                     <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
@@ -144,7 +144,7 @@
                             <p>PENDING BALANCE</p>
                         </div>
                         <div class="no-margin">
-                            <h6 style="color:#542D87">{{pendingAmount|currency}}</h6>
+                            <h6 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</h6>
                         </div>
                     </div>
                     <div class="row no-gutters"><i class="fas fa-equals"></i></div>
@@ -153,7 +153,7 @@
                             <p>AVAILABLE SPENDING</p>
                         </div>
                         <div class="no-margin">
-                            <h6 style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
+                            <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
                         </div>
                     </div>
                     <div class="dropdown-divider">
@@ -164,7 +164,7 @@
                             <p>DAILY SPEND LIMIT</p>
                         </div>
                         <div class="no-margin">
-                            <h6 style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
+                            <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
                         </div>
                     </div>
                 </div>
@@ -238,12 +238,33 @@
 
 <ng-template #template>
     <div class="modal-header">
-        <h4 class="modal-title pull-left">{{modelTitle}}</h4>
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body">
-        {{this.modelContent}}
+        <h4 class="content-heading">{{modelTitle}}</h4>
+        <p class="content-body">{{this.modelContent}}</p>
+        <h5 class="content-heading">Calculation</h5>
+        <div class="row no-gutters border-bottom mb-3">
+            <div class="col">
+                <p>Carpet One</p>
+                <p>Makeup Payment(s)</p>
+                <p>Outstanding Bounce Fees</p>
+            </div>
+            <div class="col">
+                <p class="text-right"><b>{{2605|currency}}</b></p>
+                <p class="text-right"><b>{{70|currency}}</b></p>
+                <p class="text-right"><b>{{35|currency}}</b></p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <p class="text-theme"><b>Total</b></p>
+            </div>
+            <div class="col">
+                <p class="text-right text-theme"><b>{{2710|currency}}</b></p>
+            </div>
+        </div>
     </div>
 </ng-template>

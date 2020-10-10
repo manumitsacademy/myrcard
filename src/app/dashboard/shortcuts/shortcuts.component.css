@@ -47,11 +47,20 @@
     
     
 }
-#short_cut .navbar .nav-link.active{
-    color: black;
-  font-size: 16px;
-  font-weight: bold;
+
+#short_cut .navbar .nav-link.web-active{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 15px;
+    background-color: rgb(255, 255, 255, 0.15);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
 }
+
 #short_cut .navbar .nav-link:hover{
     color:white;
     background-color: rgb(255, 255, 255, 0.15);
@@ -109,10 +118,14 @@
   }
   .search-input{
       background-color: #542d87;
+      color: white;
   }
   ::placeholder {
     color: white;
     font-size:12px;
+  }
+  .w-30{
+      width:30px;
   }
 @media(max-width:640px){
     .navbar-collapse {
@@ -147,5 +160,10 @@
     }
     #short_cut .navbar .nav-link:hover{
         color: rgb(0, 0, 0);
+    }
+    #short_cut .navbar .nav-link.active{
+        color: black;
+      font-size: 16px;
+      font-weight: bold;
     }
 }
