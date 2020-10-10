@@ -30,7 +30,7 @@
               <div class="input-holder d-flex align-items-center search-border" *ngIf="isSearchEnabled" [@fadeAnimation]>
                 <img src="/assets/search-icon.svg" class="search-icon">
                 <input type="text" class="search-input w-100 border-0 ml-2" placeholder="Search Transaction History" >
-                <img src="/assets/close-icon-light.svg" (click)="disableSearch()">
+                <img src="/assets/close-icon-light.svg" class="w-30" (click)="disableSearch()">
               </div>
             </div>
         </div>
@@ -39,28 +39,32 @@
             data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <span class="d-md-none d-lg-none d-xl-none no-action">Hello, Sylvia Smith</span>
+          </button>          
           <ul class="navbar-nav d-none d-md-flex d-lg-flex d-xl-flex">
             <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard">Account Overview</a>
+              <a class="nav-link" routerLink="/dashboard" [class.web-active]="overview" (click)="overviewActive()">Account Overview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard/default">Request Limit Increase</a>
+              <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestLimit"
+              (click)="requestLimitActive()">Request Limit Increase</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard/default">Request Cash Draw</a>
+              <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestCash"
+              (click)="requestCashActive()">Request Cash Draw</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard/default">Payment Calendar</a>
+              <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="calendar"
+              (click)="calendarActive()">Payment Calendar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="transactionhistory">Transaction History</a>
+              <a class="nav-link" routerLink="transactionhistory" [class.web-active]="history"
+              (click)="historyActive()">Transaction History</a>
             </li>
             <li class="nav-item d-md-none d-lg-none d-xl-none">
               <a class="nav-link" (click)="signout()">Logout</a>
             </li>
           </ul>
+          <span class="d-md-none d-lg-none d-xl-none no-action">Hello, Sylvia Smith</span>
           <ul class="navbar-nav d-md-none d-lg-none d-xl-none">
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="/dashboard" [class.active]="overview" (click)="overviewActive()">Account
