@@ -114,6 +114,7 @@
 #login_page .passwordL{
   margin-top:40px;
 }
+
 #login_page .right_col .for_pass{
   
   color: #2B73B0;
@@ -129,8 +130,11 @@ input:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-bottom: 2px solid #2B73B0 !important;
 }
-
+.field-focus{
+  color: #2B73B0 !important;
+}
 h1{
   font-family: Gotham bold;
 }

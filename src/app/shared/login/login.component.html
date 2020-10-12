@@ -40,13 +40,13 @@
                 </div>
                 <div [formGroup]="loginForm" id="form">
                     <div>
-                        <label for="email">Email Address</label>
-                        <input formControlName="email" type="text" class="form-control p-0 " placeholder="User Email">
+                        <label for="email" [class.field-focus]="isEmailFocussed">Email Address</label>
+                        <input formControlName="email" type="text" class="form-control p-0 " placeholder="User Email" (focus)="emailOnFocus()" (focusout)="emailOnFocusOut()">
                     </div>
                     <div class="passwordL">
-                        <label for="password">Password</label>
+                        <label for="password" [class.field-focus]="isPwdFocussed">Password</label>
                         <input formControlName="password" type="password" class="form-control p-0"
-                            placeholder="************">
+                            placeholder="************" (focus)="pwdOnFocus()" (focusout)="pwdOnFocusOut()">
                     </div>
 
                     <div class="text-danger" *ngIf="failedLogin">
@@ -62,6 +62,6 @@
         </div>
     </div>
 </section>
-<div *ngIf="loggedIn">
+<div *ngIf="loggedIn && loginForm.valid">
     <div class="loader"></div>
 </div>
