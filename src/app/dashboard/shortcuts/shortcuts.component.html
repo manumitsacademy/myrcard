@@ -13,58 +13,61 @@
     <nav class="navbar navbar-expand-lg navbar-expand-md">
       <div class="container">
         <div class="short_mobile d-xl-none d-sm d-md-none d-lg-none">
-          <button *ngIf="!isSearchEnabled" class="navbar-toggler border-0 navbar-dark" type="button" data-toggle="collapse"
-            data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
+          <button *ngIf="!isSearchEnabled" class="navbar-toggler border-0 navbar-dark" type="button"
+            data-toggle="collapse" data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon menu-closed"></span>
           </button>
-          
-            <h5 *ngIf="!isSearchEnabled" class="d-xl-none d-sm text-white align-self-end">{{headerTitle|titlecase}}</h5>
-            <!--  <div class=" d-xl-none d-sm d-inline ">
+
+          <h5 *ngIf="!isSearchEnabled" class="d-xl-none d-sm text-white align-self-end">{{headerTitle|titlecase}}</h5>
+          <!--  <div class=" d-xl-none d-sm d-inline ">
                   <i class="fa fa-bell text-white" aria-hidden="true" style="font-size:1.5rem;"></i>
                   <i class="fa fa-circle border-1 border-white" aria-hidden="true"></i>
                 
                 </div>-->
-            <div class="search-wrapper" *ngIf="currentUrl=='/dashboard/transactionhistory'" [ngClass]="{'height-match w-100': isSearchEnabled, 'ml-auto': !isSearchEnabled}">
-              <img src="/assets/search-icon.svg" class="search-icon" (click)="enableSearch()" *ngIf="!isSearchEnabled">
-              <div class="input-holder d-flex align-items-center search-border" *ngIf="isSearchEnabled" [@fadeAnimation]>
-                <img src="/assets/search-icon.svg" class="search-icon">
-                <input type="text" class="search-input w-100 border-0 ml-2" placeholder="Search Transaction History" >
-                <img src="/assets/close-icon-light.svg" class="w-30" (click)="disableSearch()">
-              </div>
+          <div class="search-wrapper" *ngIf="currentUrl=='/dashboard/transactionhistory'"
+            [ngClass]="{'height-match w-100': isSearchEnabled, 'ml-auto': !isSearchEnabled}">
+            <img src="/assets/search-icon.svg" class="search-icon" (click)="enableSearch()" *ngIf="!isSearchEnabled">
+            <div class="input-holder d-flex align-items-center search-border" *ngIf="isSearchEnabled" [@fadeAnimation]>
+              <img src="/assets/search-icon.svg" class="search-icon">
+              <input type="text" class="search-input w-100 border-0 ml-2" placeholder="Search Transaction History">
+              <img src="/assets/close-icon-light.svg" class="w-30" (click)="disableSearch()">
             </div>
+          </div>
         </div>
         <div class="collapse navbar-collapse no-action" id="shortcut">
           <button class="navbar-toggler border-0 mt-3 navbar-light" type="button" data-toggle="collapse"
             data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>          
+            <span class="navbar-toggler-icon menu-open"></span>
+          </button>
+          <span class="d-md-none d-lg-none d-xl-none no-action pos-align">Hello, Sylvia Smith</span>
           <ul class="navbar-nav d-none d-md-flex d-lg-flex d-xl-flex">
             <li class="nav-item">
-              <a class="nav-link" routerLink="/dashboard" [class.web-active]="overview" (click)="overviewActive()">Account Overview</a>
+              <a class="nav-link" routerLink="/dashboard" [class.web-active]="overview"
+                (click)="overviewActive()">Account Overview</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestLimit"
-              (click)="requestLimitActive()">Request Limit Increase</a>
+                (click)="requestLimitActive()">Request Limit Increase</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestCash"
-              (click)="requestCashActive()">Request Cash Draw</a>
+                (click)="requestCashActive()">Request Cash Draw</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="calendar"
-              (click)="calendarActive()">Payment Calendar</a>
+                (click)="calendarActive()">Payment Calendar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="transactionhistory" [class.web-active]="history"
-              (click)="historyActive()">Transaction History</a>
+                (click)="historyActive()">Transaction History</a>
             </li>
             <li class="nav-item d-md-none d-lg-none d-xl-none">
               <a class="nav-link" (click)="signout()">Logout</a>
             </li>
           </ul>
-          <span class="d-md-none d-lg-none d-xl-none no-action">Hello, Sylvia Smith</span>
+
           <ul class="navbar-nav d-md-none d-lg-none d-xl-none">
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="/dashboard" [class.active]="overview" (click)="overviewActive()">Account
