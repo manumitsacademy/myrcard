@@ -127,6 +127,16 @@
   .w-30{
       width:30px;
   }
+  .menu-closed{
+      background-image:url("/assets/menu-closed.svg");
+  }
+  .menu-open{
+      background-image:url("/assets/menu-open.svg");
+  }
+  .pos-align{
+      position: relative;
+      bottom: 3px;
+  }
 @media(max-width:640px){
     .navbar-collapse {
         position: fixed;
