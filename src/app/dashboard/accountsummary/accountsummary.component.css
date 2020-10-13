@@ -137,6 +137,9 @@ margin-bottom: 10px;
 .simple-accord .card .card-body{
   padding: 0 16px 16px 16px;
 }
+.w-14{
+  width: 14px;
+}
 .modal-header{
   border-bottom: none;
 }
