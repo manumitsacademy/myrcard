@@ -81,7 +81,6 @@ form .btn{
     left: 85%;
     top: 8px;
     background-color:white;
-    color:lightgrey;
 }
 
 .icon-addon.addon-md .form-control,
@@ -247,8 +246,24 @@ input::placeholder{
     }
 
 @media(max-width:640px){
-    .card.card1{
+    .card1{
         margin-bottom: 30px;
+    }
+    .mob-date{
+        margin-top: 0 !important;
+        padding: 0;
+    }
+    .form-inline{
+        margin: 0 !important;
+    }
+    .form-group{
+        margin: 0;
+    }
+    .mob-input{
+        border: none;
+    }
+    .mob-input:focus{
+        color: #1F74B1;
     }
     .table{
         margin-bottom: 0;
