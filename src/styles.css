@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.bs-datepicker-container {
+    padding: 0px;
+}
 .mytheme-purple .bs-datepicker-head{
     background-color: #542d87 !important;
 }
-.bs-datepicker-body table td span[class*="select-"], .bs-datepicker-body table td[class*="select-"] span{
-    color:#aba4b1;
+.mytheme-purple .bs-datepicker-body table td span.selected{
     background-color: rgb(105, 68, 105)
 }
 a.pagelink{
@@ -34,6 +36,10 @@ accordion.no-btm-border .panel-heading{
     border-bottom: 1px solid rgba(0,0,0,.125) !important;
     border-radius: 4px !important;
   } */
-
+/* @media(max-width:640px){
+    bs-datepicker-container{
+        left: 23%;
+    }
+} */
   
   

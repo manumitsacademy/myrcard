@@ -25,9 +25,10 @@
 </ng-template>
 <section id="trans_his">
     <div class="container">
-        <div class="card card1">
-            <div class="navbar navbar-expand-lg mt-3">
-                <a class="navbar-brand mr-auto font-weight-bold text-uppercase d-none d-md-block d-lg-block d-xl-block">Transaction History</a>
+        <div class="card1">
+            <div class="navbar navbar-expand-lg mt-3 mob-date">
+                <a class="navbar-brand mr-auto font-weight-bold text-uppercase d-none d-md-block d-lg-block d-xl-block">Transaction
+                    History</a>
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2 d-none d-md-block d-lg-block d-xl-block">
                         <div class="icon-addon addon-lg">
@@ -38,15 +39,15 @@
                     </div>
                     <div class="form-group d-flex">
                         <div class="icon-addon addon-lg mr-1">
-                            <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate"
-                                [bsConfig]="{containerClass:'mytheme-purple'}" id="startDate"
-                                (bsValueChange)="onDateChange($event,'minDate')">
+                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate"
+                                [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY'}"
+                                id="startDate" (bsValueChange)="onDateChange($event,'minDate')">
                             <label for="startDate" class="fa fa-calendar-o" rel="tooltip" title="startDate"></label>
                         </div>
                         <div class="icon-addon addon-lg">
-                            <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate"
-                                [bsConfig]="{containerClass:'mytheme-purple'}" id="endDate"
-                                (bsValueChange)="onDateChange($event,'maxDate')">
+                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate"
+                                [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY'}"
+                                id="endDate" (bsValueChange)="onDateChange($event,'maxDate')">
                             <label for="endDate" class="fa fa-calendar-o" rel="tooltip" title="endDate"></label>
                         </div>
                     </div>
@@ -139,8 +140,8 @@
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
             <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
+    </div>
+    <div class="modal-body">
         Start Date cannot be greater than End Date
-      </div>
+    </div>
 </ng-template>
