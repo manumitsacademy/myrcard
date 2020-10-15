@@ -113,79 +113,83 @@
 
         </div>
     </div>
-    <div class="accordion md-accordion simple-accord d-block d-md-none d-lg-none d-xl-none" id="my_ac">
-        <div class="card">
-            <div class="font-flex px-3">
-                <span>CARD ENDING - 1580</span>
-            </div>
-            <div id="ac_summary1" class="mobile_ac d-lg-none d-xl-none d-md-none collapse hide"
-                aria-labelledby="headingOne" data-parent="#my_ac">
-                <div class="card-body">
-                    <div class="row d-flex align-items-center justify-content-between no-gutters">
-                        <div class="no-margin d-flex align-items-center">
-                            <p>SPENDING LIMIT</p>
-                            <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
+    <div class="container d-block d-md-none d-lg-none d-xl-none">
+        <div class="accordion md-accordion simple-accord" id="my_ac">
+            <div class="card">
+                <div class="font-flex px-3">
+                    <span>CARD ENDING - 1580</span>
+                </div>
+                <div id="ac_summary1" class="mobile_ac d-lg-none d-xl-none d-md-none collapse hide"
+                    aria-labelledby="headingOne" data-parent="#my_ac">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center justify-content-between no-gutters">
+                            <div class="no-margin d-flex align-items-center">
+                                <p>SPENDING LIMIT</p>
+                                <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
                                     (click)="openModal(template,'Spending Limit')">
+                            </div>
+                            <div class="no-margin">
+                                <h6 class="text-bold" style="color:#3FC0EF">{{spendingLimit|currency}}</h6>
+                            </div>
                         </div>
-                        <div class="no-margin">
-                            <h6 class="text-bold" style="color:#3FC0EF">{{spendingLimit|currency}}</h6>
-                        </div>
-                    </div>
-                    <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
-                    <div class="row d-flex align-items-center justify-content-between no-gutters">
-                        <div class="no-margin d-flex align-items-center">
-                            <p>DISCOUNTED BALANCE</p>
-                            <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
+                        <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                        <div class="row d-flex align-items-center justify-content-between no-gutters">
+                            <div class="no-margin d-flex align-items-center">
+                                <p>DISCOUNTED BALANCE</p>
+                                <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
                                     (click)="openModal(template,'Discounted Balance')">
+                            </div>
+                            <div class="no-margin">
+                                <h6 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</h6>
+                            </div>
                         </div>
-                        <div class="no-margin">
-                            <h6 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</h6>
-                        </div>
-                    </div>
-                    <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
-                    <div class="row d-flex align-items-center justify-content-between no-gutters">
-                        <div class="no-margin d-flex align-items-center">
-                            <p>PENDING BALANCE</p>
-                            <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
+                        <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                        <div class="row d-flex align-items-center justify-content-between no-gutters">
+                            <div class="no-margin d-flex align-items-center">
+                                <p>PENDING BALANCE</p>
+                                <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
                                     (click)="openModal(template,'Pending Balance')">
+                            </div>
+                            <div class="no-margin">
+                                <h6 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</h6>
+                            </div>
                         </div>
-                        <div class="no-margin">
-                            <h6 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</h6>
-                        </div>
-                    </div>
-                    <div class="row no-gutters"><i class="fas fa-equals"></i></div>
-                    <div class="row d-flex align-items-center justify-content-between no-gutters">
-                        <div class="no-margin d-flex align-items-center">
-                            <p>AVAILABLE SPENDING</p>
-                            <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
+                        <div class="row no-gutters"><i class="fas fa-equals"></i></div>
+                        <div class="row d-flex align-items-center justify-content-between no-gutters">
+                            <div class="no-margin d-flex align-items-center">
+                                <p>AVAILABLE SPENDING</p>
+                                <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
                                     (click)="openModal(template,'Spending Availability')">
+                            </div>
+                            <div class="no-margin">
+                                <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
+                            </div>
                         </div>
-                        <div class="no-margin">
-                            <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
-                        </div>
-                    </div>
-                    <div class="dropdown-divider">
+                        <div class="dropdown-divider">
 
-                    </div>
-                    <div class="row d-flex align-items-center justify-content-between no-gutters">
-                        <div class="no-margin d-flex align-items-center">
-                            <p>DAILY SPEND LIMIT</p>
-                            <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
-                                    (click)="openModal(template,'Daily Spend Limit')">
                         </div>
-                        <div class="no-margin">
-                            <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
+                        <div class="row d-flex align-items-center justify-content-between no-gutters">
+                            <div class="no-margin d-flex align-items-center">
+                                <p>DAILY SPEND LIMIT</p>
+                                <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
+                                    (click)="openModal(template,'Daily Spend Limit')">
+                            </div>
+                            <div class="no-margin">
+                                <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center pos-rel">
-            <i *ngIf="isCollapsed" class="fa fa-chevron-down ac_arrow d-md-none d-lg-none d-xl-none" data-toggle="collapse"
-                data-target="#ac_summary1" aria-expanded="true" aria-controls="collapseOne" (click)="expand()"></i>
-            <i *ngIf="!isCollapsed" class="fa fa-chevron-up ac_arrow d-md-none d-lg-none d-xl-none" data-toggle="collapse"
-                data-target="#ac_summary1" aria-expanded="true" aria-controls="collapseOne" (click)="collapse()"></i>
+            <div class="d-flex justify-content-center pos-rel">
+                <i *ngIf="isCollapsed" class="fa fa-chevron-down ac_arrow d-md-none d-lg-none d-xl-none"
+                    data-toggle="collapse" data-target="#ac_summary1" aria-expanded="true" aria-controls="collapseOne"
+                    (click)="expand()"></i>
+                <i *ngIf="!isCollapsed" class="fa fa-chevron-up ac_arrow d-md-none d-lg-none d-xl-none"
+                    data-toggle="collapse" data-target="#ac_summary1" aria-expanded="true" aria-controls="collapseOne"
+                    (click)="collapse()"></i>
 
+            </div>
         </div>
     </div>
     <!-- <accordion class="d-block d-md-none d-lg-none d-xl-none no-btm-border">
