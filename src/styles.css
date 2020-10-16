@@ -31,7 +31,17 @@ a.pagelink{
 accordion.no-btm-border .panel-heading{
     border-bottom: none;
 }
-
+@media(max-width:640px){
+    bs-datepicker-container{
+    transform: scale(1,1) !important;
+    top: 150px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+}
 /* .accordion .card:first-of-type{
     border-bottom: 1px solid rgba(0,0,0,.125) !important;
     border-radius: 4px !important;
