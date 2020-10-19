@@ -9,21 +9,21 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./shortcuts.component.css'],
   animations: [
     trigger(
-      'fadeAnimation', 
+      'fadeAnimation',
       [
         transition(
-          ':enter', 
+          ':enter',
           [
             style({ opacity: 0 }),
-            animate('0.5s', 
-                    style({ opacity: 1 }))
+            animate('0.5s',
+              style({ opacity: 1 }))
           ]
         ),
         transition(
-          ':leave', 
+          ':leave',
           [
-            animate('0s', 
-                    style({ opacity: 0 }))
+            animate('0s',
+              style({ opacity: 0 }))
           ]
         )
       ]
@@ -37,73 +37,82 @@ export class ShortcutsComponent {
   requestCash = false;
   calendar = false;
   history = false;
-  divbg="bluebackground1";
+  divbg = "bluebackground1";
   headerTitle;
   currentUrl;
-  constructor(public aR:ActivatedRoute,public router: Router,private authenticationService:AuthenticationService) { 
+  constructor(public aR: ActivatedRoute, public router: Router, private authenticationService: AuthenticationService) {
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
     ).subscribe(e => {
       this.headerTitle = e["url"].split('/')[2];
       this.currentUrl = e['url'];
-      
-      if(e['url']=='/dashboard/transactionhistory'){
-        this.divbg="purplebackground1"; 
+
+      if (e['url'] == '/dashboard/transactionhistory') {
+        this.divbg = "purplebackground1";
         this.headerTitle = 'Transaction History';
         this.historyActive();
-      }      
-      else{
-        this.divbg="bluebackground1";
+      }
+      else {
+        this.divbg = "bluebackground1";
         this.headerTitle = 'Account Summary';
         this.overviewActive();
-        if(e['url']=='/dashboard/default'){
+        if (e['url'] == '/dashboard/default') {
+          this.headerTitle = 'Request Limit Increase';
           this.requestLimitActive();
+        }
+        if (e['url'] == '/dashboard/request-cash') {
+          this.headerTitle = 'Request Cash Draw';
+          this.requestCashActive();
+        }
+        if (e['url'] == '/dashboard/payment-calendar') {
+          this.headerTitle = 'Payment Calendar';
+          this.calendarActive();
         }
       }
     });
   }
-  overviewActive(){
+  overviewActive() {
     this.overview = true;
     this.requestLimit = false;
     this.requestCash = false;
     this.calendar = false;
     this.history = false;
   }
-  requestLimitActive(){
+  requestLimitActive() {
     this.overview = false;
     this.requestLimit = true;
     this.requestCash = false;
     this.calendar = false;
     this.history = false;
   }
-  requestCashActive(){
+  requestCashActive() {
     this.overview = false;
     this.requestLimit = false;
     this.requestCash = true;
     this.calendar = false;
     this.history = false;
   }
-  calendarActive(){
+  calendarActive() {
     this.overview = false;
     this.requestLimit = false;
     this.requestCash = false;
     this.calendar = true;
     this.history = false;
   }
-  historyActive(){
+  historyActive() {
     this.overview = false;
     this.requestLimit = false;
     this.requestCash = false;
     this.calendar = false;
     this.history = true;
   }
-  signout(){
+  signout() {
     this.authenticationService.signout();
   }
-  enableSearch(){
+  enableSearch() {
     this.isSearchEnabled = true;
   }
-  disableSearch(){
+  disableSearch() {
     this.isSearchEnabled = false;
   }
 }
