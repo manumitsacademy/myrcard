@@ -180,7 +180,7 @@ footer {
     
   }
 }
-@media(max-width:360px){
+@media(max-width:576px){
   .right_col{
     margin-top:100px !important;
     max-width: 306px;

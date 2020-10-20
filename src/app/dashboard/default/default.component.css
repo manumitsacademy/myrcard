@@ -25,15 +25,15 @@
         width:80%;
     }
     .chat_box p{
-        font-size: 11px;
+        font-size: 11px !important;
     } 
 }
-@media(width:411.2px){
+@media(width:411px){
     .chat_box{
         width:75%;
     }
     .chat_box p{
-        font-size: 12px;
+        font-size: 13px !important;
     } 
 }
 @media(width:320px){
@@ -41,7 +41,7 @@
         width:75%;
     }
     .chat_box p{
-        font-size: 9px;
+        font-size: 10px !important;
     } 
 }
 @media(width:375.2px){
@@ -49,14 +49,28 @@
         width:80%;
     }
     .chat_box p{
-        font-size: 11.5px;
+        font-size: 11.5px !important;
     } 
 }
-@media(width:414.4px){
+@media(width:414px){
     .chat_box{
         width:80%;
     }
     .chat_box p{
-        font-size: 13px;
+        font-size: 13px !important;
     } 
+}
+@media(max-width:640px){
+    .card{
+        margin-top: 80px;
+        border: none;
+        background-color: #FAFAFA;
+        box-shadow: none;
+    }
+    .chat_box{
+        width: 80%;
+    }
+    .chat_box p{
+        font-size: 12px;
+    }
 }

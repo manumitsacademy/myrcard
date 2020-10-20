@@ -138,11 +138,18 @@
       bottom: 3px;
   }
 @media(max-width:640px){
+    section{
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    button.navbar-dark{
+        padding-left:0;
+    }
     .navbar-collapse {
         position: fixed;
         top: 0;
         right: 110%;
-        padding: 15px 15px 15px 16px;
+        padding: 0 0 0 6px;
         width: 80%;
         transition: all 0.3s ease;
         display: block;
