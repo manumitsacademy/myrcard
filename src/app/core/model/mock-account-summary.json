@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "spendLim": "5000",
+        "discBal": "1966.21",
+        "pendBal": "35",
+        "availSpend": "2998.79",
+        "dailySpendLim": "2998.79"
+    }
+]
