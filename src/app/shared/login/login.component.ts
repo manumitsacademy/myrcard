@@ -11,36 +11,36 @@ export class LoginComponent implements OnInit {
   loggedIn = false;
   isEmailFocussed = false;
   isPwdFocussed = false;
-  constructor(public authService:AuthenticationService,public router:Router,public fb:FormBuilder) {
+  constructor(public authService: AuthenticationService, public router: Router, public fb: FormBuilder) {
 
     this.loginForm = this.fb.group({
-      email:['', Validators.required],
-      password:['', Validators.required]
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     })
   }
-  failedLogin=false;
-  loginForm:FormGroup;
+  failedLogin = false;
+  loginForm: FormGroup;
   ngOnInit() {
     console.log();
   }
-  emailOnFocus(){
+  emailOnFocus() {
     this.isEmailFocussed = true;
   }
-  emailOnFocusOut(){
+  emailOnFocusOut() {
     this.isEmailFocussed = false;
   }
-  pwdOnFocus(){
+  pwdOnFocus() {
     this.isPwdFocussed = true;
   }
-  pwdOnFocusOut(){
+  pwdOnFocusOut() {
     this.isPwdFocussed = false;
   }
-  login(){
-    if(this.loginForm.valid){
-    this.loggedIn = true;
-    this.authService.appLogin(this.loginForm,this.failedLogin,this.loggedIn);
+  login() {
+    if (this.loginForm.valid) {
+      this.loggedIn = true;
+      this.authService.appLogin(this.loginForm, this.failedLogin, this.loggedIn);
     }
-    else{
+    else {
       alert("Please enter required details");
     }
   }

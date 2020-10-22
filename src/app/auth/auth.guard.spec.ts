@@ -6,8 +6,9 @@ describe('AuthGuard', () => {
   let guard: AuthGuard;
 
   beforeEach(() => {
+    guard = new AuthGuard(null, null);
     TestBed.configureTestingModule({});
-    guard = TestBed.inject(AuthGuard);
+    //guard = TestBed.inject(AuthGuard);
   });
 
   it('should be created', () => {
