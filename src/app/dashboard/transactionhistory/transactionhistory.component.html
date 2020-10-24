@@ -32,20 +32,22 @@
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2 d-none d-md-block d-lg-block d-xl-block">
                         <div class="icon-addon addon-lg">
-                            <input type="text" placeholder="Search..." class="form-control" id="email"
+                            <input type="text" placeholder="Search..." class="form-control search-box" id="email"
                                 [(ngModel)]="searchKey" (keyup)="searchHistory()">
                             <label for="email" class="fa fa-search" rel="tooltip" title="Search..."></label>
                         </div>
                     </div>
                     <div class="form-group d-flex">
                         <div class="icon-addon addon-lg mr-1">
-                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate"
+                            <input class="form-control mob-input start-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="minDate"
                                 [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
                                 id="startDate" (bsValueChange)="onDateChange($event,'minDate')">
                             <label for="startDate" class="fa fa-calendar-o" rel="tooltip" title="startDate"></label>
                         </div>
                         <div class="icon-addon addon-lg">
-                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate"
+                            <input class="form-control mob-input end-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="maxDate"
                                 [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
                                 id="endDate" (bsValueChange)="onDateChange($event,'maxDate')">
                             <label for="endDate" class="fa fa-calendar-o" rel="tooltip" title="endDate"></label>
