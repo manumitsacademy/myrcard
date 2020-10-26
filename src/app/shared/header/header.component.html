@@ -6,32 +6,34 @@
     
 </div>
 </div>-->
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <section id="main_logo" [ngClass]="divbg" class="d-none d-xl-block d-md-block">
-   <div class="container">
-        <nav class="navbar navbar-expand-lg p-0">
-            <div class="navbar-brand d-inline">
-              <a  routerLink="/dashboard"><img src="/assets/fulllogo.png" class="img-fluid d-inline" alt=""></a>
-            </div>
-            <div class="ml-auto mt-3 right_col">
-              <!-- <div class="d-inline-block align-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="navbar-brand d-inline">
+        <a routerLink="/dashboard"><img src="/assets/fulllogo.png" class="img-fluid d-inline" alt=""></a>
+      </div>
+      <div class="ml-auto mt-3 right_col">
+        <!-- <div class="d-inline-block align-top">
                 <img src="assets/bell.png" alt="" class="img-fluid bell">
                 <i class="fa fa-circle" aria-hidden="true"></i>
               </div> -->
-              
-                <div class="dropdown d-inline-block ml-4 w-100">
-                    <a class="dropdown-toggle" href="#"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <p class="d-inline">{{legalName}}<i class="fa fa-angle-down" aria-hidden="true"></i>
-                       
-                      </p>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" (click)="changePassword()">Change Password</a>
-                      <a class="dropdown-item" (click)="signout()">Sign Out</a>
-                    </div>
-                  </div>
-            </div>
-          </nav>
-     </div>
+
+        <div class="dropdown d-inline-block ml-4 w-100">
+          <a class="dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <p class="d-inline">{{legalName}}<i class="fa fa-angle-down" aria-hidden="true"></i>
+
+            </p>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" (click)="changePassword()">Change Password</a>
+            <a class="dropdown-item sign-out" (click)="signout()">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </section>

@@ -19,6 +19,7 @@ describe('TransactionhistoryComponent', () => {
   let debugElement: DebugElement;
   let mockAccountService;
   let trans;
+  let mockModalService;
   //const fakeData = { id: 1, name: 'fakeName' };
   // const fakeAccountService = {
   //   getTransactionHistory: () => of([fakeData]),
@@ -43,13 +44,15 @@ describe('TransactionhistoryComponent', () => {
   beforeEach(async(() => {
     trans = transactions;
     mockAccountService = jasmine.createSpyObj(['getTransactionHistory']);
+    mockModalService = jasmine.createSpyObj(['show']);
+
     // component = new TransactionhistoryComponent(null, null, null, null);
 
     TestBed.configureTestingModule({
       declarations: [TransactionhistoryComponent],
       providers: [
         { provide: AccountService, useValue: mockAccountService },
-        BsModalService
+        { provide: BsModalService, useValue: mockModalService }
       ],
       imports: [BsDatepickerModule.forRoot(), ModalModule, RouterTestingModule, HttpClientTestingModule, FormsModule],
       schemas: [NO_ERRORS_SCHEMA]
@@ -66,18 +69,14 @@ describe('TransactionhistoryComponent', () => {
 
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 
   it('should return transaction history', () => {
-    mockAccountService.getTransactionHistory.and.returnValue(of(trans));
-    fixture.componentInstance.currentTransactions = trans;
+    mockAccountService.getTransactionHistory.and.returnValue(of(JSON.stringify(trans)));
     fixture.detectChanges();
-    expect(trans.length).toBe(5);
-    console.log(fixture.componentInstance.currentTransactions);
-    let abc = fixture.componentInstance.currentTransactions;
-    console.log(abc[0]);
+    expect(trans.Result.array.RevTrxn.length).toBe(5);
   });
 
   it('should contain search box', () => {
@@ -86,7 +85,7 @@ describe('TransactionhistoryComponent', () => {
   });
 
   it('should be able to search', () => {
-    mockAccountService.getTransactionHistory.and.returnValue(of(trans));
+    mockAccountService.getTransactionHistory.and.returnValue(of(JSON.stringify(trans)));
     spyOn(component, 'searchHistory');
     const searchBox = debugElement.query(By.css('.search-box'));
     searchBox.triggerEventHandler('keyup', {});
@@ -115,5 +114,14 @@ describe('TransactionhistoryComponent', () => {
     const endDate = debugElement.query(By.css('.end-date'));
     endDate.triggerEventHandler('bsValueChange', {});
     expect(component.onDateChange).toHaveBeenCalled();
+  });
+
+  it('should warn if startdate is greater than enddate', () => {
+    mockAccountService.getTransactionHistory.and.returnValue(of(JSON.stringify(trans)));
+    const startDate = new Date();
+    const endDate = new Date(startDate.getTime() - 24 * 60 * 60 * 1000);
+    component.selectedDateRange = [startDate, endDate];
+    component.onDateChange();
+    expect(mockModalService.show).toHaveBeenCalled();
   });
 });
