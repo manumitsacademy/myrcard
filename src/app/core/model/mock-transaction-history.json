@@ -1,37 +1,68 @@
-[
-    {
-        "id": 1,
-        "date": "24 Aug 2020",
-        "description": "Payment From Stinger Solutions",
-        "status": "Successful",
-        "amount": "$ 20000"
-    },
-    {
-        "id": 2,
-        "date": "24 Aug 2020",
-        "description": "Payment From Stinger Solutions",
-        "status": "Successful",
-        "amount": "$ 20000"
-    },
-    {
-        "id": 3,
-        "date": "24 Aug 2020",
-        "description": "Payment From Stinger Solutions",
-        "status": "Successful",
-        "amount": "$ 20000"
-    },
-    {
-        "id": 4,
-        "date": "24 Aug 2020",
-        "description": "Payment From Stinger Solutions",
-        "status": "Successful",
-        "amount": "$ 20000"
-    },
-    {
-        "id": 5,
-        "date": "24 Aug 2020",
-        "description": "Payment From Stinger Solutions",
-        "status": "Successful",
-        "amount": "$ 20000"
+{
+    "Result": {
+        "array": {
+            "RevTrxn": [
+                {
+                    "id": 1,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 2,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 3,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 4,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 5,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                }
+            ]
+        }
     }
-]
+}

@@ -1,10 +1,14 @@
-[
-    {
-        "id": 1,
-        "spendLim": "5000",
-        "discBal": "1966.21",
-        "pendBal": "35",
-        "availSpend": "2998.79",
-        "dailySpendLim": "2998.79"
+{
+    "Result": {
+        "RevAccountSummary": {
+            "limit": {
+                "maxTrxnAmt": 5000,
+                "maxNextAmt": 5000
+            },
+            "summary": {
+                "currentBal": 1966.20756,
+                "pendingBal": 35
+            }
+        }
     }
-]
+}
