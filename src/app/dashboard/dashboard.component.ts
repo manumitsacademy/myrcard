@@ -67,8 +67,8 @@ export class DashboardComponent implements OnInit {
         clearTimeout(this.idletimeout);
         window.localStorage.removeItem('token');
         this.router.navigate(['/login'])
-      }, 20 * 1000 * 60 * 1);
-    }, 20 * 1000 * 60 * 4)
+      }, 1000 * 60 * 1);
+    }, 1000 * 60 * 4)
   }
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
