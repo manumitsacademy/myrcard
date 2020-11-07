@@ -10,36 +10,36 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  logInStatus=false;
+  logInStatus = false;
   accountLast: any;
   legalName: any;
-  constructor(public authService:AuthenticationService,public accountService:AccountService,public router: Router) {
-    this.authService.loggedInEvent.subscribe((logInStatus)=>{
-      this.logInStatus=logInStatus;
-    })
+  constructor(public authService: AuthenticationService, public accountService: AccountService, public router: Router) {
+    // this.authService.loggedInEvent.subscribe((logInStatus) => {
+    //   this.logInStatus = logInStatus;
+    // })
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
     ).subscribe(e => {
-      if(e['url']=='/dashboard/transactionhistory'){
-        this.divbg="purplebackground1";
+      if (e['url'] == '/dashboard/transactionhistory') {
+        this.divbg = "purplebackground1";
       }
-      else{
-        this.divbg="bluebackground1";
+      else {
+        this.divbg = "bluebackground1";
       }
     });
-   }
+  }
 
   ngOnInit() {
-    this.accountService.getTransactionHistory().subscribe((res)=>{
-      res=JSON.parse(res);
+    this.accountService.getTransactionHistory().subscribe((res) => {
+      res = JSON.parse(res);
       this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
     })
   }
-  divbg="bluebackground1";
-  signout(){
+  divbg = "bluebackground1";
+  signout() {
     this.authService.signout();
   }
-  changePassword(){
+  changePassword() {
     this.router.navigate(['/dashboard/changepassword'])
   }
 }

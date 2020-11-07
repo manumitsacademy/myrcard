@@ -1,19 +1,19 @@
 <div (mousemove)="autologout()">
-<app-header></app-header>
-<app-shortcuts></app-shortcuts>
-<div [ngClass]="divbg"></div>
-<div [ngClass]="hexabg"></div>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
-<ng-template #childModal>
-  <div class="modal-header">
-    <h4 id="dialog-child-name" class="modal-title pull-left">Session will be expired</h4>
-  </div>
-  <div class="modal-body">
-    <div class="modal-body text-center">
-        <button type="button" class="btn btn-default" (click)="confirm()" >Logout</button>
-        <button type="button" class="btn btn-primary" (click)="decline()" >Resume</button>
+  <app-header></app-header>
+  <app-shortcuts></app-shortcuts>
+  <div [ngClass]="divbg"></div>
+  <div [ngClass]="hexabg"></div>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+  <ng-template #childModal>
+    <div class="modal-header">
+      <h4 id="dialog-child-name" class="modal-title pull-left">Session will be expired</h4>
     </div>
-  </div>
-</ng-template>
+    <div class="modal-body">
+      <div class="modal-body text-center">
+        <button type="button" class="btn modal-btn btn-default" (click)="confirm()">Logout</button>
+        <button type="button" class="btn modal-btn btn-primary ml-2" (click)="decline()">Resume</button>
+      </div>
+    </div>
+  </ng-template>
 </div>

@@ -32,20 +32,22 @@
                 <div class="form-inline my-2 my-lg-0">
                     <div class="form-group mr-2 d-none d-md-block d-lg-block d-xl-block">
                         <div class="icon-addon addon-lg">
-                            <input type="text" placeholder="Search..." class="form-control" id="email"
+                            <input type="text" placeholder="Search..." class="form-control search-box" id="email"
                                 [(ngModel)]="searchKey" (keyup)="searchHistory()">
                             <label for="email" class="fa fa-search" rel="tooltip" title="Search..."></label>
                         </div>
                     </div>
                     <div class="form-group d-flex">
                         <div class="icon-addon addon-lg mr-1">
-                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate"
+                            <input class="form-control mob-input start-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="minDate"
                                 [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
                                 id="startDate" (bsValueChange)="onDateChange($event,'minDate')">
                             <label for="startDate" class="fa fa-calendar-o" rel="tooltip" title="startDate"></label>
                         </div>
                         <div class="icon-addon addon-lg">
-                            <input class="form-control mob-input" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate"
+                            <input class="form-control mob-input end-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="maxDate"
                                 [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
                                 id="endDate" (bsValueChange)="onDateChange($event,'maxDate')">
                             <label for="endDate" class="fa fa-calendar-o" rel="tooltip" title="endDate"></label>
@@ -74,7 +76,7 @@
                     <tbody>
                         <tr *ngIf="!isTransactionsLoaded">
                             <td colspan="4">
-                                <div class="small-loader mx-auto"></div>
+                                <div class="loader small-loader mx-auto"></div>
                             </td>
                         </tr>
                         <tr *ngFor="let transaction of currentTransactions">
@@ -88,7 +90,7 @@
                                 {{transactionStatus[transaction.trxn.status]}}
                             </td>
                             <td style="text-align: right; padding: 10px;">
-                                {{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}
+                                {{(transaction.trxn?transaction.trxn.amount:0.00)|currency}}
                             </td>
                             <td style="padding: 10px;">
                                 <!-- <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i>  -->
@@ -109,7 +111,7 @@
             </div>
         </div>
         <div class="mobile_view d-xl-none d-sm d-md-none d-lg-none">
-            <div class="small-loader mx-auto" *ngIf="!isTransactionsLoaded"></div>
+            <div class="loader small-loader mx-auto" *ngIf="!isTransactionsLoaded"></div>
             <div class="card shadow mb-3" *ngFor="let transaction of currentTransactions">
                 <table class="table">
                     <tr>
