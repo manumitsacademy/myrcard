@@ -1,0 +1,8 @@
+.right-modal {
+    height: 100%;
+    margin: 0;
+    float: right;
+  }
+.right-modal .modal-content {
+    min-height: 100%;
+}
