@@ -1,19 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./app/styles/login.css";
-@import "./app/styles/loaders.css";
+@import "./app/styles/main.css";
 
-.bs-datepicker-container {
-    padding: 0px;
-}
-.mytheme-purple .bs-datepicker-head{
-    background-color: #542d87 !important;
-}
-.mytheme-purple .bs-datepicker-body table td span.selected{
-    background-color: rgb(105, 68, 105)
-}
-a.pagelink{
-    border:0px solid !important;
-}
 @font-face{
     font-family: Gotham book;
     src:url("assets/webfonts/GothamBook.ttf");
@@ -21,28 +8,4 @@ a.pagelink{
 @font-face{
     font-family: Gotham bold;
     src:url("assets/webfonts/GothamBold.ttf");
-}
-.right-modal {
-    height: 100%;
-    margin: 0;
-    float: right;
-  }
-.right-modal .modal-content {
-    min-height: 100%;
-    
-}
-accordion.no-btm-border .panel-heading{
-    border-bottom: none;
-}
-@media(max-width:640px){
-    bs-datepicker-container{
-    transform: scale(1,1) !important;
-    top: 118px !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: fit-content !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    }
-}
-  
+}  

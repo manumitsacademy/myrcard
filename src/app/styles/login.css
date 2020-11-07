@@ -154,7 +154,7 @@ footer {
   }
 }
 @media (max-width:576px){
-  .btn{
+  .btn.btn-responsive{
     width:100% !important;
   }
 }
