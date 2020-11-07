@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/styles/login.css";
+@import "./app/styles/loaders.css";
+
 .bs-datepicker-container {
     padding: 0px;
 }
@@ -42,14 +45,4 @@ accordion.no-btm-border .panel-heading{
     margin-right: auto !important;
     }
 }
-/* .accordion .card:first-of-type{
-    border-bottom: 1px solid rgba(0,0,0,.125) !important;
-    border-radius: 4px !important;
-  } */
-/* @media(max-width:640px){
-    bs-datepicker-container{
-        left: 23%;
-    }
-} */
-  
   
