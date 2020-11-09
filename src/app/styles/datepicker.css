@@ -1,0 +1,20 @@
+.bs-datepicker-container {
+    padding: 0px;
+}
+.mytheme-purple .bs-datepicker-head{
+    background-color: #542d87 !important;
+}
+.mytheme-purple .bs-datepicker-body table td span.selected{
+    background-color: rgb(105, 68, 105)
+}
+@media(max-width:640px){
+    bs-datepicker-container{
+    transform: scale(1,1) !important;
+    top: 118px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+}
