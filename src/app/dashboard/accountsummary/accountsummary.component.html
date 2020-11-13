@@ -7,7 +7,7 @@
         <H5>$30000</H5>
     </div>
     <div>
-        <div>DISCOUNTER BALANCE</div>
+        <div>PAYNOW DISCOUNT</div>
         <H5>$10000</H5>
     </div>
     <div>
@@ -40,7 +40,7 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">SPENDING LIMIT</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'Spending Limit')">
+                                    (click)="openModal(template,'Spending Limit',spendingLimitModelContent)">
                             </div>
 
 
@@ -56,9 +56,9 @@
                         <div class="card border-0">
 
                             <div class="d-flex align-items-center mb-10">
-                                <div class="spending-l-imit">DISCOUNTED BALANCE</div>
+                                <div class="spending-l-imit">PAYNOW DISCOUNT</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'Discounted Balance')">
+                                    (click)="openModal(template,'PayNow Discount',paynowDiscountModelContent)">
 
                             </div>
                             <H5 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</H5>
@@ -71,9 +71,9 @@
                     <div class="  col-xs-12 w-sm-50 p-1 ">
                         <div class="card border-0">
                             <div class="d-flex align-items-center mb-10">
-                                <div class="spending-l-imit">PENDING BALANCE</div>
+                                <div class="spending-l-imit">PENDING TRANSACTION</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'Pending Balance')">
+                                    (click)="openModal(template,'Pending Transaction',pendingTransactionModelContent)">
 
                             </div>
                             <H5 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</H5>
@@ -87,7 +87,7 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">SPENDING AVAILABILITY</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'Spending Availability')">
+                                    (click)="openModal(template,'Spending Availability',spendingLimitModelContent)">
 
                             </div>
                             <H5 class="text-bold" style="color:#D56926">{{spendingAvailability|currency}}</H5>
@@ -101,7 +101,7 @@
                             <div class="d-flex align-items-center mb-10">
                                 <div class="spending-l-imit">DAILY SPEND LIMIT</div>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer"
-                                    (click)="openModal(template,'Daily Spend Limit')">
+                                    (click)="openModal(template,'Daily Spend Limit',spendingLimitModelContent)">
                             </div>
                             <H5 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</H5>
                         </div>
@@ -135,9 +135,9 @@
                         <div class="row no-gutters"><i class="fa fa-minus" aria-hidden="true"></i></div>
                         <div class="row d-flex align-items-center justify-content-between no-gutters">
                             <div class="no-margin d-flex align-items-center">
-                                <p>DISCOUNTED BALANCE</p>
+                                <p>PayNow Discount </p>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
-                                    (click)="openModal(template,'Discounted Balance')">
+                                    (click)="openModal(template,'PayNow Discount',paynowDiscountModelContent)">
                             </div>
                             <div class="no-margin">
                                 <h6 class="text-bold" style="color:#CFAC1F">{{discountedBalance|currency}}</h6>
@@ -258,8 +258,8 @@
     </div>
     <div class="modal-body">
         <h4 class="content-heading">{{modelTitle}}</h4>
-        <p class="content-body">{{this.modelContent}}</p>
-        <h5 class="content-heading">Calculation</h5>
+        <p class="content-body">{{modelContent}}</p>
+        <!-- <h5 class="content-heading">Calculation</h5>
         <div class="row no-gutters border-bottom mb-3">
             <div class="col">
                 <p>Carpet One</p>
@@ -279,6 +279,6 @@
             <div class="col">
                 <p class="text-right text-theme"><b>{{2710|currency}}</b></p>
             </div>
-        </div>
+        </div> -->
     </div>
 </ng-template>
