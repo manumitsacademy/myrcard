@@ -21,7 +21,7 @@ export class AccountsummaryComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   paynowDiscountModelContent: string = "Revenued will sell back to you the percentage of receivables previously purchased by them at the 'Est Payoff' rate. This is the amount that you will save by purchasing back your receivables today.";
   pendingTransactionModelContent: string = "This amount represents the cumulative total of all  transactions that are currently awaiting Confirmation by Revenued.";
-  spendingLimitModelContent: string = "This is the total amount of funds currently available for your use. This amount is calculated by subtracting the PayNow Discount and any Pending Transactions from your total Spending Limit";
+  spendingAvailabilityModelContent: string = "This is the total amount of funds currently available for your use. This amount is calculated by subtracting the PayNow Discount and any Pending Transactions from your total Spending Limit";
   modelContent: any;
   constructor(public accountService: AccountService, private modalService: BsModalService,) { }
   transactionHistory: any;
