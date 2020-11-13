@@ -148,7 +148,7 @@
                             <div class="no-margin d-flex align-items-center">
                                 <p>PENDING BALANCE</p>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
-                                    (click)="openModal(template,'Pending Balance')">
+                                    (click)="openModal(template,'Pending Balance',pendingTransactionModelContent)">
                             </div>
                             <div class="no-margin">
                                 <h6 class="text-bold" style="color:#542D87">{{pendingAmount|currency}}</h6>
@@ -159,7 +159,7 @@
                             <div class="no-margin d-flex align-items-center">
                                 <p>AVAILABLE SPENDING</p>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
-                                    (click)="openModal(template,'Spending Availability',pendingTransactionModelContent)">
+                                    (click)="openModal(template,'Spending Availability',spendingAvailabilityModelContent)">
                             </div>
                             <div class="no-margin">
                                 <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
@@ -172,7 +172,7 @@
                             <div class="no-margin d-flex align-items-center">
                                 <p>DAILY SPEND LIMIT</p>
                                 <img src="/assets/icon-info.svg" class="ml-1 cursor-pointer w-14"
-                                    (click)="openModal(template,'Daily Spend Limit')">
+                                    (click)="openModal(template,'Daily Spend Limit',spendingAvailabilityModelContent)">
                             </div>
                             <div class="no-margin">
                                 <h6 class="text-bold" style="color:#E5298A">{{dailySpendLimit|currency}}</h6>
