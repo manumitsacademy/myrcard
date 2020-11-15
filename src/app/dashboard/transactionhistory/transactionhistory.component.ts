@@ -54,15 +54,12 @@ export class TransactionhistoryComponent implements OnInit {
       this.filteredTransactions = this.transactionHistory;
       this.filteredTransactionsLength = this.filteredTransactions.length;
       this.currentTransactions = this.transactionHistory.slice(0, this.itemsPerPage);
-      //this.isTransactionsLoaded = true;
+      this.isTransactionsLoaded = true;
       this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
       this.minDate = new Date(this.maxDate.getTime() - 7 * 24 * 60 * 60 * 1000);
-
       this.bsRangeValue = [this.minDate, this.maxDate];
       this.selectedDateRange = this.bsRangeValue;
       this.onDateChange(this.selectedDateRange);
-      this.isTransactionsLoaded = true;
-
     })
   }
   onDateChange(dateRange?: any, dateType?) {
