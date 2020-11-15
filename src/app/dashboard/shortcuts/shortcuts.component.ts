@@ -54,7 +54,7 @@ export class ShortcutsComponent {
       }
       else {
         this.divbg = "bluebackground1";
-        this.headerTitle = 'Account Summary';
+        this.headerTitle = 'Account Overview';
         this.overviewActive();
         if (e['url'] == '/dashboard/default') {
           this.headerTitle = 'Request Limit Increase';
