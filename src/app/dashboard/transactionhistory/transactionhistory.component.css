@@ -81,7 +81,6 @@ form .btn{
     left: 85%;
     top: 8px;
     background-color:white;
-    color:lightgrey;
 }
 
 .icon-addon.addon-md .form-control,
@@ -210,4 +209,50 @@ input::placeholder{
 }
 .table thead{
     border-bottom:2px solid lightgray;
+}
+.mobile_view  .table{
+    align-self: center;
+}
+.mobile_view .table td:nth-child(1){
+    width:90%;
+}
+.mobile_view .table td p{
+    margin-bottom:1px;   
+}
+
+.mobile_view .table td:nth-child(2){
+    font-weight:bold;
+}
+.shadow{
+    box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
+}
+@media(max-width:640px){
+    .card1{
+        margin-bottom: 30px;
+    }
+    .mob-date{
+        margin-top: 0 !important;
+        padding: 0;
+    }
+    .form-inline{
+        margin: 0 !important;
+    }
+    .form-group{
+        margin: 0;
+    }
+    .mob-input{
+        border: none;
+    }
+    .mob-input:focus{
+        color: #1F74B1;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+    .table td{
+        vertical-align: middle;
+    }
+    .table tr td:nth-child(1){
+        padding-left:12px !important;
+    }
 }

@@ -1,51 +1,61 @@
-
-<ng-template #popTemplate >
+<ng-template #popTemplate>
     <div *ngIf="popoverInfo.trxn.status!=='ctsDeclined'">
         <div class="row no-gutters mb-2 d-flex justify-content-between">
             <div class=" left_tt"> Payback Amount:</div>
-            <div class=" text-right right_tt" *ngIf="popoverInfo.fundingStmt"> {{(popoverInfo.fundingStmt?popoverInfo.fundingStmt.paybackAmount:'0.00')|number:'1.2-2'|currency}}</div>
+            <div class=" text-right right_tt" *ngIf="popoverInfo.fundingStmt">
+                {{(popoverInfo.fundingStmt?popoverInfo.fundingStmt.paybackAmount:'0.00')|number:'1.2-2'|currency}}</div>
             <div class=" text-right right_tt" *ngIf="!popoverInfo.fundingStmt">N/A</div>
         </div>
         <div class="row no-gutters mb-2 d-flex justify-content-between">
             <div class=" left_tt"> Collected Amount:</div>
-            <div class=" text-right right_tt" *ngIf="popoverInfo.fundingStmt"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.totCollAmt)?popoverInfo.fundingStmt.totCollAmt[0]:0.00)|number:'1.2-2'|currency}}</div>
+            <div class=" text-right right_tt" *ngIf="popoverInfo.fundingStmt">
+                {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.totCollAmt)?popoverInfo.fundingStmt.totCollAmt[0]:0.00)|number:'1.2-2'|currency}}
+            </div>
             <div class=" text-right right_tt" *ngIf="!popoverInfo.fundingStmt">N/A</div>
         </div>
         <div class="dropdown-divider"></div>
         <div class="row no-gutters d-flex justify-content-between">
             <div class=" total_bal">Balance Amount:</div>
-            <div class=" text-right total_bal" *ngIf="popoverInfo.fundingStmt"> {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.balToDone)?(popoverInfo.fundingStmt.paybackAmount-popoverInfo.fundingStmt.totCollAmt[0]):0.00)|number:'1.2-2'|currency}}</div>
+            <div class=" text-right total_bal" *ngIf="popoverInfo.fundingStmt">
+                {{((popoverInfo.fundingStmt && popoverInfo.fundingStmt.balToDone)?(popoverInfo.fundingStmt.paybackAmount-popoverInfo.fundingStmt.totCollAmt[0]):0.00)|number:'1.2-2'|currency}}
+            </div>
             <div class=" text-right right_tt" *ngIf="!popoverInfo.fundingStmt">N/A</div>
         </div>
-    </div> 
+    </div>
 </ng-template>
 <section id="trans_his">
     <div class="container">
-        <div class="card card1">
-            <div class="navbar navbar-expand-lg mt-3">
-                <a class="navbar-brand mr-auto font-weight-bold text-uppercase">Transaction History</a>
+        <div class="card1">
+            <div class="navbar navbar-expand-lg mt-3 mob-date">
+                <a class="navbar-brand mr-auto font-weight-bold text-uppercase d-none d-md-block d-lg-block d-xl-block">Transaction
+                    History</a>
                 <div class="form-inline my-2 my-lg-0">
-                    <div class="form-group mr-2">
+                    <div class="form-group mr-2 d-none d-md-block d-lg-block d-xl-block">
                         <div class="icon-addon addon-lg">
-                            <input type="text" placeholder="Search..." class="form-control" id="email" [(ngModel)]="searchKey"  (keyup)="searchHistory()">
+                            <input type="text" placeholder="Search..." class="form-control search-box" id="email"
+                                [(ngModel)]="searchKey" (keyup)="searchHistory()">
                             <label for="email" class="fa fa-search" rel="tooltip" title="Search..."></label>
                         </div>
                     </div>
-                    <div class="form-group mr-2">
-                        <div class="icon-addon addon-lg">                           
-                            <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="minDate" 
-                            [bsConfig]="{containerClass:'mytheme-purple'}" id="startDate"  (bsValueChange)="onDateChange($event,'minDate')">
+                    <div class="form-group d-flex">
+                        <div class="icon-addon addon-lg mr-1">
+                            <input class="form-control mob-input start-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="minDate"
+                                [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
+                                id="startDate" (bsValueChange)="onDateChange($event,'minDate')">
                             <label for="startDate" class="fa fa-calendar-o" rel="tooltip" title="startDate"></label>
                         </div>
-                        <div class="icon-addon addon-lg">                           
-                            <input class="form-control" #drp="bsDatepicker" bsDatepicker [(ngModel)]="maxDate" 
-                            [bsConfig]="{containerClass:'mytheme-purple'}" id="endDate"  (bsValueChange)="onDateChange($event,'maxDate')">
+                        <div class="icon-addon addon-lg">
+                            <input class="form-control mob-input end-date" #drp="bsDatepicker" bsDatepicker
+                                [(ngModel)]="maxDate"
+                                [bsConfig]="{containerClass:'mytheme-purple', dateInputFormat: 'MMM D, YYYY', showWeekNumbers: false}"
+                                id="endDate" (bsValueChange)="onDateChange($event,'maxDate')">
                             <label for="endDate" class="fa fa-calendar-o" rel="tooltip" title="endDate"></label>
                         </div>
-                    </div>                    
-                </div>                
+                    </div>
+                </div>
             </div>
-            <div class="table-responsive">
+            <div class="table-responsive d-none d-md-block d-lg-block d-xl-block">
                 <table class="table table-hover table-vcenter" width="100%">
                     <thead>
                         <tr>
@@ -64,21 +74,29 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr *ngIf="!isTransactionsLoaded">
+                            <td colspan="4">
+                                <div class="loader small-loader mx-auto"></div>
+                            </td>
+                        </tr>
                         <tr *ngFor="let transaction of currentTransactions">
                             <td style="padding: 10px;" class="textwidget custom-html-widget">
                                 <span>{{transaction.trxn.recDate}}</span>
                             </td>
-                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transaction.trxn.cpty.name}}
-                            </td> 
-                            <td style="padding: 10px;" class="textwidget custom-html-widget">{{transactionStatus[transaction.trxn.status]}}
-                            </td>                
-                            <td style="text-align: right; padding: 10px;">{{(transaction.trxn?transaction.trxn.amount:0.00)|number:'1.2-2'|currency}}                               
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                {{transaction.trxn.cpty.name}}
+                            </td>
+                            <td style="padding: 10px;" class="textwidget custom-html-widget">
+                                {{transactionStatus[transaction.trxn.status]}}
+                            </td>
+                            <td style="text-align: right; padding: 10px;">
+                                {{(transaction.trxn?transaction.trxn.amount:0.00)|currency}}
                             </td>
                             <td style="padding: 10px;">
                                 <!-- <i class="fa fa-info" triggers="mouseenter:mouseleave" [popover]="popTemplate" [outsideClick]="true" placement="auto right" [popoverTitle]="transaction.trxn.status==='ctsDeclined'?'DECLINED':'INFO'" (mouseenter)="popoverInfo=transaction" container="body"></i>  -->
                             </td>
                             <td style="padding: 10px;" class="textwidget custom-html-widget hammer">
-                                <a routerLink="/dashboard/default"  style="cursor:pointer;">
+                                <a routerLink="/dashboard/default" style="cursor:pointer;">
                                     <img src="assets/hammer.png" class="img-fluid" title="Dispute Charge">
                                 </a>
                             </td>
@@ -90,14 +108,42 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>  
-        </div>          
-        <div class="d-flex justify-content-center p-5 border-0" *ngIf="filteredTransactions && filteredTransactions.length>0">
-            <pagination class=" border-0" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;" [totalItems]="filteredTransactions.length-1" (pageChanged)="pageChanged($event)"  [boundaryLinks]="true" [itemsPerPage]="itemsPerPage" 
-            ></pagination>
+            </div>
         </div>
-        
+        <div class="mobile_view d-xl-none d-sm d-md-none d-lg-none">
+            <div class="loader small-loader mx-auto" *ngIf="!isTransactionsLoaded"></div>
+            <div class="card shadow mb-3" *ngFor="let transaction of currentTransactions">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <p>{{transaction.trxn.cpty.name}}</p>
+                            <p><small>{{transaction.trxn.recDate}}</small></p>
+                        </td>
+                        <td>{{transaction.trxn.amount|currency}}</td>
+                        <td><i class="fa fa-chevron-right"></i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center p-5 border-0"
+            *ngIf="filteredTransactions && filteredTransactions.length>0">
+            <pagination class=" border-0" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;"
+                lastText="&raquo;" [totalItems]="filteredTransactions.length-1" (pageChanged)="pageChanged($event)"
+                [boundaryLinks]="true" [itemsPerPage]="itemsPerPage"></pagination>
+        </div>
+
     </div>
-        
-    
+
+
 </section>
+<ng-template #invalidDateTemplate>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left"></h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Start Date cannot be greater than End Date
+    </div>
+</ng-template>

@@ -1,14 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-.mytheme-purple .bs-datepicker-head{
-    background-color: #542d87 !important;
-}
-.bs-datepicker-body table td span[class*="select-"], .bs-datepicker-body table td[class*="select-"] span{
-    color:#aba4b1;
-    background-color: rgb(105, 68, 105)
-}
-a.pagelink{
-    border:0px solid !important;
-}
+@import "./app/styles/main.css";
+
 @font-face{
     font-family: Gotham book;
     src:url("assets/webfonts/GothamBook.ttf");
@@ -16,13 +8,4 @@ a.pagelink{
 @font-face{
     font-family: Gotham bold;
     src:url("assets/webfonts/GothamBold.ttf");
-}
-.right-modal {
-    min-width: 50%;
-    height: 100%;
-    margin: 0;
-    float: right;
-  }
-.right-modal .modal-content {
-    min-height: 100%;
-}
+}  

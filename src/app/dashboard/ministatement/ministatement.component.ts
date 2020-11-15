@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class MinistatementComponent implements OnInit {
   ministatement: any;
-
+  isStatementLoaded = false;
   constructor(public accountService:AccountService,private authService:AuthenticationService,private router:Router) { }
   transactionHistory:any;
   transactionStatus=TransactionStatus;
@@ -23,8 +23,8 @@ export class MinistatementComponent implements OnInit {
       res=JSON.parse(res);
       this.ministatement = res['Result'].array.RevTrxn.sort((a,b)=>{
         return a.trxn.recDate>b.trxn.recDate?-1:1;
-      }).slice(0,10)
-      
+      }).slice(0,10);
+      this.isStatementLoaded = true;
     })
   }
 

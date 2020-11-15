@@ -35,7 +35,7 @@
     
     font-size:15px;
     font-weight:400;
-    padding-left:24px;
+    padding-left:16px;
     padding-right:24px;
     opacity: 0.9;
     color: #FFFFFF;
@@ -47,19 +47,20 @@
     
     
 }
-#short_cut .navbar .nav-link.active{
+
+#short_cut .navbar .nav-link.web-active{
     color: #FFFFFF;
-  font-family: Gotham bold;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 15px;
     background-color: rgb(255, 255, 255, 0.15);
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
    border-top-right-radius: 20px;
    border-bottom-right-radius: 20px;
 }
+
 #short_cut .navbar .nav-link:hover{
     color:white;
     background-color: rgb(255, 255, 255, 0.15);
@@ -94,75 +95,66 @@
     font-size:0.8rem;
   }
   .short_mobile{
-    display:d-flex;
-    align-items:stretch;
-    justify-content:space-between;
+    display:flex;
+    align-items:center;
     width:100%;
     margin:0;
     padding:0;
   }
-  @media (max-width: 576px) {
-    .navbar-collapse {
-        position: absolute;
-        top: 54px;
-        right: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.3s ease;
-        display: block;
-        z-index:99;
-        background-color: black;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-right: 50%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.show {
-        right: 0;
-    }
-}
-@media(max-width:360px){
-    .navbar-collapse {
-        position: absolute;
-        top: 54px;
-        right: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.3s ease;
-        display: block;
-        z-index:99;
-        background-color: black;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-right: 50%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.show {
-        right: 0;
-    }
-
-}
+  span.no-action{
+      font-weight: bold;
+  }
+  .height-match{
+      margin-bottom: 11px;
+  }
+  .img{
+      margin:0 !important;
+  }
+  .search-border{
+    border-bottom: 1px solid white;
+  }
+  .search-icon{
+      height: fit-content;
+  }
+  .search-input{
+      background-color: #542d87;
+      color: white;
+  }
+  ::placeholder {
+    color: white;
+    font-size:12px;
+  }
+  .w-30{
+      width:30px;
+  }
+  .menu-closed{
+      background-image:url("/assets/menu-closed.svg");
+  }
+  .menu-open{
+      background-image:url("/assets/menu-open.svg");
+  }
+  .pos-align{
+      position: relative;
+      bottom: 3px;
+  }
 @media(max-width:640px){
+    section{
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    button.navbar-dark{
+        padding-left:0;
+    }
     .navbar-collapse {
-        position: absolute;
-        top: 54px;
+        position: fixed;
+        top: 0;
         right: 110%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
+        padding: 0 0 0 6px;
+        width: 80%;
         transition: all 0.3s ease;
         display: block;
         z-index:99;
-        background-color: black;
+        background-color: rgb(235, 243, 255);
     }
     .navbar-collapse.collapsing {
         height: auto !important;
@@ -171,6 +163,24 @@
         display: block;
     }
     .navbar-collapse.show {
-        right: 0;
+        right: 20%;
+        height: 100%;
+    }
+    .navbar-nav{
+        margin-top: 16px !important;
+    }
+    .nav-item{
+        margin-bottom: 20px;
+    }
+    #short_cut .navbar .nav-link{
+        color: rgb(135,135,135);
+    }
+    #short_cut .navbar .nav-link:hover{
+        color: rgb(0, 0, 0);
+    }
+    #short_cut .navbar .nav-link.active{
+        color: black;
+      font-size: 16px;
+      font-weight: bold;
     }
 }

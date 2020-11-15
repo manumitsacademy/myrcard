@@ -10,7 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component';
 import { TransactionhistoryComponent } from './transactionhistory/transactionhistory.component';
-import { PopoverModule, BsDatepickerModule, PaginationModule, ModalModule } from 'ngx-bootstrap';
+import { PopoverModule, BsDatepickerModule, PaginationModule, ModalModule, AccordionModule } from 'ngx-bootstrap';
 import { DefaultComponent } from './default/default.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
@@ -19,18 +19,20 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 
 
 @NgModule({
-  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent,DefaultComponent, UpdatepasswordComponent],
+  declarations: [DashboardComponent, ShortcutsComponent, AccountsummaryComponent, MinistatementComponent, DashboardhomeComponent, TransactionhistoryComponent, DefaultComponent, UpdatepasswordComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule,FormsModule,
+    SharedModule,
+    FormsModule,
     HttpClientModule,
     PopoverModule,
     BsDatepickerModule,
     PaginationModule,
     FormsModule,
     ReactiveFormsModule,
-    ModalModule
+    ModalModule,
+    AccordionModule.forRoot(),
   ]
 })
 export class DashboardModule { }

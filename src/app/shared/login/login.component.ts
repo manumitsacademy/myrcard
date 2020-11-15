@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/core/authentication.service';
 @Component({
   selector: 'app-login',
@@ -8,20 +8,40 @@ import { AuthenticationService } from 'src/app/core/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor(public authService:AuthenticationService,public router:Router,public fb:FormBuilder) {
+  loggedIn = false;
+  isEmailFocussed = false;
+  isPwdFocussed = false;
+  constructor(public authService: AuthenticationService, public router: Router, public fb: FormBuilder) {
 
     this.loginForm = this.fb.group({
-      email:[],
-      password:[]
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     })
   }
-  failedLogin=false;
-  loginForm:FormGroup;
+  failedLogin = false;
+  loginForm: FormGroup;
   ngOnInit() {
-   
+    console.log();
   }
-  login(){
-    this.authService.appLogin(this.loginForm,this.failedLogin);
+  emailOnFocus() {
+    this.isEmailFocussed = true;
+  }
+  emailOnFocusOut() {
+    this.isEmailFocussed = false;
+  }
+  pwdOnFocus() {
+    this.isPwdFocussed = true;
+  }
+  pwdOnFocusOut() {
+    this.isPwdFocussed = false;
+  }
+  login() {
+    if (this.loginForm.valid) {
+      this.loggedIn = true;
+      this.authService.appLogin(this.loginForm, this.failedLogin, this.loggedIn);
+    }
+    else {
+      alert("Please enter required details");
+    }
   }
 }

@@ -2,9 +2,7 @@
   height: 100%;
 }
 #login_page .left_col{
- 
-    padding-left:25%;
-  
+  padding-left:25%;
 }
 #login_page .left_col p{
   width:411px;
@@ -18,7 +16,6 @@
   line-height: 60px;
   height: 120px;
   width: 476px;
-  
 }
 #login_page .left_col .data{
   font-size: 1rem;
@@ -26,16 +23,11 @@
   margin-top:24px;
 }
 #login_page .left_col .logohead{
- 
   text-decoration: none;
   color:white;
   margin-bottom:80px;
   margin-top:65px;
-  
-
-  
 }
-
 #login_page .left_col .logohead span{
   color: #FFFFFF;
   font-family: Montserrat;
@@ -44,52 +36,22 @@
   letter-spacing: 0.8px;
   height: 33px;
   width: 142px;
-  
-}
-
-
-#login_page .right_col .right_col_head{
-  
-  height: 36px;
-  width: 304px;
-  
-  
- 
- 
-}
-#login_page .right_col_head h3{
-  height: 36px;
-  width: 304px;
-  
-  font-family: Gotham bold;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 36px;
 }
 #login_page .right_col span{
   color: #2B73B0;
 }
 #login_page .right_col_head p{
-  
   width: 411px;
   color: #90A2B1;
   font-family: Gotham book;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;
-  
 }
 #login_page #form{
   margin-top:120px;
 }
-#login_page .right_col{
-  height: 409px;
-  width: 411px;
-  margin-top:198px;
-}
 #login_page .right_col label{
-  
   color: #90A2B1;
   font-family: Gotham book;
   font-size: 12px;
@@ -104,11 +66,9 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #dddddd;
- 
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-
   box-sizing: border-box;
   color: #072843;
   font-family: Gotham book;
@@ -121,24 +81,24 @@
   margin-top:40px;
 }
 #login_page .right_col .for_pass{
-  
   color: #2B73B0;
   font-family: Gotham book;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 15px;
-  
-
 }
 input:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-bottom: 2px solid #2B73B0 !important;
 }
-
+.field-focus{
+  color: #2B73B0 !important;
+}
 h1{
-  font-family: Gotham book;
+  font-family: Gotham bold;
 }
 .left_maincol{
   min-height: 100%;
@@ -149,7 +109,6 @@ footer {
   margin-left:25%;
   grid-row-start: 2;
   grid-row-end: 3;
- 
   border-top: 1px solid #4B6377;
 }
 #login_page footer a{
@@ -167,6 +126,19 @@ footer {
   font-weight:700;
   font-family:Gotham book;
 }
+.modal-btn{
+    width:fit-content;
+    height:auto;
+}
+.btn-default{
+    color: black;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
 #login_page .right_col .login_btn{
   margin-top:40px;
 }
@@ -179,42 +151,22 @@ footer {
   .right_col{
     width:85% !important;
     margin-top:140px !important;
-    
   }
 }
-@media(max-width:360px){
-  .right_col{
-    margin-top:100px !important;
-  }
-}
-/*@media (max-width:576px){
-  .right_col_head{
-   
-    margin-top:20% !important;
-  }
-}*/
 @media (max-width:576px){
-  .btn{
-    color:#072843 !important;
+  .btn.btn-responsive{
     width:100% !important;
-    
   }
 }
 .fa-arrow-left{
   color:#ce6b20;
   font-size:1rem;
 }
-@media (max-width:576px){
-  #login_page .right_col_head p{
-    width:100% !important;
-  }
-}
 #login_page .mobile_signup{
   font-family: Gotham book;
   font-size:12px;
   margin-top:12px;
   font-weight:bold;
-  
 }
 #login_page .mobile_signup a{
   text-decoration:none;

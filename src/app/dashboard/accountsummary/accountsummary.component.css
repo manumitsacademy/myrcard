@@ -1,7 +1,6 @@
 
 *{
-    font-family: Gotham bold;
-    font-weight:bold;
+    font-family: Gotham book;
 }
 #summaryheading h5{
         height: 19px;
@@ -73,7 +72,7 @@ margin-bottom: 10px;
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 34px;
+    line-height: 25px;
   }
   #ac_summary1 p{
     color:#90A2B1;
@@ -103,4 +102,58 @@ margin-bottom: 10px;
   color:#1F74B1;
   font-size: 1.rem;
   position: absolute;
+}
+.text-bold{
+  font-family: Gotham bold;
+}
+.font-flex{
+  font-size:12px;
+  display: flex;
+  justify-content: center;
+}
+.font-flex span{
+  font-family: Gotham bold;
+  color: #1F74B1;;
+  padding: 14px;
+}
+.pos-rel{
+  position: relative;
+  bottom: 15px;
+}
+.text-theme{
+  color:#1F74B1;
+}
+.no-margin p,h6{
+  margin: 0 !important;
+}
+.no-margin p{
+  font-size: 10px !important;
+}
+.simple-accord .card:first-of-type{
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 0 0 rgba(7,40,67,0.25);
+}
+.simple-accord .card .card-body{
+  padding: 0 16px 16px 16px;
+}
+.w-14{
+  width: 14px;
+}
+.modal-header{
+  border-bottom: none;
+}
+.modal-body{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.content-heading{
+  color: #2B73B0;
+  margin-bottom: 20px;
+  font-family: Gotham bold;
+}
+.content-body{
+  font-size: 13px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }

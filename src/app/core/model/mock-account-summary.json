@@ -1,0 +1,14 @@
+{
+    "Result": {
+        "RevAccountSummary": {
+            "limit": {
+                "maxTrxnAmt": 5000,
+                "maxNextAmt": 5000
+            },
+            "summary": {
+                "currentBal": 1966.20756,
+                "pendingBal": 35
+            }
+        }
+    }
+}

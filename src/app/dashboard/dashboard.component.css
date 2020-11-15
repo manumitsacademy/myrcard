@@ -42,5 +42,19 @@
     left:0px;
     z-index:-1;
 }
-
-
+@media(max-width:415px){
+    .bluebackground1.bg-sub{
+        height: 0px;
+    }
+    .bluebackground{
+        background-image:url("/assets/blue-mobile-reduced.png");
+        top: 69px;
+    }
+    .purplebackground1{
+        height: 0px;
+    }
+    .purplebackground{
+        background-image:url("/assets/purple-mobile-reduced.png");
+        top: 69px;
+    }
+}

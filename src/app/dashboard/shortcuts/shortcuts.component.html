@@ -6,46 +6,95 @@
     <div>Transaction History</div>
     <div>Rewards</div>
 </div>-->
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <section id="short_cut" class="py-4" [ngClass]="divbg">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-          <div class="container">
-            <div class="row short_mobile no-gutters d-xl-none d-sm d-md-none d-lg-none ">
-              
-                  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <h5 class="d-inline d-xl-none d-sm text-white align-self-end">{{headerTitle|uppercase}}</h5>
-              <!--  <div class=" d-xl-none d-sm d-inline ">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-expand-md">
+      <div class="container">
+        <div class="short_mobile d-xl-none d-sm d-md-none d-lg-none">
+          <button *ngIf="!isSearchEnabled" class="navbar-toggler border-0 navbar-dark" type="button"
+            data-toggle="collapse" data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menu-closed"></span>
+          </button>
+
+          <h5 *ngIf="!isSearchEnabled" class="d-xl-none d-sm text-white align-self-end">{{headerTitle|titlecase}}</h5>
+          <!--  <div class=" d-xl-none d-sm d-inline ">
                   <i class="fa fa-bell text-white" aria-hidden="true" style="font-size:1.5rem;"></i>
                   <i class="fa fa-circle border-1 border-white" aria-hidden="true"></i>
                 
                 </div>-->
-                <div class=" d-xl-none d-sm d-inline ">
-                </div>
-               
-            </div>
-          <div class="collapse navbar-collapse" id="shortcut">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/dashboard">Account Overview</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  routerLink="/dashboard/default">Request Limit Increase</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  routerLink="/dashboard/default">Request Cash Draw</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  routerLink="/dashboard/default" >Payment Calendar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  routerLink="transactionhistory" >Transaction History</a>
-                </li>             
-              </ul>
+          <div class="search-wrapper" *ngIf="currentUrl=='/dashboard/transactionhistory'"
+            [ngClass]="{'height-match w-100': isSearchEnabled, 'ml-auto': !isSearchEnabled}">
+            <img src="/assets/search-icon.svg" class="search-icon" (click)="enableSearch()" *ngIf="!isSearchEnabled">
+            <div class="input-holder d-flex align-items-center search-border" *ngIf="isSearchEnabled" [@fadeAnimation]>
+              <img src="/assets/search-icon.svg" class="search-icon">
+              <input type="text" class="search-input w-100 border-0 ml-2" placeholder="Search Transaction History">
+              <img src="/assets/close-icon-light.svg" class="w-30" (click)="disableSearch()">
             </div>
           </div>
-        </nav>
-    </div>
+        </div>
+        <div class="collapse navbar-collapse no-action" id="shortcut">
+          <button class="navbar-toggler border-0 mt-3 navbar-light" type="button" data-toggle="collapse"
+            data-target="#shortcut" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menu-open"></span>
+          </button>
+          <span class="d-md-none d-lg-none d-xl-none no-action pos-align">Hello, Sylvia Smith</span>
+          <ul class="navbar-nav d-none d-md-flex d-lg-flex d-xl-flex">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard" [class.web-active]="overview"
+                (click)="overviewActive()">Account Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestLimit"
+                (click)="requestLimitActive()">Request Limit Increase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard/request-cash" [class.web-active]="requestCash"
+                (click)="requestCashActive()">Request Cash Draw</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard/payment-calendar" [class.web-active]="calendar"
+                (click)="calendarActive()">Payment Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="transactionhistory" [class.web-active]="history"
+                (click)="historyActive()">Transaction History</a>
+            </li>
+            <li class="nav-item d-md-none d-lg-none d-xl-none">
+              <a class="nav-link" (click)="signout()">Logout</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-md-none d-lg-none d-xl-none">
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard" [class.active]="overview" (click)="overviewActive()">Account
+                Overview</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/default" [class.active]="requestLimit"
+                (click)="requestLimitActive()">Request Limit Increase</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/request-cash" [class.active]="requestCash"
+                (click)="requestCashActive()">Request Cash Draw</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="/dashboard/payment-calendar" [class.active]="calendar"
+                (click)="calendarActive()">Payment Calendar</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
+              <a class="nav-link" routerLink="transactionhistory" [class.active]="history"
+                (click)="historyActive()">Transaction History</a>
+            </li>
+            <li class="nav-item d-md-none d-lg-none d-xl-none">
+              <a class="nav-link" (click)="signout()">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </section>

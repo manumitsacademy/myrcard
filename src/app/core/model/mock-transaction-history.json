@@ -1,0 +1,68 @@
+{
+    "Result": {
+        "array": {
+            "RevTrxn": [
+                {
+                    "id": 1,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 2,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 3,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 4,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                },
+                {
+                    "id": 5,
+                    "trxn": {
+                        "recDate": "08/28/2020",
+                        "cpty": {
+                            "name": "FLEETPRIDE810"
+                        },
+                        "status": "ctsCleared",
+                        "amount": 20000,
+                        "legalName": "G.J.H. MECHANICS LLC"
+                    }
+                }
+            ]
+        }
+    }
+}
