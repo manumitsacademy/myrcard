@@ -11,27 +11,27 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 const routes: Routes = [{
   path: '', component: DashboardComponent, children: [
     {
-      path: '', component: DashboardhomeComponent, canActivate: [AuthGuard]
+      path: '', component: DashboardhomeComponent
     },
     {
       path: 'transactionhistory',
-      component: TransactionhistoryComponent, canActivate: [AuthGuard]
+      component: TransactionhistoryComponent
     },
     {
       path: 'changepassword',
-      component: UpdatepasswordComponent, canActivate: [AuthGuard]
+      component: UpdatepasswordComponent
     },
     {
       path: 'default',
-      component: DefaultComponent, canActivate: [AuthGuard]
+      component: DefaultComponent
     },
     {
       path: 'request-cash',
-      component: DefaultComponent, canActivate: [AuthGuard]
+      component: DefaultComponent
     },
     {
       path: 'payment-calendar',
-      component: DefaultComponent, canActivate: [AuthGuard]
+      component: DefaultComponent
     }
   ]
 }];

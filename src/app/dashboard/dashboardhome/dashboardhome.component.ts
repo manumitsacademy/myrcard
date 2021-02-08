@@ -9,13 +9,15 @@ import { AuthenticationService } from 'src/app/core/authentication.service';
 })
 export class DashboardhomeComponent implements OnInit {
 
-  constructor(private authService:AuthenticationService,private router:Router) { }
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
-    this.authService.isTokenIdValid().subscribe((res)=>{
-    },()=>{window.localStorage.removeItem('token');
-    this.router.navigate(['/login'])
-    })
+    // this.authService.isTokenIdValid().subscribe((res)=>{
+    // }, () => {
+    // window.localStorage.removeItem('token');
+    // this.router.navigate(['/login'])
+    // }
+    // )
   }
 
 }

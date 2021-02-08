@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
-import { AccountService } from 'src/app/core/account.service';
+// import { AccountService } from 'src/app/core/account.service';
+import transactions from 'src/app/core/model/mock-transaction-history.json';
+
 import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/core/authentication.service';
@@ -17,7 +19,7 @@ export class TransactionhistoryComponent implements OnInit {
   currentTransactions: any;
   spendingAvailability: number;
   @ViewChild('invalidDateTemplate', { static: true }) invalidDateTemplate: TemplateRef<any>;
-  constructor(public accountService: AccountService, public router: Router, private authService: AuthenticationService, public modalService: BsModalService) {
+  constructor(public router: Router, private authService: AuthenticationService, public modalService: BsModalService) {
 
   }
   //latest available transaction date to latest avaible 
@@ -41,26 +43,26 @@ export class TransactionhistoryComponent implements OnInit {
   endDate: Date;
   ngOnInit() {
 
-    this.authService.isTokenIdValid().subscribe((res) => {
-    }, () => {
-      window.localStorage.removeItem('token');
-      this.router.navigate(['/login'])
-    })
-    this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
-      this.transactionHistory = res['Result'].array.RevTrxn.sort((a, b) => {
-        return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
-      });
-      this.filteredTransactions = this.transactionHistory;
-      this.filteredTransactionsLength = this.filteredTransactions.length;
-      this.currentTransactions = this.transactionHistory.slice(0, this.itemsPerPage);
-      this.isTransactionsLoaded = true;
-      this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
-      this.minDate = new Date(this.maxDate.getTime() - 7 * 24 * 60 * 60 * 1000);
-      this.bsRangeValue = [this.minDate, this.maxDate];
-      this.selectedDateRange = this.bsRangeValue;
-      this.onDateChange(this.selectedDateRange);
-    })
+    // this.authService.isTokenIdValid().subscribe((res) => {
+    // }, () => {
+    //   window.localStorage.removeItem('token');
+    //   this.router.navigate(['/login'])
+    // })
+    // this.accountService.getTransactionHistory().subscribe((res) => {
+    //   res = JSON.parse(res);
+    this.transactionHistory = transactions.Result.array.RevTrxn.sort((a, b) => {
+      return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
+    });
+    this.filteredTransactions = this.transactionHistory;
+    this.filteredTransactionsLength = this.filteredTransactions.length;
+    this.currentTransactions = this.transactionHistory.slice(0, this.itemsPerPage);
+    this.isTransactionsLoaded = true;
+    this.maxDate = new Date(this.filteredTransactions[0].trxn.recDate);
+    this.minDate = new Date(this.maxDate.getTime() - 7 * 24 * 60 * 60 * 1000);
+    this.bsRangeValue = [this.minDate, this.maxDate];
+    this.selectedDateRange = this.bsRangeValue;
+    this.onDateChange(this.selectedDateRange);
+    // })
   }
   onDateChange(dateRange?: any, dateType?) {
     //console.dir(dateRange, this.selectedDateRange)

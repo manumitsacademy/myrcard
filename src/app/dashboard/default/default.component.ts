@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 })
 export class DefaultComponent implements OnInit {
 
-  constructor(private authService:AuthenticationService,private router:Router) { }
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
-    this.authService.isTokenIdValid().subscribe((res)=>{
-    },()=>{window.localStorage.removeItem('token');
-    this.router.navigate(['/login'])
-    })
+    // this.authService.isTokenIdValid().subscribe((res)=>{
+    // },()=>{window.localStorage.removeItem('token');
+    // this.router.navigate(['/login'])
+    // })
   }
 
 }

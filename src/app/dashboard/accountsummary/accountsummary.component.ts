@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef, OnDestroy } from '@angular/core';
-import { AccountService } from 'src/app/core/account.service';
+//import { AccountService } from 'src/app/core/account.service';
+import accountsummary from 'src/app/core/model/mock-account-summary.json';
 import * as xml2js from 'xml2js';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
@@ -23,24 +24,24 @@ export class AccountsummaryComponent implements OnInit, OnDestroy {
   pendingTransactionModelContent: string = "This amount represents the cumulative total of all  transactions that are currently awaiting Confirmation by Revenued.";
   spendingAvailabilityModelContent: string = "This is the total amount of funds currently available for your use. This amount is calculated by subtracting the PayNow Discount and any Pending Transactions from your total Spending Limit.";
   modelContent: any;
-  constructor(public accountService: AccountService, private modalService: BsModalService,) { }
+  constructor(private modalService: BsModalService,) { }
   transactionHistory: any;
   ngOnInit() {
-    this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
-      this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
-    })
-    this.accountService.getAccountSummary().subscribe((res) => {
-      res = JSON.parse(res);
-      this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;
-      this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
-      this.pendingAmount = res['Result'].RevAccountSummary.summary.pendingBal;
-      this.spendingAvailability = this.spendingLimit - this.discountedBalance - this.pendingAmount;
-      var mn = res['Result'].RevAccountSummary.limit.maxNextAmt;
-      var ma = res['Result'].RevAccountSummary.limit.maxTrxnAmt;
-      var sa = this.spendingAvailability;
-      this.dailySpendLimit = (mn < ma) ? (mn < sa ? mn : sa) : (ma < sa ? ma : sa);
-    })
+    // this.accountService.getTransactionHistory().subscribe((res) => {
+    //   res = JSON.parse(res);
+    //   this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
+    // })
+    // this.accountService.getAccountSummary().subscribe((res) => {
+    //   res = JSON.parse(res);
+    this.spendingLimit = accountsummary.Result.RevAccountSummary.limit.maxTrxnAmt;
+    this.discountedBalance = accountsummary.Result.RevAccountSummary.summary.currentBal;
+    this.pendingAmount = accountsummary.Result.RevAccountSummary.summary.pendingBal;
+    this.spendingAvailability = this.spendingLimit - this.discountedBalance - this.pendingAmount;
+    var mn = accountsummary.Result.RevAccountSummary.limit.maxNextAmt;
+    var ma = accountsummary.Result.RevAccountSummary.limit.maxTrxnAmt;
+    var sa = this.spendingAvailability;
+    this.dailySpendLimit = (mn < ma) ? (mn < sa ? mn : sa) : (ma < sa ? ma : sa);
+    // })
   }
 
   openModal(template: TemplateRef<any>, title, description) {

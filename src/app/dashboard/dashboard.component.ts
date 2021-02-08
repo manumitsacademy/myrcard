@@ -27,8 +27,8 @@ export class DashboardComponent implements OnInit {
     this.modalRef.hide();
   }
   constructor(public authService: AuthenticationService, public aR: ActivatedRoute, public router: Router, private modalService: BsModalService) {
-    this.authService.isTokenIdValid().subscribe((res) => {
-    })
+    // this.authService.isTokenIdValid().subscribe((res) => {
+    // })
     router.events.pipe(
       filter(e => e instanceof RouterEvent)
     ).subscribe(e => {
@@ -45,11 +45,11 @@ export class DashboardComponent implements OnInit {
   divbg = "bluebackground1 bg-sub";
   hexabg = "bluebackground";
   ngOnInit() {
-    this.authService.isTokenIdValid().subscribe((res) => {
-    }, () => {
-      window.localStorage.removeItem('token');
-      this.router.navigate(['/login'])
-    })
+    // this.authService.isTokenIdValid().subscribe((res) => {
+    // }, () => {
+    // window.localStorage.removeItem('token');
+    // this.router.navigate(['/login'])
+    // // })
     this.authService.loggedIn();
     this.autologout();
   }

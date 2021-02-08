@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../core/authentication.service';
-import { AccountService } from '../../core/account.service';
+//import { AccountService } from '../../core/account.service';
+import transactions from 'src/app/core/model/mock-transaction-history.json';
+
 import * as xml2js from 'xml2js';
 import { RouterEvent, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
@@ -13,7 +15,7 @@ export class HeaderComponent implements OnInit {
   logInStatus = false;
   accountLast: any;
   legalName: any;
-  constructor(public authService: AuthenticationService, public accountService: AccountService, public router: Router) {
+  constructor(public authService: AuthenticationService, public router: Router) {
     // this.authService.loggedInEvent.subscribe((logInStatus) => {
     //   this.logInStatus = logInStatus;
     // })
@@ -30,10 +32,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
-      this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
-    })
+    // this.accountService.getTransactionHistory().subscribe((res) => {
+    //   res = JSON.parse(res);
+    this.legalName = transactions.Result.array.RevTrxn[0].trxn.legalName;
+    // })
   }
   divbg = "bluebackground1";
   signout() {
