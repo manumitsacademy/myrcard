@@ -25,7 +25,7 @@
     "bootstrap": "4.1.1",
     "cors": "^2.8.5",
     "easy-soap-request": "^3.3.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ngx-bootstrap": "^5.5.0",
     "nodemon": "^2.0.2",
     "request": "^2.88.2",
