@@ -9,17 +9,7 @@
     left:0px;
     z-index:-1;
 }
-.bluebackground{
-    width:100%;
-    height:40%;
-    background-image:url("/assets/blue.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top:220px;
-    left:0px;
-    z-index:-1;
-}
+
 .purplebackground1{
     width:100%;
     height:70px;
@@ -28,17 +18,6 @@
     background-repeat: no-repeat;
     position: absolute;
     top:150px;
-    left:0px;
-    z-index:-1;
-}
-.purplebackground{
-    width:100%;
-    height:40%;
-    background-image:url("/assets/purple.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top:220px;
     left:0px;
     z-index:-1;
 }

@@ -1,16 +1,15 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 #main_footer{
-    background-color: #7c7b7b;
+    background-color: #33485a;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
-    font-family: Gotam;
     padding:50px 0;
     margin-top:2%;
 }
-@font-face {
-    font-family: Gotam;
-    src: url("/assets/webfonts/GothamBook.ttf");
-  }
+
 
   #main_footer ul li{
     margin-bottom: 5px;

@@ -24,10 +24,10 @@ export class UpdatepasswordComponent implements OnInit {
     return this.passwordForm.controls['newPassword'];
   }
   ngOnInit() {
-    this.authService.isTokenIdValid().subscribe((res)=>{
+   /*  this.authService.isTokenIdValid().subscribe((res)=>{
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])
-    })
+    }) */
   }
   updatePassword(){
     this.authService.updatePwd(this.passwordForm.value).subscribe(()=>{

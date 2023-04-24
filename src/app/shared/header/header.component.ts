@@ -14,24 +14,11 @@ export class HeaderComponent implements OnInit {
   accountLast: any;
   legalName: any;
   constructor(public authService: AuthenticationService, public accountService: AccountService, public router: Router) {
-    // this.authService.loggedInEvent.subscribe((logInStatus) => {
-    //   this.logInStatus = logInStatus;
-    // })
-    router.events.pipe(
-      filter(e => e instanceof RouterEvent)
-    ).subscribe(e => {
-      if (e['url'] == '/dashboard/transactionhistory') {
-        this.divbg = "purplebackground1";
-      }
-      else {
-        this.divbg = "bluebackground1";
-      }
-    });
   }
 
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
+      //res = JSON.parse(res);
       this.legalName = res['Result'].array.RevTrxn[0].trxn.legalName;
     })
   }

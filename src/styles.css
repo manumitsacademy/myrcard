@@ -2,10 +2,6 @@
 @import "./app/styles/main.css";
 
 @font-face{
-    font-family: Gotham book;
-    src:url("assets/webfonts/GothamBook.ttf");
+    font-family: 'Montserrat', sans-serif;
+    src:url("assets/Montserrat/Montserrat-Regular.ttf");
 }
-@font-face{
-    font-family: Gotham bold;
-    src:url("assets/webfonts/GothamBold.ttf");
-}  

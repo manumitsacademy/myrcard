@@ -41,13 +41,13 @@ export class TransactionhistoryComponent implements OnInit {
   endDate: Date;
   ngOnInit() {
 
-    this.authService.isTokenIdValid().subscribe((res) => {
+    /* this.authService.isTokenIdValid().subscribe((res) => {
     }, () => {
       window.localStorage.removeItem('token');
       this.router.navigate(['/login'])
-    })
+    }) */
     this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
+      //res = JSON.parse(res);
       this.transactionHistory = res['Result'].array.RevTrxn.sort((a, b) => {
         return a.trxn.recDate > b.trxn.recDate ? -1 : 1;
       });

@@ -1,11 +1,12 @@
-
 *{
-    font-family: Gotham book;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+
 #summaryheading h5{
         height: 19px;
-        color: #1F74B1;
-        font-family: Gotham bold;
+        color: #408855;
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: 0;
@@ -17,10 +18,14 @@ margin-bottom: 10px;
 .spending-l-imit {
     width: 100%;
     color: #90A2B1;
-    font-family: Gotham bold;
     font-size: 12px;
     font-weight: bold;
     line-height: 15px;
+  }
+
+  .text-bold{
+    font-weight: bold;
+    text-align: center;
   }
   .cursor-pointer{
     cursor: pointer;
@@ -76,14 +81,12 @@ margin-bottom: 10px;
   }
   #ac_summary1 p{
     color:#90A2B1;
-    font-family: GOtham bold;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
     line-height:15px;
   }
 #ac_summary1 H5{
-  font-family: Gotham bold;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
@@ -103,16 +106,13 @@ margin-bottom: 10px;
   font-size: 1.rem;
   position: absolute;
 }
-.text-bold{
-  font-family: Gotham bold;
-}
+
 .font-flex{
   font-size:12px;
   display: flex;
   justify-content: center;
 }
 .font-flex span{
-  font-family: Gotham bold;
   color: #1F74B1;;
   padding: 14px;
 }
@@ -150,7 +150,6 @@ margin-bottom: 10px;
 .content-heading{
   color: #2B73B0;
   margin-bottom: 20px;
-  font-family: Gotham bold;
 }
 .content-body{
   font-size: 13px;

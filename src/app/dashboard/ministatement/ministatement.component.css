@@ -1,15 +1,15 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 .textwidget.custom-html-widget{
     color:#7c7b7b;
 }
-*{
-    font-family: Gotham book;
-}
+
 #summaryheading{
     padding-bottom:14px;
 }
 #summaryheading h5{
-    color: #1F74B1;
-    font-family: Gotham bold;
+    color: #408855;
     font-size: 16px;
     font-weight: bold;
     padding-left:2.5rem;
@@ -24,7 +24,6 @@
     border-top:none;
     text-transform: uppercase;
     color: #90A2B1;
-    font-family: Gotham bold;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
@@ -109,7 +108,6 @@
 }
 .table tbody tr td{
     color: #072843;
-    font-family:Gotham book;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 24px;

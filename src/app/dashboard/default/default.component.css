@@ -1,3 +1,6 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 .card{
     border: 1px solid #D9DEE4;
     border-radius: 4px;
@@ -14,7 +17,6 @@
 }
 .chat_box p{
     color: #90A2B1;
-  font-family: Gotham book;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;

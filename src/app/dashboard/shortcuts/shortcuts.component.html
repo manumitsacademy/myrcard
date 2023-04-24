@@ -1,11 +1,3 @@
-<!--<div style="display: flex" class="container">
-    <div>Account Overview</div>
-    <div>Request limit Increase</div>
-    <div>Request Cash Draw</div>
-    <div>Payment Calendar</div>
-    <div>Transaction History</div>
-    <div>Rewards</div>
-</div>-->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
   integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <section id="short_cut" class="py-4" [ngClass]="divbg">
@@ -18,13 +10,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon menu-closed"></span>
           </button>
-
           <h5 *ngIf="!isSearchEnabled" class="d-xl-none d-sm text-white align-self-end">{{headerTitle|titlecase}}</h5>
-          <!--  <div class=" d-xl-none d-sm d-inline ">
-                  <i class="fa fa-bell text-white" aria-hidden="true" style="font-size:1.5rem;"></i>
-                  <i class="fa fa-circle border-1 border-white" aria-hidden="true"></i>
-                
-                </div>-->
           <div class="search-wrapper" *ngIf="currentUrl=='/dashboard/transactionhistory'"
             [ngClass]="{'height-match w-100': isSearchEnabled, 'ml-auto': !isSearchEnabled}">
             <img src="/assets/search-icon.svg" class="search-icon" (click)="enableSearch()" *ngIf="!isSearchEnabled">
@@ -49,15 +35,15 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/default" [class.web-active]="requestLimit"
-                (click)="requestLimitActive()">Request Limit Increase</a>
+                (click)="requestLimitActive()">Default Component</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/request-cash" [class.web-active]="requestCash"
-                (click)="requestCashActive()">Request Cash Draw</a>
+                (click)="requestCashActive()">Default Component</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="/dashboard/payment-calendar" [class.web-active]="calendar"
-                (click)="calendarActive()">Payment Calendar</a>
+                (click)="calendarActive()">Default Component</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="transactionhistory" [class.web-active]="history"
@@ -75,15 +61,15 @@
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="/dashboard/default" [class.active]="requestLimit"
-                (click)="requestLimitActive()">Request Limit Increase</a>
+                (click)="requestLimitActive()">Default Component</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="/dashboard/request-cash" [class.active]="requestCash"
-                (click)="requestCashActive()">Request Cash Draw</a>
+                (click)="requestCashActive()">Default Component</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="/dashboard/payment-calendar" [class.active]="calendar"
-                (click)="calendarActive()">Payment Calendar</a>
+                (click)="calendarActive()">Default Component</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#shortcut">
               <a class="nav-link" routerLink="transactionhistory" [class.active]="history"

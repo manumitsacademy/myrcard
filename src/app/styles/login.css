@@ -1,3 +1,6 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 #login_page .row{
   height: 100%;
 }
@@ -9,7 +12,6 @@
 }
 #login_page .left_col h1{
   color: #FFFFFF;
-  font-family: Gotham bold;
   font-size: 50px;
   font-weight: 900;
   letter-spacing: 0.8px;
@@ -30,7 +32,6 @@
 }
 #login_page .left_col .logohead span{
   color: #FFFFFF;
-  font-family: Montserrat;
   font-size: 26.67px;
   font-weight: 600;
   letter-spacing: 0.8px;
@@ -38,12 +39,11 @@
   width: 142px;
 }
 #login_page .right_col span{
-  color: #2B73B0;
+  color: #408855;
 }
 #login_page .right_col_head p{
   width: 411px;
   color: #90A2B1;
-  font-family: Gotham book;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;
@@ -53,7 +53,6 @@
 }
 #login_page .right_col label{
   color: #90A2B1;
-  font-family: Gotham book;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -71,18 +70,16 @@
   border-radius: 0;
   box-sizing: border-box;
   color: #072843;
-  font-family: Gotham book;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 19px;
 }
-#login_page .passwordL{
+#login_page .passwordL,#login_page .emailP{
   margin-top:40px;
 }
 #login_page .right_col .for_pass{
-  color: #2B73B0;
-  font-family: Gotham book;
+  color: #408855;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -97,9 +94,7 @@ select.form-control:focus {
 .field-focus{
   color: #2B73B0 !important;
 }
-h1{
-  font-family: Gotham bold;
-}
+
 .left_maincol{
   min-height: 100%;
   display: grid;
@@ -122,9 +117,14 @@ footer {
   height: 48px;
   width: 255px;
   border-radius: 4px;
-  background-color: #D46929;
+  background-color: #078282;
   font-weight:700;
-  font-family:Gotham book;
+}
+
+.register{
+  font-weight: bold;
+  cursor: pointer;
+  color: #408855;
 }
 .modal-btn{
     width:fit-content;
@@ -163,7 +163,6 @@ footer {
   font-size:1rem;
 }
 #login_page .mobile_signup{
-  font-family: Gotham book;
   font-size:12px;
   margin-top:12px;
   font-weight:bold;

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreatepasswordComponent } from './createpassword/createpassword.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -15,7 +16,8 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
   declarations: [HeaderComponent, MainareaComponent, LoginComponent,
     FooterComponent,
     CreatepasswordComponent,
-    ForgotpasswordComponent],
+    ForgotpasswordComponent,
+    RegisterComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([]),FormsModule,ReactiveFormsModule

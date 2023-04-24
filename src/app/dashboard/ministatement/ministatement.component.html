@@ -20,7 +20,6 @@
                     </div>
                     <div class="mini_table d-sm-none d-md-block d-xl-block d-lg-block">
                         <div class="table-responsive transac-table">
-                            <!--<table class="table table-hover table-outline table-vcenter text-nowrap card-table"  width="100%">-->
                             <table class="table table-hover table-vcenter text-left" width="100%">
                                 <thead>
                                     <tr>
@@ -55,7 +54,7 @@
                                             {{transactionStatus[transaction.trxn.status]}}
                                         </td>
                                         <td style=" padding: 10px;" class="textwidget custom-html-widget text-right">
-                                            {{transaction.trxn.amount|currency}}
+                                            {{transaction.trxn.amount|currency:'INR'}}
                                         </td>
                                         <td style="padding: 10px;" class="textwidget custom-html-widget">
                                             &nbsp;
@@ -75,7 +74,7 @@
                                         <p><small>{{transactionStatus[transaction.trxn.status]}}</small></p>
                                         <p><small>{{transaction.trxn.recDate}}</small></p>
                                     </td>
-                                    <td>{{transaction.trxn.amount|currency}}</td>
+                                    <td>{{transaction.trxn.amount|currency:'INR'}}</td>
                                 </tr>
                             </table>
                         </div>

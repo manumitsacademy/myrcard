@@ -1,29 +1,17 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 .bluebackground1{
-    background-color: #2b73b0;
+    background-color: #408855;
 }
 .purplebackground1{
-    background-color: #542d87;
+    background-color: #94414f;
 }
-/*#short_cut:after{
-    background: 
-                linear-gradient(-45deg, transparent 20px, #0074b6ff 0), 
-                linear-gradient(45deg, transparent 20px, #0074b6ff  0);
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    background-size: 30px 20px;
-    content: "";
-    display: block;
 
-    width: 100%;
-    height: 32px;
-
-     position: relative;
-    top:47%;
-    left:0px;
-    border:none;
-  
+#short_cut{
+    margin-bottom: 20px;
 }
-*/
+
 #short_cut nav{
     flex-wrap:nowrap;
 }
@@ -39,7 +27,6 @@
     padding-right:24px;
     opacity: 0.9;
     color: #FFFFFF;
-    font-family: Gotham book;
    
     letter-spacing: 0;
     line-height: 15px;
@@ -55,19 +42,13 @@
     letter-spacing: 0;
     line-height: 15px;
     background-color: rgb(255, 255, 255, 0.15);
-   border-top-left-radius: 20px;
-   border-bottom-left-radius: 20px;
-   border-top-right-radius: 20px;
-   border-bottom-right-radius: 20px;
+    border-radius: 5px;
 }
 
 #short_cut .navbar .nav-link:hover{
     color:white;
     background-color: rgb(255, 255, 255, 0.15);
-   border-top-left-radius: 20px;
-   border-bottom-left-radius: 20px;
-   border-top-right-radius: 20px;
-   border-bottom-right-radius: 20px;
+    border-radius: 5px;
 }
 #short_cut .navbar ul{
     display:d-flex;
@@ -81,9 +62,7 @@
 #short_cut .nav-link{
     padding:0.5rem 0.5rem;
 }
-*{
-    font-family: Gotham book;
-}
+
 .fa-bell-o{
     position: relative;
     font-size:1.6rem;

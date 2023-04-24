@@ -27,11 +27,9 @@ export class AccountsummaryComponent implements OnInit, OnDestroy {
   transactionHistory: any;
   ngOnInit() {
     this.accountService.getTransactionHistory().subscribe((res) => {
-      res = JSON.parse(res);
       this.accountLast = res['Result'].array.RevTrxn[0].trxn.acctLast4;
     })
     this.accountService.getAccountSummary().subscribe((res) => {
-      res = JSON.parse(res);
       this.spendingLimit = res['Result'].RevAccountSummary.limit.maxTrxnAmt;
       this.discountedBalance = res['Result'].RevAccountSummary.summary.currentBal;
       this.pendingAmount = res['Result'].RevAccountSummary.summary.pendingBal;

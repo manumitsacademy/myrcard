@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   failedLogin = false;
   loginForm: FormGroup;
   ngOnInit() {
-    console.log();
   }
   emailOnFocus() {
     this.isEmailFocussed = true;
@@ -35,10 +34,11 @@ export class LoginComponent implements OnInit {
   pwdOnFocusOut() {
     this.isPwdFocussed = false;
   }
-  login() {
-    if (this.loginForm.valid) {
-      this.loggedIn = true;
-      this.authService.appLogin(this.loginForm, this.failedLogin, this.loggedIn);
+  login(loginForm) {
+    //this.authService.appLogin(loginForm.value);
+    if (loginForm.valid) {
+      //this.loggedIn = true;
+      this.authService.appLogin(loginForm.value);
     }
     else {
       alert("Please enter required details");

@@ -1,24 +1,6 @@
-/*#logo h1{
-  display:inline-block;
-  font-family: Montserrat;
-  font-size:1.4rem;
-  font-weight:bold;
-  color:white;
-  padding:10px 40px 0px 0px;
-  
-}*/
-.bluebackground1{
-  background-color: #effaff;
+*{
+  font-family: 'Montserrat', sans-serif;
 }
-.purplebackground1{
-  background-color: #f1edf4;
-}
-#main_logo{
-  
-  
-  height: 80px;
-}
-
 
 .fa-circle{
   position: absolute;
@@ -41,9 +23,7 @@
   width:60%;
 }
 #main_logo img{
-  width:20%;
-  padding-top: 1rem;
- 
+  width: 30%; 
 }
 
 
@@ -58,7 +38,6 @@
 }
 #main_logo .navbar-brand span{
   font-size:24px;
-  font-family: Gotham book;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -78,7 +57,6 @@
 .right_col .dropdown p{
   font-size:1rem;
   color: #072843;
-  font-family: Gotham book;
 }
 .fa-angle-down{
   color: #8DA2B3;

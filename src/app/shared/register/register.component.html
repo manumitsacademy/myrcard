@@ -1,0 +1,37 @@
+<section id="login_page" style="height:100%">
+    <div class="row no-gutters">
+        <div class="col d-flex justify-content-center right_maincol">
+            <div class="right_col">
+                <div class="right_col_head">
+                    <div class="d-flex text-center justify-content-center">
+                        <h3>Register in <span>Credocard</span></h3>
+                    </div>
+                </div>
+                <div [formGroup]="registerForm" id="form">
+                    <div>
+                        <label for="uname" [class.field-focus]="isUnameFocussed">User Name</label>
+                        <input formControlName="uname" type="text" class="form-control p-0"
+                            placeholder="User Name" (focus)="unameOnFocus()" (focusout)="unameOnFocusOut()">
+                    </div>
+                    <div class="emailP">
+                        <label for="email" [class.field-focus]="isEmailFocussed">Email Address</label>
+                        <input formControlName="email" type="text" class="form-control p-0"
+                            placeholder="User Email" (focus)="emailOnFocus()" (focusout)="emailOnFocusOut()">
+                    </div>
+                    <div class="passwordL">
+                        <label for="password" [class.field-focus]="isPwdFocussed">Password</label>
+                        <input formControlName="password" type="password" class="form-control p-0"
+                            placeholder="************" (focus)="pwdOnFocus()" (focusout)="pwdOnFocusOut()">
+                    </div>
+
+                </div>
+                <div class="text-center login_btn">
+                    <button type="button" class="btn btn-center login-button btn-responsive" (click)="register()">Register</button>
+                </div>   
+                <div class="text-center mt-4 register">
+                    <span routerLink="/login">Login</span>      
+                </div>       
+            </div>
+        </div>
+    </div>
+</section>

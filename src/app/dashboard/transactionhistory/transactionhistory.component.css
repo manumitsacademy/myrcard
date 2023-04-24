@@ -1,16 +1,14 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 .search1{
     opacity: 0.5;
     color: #90A2B1;
-    font-family: Gotham book;
-    font-size: 12px;
-   
-   
-   
+    font-size: 12px;   
 }
 .navbar-brand{
     padding-left:1.5rem;
-    color: #532D85 !important;
-  font-family: Gotham bold;
+    color: #94414f !important;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -107,7 +105,6 @@ form .btn{
 input::placeholder{
     opacity: 0.5;
     color: #90A2B1;
-    font-family: Gotham book;
     font-size: 12px;
     letter-spacing: 0;
     line-height: 15px;
@@ -130,7 +127,6 @@ input::placeholder{
     border-top:none;
     text-transform: uppercase;
     color: #90A2B1;
-    font-family: Gotham bold;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
@@ -151,7 +147,6 @@ input::placeholder{
 }
 .table tbody tr td{
     color: #072843;
-    font-family: Gotham book;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 24px;
@@ -172,7 +167,6 @@ input::placeholder{
 }
 .left_tt{
     color: #072843;
-  font-family: Gotham book;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 24px;
@@ -180,7 +174,6 @@ input::placeholder{
 }
 .right_tt{
     color: #072843;
-    font-family:Gotham bold;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0;
@@ -191,7 +184,6 @@ input::placeholder{
 }
 .total_bal{
     color:#2B73B0;
-    font-family: Gotham bold;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 19px;

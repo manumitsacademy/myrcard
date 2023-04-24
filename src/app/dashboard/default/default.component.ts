@@ -12,10 +12,10 @@ export class DefaultComponent implements OnInit {
   constructor(private authService:AuthenticationService,private router:Router) { }
 
   ngOnInit() {
-    this.authService.isTokenIdValid().subscribe((res)=>{
+    /* this.authService.isTokenIdValid().subscribe((res)=>{
     },()=>{window.localStorage.removeItem('token');
     this.router.navigate(['/login'])
-    })
+    }) */
   }
 
 }

@@ -39,6 +39,13 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  // it('should abc', () => {
+  //   spyOn(component, 'emailOnFocus');
+  //   component.ngOnInit();
+
+  //   expect(component.emailOnFocus).toHaveBeenCalled();
+  // });
+
   it('should contain login form', () => {
     const formElement = fixture.nativeElement.querySelector('#form');
     expect(formElement).toBeTruthy();
